@@ -59,7 +59,7 @@ Before calling APIs, create and initialize the IThunderEngine object.
 
 Fill in the APPID of the project in this step.
 
-Call [createEngine](../api/Windows/v2.7.0/function.html#ithunderenginecreateengine) and [initialize](../api/Windows/v2.7.0/function.html#ithunderengineinitialize). Obtain APPID and initialize [IThunderEngine](../api/Windows/v2.7.0/function.html#ithunderengine).
+Call [createEngine](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginecreateengine) and [initialize](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderengineinitialize). Obtain APPID and initialize [IThunderEngine](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderengine).
 
 You can also register callback events that you want to monitor during initialization as required by the scenario, for example, local users joining the channel or decoding the video start frame of remote users.
 
@@ -90,7 +90,7 @@ virtual void onRemoteVideoStopped(const char* uid, bool stop) = 0;
 
 ### 4.4 Joining a Room
 
-After creating and initializing SDK, call [joinRoom](../api/Windows/v2.7.0/function.html#ithunderenginejoinroom) to join a room. After you enter a room successfully, you will receive the [onJoinRoomSuccess](../api/Windows/v2.7.0/notification.html#ithundereventhandleronjoinroomsuccess) callback. Following are the detailed steps:
+After creating and initializing SDK, call [joinRoom](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginejoinroom) to join a room. After you enter a room successfully, you will receive the [onJoinRoomSuccess](/rtc_video_interaction/api/Windows/v2.7.0/notification.md#ithundereventhandleronjoinroomsuccess) callback. Following are the detailed steps:
 
 ```c++
 virtual int joinRoom(const char* token, int tokenLen, const char* roomId, const char* uid) = 0;
@@ -152,11 +152,11 @@ MediaManager::instance()->getThunderManager()->stopLocalVideoStream(false);
 MediaManager::instance()->getThunderManager()->stopLocalAudioStream(false);
 ```
 
-After performing the preceding steps, you can start local view now. For detailed information, see descriptions about [joinRoom](../api/Windows/v2.7.0/function.html#ithunderenginejoinroom), [getVideoDeviceMgr](../api/Windows/v2.7.0/function.html#ithunderenginegetvideodevicemgr), [startVideoDeviceCapture](../api/Windows/v2.7.0/function.html#ivideodevicemanagerstartvideodevicecapture), [setLocalVideoCanvas](../api/Windows/v2.7.0/function.html#ithunderenginesetlocalvideocanvas), [setVideoEncoderConfig](../api/Windows/v2.7.0/function.html#ithunderenginesetvideoencoderconfig), [startVideoPreview](../api/Windows/v2.7.0/function.html#ithunderenginestartvideopreview) in API Document.
+After performing the preceding steps, you can start local view now. For detailed information, see descriptions about [joinRoom](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginejoinroom), [getVideoDeviceMgr](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginegetvideodevicemgr), [startVideoDeviceCapture](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ivideodevicemanagerstartvideodevicecapture), [setLocalVideoCanvas](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginesetlocalvideocanvas), [setVideoEncoderConfig](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginesetvideoencoderconfig), [startVideoPreview](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginestartvideopreview) in API Document.
 
 ### 3.4 Remote View
 
-If a user enters the room and calls stopLocalVideoStream, other users in the room will receive the [onRemoteVideoStopped](../api/Windows/v2.7.0/notification.html#ithundereventhandleronremotevideostopped) notification. The video stream status of remote users can be determined by checking the stop attribute.
+If a user enters the room and calls stopLocalVideoStream, other users in the room will receive the [onRemoteVideoStopped](/rtc_video_interaction/api/Windows/v2.7.0/notification.md#ithundereventhandleronremotevideostopped) notification. The video stream status of remote users can be determined by checking the stop attribute.
 
 ```c++
 virtual void onRemoteVideoStopped(const char* uid, bool stop) = 0;
@@ -177,13 +177,13 @@ void CJLYMeetDlg::setRemoteVideoCanvas(__int64 uid, HWND hwnd)
 }
 ```
 
-For detailed information, see descriptions about [setRemoteVideoCanvas](../api/Windows/v2.7.0/function.html#ithunderenginesetremotevideocanvas) in API Document.
+For detailed information, see descriptions about [setRemoteVideoCanvas](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginesetremotevideocanvas) in API Document.
 
 ### 3.5 Leaving a Room
 
-To stop a call, call [leaveRoom](../api/Windows/v2.7.0/function.html#ithunderengineleaveroom) to leave the current room.
+To stop a call, call [leaveRoom](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderengineleaveroom) to leave the current room.
 
-To disable the app, call [leaveRoom](../api/Windows/v2.7.0/function.html#ithunderengineleaveroom) to leave the current room and call [destroyEngine](../api/Windows/v2.7.0/function.html#ithunderenginedestroyengine) to destroy the IThunderEngine object so as to avoid memory leak.
+To disable the app, call [leaveRoom](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderengineleaveroom) to leave the current room and call [destroyEngine](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginedestroyengine) to destroy the IThunderEngine object so as to avoid memory leak.
 
 ## 4 Running a Project
 
@@ -191,20 +191,20 @@ Run the project on the Windows device. After a video call is established success
 
 ## 5. API Reference
 
-- [createEngine](../api/Windows/v2.7.0/function.html#ithunderenginecreateengine)
-- [initialize](../api/Windows/v2.7.0/function.html#ithunderengineinitialize)
-- [setArea](../api/Windows/v2.7.0/function.html#ithunderenginesetarea)
-- [joinRoom](../api/Windows/v2.7.0/function.html#ithunderenginejoinroom)
-- [getVideoDeviceMgr](../api/Windows/v2.7.0/function.html#ithunderenginegetvideodevicemgr)
-- [startVideoDeviceCapture](../api/Windows/v2.7.0/function.html#ivideodevicemanagerstartvideodevicecapture)
-- [setLocalVideoCanvas](../api/Windows/v2.7.0/function.html#ithunderenginesetlocalvideocanvas)
-- [setVideoEncoderConfig](../api/Windows/v2.7.0/function.html#ithunderenginesetvideoencoderconfig)
-- [startVideoPreview](../api/Windows/v2.7.0/function.html#ithunderenginestartvideopreview)
-- [stopVideoPreview](../api/Windows/v2.7.0/function.html#ithunderenginestopvideopreview)
-- [stopLocalVideoStream](../api/Windows/v2.7.0/function.html#ithunderenginestoplocalvideostream)
-- [setRemoteVideoCanvas](../api/Windows/v2.7.0/function.html#ithunderenginesetremotevideocanvas)
-- [leaveRoom](../api/Windows/v2.7.0/function.html#ithunderengineleaveroom)
-- [destroyEngine](../api/Windows/v2.7.0/function.html#ithunderenginedestroyengine)
+- [createEngine](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginecreateengine)
+- [initialize](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderengineinitialize)
+- [setArea](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginesetarea)
+- [joinRoom](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginejoinroom)
+- [getVideoDeviceMgr](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginegetvideodevicemgr)
+- [startVideoDeviceCapture](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ivideodevicemanagerstartvideodevicecapture)
+- [setLocalVideoCanvas](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginesetlocalvideocanvas)
+- [setVideoEncoderConfig](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginesetvideoencoderconfig)
+- [startVideoPreview](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginestartvideopreview)
+- [stopVideoPreview](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginestopvideopreview)
+- [stopLocalVideoStream](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginestoplocalvideostream)
+- [setRemoteVideoCanvas](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginesetremotevideocanvas)
+- [leaveRoom](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderengineleaveroom)
+- [destroyEngine](/rtc_video_interaction/api/Windows/v2.7.0/function.md#ithunderenginedestroyengine)
 
 ## 6. Precautions
 
