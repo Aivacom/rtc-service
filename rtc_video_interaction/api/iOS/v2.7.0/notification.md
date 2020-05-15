@@ -7,110 +7,110 @@
 
 | Public callback function | Function Name |
 | ---:| :--- |
-| void | [thunderEngine:onJoinRoomSuccess:withUid:elapsed:](#ThunderEventDelegate::thunderEngine:onJoinRoomSuccess:withUid:elapsed) |
-| void | [thunderEngine:onLeaveRoomWithStats:](#ThunderEventDelegate::thunderEngine:onLeaveRoomWithStats) |
-| void | [thunderEngine:sdkAuthResult:](#ThunderEventDelegate::thunderEngine:sdkAuthResult) |
-| void | [thunderEngine:bPublish:bizAuthResult:](#ThunderEventDelegate::thunderEngine:bPublish:bizAuthResult) |
-| void | [thunderEngine:onPlayVolumeIndication:totalVolume:](#ThunderEventDelegate::onPlayVolumeIndication:totalVolume) |
-| void | [thunderEngine:onCaptureVolumeIndication:cpt:micVolume:](#ThunderEventDelegate::thunderEngine:onCaptureVolumeIndication:cpt:micVolume) |
-| void | [thunderEngine:onAudioPlaySpectrumData:](#ThunderEventDelegate::thunderEngine:onAudioPlaySpectrumData) |
-| void | [thunderEngine:onRecvUserAppMsgData:uid:](#ThunderEventDelegate::thunderEngine:onRecvUserAppMsgData:uid) |
-| void | [thunderEngine:onSendAppMsgDataFailedStatus:](#ThunderEventDelegate::thunderEngine:onSendAppMsgDataFailedStatus) |
-| void | [thunderEngine:onRemoteAudioStopped:byUid:](#ThunderEventDelegate::thunderEngine:onRemoteAudioStopped:byUid) |
-| void | [thunderEngine:onRemoteVideoStopped:byUid:](#ThunderEventDelegate::thunderEngine:onRemoteVideoStopped:byUid) |
-| void | [thunderEngine:onRemoteVideoPlay:size:elapsed:](#ThunderEventDelegate::thunderEngine:onRemoteVideoPlay:size:elapsed) |
-| void | [thunderEngine:onVideoSizeChangedOfUid:size:rotation:](#ThunderEventDelegate::thunderEngine:onVideoSizeChangedOfUid:size:rotation) |
-| void | [thunderEngine:onVideoCaptureStatus:](#ThunderEventDelegate::thunderEngine:onVideoCaptureStatus) |
-| void | [thunderEngine:onConnectionStatus:](#ThunderEventDelegate::thunderEngine:onConnectionStatus) |
-| void | [thunderEngine:onRoomStats:](#ThunderEventDelegate::thunderEngine:onRoomStats) |
-| void | [thunderEngine:onFirstLocalAudioFrameSent:](#ThunderEventDelegate::thunderEngine:onFirstLocalAudioFrameSent) |
-| void | [thunderEngine:onFirstLocalVideoFrameSent:](#ThunderEventDelegate::thunderEngine:onFirstLocalVideoFrameSent) |
-| void | [thunderEngine:onPublishStreamToCDNStatusWithUrl:errorCode:](#ThunderEventDelegate::thunderEngine:onPublishStreamToCDNStatusWithUrl:errorCode) |
-| void | [thunderEngine:onNetworkTypeChanged:](#ThunderEventDelegate::thunderEngine:onNetworkTypeChanged) |
-| void | [thunderEngine:onLocalVideoStats:](#ThunderEventDelegate::thunderEngine:onLocalVideoStats) |
-| void | [thunderEngine:onLocalAudioStats:](#ThunderEventDelegate::thunderEngine:onLocalAudioStats) |
-| void | [thunderEngine:onAudioCaptureStatus:](#ThunderEventDelegate::thunderEngine:onAudioCaptureStatus) |
-| void | [thunderEngineConnectionLost:](#ThunderEventDelegate::thunderEngineConnectionLost) |
-| void | [thunderEngine:onTokenWillExpire:](#ThunderEventDelegate::thunderEngine:onTokenWillExpire) |
-| void | [thunderEngineTokenRequest:](#ThunderEventDelegate::thunderEngineTokenRequest) |
-| void | [thunderEngine:onUserBanned:](#ThunderEventDelegate::thunderEngine:onUserBanned) |
-| void | [thunderEngine:onUserJoined:elapsed:](#ThunderEventDelegate::thunderEngine:onUserJoined:elapsed) |
-| void | [thunderEngine:onUserOffline:reason:](#ThunderEventDelegate::thunderEngine:onUserOffline:reason) |
-| void | [thunderEngine:onNetworkQuality:txQuality:rxQuality:](#ThunderEventDelegate::thunderEngine:onNetworkQuality:txQuality:rxQuality) |
-| void | [thunderEngine:onRemoteVideoStatsOfUid:stats:](#ThunderEventDelegate::thunderEngine:onRemoteVideoStatsOfUid:stats) |
-| void | [thunderEngine:onRemoteAudioStatsOfUid:stats:](#ThunderEventDelegate:thunderEngine:onRemoteAudioStatsOfUid:stats) |
+| void | [thunderEngine:onJoinRoomSuccess:withUid:elapsed:](#thundereventdelegatethunderengineonjoinroomsuccesswithuidelapsed) |
+| void | [thunderEngine:onLeaveRoomWithStats:](#thundereventdelegatethunderengineonleaveroomwithstats) |
+| void | [thunderEngine:sdkAuthResult:](#thundereventdelegatethunderenginesdkauthresult) |
+| void | [thunderEngine:bPublish:bizAuthResult:](#thundereventdelegatethunderenginebpublishbizauthresult) |
+| void | [thunderEngine:onPlayVolumeIndication:totalVolume:](#thundereventdelegateonplayvolumeindicationtotalvolume) |
+| void | [thunderEngine:onCaptureVolumeIndication:cpt:micVolume:](#thundereventdelegatethunderengineoncapturevolumeindicationcptmicvolume) |
+| void | [thunderEngine:onAudioPlaySpectrumData:](#thundereventdelegatethunderengineonaudioplayspectrumdata) |
+| void | [thunderEngine:onRecvUserAppMsgData:uid:](#thundereventdelegatethunderengineonrecvuserappmsgdatauid) |
+| void | [thunderEngine:onSendAppMsgDataFailedStatus:](#thundereventdelegatethunderengineonsendappmsgdatafailedstatus) |
+| void | [thunderEngine:onRemoteAudioStopped:byUid:](#thundereventdelegatethunderengineonremoteaudiostoppedbyuid) |
+| void | [thunderEngine:onRemoteVideoStopped:byUid:](#thundereventdelegatethunderengineonremotevideostoppedbyuid) |
+| void | [thunderEngine:onRemoteVideoPlay:size:elapsed:](#thundereventdelegatethunderengineonremotevideoplaysizeelapsed) |
+| void | [thunderEngine:onVideoSizeChangedOfUid:size:rotation:](#thundereventdelegatethunderengineonvideosizechangedofuidsizerotation) |
+| void | [thunderEngine:onVideoCaptureStatus:](#thundereventdelegatethunderengineonvideocapturestatus) |
+| void | [thunderEngine:onConnectionStatus:](#thundereventdelegatethunderengineonconnectionstatus) |
+| void | [thunderEngine:onRoomStats:](#thundereventdelegatethunderengineonroomstats) |
+| void | [thunderEngine:onFirstLocalAudioFrameSent:](#thundereventdelegatethunderengineonfirstlocalaudioframesent) |
+| void | [thunderEngine:onFirstLocalVideoFrameSent:](#thundereventdelegatethunderengineonfirstlocalvideoframesent) |
+| void | [thunderEngine:onPublishStreamToCDNStatusWithUrl:errorCode:](#thundereventdelegatethunderengineonpublishstreamtocdnstatuswithurlerrorcode) |
+| void | [thunderEngine:onNetworkTypeChanged:](#thundereventdelegatethunderengineonnetworktypechanged) |
+| void | [thunderEngine:onLocalVideoStats:](#thundereventdelegatethunderengineonlocalvideostats) |
+| void | [thunderEngine:onLocalAudioStats:](#thundereventdelegatethunderengineonlocalaudiostats) |
+| void | [thunderEngine:onAudioCaptureStatus:](#thundereventdelegatethunderengineonaudiocapturestatus) |
+| void | [thunderEngineConnectionLost:](#thundereventdelegatethunderengineconnectionlost) |
+| void | [thunderEngine:onTokenWillExpire:](#thundereventdelegatethunderengineontokenwillexpire) |
+| void | [thunderEngineTokenRequest:](#thundereventdelegatethunderenginetokenrequest) |
+| void | [thunderEngine:onUserBanned:](#thundereventdelegatethunderengineonuserbanned) |
+| void | [thunderEngine:onUserJoined:elapsed:](#thundereventdelegatethunderengineonuserjoinedelapsed) |
+| void | [thunderEngine:onUserOffline:reason:](#thundereventdelegatethunderengineonuserofflinereason) |
+| void | [thunderEngine:onNetworkQuality:txQuality:rxQuality:](#thundereventdelegatethunderengineonnetworkqualitytxqualityrxquality) |
+| void | [thunderEngine:onRemoteVideoStatsOfUid:stats:](#thundereventdelegatethunderengineonremotevideostatsofuidstats) |
+| void | [thunderEngine:onRemoteAudioStatsOfUid:stats:](#thundereventdelegatethunderengineonremoteaudiostatsofuidstats) |
 
 - ### ThunderVideoDecodeFrameObserver
 
 | Public callback function | Function Name |
 | ---:| :--- |
-| void | [onVideoDecodeFrame:pts:uid:](#ThunderVideoDecodeFrameObserver::onVideoDecodeFrame:pts:uid) |
+| void | [onVideoDecodeFrame:pts:uid:](#thundervideodecodeframeobserveronvideodecodeframeptsuid) |
 
 - ### ThunderVideoCaptureFrameObserver
 
 | Public callback function | Function Name |
 | ---:| :--- |
-| [ThunderVideoCaptureFrameDataType](#ThunderVideoCaptureFrameDataType) | [needThunderVideoCaptureFrameDataType:](#ThunderVideoCaptureFrameObserver::needThunderVideoCaptureFrameDataType) |
-| CVPixelBufferRef _Nullable | [onVideoCaptureFrame:PixelBuffer:](#ThunderVideoCaptureFrameObserver::onVideoCaptureFrame:PixelBuffer) |
-| BOOL | [onVideoCaptureFrame:PixelBuffer:SourceTextureID:DestinationTextureID:TextureFormat:TextureTarget:TextureWidth:TextureHeight:](#ThunderVideoCaptureFrameObserver::onVideoCaptureFrame:PixelBuffer:SourceTextureID:DestinationTextureID:TextureFormat:TextureTarget:TextureWidth:TextureHeight) |
+| [ThunderVideoCaptureFrameDataType](#thundervideocaptureframedatatype) | [needThunderVideoCaptureFrameDataType:](#thundervideocaptureframeobserverneedthundervideocaptureframedatatype) |
+| CVPixelBufferRef _Nullable | [onVideoCaptureFrame:PixelBuffer:](#thundervideocaptureframeobserveronvideocaptureframepixelbuffer) |
+| BOOL | [onVideoCaptureFrame:PixelBuffer:SourceTextureID:DestinationTextureID:TextureFormat:TextureTarget:TextureWidth:TextureHeight:](#thundervideocaptureframeobserveronvideocaptureframepixelbuffersourcetextureiddestinationtextureidtextureformattexturetargettexturewidthtextureheight) |
 
 - ### ThunderMediaExtraInfoDelegate
 
 | Public callback function | Function Name |
 | ---:| :--- |
-| void | [onSendMediaExtraInfoFailedStatus:](#ThunderMediaExtraInfoDelegate::onSendMediaExtraInfoFailedStatus) |
-| void | [onRecvMediaExtraInfo:ofUid:](#ThunderMediaExtraInfoDelegate::onRecvMediaExtraInfo:ofUid) |
-| void | [onRecvMixAudioInfo:ofUid:](#ThunderMediaExtraInfoDelegate::onRecvMixAudioInfo:ofUid) |
-| void | [onRecvMixVideoInfo:ofUid:](#ThunderMediaExtraInfoDelegate::onRecvMixVideoInfo:ofUid) |
+| void | [onSendMediaExtraInfoFailedStatus:](#thundermediaextrainfodelegateonsendmediaextrainfofailedstatus) |
+| void | [onRecvMediaExtraInfo:ofUid:](#thundermediaextrainfodelegateonrecvmediaextrainfoofuid) |
+| void | [onRecvMixAudioInfo:ofUid:](#thundermediaextrainfodelegateonrecvmixaudioinfoofuid) |
+| void | [onRecvMixVideoInfo:ofUid:](#thundermediaextrainfodelegateonrecvmixvideoinfoofuid) |
 
 - ### ThunderAudioFilePlayerDelegate
 
 | Public callback function | Function Name |
 | ---:| :--- |
-| void | [onAudioFilePlayEnd:](#ThunderAudioFilePlayerDelegate::onAudioFilePlayEnd) |
-| void | [onAudioFilePlayError:errorCode:](#ThunderAudioFilePlayerDelegate::onAudioFilePlayError:errorCode) |
-| void | [onAudioFilePlaying:](#ThunderAudioFilePlayerDelegate::onAudioFilePlaying) |
-| void | [onAudioFilePause:](#ThunderAudioFilePlayerDelegate::onAudioFilePause) |
-| void | [onAudioFileResume:](#ThunderAudioFilePlayerDelegate::onAudioFileResume) |
-| void | [onAudioFileStop:](#ThunderAudioFilePlayerDelegate::onAudioFileStop) |
-| void | [onAudioFileSeekComplete:milliseconds:](#ThunderAudioFilePlayerDelegate::onAudioFileSeekComplete:milliseconds) |
-| void | [onAudioFileVolume:volume:currentMs:totalMs:](#ThunderAudioFilePlayerDelegate::onAudioFileVolume:volume:currentMs:totalMs) |
-| void | [onAudioFileStateChange:event:errorCode:](#ThunderAudioFilePlayerDelegate::onAudioFileStateChange:event:errorCode) |
+| void | [onAudioFilePlayEnd:](#thunderaudiofileplayerdelegateonaudiofileplayend) |
+| void | [onAudioFilePlayError:errorCode:](#thunderaudiofileplayerdelegateonaudiofileplayerrorerrorcode) |
+| void | [onAudioFilePlaying:](#thunderaudiofileplayerdelegateonaudiofileplaying) |
+| void | [onAudioFilePause:](#thunderaudiofileplayerdelegateonaudiofilepause) |
+| void | [onAudioFileResume:](#thunderaudiofileplayerdelegateonaudiofileresume) |
+| void | [onAudioFileStop:](#thunderaudiofileplayerdelegateonaudiofilestop) |
+| void | [onAudioFileSeekComplete:milliseconds:](#thunderaudiofileplayerdelegateonaudiofileseekcompletemilliseconds) |
+| void | [onAudioFileVolume:volume:currentMs:totalMs:](#thunderaudiofileplayerdelegateonaudiofilevolumevolumecurrentmstotalms) |
+| void | [onAudioFileStateChange:event:errorCode:](#thunderaudiofileplayerdelegateonaudiofilestatechangeeventerrorcode) |
 
 - ### IAudioFrameObserver
 
 | Public callback function | Function Name |
 | ---:| :--- |
-| virtual bool | [onRecordAudioFrame](#IAudioFrameObserver::onRecordAudioFrame)([AudioFrame](#AudioFrame)& audioFrame) = 0 |
-| virtual bool | [onPlaybackAudioFrame](#IAudioFrameObserver::onPlaybackAudioFrame)([AudioFrame](#AudioFrame)& audioFrame) = 0 |
-| virtual bool | [onPlaybackAudioFrameBeforeMixing](#IAudioFrameObserver::onPlaybackAudioFrameBeforeMixing)(char* uid, [AudioFrame](#AudioFrame)& audioFrame) = 0 |
+| virtual bool | [onRecordAudioFrame](#iaudioframeobserveronrecordaudioframe)([AudioFrame](#audioframe)& audioFrame) = 0 |
+| virtual bool | [onPlaybackAudioFrame](#iaudioframeobserveronplaybackaudioframe)([AudioFrame](#audioframe)& audioFrame) = 0 |
+| virtual bool | [onPlaybackAudioFrameBeforeMixing](#iaudioframeobserveronplaybackaudioframebeforemixing)(char* uid, [AudioFrame](#audioframe)& audioFrame) = 0 |
 
 - ### ThunderRtcLogDelegate
 
 | Public callback function | Function Name |
 | ---:| :--- |
-| void | [onThunderRtcLogWithLevel:message:](#ThunderRtcLogDelegate::onThunderRtcLogWithLevel:message) |
+| void | [onThunderRtcLogWithLevel:message:](#thunderrtclogdelegateonthunderrtclogwithlevelmessage) |
 
 - ### ThunderCustomVideoSourceProtocol
 
 | Public callback function | Function Name |
 | ---:| :--- |
-| BOOL | [onInitialize](#ThunderCustomVideoSourceProtocol::onInitialize):(nullable id<[ThunderVideoFrameConsumer](function.md#ThunderVideoFrameConsumer)>)protocol |
-| [ThunderVideoBufferType](#ThunderVideoBufferType) | [bufferType](#ThunderCustomVideoSourceProtocol::bufferType) |
-| void | [onStart](#ThunderCustomVideoSourceProtocol::onStart) |
-| void | [onStop](#ThunderCustomVideoSourceProtocol::onStop) |
-| void | [onDispose](#ThunderCustomVideoSourceProtocol::onDispose) |
+| BOOL | [onInitialize](#thundercustomvideosourceprotocoloninitialize):(nullable id<[ThunderVideoFrameConsumer](function.html#thundervideoframeconsumer)>)protocol |
+| [ThunderVideoBufferType](#thundervideobuffertype) | [bufferType](#thundercustomvideosourceprotocolbuffertype) |
+| void | [onStart](#thundercustomvideosourceprotocolonstart) |
+| void | [onStop](#thundercustomvideosourceprotocolonstop) |
+| void | [onDispose](#thundercustomvideosourceprotocolondispose) |
 
 - ### ThunderExternalAudioProcessorDelegate
 
 | Public callback function | Function Name |
 | ---:| :--- |
-| void | [audioCaptureStart](#ThunderExternalAudioProcessorDelegate::audioCaptureStart) |
-| void | [audioCaptureData:data:len:sampleRate:channelCount:bitPerSample:](#ThunderExternalAudioProcessorDelegate::audioCaptureData:data:len:sampleRate:channelCount:bitPerSample:) |
-| void | [audioCaptureStop](#ThunderExternalAudioProcessorDelegate::audioCaptureStop) |
-| void | [audioRenderStart](#ThunderExternalAudioProcessorDelegate::audioRenderStart) |
-| void | [audioRenderData:data:len:sampleRate:channelCount:bitPerSample:](#ThunderExternalAudioProcessorDelegate::audioRenderData:data:len:sampleRate:channelCount:bitPerSample:) |
-| void | [audioRenderStop](#ThunderExternalAudioProcessorDelegate::audioRenderStop) |
+| void | [audioCaptureStart](#thunderexternalaudioprocessordelegateaudiocapturestart) |
+| void | [audioCaptureData:data:len:sampleRate:channelCount:bitPerSample:](#thunderexternalaudioprocessordelegateaudiocapturedatadatalensampleratechannelcountbitpersample) |
+| void | [audioCaptureStop](#thunderexternalaudioprocessordelegateaudiocapturestop) |
+| void | [audioRenderStart](#thunderexternalaudioprocessordelegateaudiorenderstart) |
+| void | [audioRenderData:data:len:sampleRate:channelCount:bitPerSample:](#thunderexternalaudioprocessordelegateaudiorenderdatadatalensampleratechannelcountbitpersample) |
+| void | [audioRenderStop](#thunderexternalaudioprocessordelegateaudiorenderstop) |
 
 ## Detailed callback description
 
@@ -124,11 +124,11 @@
 
 Callback of processing log
 
-##### Parameter[](#onThunderRtcLogWithLevel)
+##### Parameter[](#onthunderrtclogwithlevel)
 
 | Parameter | Description |
 | :--- | :--- |
-| level | For levels, see [ThunderRtcLogLevel for details](#ThunderRtcLogLevel) |
+| level | For levels, see [ThunderRtcLogLevel for details](#thunderrtcloglevel) |
 | msg | Log |
 
 --------------------------
@@ -144,13 +144,13 @@ Callback of processing log
 
 Callback of Join Room
 
-##### Parameter[](#onJoinRoomSuccess)
+##### Parameter[](#onjoinroomsuccess)
 
 | Parameter | Description |
 | :--- | :--- |
 | room | Room name |
 | uid | User ID |
-| elapsed | Time (ms) consumed from callback of [joinRoom](function.md#ThunderEngine::joinRoom:roomName:uid) API to callback of the event |
+| elapsed | Time (ms) consumed from callback of [joinRoom](function.html#thunderenginejoinroomroomnameuid) API to callback of the event |
 
 --------------------------
 
@@ -162,11 +162,11 @@ Callback of Join Room
 
 Callback of SDK authentication result. Result of SunClouds’ authentication returned
 
-##### Parameter[](#sdkAuthResult)
+##### Parameter[](#sdkauthresult)
 
 | Parameter | Description |
 | :--- | :--- |
-| sdkAuthResult | For authentication results, see [ThunderRtcSdkAuthResult for details](#ThunderRtcSdkAuthResult) |
+| sdkAuthResult | For authentication results, see [ThunderRtcSdkAuthResult for details](#thunderrtcsdkauthresult) |
 
 --------------------------
 
@@ -182,7 +182,7 @@ Callback on service authentication results.
 >
 > - For returned results to be authenticated by the service, SunClouds will transfer the authentication request to the service authentication server and pass through and return authentication results.
 
-##### Parameter[](#bizAuthResult)
+##### Parameter[](#bizauthresult)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -205,7 +205,7 @@ Callback of speaking volume.
 >
 > - Callback of prompt who is speaking in the room and volume of the speaker.
 
-##### Parameter[](#onPlayVolumeIndication)
+##### Parameter[](#onplayvolumeindication)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -226,7 +226,7 @@ Callback on audio play spectrum data.
 >
 > - This callback calls back the spectrum data of the audio played to the user.
 
-##### Parameter[](#onAudioPlaySpectrumData)
+##### Parameter[](#onaudioplayspectrumdata)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -248,7 +248,7 @@ Callback of receiving service-customized broadcast message.
 >
 > - This callback calls back the pass-through message received by the user and uid of the user sending the message.
 
-##### Parameter[](#onRecvUserAppMsgData)
+##### Parameter[](#onrecvuserappmsgdata)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -269,7 +269,7 @@ Callback of failure of sending service-customized broadcast message.
 >
 > - This callback calls back the reason why the user fails in sending the service-customized broadcast message. As stipulated currently, the passthrough frequency is twice/s and size of data sent is <=200Byte.
 
-##### Parameter[](#onSendAppMsgDataFailedStatus)
+##### Parameter[](#onsendappmsgdatafailedstatus)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -285,7 +285,7 @@ Callback of failure of sending service-customized broadcast message.
 
 Notification of enabling/disabling audio stream of remote user.
 
-##### Parameter[](#onRemoteAudioStopped)
+##### Parameter[](#onremoteaudiostopped)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -302,7 +302,7 @@ Notification of enabling/disabling audio stream of remote user.
 
 Notification of enabling/disabling video stream of remote user.
 
-##### Parameter[](#onRemoteVideoStopped)
+##### Parameter[](#onremotevideostopped)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -326,13 +326,13 @@ Callback on displayed first remote video frame.
 >
 > - Used to calculate the video speed.
 
-##### Parameter[](#onRemoteVideoPlay)
+##### Parameter[](#onremotevideoplay)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | User id |
-| size | For video size (width and height), see [CGSize for details](#CGSize) |
-| elapsed | Time (ms) consumed from callback of [joinRoom](function.md#ThunderEngine::joinRoom:roomName:uid) API to callback of the event |
+| size | For video size (width and height), see [CGSize for details](#cgsize) |
+| elapsed | Time (ms) consumed from callback of [joinRoom](function.html#thunderenginejoinroomroomnameuid) API to callback of the event |
 
 --------------------------
 
@@ -347,12 +347,12 @@ onVideoSizeChangedOfUid:(nonnull NSString*)uid
 
 Callback on change in local or remote video resolution.
 
-##### Parameter[](#onVideoSizeChangedOfUid)
+##### Parameter[](#onvideosizechangedofuid)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | User id |
-| size | For video size (width and height), see [CGSize for details](#CGSize) |
+| size | For video size (width and height), see [CGSize for details](#cgsize) |
 | rotation | Rotation information [0 , 360] |
 
 --------------------------
@@ -369,11 +369,11 @@ Notification of change in camera capture status.
 >
 > - Enable camera capture. When device for camera capture changes in status, this notification will be received.
 
-##### Parameter[](#onVideoCaptureStatus)
+##### Parameter[](#onvideocapturestatus)
 
 | Parameter | Description |
 | :--- | :--- |
-| status | For status of camera capture, see [ThunderVideoCaptureStatus for details](#ThunderVideoCaptureStatus) |
+| status | For status of camera capture, see [ThunderVideoCaptureStatus for details](#thundervideocapturestatus) |
 
 --------------------------
 
@@ -385,11 +385,11 @@ Notification of change in camera capture status.
 
 This interface will be called upon change of connection between SDK and server.
 
-##### Parameter[](#onConnectionStatus)
+##### Parameter[](#onconnectionstatus)
 
 | Parameter | Description |
 | :--- | :--- |
-| status | For status of connection between SDK and server, see [ThunderConnectionStatus for details](#ThunderConnectionStatus) |
+| status | For status of connection between SDK and server, see [ThunderConnectionStatus for details](#thunderconnectionstatus) |
 
 --------------------------
 
@@ -405,11 +405,11 @@ Notification of upstream/downstream traffic
 >
 > - Notification of upstream/downstream traffic pops out once 2s.
 
-##### Parameter[](#onRoomStats)
+##### Parameter[](#onroomstats)
 
 | Parameter | Description |
 | :--- | :--- |
-| stats | For statistics of upstream/downstream traffic, see [RoomStats for details](#RoomStats) |
+| stats | For statistics of upstream/downstream traffic, see [RoomStats for details](#roomstats) |
 
 --------------------------
 
@@ -420,11 +420,11 @@ Notification of upstream/downstream traffic
 ```
 Callback on the first local audio frame sent.
 
-##### Parameter[](#onFirstLocalAudioFrameSent)
+##### Parameter[](#onfirstlocalaudioframesent)
 
 | Parameter | Description |
 | :--- | :--- |
-| elapsed | Time (ms) consumed from callback of [joinRoom](function.md#ThunderEngine::joinRoom:roomName:uid) API to callback of the event |
+| elapsed | Time (ms) consumed from callback of [joinRoom](function.html#thunderenginejoinroomroomnameuid) API to callback of the event |
 
 --------------------------
 
@@ -436,11 +436,11 @@ Callback on the first local audio frame sent.
 
 Callback on the first local video frame sent.
 
-##### Parameter[](#onFirstLocalVideoFrameSent)
+##### Parameter[](#onfirstlocalvideoframesent)
 
 | Parameter | Description |
 | :--- | :--- |
-| elapsed | Time (ms) consumed from callback of [joinRoom](function.md#ThunderEngine::joinRoom:roomName:uid) API to callback of the event |
+| elapsed | Time (ms) consumed from callback of [joinRoom](function.html#thunderenginejoinroomroomnameuid) API to callback of the event |
 
 --------------------------
 
@@ -459,12 +459,12 @@ Callback on cdn stream publishing result.
 > - To notify whether CDN stream publishing succeeds. If it fails, errorCode will indicate the specific reason.
 > - This callback will be triggered when stream publishing status changes, or every 10s when publish stream status stays unchanged.
 
-##### Parameter[](#onPublishStreamToCDNStatusWithUrl)
+##### Parameter[](#onpublishstreamtocdnstatuswithurl)
 
 | Parameter | Description |
 | :--- | :--- |
 | url | Target url of stream publishing |
-| errorCode | For stream publishing error code, see [ThunderPublishCDNErrorCode](#ThunderPublishCDNErrorCode) |
+| errorCode | For stream publishing error code, see [ThunderPublishCDNErrorCode](#thunderpublishcdnerrorcode) |
 
 --------------------------
 
@@ -476,7 +476,7 @@ Callback on cdn stream publishing result.
 
 Callback on network type change.
 
-##### Parameter[](#onNetworkTypeChanged)
+##### Parameter[](#onnetworktypechanged)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -496,11 +496,11 @@ Notification of statistics of local video
 >
 > - The statistics of sending of video stream by local device is described during this callback. Callback time: 1. immediate callback when the publishing interface is called; 2. immediate callback on bracket change during the publishing; and 3. periodical callback at an interval of 2s.
 
-##### Parameter[](#onLocalVideoStats)
+##### Parameter[](#onlocalvideostats)
 
 | Parameter | Description |
 | :--- | :--- | :--- |
-| stats | For statistics of local video, see [ThunderRtcLocalVideoStats](#ThunderRtcLocalVideoStats) |
+| stats | For statistics of local video, see [ThunderRtcLocalVideoStats](#thunderrtclocalvideostats) |
 
 --------------------------
 
@@ -516,11 +516,11 @@ Notification of statistics of local audio.
 >
 > - The statistics of sending of video stream by local device is described during this callback. Callback time: periodical callback at an interval of 2s.
 
-##### Parameter[](#onLocalAudioStats)
+##### Parameter[](#onlocalaudiostats)
 
 | Parameter | Description |
 | :--- | :--- |
-| stats | For statistics of local audio, see [ThunderRtcLocalAudioStats](#ThunderRtcLocalAudioStats) |
+| stats | For statistics of local audio, see [ThunderRtcLocalAudioStats](#thunderrtclocalaudiostats) |
 
 --------------------------
 
@@ -536,11 +536,11 @@ Notification of change in audio device capture status.
 >
 > - Enable audio capture. When device for audio capture changes in status, this notification will be received
 
-##### Parameter[](#onAudioCaptureStatus)
+##### Parameter[](#onaudiocapturestatus)
 
 | Parameter | Description |
 | :--- | :--- |
-| status | For status of audio device, see [ThunderAudioDeviceStatus](#ThunderAudioDeviceStatus) |
+| status | For status of audio device, see [ThunderAudioDeviceStatus](#thunderaudiodevicestatus) |
 
 --------------------------
 
@@ -570,7 +570,7 @@ Callback of near expiration of server's authentication.
 >
 > - SDK will call back this interface 30s before expiration of the token.
 
-##### Parameter[](#onTokenWillExpire)
+##### Parameter[](#ontokenwillexpire)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -600,7 +600,7 @@ Callback of expiration of server's authentication.
 
 Callback during banning period of the user.
 
-##### Parameter[](#onUserBanned)
+##### Parameter[](#onuserbanned)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -620,7 +620,7 @@ Callback of remote user joining the room.
 >
 > - Validated only in audio mode.
 
-##### Parameter[](#onUserJoined)
+##### Parameter[](#onuserjoined)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -643,12 +643,12 @@ Callback of remote user leaving the room.
 >
 > - Validated only in audio mode.
 
-##### Parameter[](#onUserOffline)
+##### Parameter[](#onuseroffline)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | Remote user id |
-| reason | For offline reason, see [ThunderLiveRtcUserOfflineReason](#ThunderLiveRtcUserOfflineReason) |
+| reason | For offline reason, see [ThunderLiveRtcUserOfflineReason](#thunderlivertcuserofflinereason) |
 
 --------------------------
 
@@ -663,13 +663,13 @@ Callback of remote user leaving the room.
 
 Callback on uplink/downlink quality report.
 
-##### Parameter[](#onNetworkQuality)
+##### Parameter[](#onnetworkquality)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | It means this callback indicates the network quality of user of the id. When the uid is 0, network quality of local user is returned |
-| txQuality | For uplink network quality of this user, see [ThunderLiveRtcNetworkQuality](#ThunderLiveRtcNetworkQuality) |
-| rxQuality | For downlink network quality of this user, see [ThunderLiveRtcNetworkQuality](#ThunderLiveRtcNetworkQuality) |
+| txQuality | For uplink network quality of this user, see [ThunderLiveRtcNetworkQuality](#thunderlivertcnetworkquality) |
+| rxQuality | For downlink network quality of this user, see [ThunderLiveRtcNetworkQuality](#thunderlivertcnetworkquality) |
 
 --------------------------
 
@@ -687,12 +687,12 @@ Callback on remote video stream information during the call.
 >
 > - The end-to-end video stream status in calling of remote users is described during this callback, which is triggered once 2s for each remote user/anchor. In case multiple users/anchors exist remotely at the same time, this callback will be triggered multiple times every 2 seconds.
 
-##### Parameter[](#onRemoteVideoStatsOfUid)
+##### Parameter[](#onremotevideostatsofuid)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | Id of remote user/anchor |
-| stats | For statistics of remote video, see [ThunderRtcRemoteVideoStats](#ThunderRtcRemoteVideoStats) |
+| stats | For statistics of remote video, see [ThunderRtcRemoteVideoStats](#thunderrtcremotevideostats) |
 
 --------------------------
 
@@ -710,12 +710,12 @@ Callback on remote audio stream information during the call.
 >
 > - The statistics of end-to-end audio in calling of remote users is described during this callback, which is triggered once 2s for each remote user/anchor. If there are multiple users/anchors existing remotely at the same time, SDK will be triggered several times every 2s.
 
-##### Parameter[](#onRemoteAudioStatsOfUid)
+##### Parameter[](#onremoteaudiostatsofuid)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | Id of remote user/anchor |
-| stats | For statistics of remote audio, see [ThunderRtcRemoteAudioStats](#ThunderRtcRemoteAudioStats) |
+| stats | For statistics of remote audio, see [ThunderRtcRemoteAudioStats](#thunderrtcremoteaudiostats) |
 
 --------------------------
 
@@ -731,7 +731,7 @@ Custom rendering of a decoded image is to cut out the decoded image of SDK for c
 >
 > - There may be multiple video streams in the room, and the ThunderDecodeFrameObserver interface protocol should be set for different uid video streams.
 
-##### Parameter[](#onVideoDecodeFrame)
+##### Parameter[](#onvideodecodeframe)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -753,7 +753,7 @@ Declaration is made to SDK on which format of data will be used. The following t
 
 ##### Return value
 
-For type of video capture data called back, see [ThunderVideoCaptureFrameDataType for details](#ThunderVideoCaptureFrameDataType)
+For type of video capture data called back, see [ThunderVideoCaptureFrameDataType for details](#thundervideocaptureframedatatype)
 
 --------------------------
 
@@ -772,7 +772,7 @@ Receive a frame of data from capture for processing and return processed data
 >
 > - SDK returns the original PixelBuffer to the developer via interface. After the developer processes the PixelBuffer, the result is returned to SDK in form of return value for further procedure.
 
-##### Parameter[](#onVideoCaptureFrame)
+##### Parameter[](#onvideocaptureframe)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -802,7 +802,7 @@ Receive a frame of data from capture for processing and return processed data Pr
 >
 > - SDK converts pixelBuffer into srcTextureID and dstTextureID via interface to return to the developer. Developer can operate the texture and render the final result in dstTextureID. SDK will take dstTextureID as data to perform the next work flow.
 
-##### Parameter[](#onVideoCaptureFrame)
+##### Parameter[](#onvideocaptureframe)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -815,7 +815,7 @@ Receive a frame of data from capture for processing and return processed data Pr
 | width | Texture width |
 | height | Texture height |
 
-##### Return[](#onVideoCaptureFrame)
+##### Return[](#onvideocaptureframe)
 
 - YES
 
@@ -833,7 +833,7 @@ Callback on leaving room.
 >
 > - When leaveRoom is called, this notification will be received upon normal leaving of the room.
 
-##### Parameter[](#onLeaveRoomWithStats)
+##### Parameter[](#onleaveroomwithstats)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -854,9 +854,9 @@ Callback on capture volume
 
 > **Note:**
 >
-> - This callback is set with the [enableCaptureVolumeIndication](function.md#ThunderEngine::enableCaptureVolumeIndication:moreThanThd:lessThanThd:smooth:) interface.
+> - This callback is set with the [enableCaptureVolumeIndication](function.html#thunderengineenablecapturevolumeindicationmorethanthdlessthanthdsmooth) interface.
 
-##### Parameter[](#onCaptureVolumeIndication)
+##### Parameter[](#oncapturevolumeindication)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -880,7 +880,7 @@ Callback of receiving service-customized broadcast message.
 >
 > - This callback calls back the passthrough message received by the user and uid of the user sending the message.
 
-##### Parameter[](#onRecvUserAppMsgData)
+##### Parameter[](#onrecvuserappmsgdata)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -901,7 +901,7 @@ Callback on failure in sending media extra information.
 
 > **Note:**
 >
-> - For return failure status, see [ThunderSendMediaExtraInfoFailedStatus](#ThunderSendMediaExtraInfoFailedStatus)
+> - For return failure status, see [ThunderSendMediaExtraInfoFailedStatus](#thundersendmediaextrainfofailedstatus)
 
 --------------------------
 
@@ -913,7 +913,7 @@ Callback on failure in sending media extra information.
 
 Receive media extra information.
 
-##### Parameter[](#onRecvMediaExtraInfo)
+##### Parameter[](#onrecvmediaextrainfo)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -930,11 +930,11 @@ Receive media extra information.
 
 Extra information of mixed audio stream received.
 
-##### Parameter[](#onRecvMixAudioInfo)
+##### Parameter[](#onrecvmixaudioinfo)
 
 | Parameter | Description |
 | :--- | :--- |
-| infos | Original information about mixed audio stream indicates sources of this mixed audio stream. See [ThunderMixAudioInfo for details](#ThunderMixAudioInfo) |
+| infos | Original information about mixed audio stream indicates sources of this mixed audio stream. See [ThunderMixAudioInfo for details](#thundermixaudioinfo) |
 | uid | Mixed audio stream uid |
 
 --------------------------
@@ -947,12 +947,12 @@ Extra information of mixed audio stream received.
 
 Extra information of mixed video stream received.
 
-##### Parameter[](#onRecvMixVideoInfo)
+##### Parameter[](#onrecvmixvideoinfo)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | Mixed video stream uid |
-| infos | Original information about mixed video stream indicates sources of this mixed video stream. See [ThunderMixAudioInfo for details](#ThunderMixVideoInfo) |
+| infos | Original information about mixed video stream indicates sources of this mixed video stream. See [ThunderMixAudioInfo for details](#thundermixvideoinfo) |
 
 --------------------------
 
@@ -968,13 +968,13 @@ Callback on raw audio capture data.
 
 > **Note:**
 >
-> - This interface adopts the C++ method. The user calls the [registerAudioFrameObserver](#registerAudioFrameObserver) interface and has registered the IAudioFrameObserver. Meanwhile, when the user starts capture, this callback will be received.
+> - This interface adopts the C++ method. The user calls the [registerAudioFrameObserver](#registeraudioframeobserver) interface and has registered the IAudioFrameObserver. Meanwhile, when the user starts capture, this callback will be received.
 
-##### Parameter[](#onRecordAudioFrame)
+##### Parameter[](#onrecordaudioframe)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| audioFrame | OUT | For original audio data, see [AudioFrame for details](#AudioFrame) |
+| audioFrame | OUT | For original audio data, see [AudioFrame for details](#audioframe) |
 
 --------------------------
 
@@ -988,13 +988,13 @@ Callback on raw audio play data.
 
 > **Note:**
 >
-> - This interface adopts the C++ method. The user calls the [registerAudioFrameObserver](#registerAudioFrameObserver) interface and has registered the IAudioFrameObserver. Meanwhile, when there’s audio data being played, this callback will be received.
+> - This interface adopts the C++ method. The user calls the [registerAudioFrameObserver](#registeraudioframeobserver) interface and has registered the IAudioFrameObserver. Meanwhile, when there’s audio data being played, this callback will be received.
 
-##### Parameter[](#onPlaybackAudioFrame)
+##### Parameter[](#onplaybackaudioframe)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| audioFrame | OUT | For original audio data, see [AudioFrame for details](#AudioFrame) |
+| audioFrame | OUT | For original audio data, see [AudioFrame for details](#audioframe) |
 
 --------------------------
 
@@ -1008,14 +1008,14 @@ Callback of original data decoded by remote user can differentiate users through
 
 > **Note:**
 >
-> - This interface adopts the C++ method. The user calls the [registerAudioFrameObserver](#registerAudioFrameObserver) interface and has registered the IAudioFrameObserver. Meanwhile, when there’s remote audio data being played, this callback will be received.
+> - This interface adopts the C++ method. The user calls the [registerAudioFrameObserver](#registeraudioframeobserver) interface and has registered the IAudioFrameObserver. Meanwhile, when there’s remote audio data being played, this callback will be received.
 
-##### Parameter[](#onPlaybackAudioFrameBeforeMixing)
+##### Parameter[](#onplaybackaudioframebeforemixing)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | uid | OUT | Remote user uid |
-| audioFrame | OUT | For original audio data, see [AudioFrame for details](#AudioFrame) |
+| audioFrame | OUT | For original audio data, see [AudioFrame for details](#audioframe) |
 
 --------------------------
 
@@ -1029,7 +1029,7 @@ Callback of original data decoded by remote user can differentiate users through
 
 End of audio file playback.
 
-##### Parameter[](#onAudioFilePlayEnd)
+##### Parameter[](#onaudiofileplayend)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1045,7 +1045,7 @@ End of audio file playback.
 
 Callback on audio file playback error
 
-##### Parameter[](#onAudioFilePlayError)
+##### Parameter[](#onaudiofileplayerror)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1062,7 +1062,7 @@ Callback on audio file playback error
 
 Start playing.
 
-##### Parameter[](#onAudioFilePlaying)
+##### Parameter[](#onaudiofileplaying)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1078,7 +1078,7 @@ Start playing.
 
 Pause playing.
 
-##### Parameter[](#onAudioFilePause)
+##### Parameter[](#onaudiofilepause)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1094,7 +1094,7 @@ Pause playing.
 
 Resume playing.
 
-##### Parameter[](#onAudioFileResume)
+##### Parameter[](#onaudiofileresume)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1110,7 +1110,7 @@ Resume playing.
 
 Callback on playback being stopped by user.
 
-##### Parameter[](#onAudioFileStop)
+##### Parameter[](#onaudiofilestop)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1126,7 +1126,7 @@ Callback on playback being stopped by user.
 
 Forwarding to specified time completed.
 
-##### Parameter[](#onAudioFileSeekComplete)
+##### Parameter[](#onaudiofileseekcomplete)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1146,7 +1146,7 @@ Forwarding to specified time completed.
 
 Audio playing volume.
 
-##### Parameter[](#onAudioFileVolume)
+##### Parameter[](#onaudiofilevolume)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1165,13 +1165,13 @@ Audio playing volume.
 
 Notification of changes in player status.
 
-##### Parameter[](#onAudioFileStateChange)
+##### Parameter[](#onaudiofilestatechange)
 
 | Parameter | Description |
 | :--- | :--- |
 | player |  Pointer of file playing object |
-| event | player event，see [ThunderAudioFilePlayerEvent](#ThunderAudioFilePlayerEvent) |
-| errorCode | For other errors，see [ThunderAudioFilePLayerErrorCode](#ThunderAudioFilePLayerErrorCode) |
+| event | player event，see [ThunderAudioFilePlayerEvent](#thunderaudiofileplayerevent) |
+| errorCode | For other errors，see [ThunderAudioFilePLayerErrorCode](#thunderaudiofileplayererrorcode) |
 
 --------------------------
 
@@ -1189,13 +1189,13 @@ When initializing video source, Engine will call this method. The developer can 
 In initializing the video source, the developer shall specify a Buffer type in bufferType, and use only the method corresponding to it in customized video source to transmit the video frame data. 
 In initializing the video source, Engine will transmit a ThunderVideoFrameConsumer object to the developer. The developer shall save this object, and input the video frame to Engine via this object after the video source is enabled.
 
-##### Parameter[](#onInitialize)
+##### Parameter[](#oninitialize)
 
 | Parameter | Description |
 | :--- | :--- |
-| protocol | For operation object of external video frame, see [ThunderVideoFrameConsumer for details](function.md#ThunderVideoFrameConsumer) |
+| protocol | For operation object of external video frame, see [ThunderVideoFrameConsumer for details](function.html#thundervideoframeconsumer) |
 
-##### Return value[](#onInitialize)
+##### Return value[](#oninitialize)
 
 - YES: Initializing customized video source completed.
 - NO: Customized video source device is not ready or fails in initialization. Engine will stop and report the error.
@@ -1212,9 +1212,9 @@ Acquire Buffer type.
 
 In initialization, Engine will call this method to consult the Buffer type used by this video source. The developer must and can only specify one Buffer type and tell Media Engine via return value.
 
-##### Return value[](#bufferType)
+##### Return value[](#buffertype)
 
-- [ThunderVideoBufferType](#ThunderVideoBufferType) Buffer type used by the video.
+- [ThunderVideoBufferType](#thundervideobuffertype) Buffer type used by the video.
 
 --------------------------
 
@@ -1278,7 +1278,7 @@ Audio capture starts.
 
 Callback on audio acquisition data.
 
-##### Parameter[](#audioCaptureData)
+##### Parameter[](#audiocapturedata)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1322,7 +1322,7 @@ Audio rendering starts.
 
 Callback on audio rendering data.
 
-##### Parameter[](#audioRenderData)
+##### Parameter[](#audiorenderdata)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1356,7 +1356,7 @@ Detailed information of audio data
 
 | Parameter | Meaning |
 | :--- | :--- |
-| type | For audio frame type, see [AUDIO_FRAME_TYPE for details](#AUDIO_FRAME_TYPE) |
+| type | For audio frame type, see [AUDIO_FRAME_TYPE for details](#audio-frame-type) |
 | samples | Sample quantity of the frame |
 | bytesPerSample | Bytes per sample: PCM (16 digits) contains two types |
 | channels | Number of channels (crossed data for stereo); 1: single track, 2: dual track |
