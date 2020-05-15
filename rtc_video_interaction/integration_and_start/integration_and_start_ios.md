@@ -33,7 +33,7 @@ After the preceding prerequisites are met, SDK development can be started.
 
 **Note**: `In versions later than v2.5.1`, SDK relies on the `AFNetworking` third-party library and the version is later than `3.2.0`
 
-- For API Development Manual, visit: [iOS API](/rtc_video_interaction/api/iOS/v2.7.0/0.%E6%8E%A5%E5%8F%A3%E6%A6%82%E8%A7%88.html)
+- For API Development Manual, visit: [iOS API](/rtc_video_interaction/api/iOS/v2.7.0/category.md)
 - For Development Reference Demo, visit: [Demo Downloading](https://github.com/Aivacom/JLYMeet/tree/master/JLYMeet-ios)
 
 Integrate ThunderBolt SDK to your project.
