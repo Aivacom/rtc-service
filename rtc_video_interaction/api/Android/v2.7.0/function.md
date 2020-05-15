@@ -453,7 +453,7 @@ Join a room.
 
 | Name | Description |
 | :--- | :--- |
-| token | For the requirements of authentication, see [Authentication Access Manual](../../rtc_video_interaction/token_generator/token_generator.md) for details |
+| token | For the requirements of authentication, see [Authentication Access Manual](../../../../rtc_video_interaction/token_generator/token_generator.md) for details |
 | roomName | Room name (unique for each AppId) only supports the permutation and combination of characters such as [A,Z],[a,z],[0,9],-,_, with the length of not more than 64 bytes. |
 | uid | User ID only supports the permutation and combination of characters such as [A,Z],[a,z],[0,9],-,_, with the length of not more than 64 bytes. |
 
