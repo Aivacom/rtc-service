@@ -4,113 +4,113 @@ AIVACOM provides various client SDKs with APIs that can be flexibly combined. SD
 
 The Aivacom SDK has a code of `Thunderbolt`, and a pure audio SDK for a mobile terminal has a code of `Thunder`.
 
-- [The IThunderEngine](function.md#IThunderEngine) interface class provides all functions that can be called by application.
-- [The IThunderEventHandler](notification.md#IThunderEventHandler) interface class is used to send callbacks to the application.
+- [The IThunderEngine](function.md#ithunderengine) interface class provides all functions that can be called by application.
+- [The IThunderEventHandler](notification.md#ithundereventhandler) interface class is used to send callbacks to the application.
 
-> Note: Unless otherwise stated, event callbacks in this document are monitored through the [IThunderEventHandler](notification.md#IThunderEventHandler) interface.
+> Note: Unless otherwise stated, event callbacks in this document are monitored through the [IThunderEventHandler](notification.md#ithundereventhandler) interface.
 
 ## Basic Method
 
 | Method | Function |
 | :---| :--- |
-| [createEngine](function.md#IThunderEngine::createEngine) | Create the IThunderEngine instance |
-| [initialize](function.md#IThunderEngine::initialize) | Initialize the IThunderEngine object |
-| [destroyEngine](function.md#IThunderEngine::destroyEngine) | Destroy the IThunderEngine object |
+| [createEngine](function.md#ithunderenginecreateengine) | Create the IThunderEngine instance |
+| [initialize](function.md#ithunderengineinitialize) | Initialize the IThunderEngine object |
+| [destroyEngine](function.md#ithunderenginedestroyengine) | Destroy the IThunderEngine object |
 
 ## Room Management
 
 | Method | Function |
 | :---| :--- |
-| [setArea](function.md#IThunderEngine::setArea) | Set user’s area |
-| [setMediaMode](function.md#IThunderEngine::setMediaMode) | Set media mode |
-| [setRoomMode](function.md#IThunderEngine::setRoomMode) | Set room mode |
-| [joinRoom](function.md#IThunderEngine::joinRoom) | Join a room |
-| [leaveRoom](function.md#IThunderEngine::leaveRoom) | Leave a room |
-| [updateToken](function.md#IThunderEngine::updateToken) | Update Token |
+| [setArea](function.md#ithunderenginesetarea) | Set user’s area |
+| [setMediaMode](function.md#ithunderenginesetmediamode) | Set media mode |
+| [setRoomMode](function.md#ithunderenginesetroommode) | Set room mode |
+| [joinRoom](function.md#ithunderenginejoinroom) | Join a room |
+| [leaveRoom](function.md#ithunderengineleaveroom) | Leave a room |
+| [updateToken](function.md#ithunderengineupdatetoken) | Update Token |
 
 | Callback | Function |
 | :---| :--- |
-| [onJoinRoomSuccess](notification.md#IThunderEventHandler::onJoinRoomSuccess) | Callback when the local user joins a room |
-| [onLeaveRoom](notification.md#IThunderEventHandler::onLeaveRoom) | Callback after the local user leaves a room |
-| [onSdkAuthResult](notification.md#IThunderEventHandler::onSdkAuthResult) | Callback on SDK authentication result. For authentication details, refer to “User Authentication Description” on official website. |
-| [onUserBanned](notification.md#IThunderEventHandler::onUserBanned) | Callback when a user is banned |
-| [onUserJoined](notification.md#IThunderEventHandler::onUserJoined) | Callback when a remote user joins the current room |
-| [onUserOffline](notification.md#IThunderEventHandler::onUserOffline) | Callback on user leaving a current room |
-| [onRoomStats](notification.md#IThunderEventHandler::onRoomStats) | Callback on uplink/downlink traffic (periodic callback at an interval of 2s) |
-| [onBizAuthResult](notification.md#IThunderEventHandler::onBizAuthResult) | Callback on service authentication results |
-| [onTokenWillExpire](notification.md#IThunderEventHandler::onTokenWillExpire) | Callback on token to be expired |
-| [onTokenRequest](notification.md#IThunderEventHandler::onTokenRequest) | Callback when token expires |
+| [onJoinRoomSuccess](notification.md#ithundereventhandleronjoinroomsuccess) | Callback when the local user joins a room |
+| [onLeaveRoom](notification.md#ithundereventhandleronleaveroom) | Callback after the local user leaves a room |
+| [onSdkAuthResult](notification.md#ithundereventhandleronsdkauthresult) | Callback on SDK authentication result. For authentication details, refer to “User Authentication Description” on official website. |
+| [onUserBanned](notification.md#ithundereventhandleronuserbanned) | Callback when a user is banned |
+| [onUserJoined](notification.md#ithundereventhandleronuserjoined) | Callback when a remote user joins the current room |
+| [onUserOffline](notification.md#ithundereventhandleronuseroffline) | Callback on user leaving a current room |
+| [onRoomStats](notification.md#ithundereventhandleronroomstats) | Callback on uplink/downlink traffic (periodic callback at an interval of 2s) |
+| [onBizAuthResult](notification.md#ithundereventhandleronbizauthresult) | Callback on service authentication results |
+| [onTokenWillExpire](notification.md#ithundereventhandlerontokenwillexpire) | Callback on token to be expired |
+| [onTokenRequest](notification.md#ithundereventhandlerontokenrequest) | Callback when token expires |
 
 ## Audio Publishing
 
 | Method | Function |
 | :---| :--- |
-| [setAudioConfig](function.md#IThunderEngine::setAudioConfig) | Sets audio parameters and application scenarios. |
-| [adjustRecordingSignalVolume](function.md#IThunderEngine::adjustRecordingSignalVolume) | Set microphone volume |
-| [stopLocalAudioStream](function.md#IThunderEngine::stopLocalAudioStream) | Stop broadcasting/Publishing audio (including starting collection, encoding, and stream publishing) |
-| [enableLoopbackRecording](function.md#IThunderEngine::enableLoopbackRecording) | Enable/Disable graphic card capture. |
-| [setAudioSourceType](function.md#IThunderEngine::setAudioSourceType) | Set audio publishing type |
+| [setAudioConfig](function.md#ithunderenginesetaudioconfig) | Sets audio parameters and application scenarios. |
+| [adjustRecordingSignalVolume](function.md#ithunderengineadjustrecordingsignalvolume) | Set microphone volume |
+| [stopLocalAudioStream](function.md#ithunderenginestoplocalaudiostream) | Stop broadcasting/Publishing audio (including starting collection, encoding, and stream publishing) |
+| [enableLoopbackRecording](function.md#ithunderengineenableloopbackrecording) | Enable/Disable graphic card capture. |
+| [setAudioSourceType](function.md#ithunderenginesetaudiosourcetype) | Set audio publishing type |
 
 | Callback | Function |
 | :---| :--- |
-| [onFirstLocalAudioFrameSent](notification.md#IThunderEventHandler::onFirstLocalVideoFrameSent) | Callback on first local audio frame sent successfully |
-| [onLocalAudioStats](notification.md#IThunderEventHandler::onLocalAudioStats) | Reporting audio streaming sending statistics in every 2s |
+| [onFirstLocalAudioFrameSent](notification.md#ithundereventhandleronfirstlocalvideoframesent) | Callback on first local audio frame sent successfully |
+| [onLocalAudioStats](notification.md#ithundereventhandleronlocalaudiostats) | Reporting audio streaming sending statistics in every 2s |
 
 ## Audio Subscription
 
 | Method | Function |
 | :---| :--- |
-| [stopAllRemoteAudioStreams](function.md#IThunderEngine::stopAllRemoteAudioStreams) | Stop/Receive all audio streaming data |
-| [stopRemoteAudioStream](function.md#IThunderEngine::stopRemoteAudioStream) | Stop/Receive audio streaming data of a specified user |
-| [adjustPlaybackSignalVolume](function.md#IThunderEngine::adjustPlaybackSignalVolume) | Set local playing volume |
+| [stopAllRemoteAudioStreams](function.md#ithunderenginestopallremoteaudiostreams) | Stop/Receive all audio streaming data |
+| [stopRemoteAudioStream](function.md#ithunderenginestopremoteaudiostream) | Stop/Receive audio streaming data of a specified user |
+| [adjustPlaybackSignalVolume](function.md#ithunderengineadjustplaybacksignalvolume) | Set local playing volume |
 
 | Callback | Function |
 | :---| :--- |
-| [onRemoteAudioStopped](notification.md#IThunderEventHandler::onRemoteAudioStopped) | Callback when a remote user stops broadcasting/publishing audio streams |
-| [onRemoteAudioStatsOfUid](notification.md#IThunderEventHandler::onRemoteAudioStatsOfUid) | Reporting remote audio streams statistics by user in every 2s |
+| [onRemoteAudioStopped](notification.md#ithundereventhandleronremoteaudiostopped) | Callback when a remote user stops broadcasting/publishing audio streams |
+| [onRemoteAudioStatsOfUid](notification.md#ithundereventhandleronremoteaudiostatsofuid) | Reporting remote audio streams statistics by user in every 2s |
 
 ## Video Publishing
 
 | Method | Function |
 | :---| :--- |
-| [setVideoEncoderConfig](function.md#IThunderEngine::setVideoEncoderConfig) | Set video encoding configuration |
-| [enableLocalVideoCapture](function.md#IThunderEngine::enableLocalVideoCapture) | Enable/Disable local video capture |
-| [setLocalVideoCanvas](function.md#IThunderEngine::setLocalVideoCanvas) | Set the rendering canvas of a local video |
-| [startVideoPreview](function.md#IThunderEngine::startVideoPreview) | Enable video preview |
-| [stopVideoPreview](function.md#IThunderEngine::stopVideoPreview) | Disable video preview |
-| [setLocalCanvasScaleMode](function.md#IThunderEngine::setLocalCanvasScaleMode) | Set a scaling mode of a local canvas |
-| [setLocalVideoMirrorMode](function.md#IThunderEngine::setLocalVideoMirrorMode) | Set local video mirror mode |
-| [stopLocalVideoStream](function.md#IThunderEngine::stopLocalVideoStream) | Stop/Start the sending of a local video streaming (codes included) |
+| [setVideoEncoderConfig](function.md#ithunderenginesetvideoencoderconfig) | Set video encoding configuration |
+| [enableLocalVideoCapture](function.md#ithunderengineenablelocalvideocapture) | Enable/Disable local video capture |
+| [setLocalVideoCanvas](function.md#ithunderenginesetlocalvideocanvas) | Set the rendering canvas of a local video |
+| [startVideoPreview](function.md#ithunderenginestartvideopreview) | Enable video preview |
+| [stopVideoPreview](function.md#ithunderenginestopvideopreview) | Disable video preview |
+| [setLocalCanvasScaleMode](function.md#ithunderenginesetlocalcanvasscalemode) | Set a scaling mode of a local canvas |
+| [setLocalVideoMirrorMode](function.md#ithunderenginesetlocalvideomirrormode) | Set local video mirror mode |
+| [stopLocalVideoStream](function.md#ithunderenginestoplocalvideostream) | Stop/Start the sending of a local video streaming (codes included) |
 
 | Callback | Function |
 | :---| :--- |
-| [onFirstLocalVideoFrameSent](notification.md#IThunderEventHandler::onFirstLocalVideoFrameSent) | Callback when the first video frame is successfully sent |
-| [onLocalVideoStats](notification.md#IThunderEventHandler::onLocalVideoStats) | Callback every 2s, reporting video streaming sending statistics |
+| [onFirstLocalVideoFrameSent](notification.md#ithundereventhandleronfirstlocalvideoframesent) | Callback when the first video frame is successfully sent |
+| [onLocalVideoStats](notification.md#ithundereventhandleronlocalvideostats) | Callback every 2s, reporting video streaming sending statistics |
 
 ## Video Subscription
 
 | Method | Function |
 | :---| :--- |
-| [stopAllRemoteVideoStreams](function.md#IThunderEngine::stopAllRemoteVideoStreams) | Stop/Receive all video stream data |
-| [stopRemoteVideoStream](function.md#IThunderEngine::stopRemoteVideoStream) | Stop/Receive video stream data of a specified user |
-| [setRemoteCanvasScaleMode](function.md#IThunderEngine::setRemoteCanvasScaleMode) | Set a scaling mode of a remote canvas |
-| [setRemoteVideoCanvas](function.md#IThunderEngine::setRemoteVideoCanvas) | Set the rendering view of remote video stream. |
+| [stopAllRemoteVideoStreams](function.md#ithunderenginestopallremotevideostreams) | Stop/Receive all video stream data |
+| [stopRemoteVideoStream](function.md#ithunderenginestopremotevideostream) | Stop/Receive video stream data of a specified user |
+| [setRemoteCanvasScaleMode](function.md#ithunderenginesetremotecanvasscalemode) | Set a scaling mode of a remote canvas |
+| [setRemoteVideoCanvas](function.md#ithunderenginesetremotevideocanvas) | Set the rendering view of remote video stream. |
 
 | Callback | Function |
 | :---| :--- |
-| [onRemoteVideoStopped](notification.md#IThunderEventHandler::onRemoteVideoStopped) | Callback on stopping/publishing user’s video stream |
-| [onRemoteVideoStatsOfUid](notification.md#IThunderEventHandler::onRemoteVideoStatsOfUid) | Reporting remote video streams statistics by user in every 2s |
-| [onRemoteVideoPlay](notification.md#IThunderEventHandler::onRemoteVideoPlay) | Callback on displayed first remote video frame |
-| [onVideoSizeChanged](notification.md#IThunderEventHandler::onVideoSizeChanged) | Callback on change in local/remote video resolution |
+| [onRemoteVideoStopped](notification.md#ithundereventhandleronremotevideostopped) | Callback on stopping/publishing user’s video stream |
+| [onRemoteVideoStatsOfUid](notification.md#ithundereventhandleronremotevideostatsofuid) | Reporting remote video streams statistics by user in every 2s |
+| [onRemoteVideoPlay](notification.md#ithundereventhandleronremotevideoplay) | Callback on displayed first remote video frame |
+| [onVideoSizeChanged](notification.md#ithundereventhandleronvideosizechanged) | Callback on change in local/remote video resolution |
 
 ## Network status
 
 | Callback | Function |
 | :---| :--- |
-| [onNetworkQuality](notification.md#IThunderEventHandler::onNetworkQuality) | Reporting the network statistics in every 2s|
-| [onNetworkTypeChanged](notification.md#IThunderEventHandler::onNetworkTypeChanged) | Callback on network status change |
-| [onConnectionStatus](notification.md#IThunderEventHandler::onConnectionStatus) | Callback on server network connection status change |
-| [onConnectionLost](notification.md#IThunderEventHandler::onConnectionLost) | Callback on lost network connection with a server |
+| [onNetworkQuality](notification.md#ithundereventhandleronnetworkquality) | Reporting the network statistics in every 2s|
+| [onNetworkTypeChanged](notification.md#ithundereventhandleronnetworktypechanged) | Callback on network status change |
+| [onConnectionStatus](notification.md#ithundereventhandleronconnectionstatus) | Callback on server network connection status change |
+| [onConnectionLost](notification.md#ithundereventhandleronconnectionlost) | Callback on lost network connection with a server |
 
 ## Publishing detection
 
@@ -120,31 +120,31 @@ N/A
 
 | Method | Function |
 | :---| :--- |
-| [setLiveTranscodingTask](function.md#IThunderEngine::setLiveTranscodingTask) | Add/update transcoding task |
-| [removeLiveTranscodingTask](function.md#IThunderEngine::removeLiveTranscodingTask) | Remove a transcoding task |
-| [removePublishTranscodingStreamUrl](function.md#IThunderEngine::removePublishTranscodingStreamUrl) | Remove a stream publishing address of a transcoding stream |
-| [addPublishTranscodingStreamUrl](function.md#IThunderEngine::addPublishTranscodingStreamUrl) | Add a stream publishing address of a transcoding stream |
-| [addPublishOriginStreamUrl](function.md#IThunderEngine::addPublishOriginStreamUrl) | Add the source stream publishing address |
-| [removePublishOriginStreamUrl](function.md#IThunderEngine::removePublishOriginStreamUrl) | Remove the source stream publishing address |
-| [enableMixVideoExtraInfo](function.md#IThunderEngine::enableMixVideoExtraInfo) | Enable video mixing with media extra information |
+| [setLiveTranscodingTask](function.md#ithunderenginesetlivetranscodingtask) | Add/update transcoding task |
+| [removeLiveTranscodingTask](function.md#ithunderengineremovelivetranscodingtask) | Remove a transcoding task |
+| [removePublishTranscodingStreamUrl](function.md#ithunderengineremovepublishtranscodingstreamurl) | Remove a stream publishing address of a transcoding stream |
+| [addPublishTranscodingStreamUrl](function.md#ithunderengineaddpublishtranscodingstreamurl) | Add a stream publishing address of a transcoding stream |
+| [addPublishOriginStreamUrl](function.md#ithunderengineaddpublishoriginstreamurl) | Add the source stream publishing address |
+| [removePublishOriginStreamUrl](function.md#ithunderengineremovepublishoriginstreamurl) | Remove the source stream publishing address |
+| [enableMixVideoExtraInfo](function.md#ithunderengineenablemixvideoextrainfo) | Enable video mixing with media extra information |
 
 | Callback | Function |
 | :---| :--- |
-| [onPublishStreamToCDNStatus](notification.md#IThunderEventHandler::onPublishStreamToCDNStatus) | Reporting CDN stream publishing result |
+| [onPublishStreamToCDNStatus](notification.md#ithundereventhandleronpublishstreamtocdnstatus) | Reporting CDN stream publishing result |
 
 ## Audio Recording
 
 | Method | Function |
 | :---| :--- |
-| [startAudioRecording](function.md#IThunderEngine::startAudioRecording) | Start audio recording |
-| [stopAudioRecording](function.md#IThunderEngine::stopAudioRecording) | Stop audio recording |
+| [startAudioRecording](function.md#ithunderenginestartaudiorecording) | Start audio recording |
+| [stopAudioRecording](function.md#ithunderenginestopaudiorecording) | Stop audio recording |
 
 ## Cross-room Microphone Connection
 
 | Method | Function |
 | :---| :--- |
-| [addSubscribe](function.md#IThunderEngine::addSubscribe) | Subscribe a stream of the specified user in other rooms |
-| [removeSubscribe](function.md#IThunderEngine::removeSubscribe) | UnSubscribe a stream stream of the specified user in other rooms |
+| [addSubscribe](function.md#ithunderengineaddsubscribe) | Subscribe a stream of the specified user in other rooms |
+| [removeSubscribe](function.md#ithunderengineremovesubscribe) | UnSubscribe a stream stream of the specified user in other rooms |
 
 ## Camera Management
 
@@ -154,19 +154,19 @@ N/A
 
 | Method | Function |
 | :---| :--- |
-| [startScreenCaptureForHwnd](function.md#IThunderEngine::startScreenCaptureForHwnd) | Start screen capturing specific window |
-| [startScreenCaptureForScreen](function.md#IThunderEngine::startScreenCaptureForScreen) | Start screen capturing a specific region on desktop |
-| [updateScreenCaptureRect](function.md#IThunderEngine::updateScreenCaptureRect) | Update the region of screen capturing |
-| [stopScreenCapture](function.md#IThunderEngine::stopScreenCapture) | Stop screen capturing the desktop or window |
-| [pauseScreenCapture](function.md#IThunderEngine::pauseScreenCapture) | Pause screen capturing the desktop or window |
-| [resumeScreenCapture](function.md#IThunderEngine::resumeScreenCapture) | Resume screen capturing the desktop or window |
+| [startScreenCaptureForHwnd](function.md#ithunderenginestartscreencaptureforhwnd) | Start screen capturing specific window |
+| [startScreenCaptureForScreen](function.md#ithunderenginestartscreencaptureforscreen) | Start screen capturing a specific region on desktop |
+| [updateScreenCaptureRect](function.md#ithunderengineupdatescreencapturerect) | Update the region of screen capturing |
+| [stopScreenCapture](function.md#ithunderenginestopscreencapture) | Stop screen capturing the desktop or window |
+| [pauseScreenCapture](function.md#ithunderenginepausescreencapture) | Pause screen capturing the desktop or window |
+| [resumeScreenCapture](function.md#ithunderengineresumescreencapture) | Resume screen capturing the desktop or window |
 
 ## Real-time Watermark
 
 | Method | Function |
 | :---| :--- |
-| [setVideoWatermark](function.md#IThunderEngine::setVideoWatermark) | Set video watermark |
-| [removeVideoWatermarks](function.md#IThunderEngine::removeVideoWatermarks) | Remove video watermark |
+| [setVideoWatermark](function.md#ithunderenginesetvideowatermark) | Set video watermark |
+| [removeVideoWatermarks](function.md#ithunderengineremovevideowatermarks) | Remove video watermark |
 
 ## Video Dual Stream
 
@@ -176,35 +176,35 @@ N/A
 
 | Method | Function |
 | :---| :--- |
-| [createThunderAudioPlayer](function.md#IThunderEngine::createThunderAudioPlayer) | Create audio file player object[IThunderAudioPlayer](function.md#IThunderAudioPlayer) |
-| [destroyThunderAudioPlayer](function.md#IThunderEngine::destroyThunderAudioPlayer) | Destroy the audio file player object[IThunderAudioPlayer](function.md#IThunderAudioPlayer) |
+| [createThunderAudioPlayer](function.md#ithunderenginecreatethunderaudioplayer) | Create audio file player object[IThunderAudioPlayer](function.md#ithunderaudioplayer) |
+| [destroyThunderAudioPlayer](function.md#ithunderenginedestroythunderaudioplayer) | Destroy the audio file player object[IThunderAudioPlayer](function.md#ithunderaudioplayer) |
 
-- [Methods in the IThunderAudioPlayer](function.md#IThunderAudioPlayer) interface class
+- [Methods in the IThunderAudioPlayer](function.md#ithunderaudioplayer) interface class
 
 | Method | Function |
 | :---| :--- |
-| [open](function.md#IThunderAudioPlayer::open) | Open an file for accompaniment |
-| [close](function.md#IThunderAudioPlayer::close) | Close an file for accompaniment|
-| [play](function.md#IThunderAudioPlayer::play) | Start playing the file |
-| [Stop](function.md#IThunderAudioPlayer::stop) | Stop playing the file |
-| [pause](function.md#IThunderAudioPlayer::pause) | Pause playing the file |
-| [resume](function.md#IThunderAudioPlayer::resume) | Resume playing the file |
-| [seek](function.md#IThunderAudioPlayer::seek) | Seek time for playing the file |
-| [getTotalPlayTimeMS](function.md#IThunderAudioPlayer::getTotalPlayTimeMS) | Obtain the total duration of the audio file |
-| [getCurrentPlayTimeMS](function.md#IThunderAudioPlayer::getCurrentPlayTimeMS) | Obtain the current playback duration of the audio file |
-| [setPlayerLocalVolume](function.md#IThunderAudioPlayer::setPlayerLocalVolume) | Set the local playing volume of the audio file |
-| [setPlayerPublishVolume](function.md#IThunderAudioPlayer::setPlayerPublishVolume) | Set the remote playing volume of the audio file |
-| [getPlayerLocalVolume](function.md#IThunderAudioPlayer::getPlayerLocalVolume) | Obtain the local playing volume of the audio file |
-| [getPlayerPublishVolume](function.md#IThunderAudioPlayer::getPlayerPublishVolume) | Get the remote playing volume of the audio file |
-| [setLooping](function.md#IThunderAudioPlayer::setLooping) | Set a looping count |
-| [SetFilePlayerNotify](function.md#IThunderAudioPlayer::SetFilePlayerNotify) | Callback when the audio file player is configured |
+| [open](function.md#ithunderaudioplayeropen) | Open an file for accompaniment |
+| [close](function.md#ithunderaudioplayerclose) | Close an file for accompaniment|
+| [play](function.md#ithunderaudioplayerplay) | Start playing the file |
+| [Stop](function.md#ithunderaudioplayerstop) | Stop playing the file |
+| [pause](function.md#ithunderaudioplayerpause) | Pause playing the file |
+| [resume](function.md#ithunderaudioplayerresume) | Resume playing the file |
+| [seek](function.md#ithunderaudioplayerseek) | Seek time for playing the file |
+| [getTotalPlayTimeMS](function.md#ithunderaudioplayergettotalplaytimems) | Obtain the total duration of the audio file |
+| [getCurrentPlayTimeMS](function.md#ithunderaudioplayergetcurrentplaytimems) | Obtain the current playback duration of the audio file |
+| [setPlayerLocalVolume](function.md#ithunderaudioplayersetplayerlocalvolume) | Set the local playing volume of the audio file |
+| [setPlayerPublishVolume](function.md#ithunderaudioplayersetplayerpublishvolume) | Set the remote playing volume of the audio file |
+| [getPlayerLocalVolume](function.md#ithunderaudioplayergetplayerlocalvolume) | Obtain the local playing volume of the audio file |
+| [getPlayerPublishVolume](function.md#ithunderaudioplayergetplayerpublishvolume) | Get the remote playing volume of the audio file |
+| [setLooping](function.md#ithunderaudioplayersetlooping) | Set a looping count |
+| [SetFilePlayerNotify](function.md#ithunderaudioplayersetfileplayernotify) | Callback when the audio file player is configured |
 
-- Callback of monitoring through [IThunderAudioPlayerNotify](notification.md#IThunderAudioPlayerNotify)
+- Callback of monitoring through [IThunderAudioPlayerNotify](notification.md#ithunderaudioplayernotify)
 
 | Callback | Function |
 | :---| :--- |
-| [onAudioFileVolume](notification.md#IThunderAudioPlayerNotify::onAudioFileVolume) | Reporting the playing progress |
-| [onAudioFilePlayEnd](notification.md#IThunderAudioPlayerNotify::onAudioFilePlayEnd) | Reporting the playing-end status |
+| [onAudioFileVolume](notification.md#ithunderaudioplayernotifyonaudiofilevolume) | Reporting the playing progress |
+| [onAudioFilePlayEnd](notification.md#ithunderaudioplayernotifyonaudiofileplayend) | Reporting the playing-end status |
 
 
 ## Voice Change and Reverb
@@ -219,11 +219,11 @@ N/A
 
 | Method | Function |
 | :---| :--- |
-| [setAudioVolumeIndication](function.md#IThunderEngine::setAudioVolumeIndication) | Enable/Disable speaker volume callback |
+| [setAudioVolumeIndication](function.md#ithunderenginesetaudiovolumeindication) | Enable/Disable speaker volume callback |
 
 | Callback | Function |
 | :---| :--- |
-| [onPlayVolumeIndication](notification.md#IThunderEventHandler::onPlayVolumeIndication) | Reporting the speakers' volume |
+| [onPlayVolumeIndication](notification.md#ithundereventhandleronplayvolumeindication) | Reporting the speakers' volume |
 
 ## Voice Routing
 
@@ -236,131 +236,131 @@ N/A
 
 ## Audio Device Management
 
-Major methods are encapsulated in the [IAudioDeviceManager](function.md#IAudioDeviceManager) interface class and obtain object pointers through the [getAudioDeviceMgr](function.md#IThunderEngine::getAudioDeviceMgr) interface.
+Major methods are encapsulated in the [IAudioDeviceManager](function.md#iaudiodevicemanager) interface class and obtain object pointers through the [getAudioDeviceMgr](function.md#ithunderenginegetaudiodevicemgr) interface.
 
 | Method | Function |
 | :---| :--- |
-| [getAudioDeviceMgr](function.md#IThunderEngine::getAudioDeviceMgr) | Get pointers of audio/video device management objects |
+| [getAudioDeviceMgr](function.md#ithunderenginegetaudiodevicemgr) | Get pointers of audio/video device management objects |
 
-- [Methods in the IAudioDeviceManager](function.md#IAudioDeviceManager) interface class
+- [Methods in the IAudioDeviceManager](function.md#iaudiodevicemanager) interface class
 
 | Method | Function |
 | :---| :--- |
-| [enumInputDevices](function.md#IAudioDeviceManager::enumInputDevices) | Enumerate audio input devices |
-| [setInputtingDevice](function.md#IAudioDeviceManager::setInputtingDevice) | Set audio input devices for capturing|
-| [getInputtingDevice](function.md#IAudioDeviceManager::getInputtingDevice) | Get the currently selected audio input device |
-| [setInputtingVolume](function.md#IAudioDeviceManager::setInputtingVolume) | Set the volume of the current audio input device |
-| [getInputtingVolume](function.md#IAudioDeviceManager::getInputtingVolume) | Get the volume of the current audio input device |
-| [setInputtingMute](function.md#IAudioDeviceManager::setInputtingMute) | Mute or unmute the current audio input device |
-| [getInputtingMute](function.md#IAudioDeviceManager::getInputtingMute) | Get the mute status of the current audio input device |
-| [startInputDeviceTest](function.md#IAudioDeviceManager::startInputDeviceTest) | Start testing the current audio input device |
-| [stopInputDeviceTest](function.md#IAudioDeviceManager::stopInputDeviceTest) | Stop testing the current audio input device |
-| [enumOutputDevices](function.md#IAudioDeviceManager::enumOutputDevices) | Enumerate audio playback devices |
-| [setOutputtingDevice](function.md#IAudioDeviceManager::setOutputtingDevice) | Specify the audio playback device |
-| [getOutputtingDevice](function.md#IAudioDeviceManager::getOutputtingDevice) | Get the current audio playback device |
-| [setOuttingVolume](function.md#IAudioDeviceManager::setOuttingVolume) | Set the volume of the current playback device |
-| [getOuttingVolume](function.md#IAudioDeviceManager::getOuttingVolume) | Get the volume of the current playback device |
-| [setOutputtingMute](function.md#IAudioDeviceManager::setOutputtingMute) | Mute/Unmute the current playback device |
-| [getOutputtingMute](function.md#IAudioDeviceManager::getOutputtingMute) | Get the mute status of the current playback device |
-| [startOutputDeviceTest](function.md#IAudioDeviceManager::startOutputDeviceTest) | Start testing the current audio playback device |
-| [stopOutputDeviceTest](function.md#IAudioDeviceManager::stopOutputDeviceTest) | Stop testing the current audio playback device |
-| [enableMicEnhancement](function.md#IAudioDeviceManager::enableMicEnhancement) | Enable/Disable microphone enhancement |
-| [enableMicDenoise](function.md#IAudioDeviceManager::enableMicDenoise) | Enable/Disable microphone noise reduction |
-| [enableAEC](function.md#IAudioDeviceManager::enableAEC) | Enable/Disable AEC |
-| [enableAGC](function.md#IAudioDeviceManager::enableAGC) | Enable/Disable Automatic Gain Control (AGC) |
+| [enumInputDevices](function.md#iaudiodevicemanagerenuminputdevices) | Enumerate audio input devices |
+| [setInputtingDevice](function.md#iaudiodevicemanagersetinputtingdevice) | Set audio input devices for capturing|
+| [getInputtingDevice](function.md#iaudiodevicemanagergetinputtingdevice) | Get the currently selected audio input device |
+| [setInputtingVolume](function.md#iaudiodevicemanagersetinputtingvolume) | Set the volume of the current audio input device |
+| [getInputtingVolume](function.md#iaudiodevicemanagergetinputtingvolume) | Get the volume of the current audio input device |
+| [setInputtingMute](function.md#iaudiodevicemanagersetinputtingmute) | Mute or unmute the current audio input device |
+| [getInputtingMute](function.md#iaudiodevicemanagergetinputtingmute) | Get the mute status of the current audio input device |
+| [startInputDeviceTest](function.md#iaudiodevicemanagerstartinputdevicetest) | Start testing the current audio input device |
+| [stopInputDeviceTest](function.md#iaudiodevicemanagerstopinputdevicetest) | Stop testing the current audio input device |
+| [enumOutputDevices](function.md#iaudiodevicemanagerenumoutputdevices) | Enumerate audio playback devices |
+| [setOutputtingDevice](function.md#iaudiodevicemanagersetoutputtingdevice) | Specify the audio playback device |
+| [getOutputtingDevice](function.md#iaudiodevicemanagergetoutputtingdevice) | Get the current audio playback device |
+| [setOuttingVolume](function.md#iaudiodevicemanagersetouttingvolume) | Set the volume of the current playback device |
+| [getOuttingVolume](function.md#iaudiodevicemanagergetouttingvolume) | Get the volume of the current playback device |
+| [setOutputtingMute](function.md#iaudiodevicemanagersetoutputtingmute) | Mute/Unmute the current playback device |
+| [getOutputtingMute](function.md#iaudiodevicemanagergetoutputtingmute) | Get the mute status of the current playback device |
+| [startOutputDeviceTest](function.md#iaudiodevicemanagerstartoutputdevicetest) | Start testing the current audio playback device |
+| [stopOutputDeviceTest](function.md#iaudiodevicemanagerstopoutputdevicetest) | Stop testing the current audio playback device |
+| [enableMicEnhancement](function.md#iaudiodevicemanagerenablemicenhancement) | Enable/Disable microphone enhancement |
+| [enableMicDenoise](function.md#iaudiodevicemanagerenablemicdenoise) | Enable/Disable microphone noise reduction |
+| [enableAEC](function.md#iaudiodevicemanagerenableaec) | Enable/Disable AEC |
+| [enableAGC](function.md#iaudiodevicemanagerenableagc) | Enable/Disable Automatic Gain Control (AGC) |
 
 | Callback | Function |
 | :---| :--- |
-| [onAudioCaptureStatus](notification.md#IThunderEventHandler::onAudioCaptureStatus) | Callback on changes in audio device capture status |
-| [onInputVolume](notification.md#IThunderEventHandler::onInputVolume) | Callback on test volume of the current audio input device |
-| [onOutputVolume](notification.md#IThunderEventHandler::onOutputVolume) | Callback on test volume of the current audio playback device |
+| [onAudioCaptureStatus](notification.md#ithundereventhandleronaudiocapturestatus) | Callback on changes in audio device capture status |
+| [onInputVolume](notification.md#ithundereventhandleroninputvolume) | Callback on test volume of the current audio input device |
+| [onOutputVolume](notification.md#ithundereventhandleronoutputvolume) | Callback on test volume of the current audio playback device |
 
 ## Video Device Management
 
-Major methods are encapsulated in the [IVideoDeviceManager](function.md#IVideoDeviceManager) interface class and obtain object pointers through the [getVideoDeviceMgr](function.md#IThunderEngine::getVideoDeviceMgr) interface.
+Major methods are encapsulated in the [IVideoDeviceManager](function.md#ivideodevicemanager) interface class and obtain object pointers through the [getVideoDeviceMgr](function.md#ithunderenginegetvideodevicemgr) interface.
 
 | Method | Function |
 | :---| :--- |
-| [getVideoDeviceMgr](function.md#IThunderEngine::getVideoDeviceMgr) | Get the pointer of the video device management object |
+| [getVideoDeviceMgr](function.md#ithunderenginegetvideodevicemgr) | Get the pointer of the video device management object |
 
-- [Methods in the IVideoDeviceManager](function.md#IVideoDeviceManager) interface class
+- [Methods in the IVideoDeviceManager](function.md#ivideodevicemanager) interface class
 
 | Method | Function |
 | :---| :--- |
-| [enumVideoDevices](function.md#IVideoDeviceManager::enumVideoDevices) | Enumerate video input devices |
-| [startVideoDeviceCapture](function.md#IVideoDeviceManager::startVideoDeviceCapture) | Start video device capturing |
-| [stopVideoDeviceCapture](function.md#IVideoDeviceManager::stopVideoDeviceCapture) | Stop video device capturing |
-| [enumMonitorDevices](function.md#IVideoDeviceManager::enumMonitorDevices) | Enumerate monitor input devices |
+| [enumVideoDevices](function.md#ivideodevicemanagerenumvideodevices) | Enumerate video input devices |
+| [startVideoDeviceCapture](function.md#ivideodevicemanagerstartvideodevicecapture) | Start video device capturing |
+| [stopVideoDeviceCapture](function.md#ivideodevicemanagerstopvideodevicecapture) | Stop video device capturing |
+| [enumMonitorDevices](function.md#ivideodevicemanagerenummonitordevices) | Enumerate monitor input devices |
 
 | Callback | Function |
 | :---| :--- |
-| [onVideoCaptureStatus](notification.md#IThunderEventHandler::onVideoCaptureStatus) | Reporting the camera capturing status |
+| [onVideoCaptureStatus](notification.md#ithundereventhandleronvideocapturestatus) | Reporting the camera capturing status |
 
 ## Media extra information
 
 | Method | Function |
 | :---| :--- |
-| [registerMediaExtraInfoObserver](function.md#IThunderEngine::registerMediaExtraInfoObserver) | Register the monitored object of media extra information [IThunderMediaExtraInfoObserver](notification.md#IThunderMediaExtraInfoObserver) |
-| [sendMediaExtraInfo](function.md#IThunderEngine::sendMediaExtraInfo) | Send media extra information |
+| [registerMediaExtraInfoObserver](function.md#ithunderengineregistermediaextrainfoobserver) | Register the monitored object of media extra information [IThunderMediaExtraInfoObserver](notification.md#ithundermediaextrainfoobserver) |
+| [sendMediaExtraInfo](function.md#ithunderenginesendmediaextrainfo) | Send media extra information |
 
-- the [IThunderMediaExtraInfoObserver](notification.md#IThunderMediaExtraInfoObserver) interface class reports the status and informations of the MediaExtraInfo.
+- the [IThunderMediaExtraInfoObserver](notification.md#ithundermediaextrainfoobserver) interface class reports the status and informations of the MediaExtraInfo.
 
 | Callback | Function |
 | :---| :--- |
-| [onSendMediaExtraInfoFailedStatus](notification.md#IThunderMediaExtraInfoObserver::onSendMediaExtraInfoFailedStatus) | Callback on failure in sending media extra information |
-| [onRecvMediaExtraInfo](notification.md#IThunderMediaExtraInfoObserver::onRecvMediaExtraInfo) | Received media extra information |
-| [onRecvMixAudioInfo](notification.md#IThunderMediaExtraInfoObserver::onRecvMixAudioInfo) | Received extra information of mixed audio stream |
-| [onRecvMixVideoInfo](notification.md#IThunderMediaExtraInfoObserver::onRecvMixVideoInfo) | Received extra information of mixed video stream |
+| [onSendMediaExtraInfoFailedStatus](notification.md#ithundermediaextrainfoobserveronsendmediaextrainfofailedstatus) | Callback on failure in sending media extra information |
+| [onRecvMediaExtraInfo](notification.md#ithundermediaextrainfoobserveronrecvmediaextrainfo) | Received media extra information |
+| [onRecvMixAudioInfo](notification.md#ithundermediaextrainfoobserveronrecvmixaudioinfo) | Received extra information of mixed audio stream |
+| [onRecvMixVideoInfo](notification.md#ithundermediaextrainfoobserveronrecvmixvideoinfo) | Received extra information of mixed video stream |
 
 ## Audio Raw Data
 
 | Method | Function |
 | :---| :--- |
-| [registerAudioFrameObserver](function.md#IThunderEngine::registerAudioFrameObserver) | Register a observer [IAudioFrameObserver](notification.md#IAudioFrameObserver) |
-| [setRecordingAudioFrameParameters](function.md#IThunderEngine::setRecordingAudioFrameParameters) | Set the mode for using raw audio recording data during callback [onRecordAudioFrame](notification.md#IAudioFrameObserver::onRecordAudioFrame) |
-| [setPlaybackAudioFrameParameters](function.md#IThunderEngine::setPlaybackAudioFrameParameters) | Set the mode for using raw audio playback data during callback [onPlaybackAudioFrame](notification.md#IAudioFrameObserver::onPlaybackAudioFrame) |
+| [registerAudioFrameObserver](function.md#ithunderengineregisteraudioframeobserver) | Register a observer [IAudioFrameObserver](notification.md#iaudioframeobserver) |
+| [setRecordingAudioFrameParameters](function.md#ithunderenginesetrecordingaudioframeparameters) | Set the mode for using raw audio recording data during callback [onRecordAudioFrame](notification.md#iaudioframeobserveronrecordaudioframe) |
+| [setPlaybackAudioFrameParameters](function.md#ithunderenginesetplaybackaudioframeparameters) | Set the mode for using raw audio playback data during callback [onPlaybackAudioFrame](notification.md#iaudioframeobserveronplaybackaudioframe) |
 
-- the [IAudioFrameObserver](notification.md#IAudioFrameObserver) interface class reports the information of the Audio Raw Data information.
+- the [IAudioFrameObserver](notification.md#iaudioframeobserver) interface class reports the information of the Audio Raw Data information.
 
 | Callback | Function |
 | :---| :--- |
-| [onRecordAudioFrame](notification.md#IAudioFrameObserver::onRecordAudioFrame) | Callback on raw audio capture data |
-| [onPlaybackAudioFrame](notification.md#IAudioFrameObserver::onPlaybackAudioFrame) | Callback on raw audio play data |
-| [onPlaybackAudioFrameBeforeMixing](notification.md#IAudioFrameObserver::onPlaybackAudioFrameBeforeMixing) | Callback on raw data after the audio remote data decoding (differentiated among users) |
+| [onRecordAudioFrame](notification.md#iaudioframeobserveronrecordaudioframe) | Callback on raw audio capture data |
+| [onPlaybackAudioFrame](notification.md#iaudioframeobserveronplaybackaudioframe) | Callback on raw audio play data |
+| [onPlaybackAudioFrameBeforeMixing](notification.md#iaudioframeobserveronplaybackaudioframebeforemixing) | Callback on raw data after the audio remote data decoding (differentiated among users) |
 
 ## Video Raw Data
 
 | Method | Function |
 | :---| :--- |
-| [registerVideoFrameObserver](function.md#IThunderEngine::registerVideoFrameObserver) | Register video monitor object [IVideoFrameObserver](notification.md#IVideoFrameObserver) |
-| [registerVideoCaptureObserver](function.md#IThunderEngine::registerVideoCaptureObserver) | Register monitoring object for camera data capture [IVideoCaptureObserver.](notification.md#IVideoCaptureObserver) |
+| [registerVideoFrameObserver](function.md#ithunderengineregistervideoframeobserver) | Register video monitor object [IVideoFrameObserver](notification.md#ivideoframeobserver) |
+| [registerVideoCaptureObserver](function.md#ithunderengineregistervideocaptureobserver) | Register monitoring object for camera data capture [IVideoCaptureObserver.](notification.md#ivideocaptureobserver) |
 
-- the [IVideoFrameObserver](notification.md#IVideoFrameObserver) interface class reports the Video Raw Data (rendering & preview)information.
-
-| Callback | Function |
-| :---| :--- |
-| [onPreviewVideoFrame](notification.md#IVideoFrameObserver::onPreviewVideoFrame) | Occurs when local video preview data is returned. |
-| [onRenderVideoFrame](notification.md#IVideoFrameObserver::onRenderVideoFrame) | Callback on rendering video data of other users |
-
-- the [IVideoCaptureObserver](notification.md#IVideoCaptureObserver) interface class reports the Video Raw Data (capturing) information.
+- the [IVideoFrameObserver](notification.md#ivideoframeobserver) interface class reports the Video Raw Data (rendering & preview)information.
 
 | Callback | Function |
 | :---| :--- |
-| [onCaptureVideoFrame](notification.md#IVideoCaptureObserver::onCaptureVideoFrame) | Callback on video data collected locally |
+| [onPreviewVideoFrame](notification.md#ivideoframeobserveronpreviewvideoframe) | Occurs when local video preview data is returned. |
+| [onRenderVideoFrame](notification.md#ivideoframeobserveronrendervideoframe) | Callback on rendering video data of other users |
+
+- the [IVideoCaptureObserver](notification.md#ivideocaptureobserver) interface class reports the Video Raw Data (capturing) information.
+
+| Callback | Function |
+| :---| :--- |
+| [onCaptureVideoFrame](notification.md#ivideocaptureobserveroncapturevideoframe) | Callback on video data collected locally |
 
 ## Custom Audio Capture
 
 | Method | Function |
 | :---| :--- |
-| [setCustomAudioSource](function.md#IThunderEngine::setCustomAudioSource) | Set parameters of external audio capturing |
-| [pushCustomAudioFrame](function.md#IThunderEngine::pushCustomAudioFrame) | Publishing an external audio frame |
+| [setCustomAudioSource](function.md#ithunderenginesetcustomaudiosource) | Set parameters of external audio capturing |
+| [pushCustomAudioFrame](function.md#ithunderenginepushcustomaudioframe) | Publishing an external audio frame |
 
 ## Custom Video Capture
 
 | Method | Function |
 | :---| :--- |
-| [setCustomVideoSource](function.md#IThunderEngine::setCustomVideoSource) | Set parameters for external video capturing |
-| [pushCustomVideoFrame](function.md#IThunderEngine::pushCustomVideoFrame) | Publishing external video frame |
+| [setCustomVideoSource](function.md#ithunderenginesetcustomvideosource) | Set parameters for external video capturing |
+| [pushCustomVideoFrame](function.md#ithunderenginepushcustomvideoframe) | Publishing external video frame |
 
 ## Audio Self-rendering
 
@@ -374,22 +374,22 @@ N/A
 
 | Method | Function |
 | :---| :--- |
-| [sendUserAppMsgData](function.md#IThunderEngine::sendUserAppMsgData) | Send custom broadcasting message |
+| [sendUserAppMsgData](function.md#ithunderenginesenduserappmsgdata) | Send custom broadcasting message |
 
 | Callback | Function |
 | :---| :--- |
-| [onRecvUserAppMsgData](notification.md#IThunderEventHandler::onRecvUserAppMsgData) | Reporting custom broadcasting message |
-| [onSendAppMsgDataFailedStatus](notification.md#IThunderEventHandler::onSendAppMsgDataFailedStatus) | Callback on failure when sending broadcasting message |
+| [onRecvUserAppMsgData](notification.md#ithundereventhandleronrecvuserappmsgdata) | Reporting custom broadcasting message |
+| [onSendAppMsgDataFailedStatus](notification.md#ithundereventhandleronsendappmsgdatafailedstatus) | Callback on failure when sending broadcasting message |
 
 ## Log Management
 
 | Method | Function |
 | :---| :--- |
-| [setLogFilePath](function.md#IThunderEngine::setLogFilePath) | Set a directory for SDK to write the log files |
-| [setLogLevel](function.md#IThunderEngine::setLogLevel) | Set the log levels |
+| [setLogFilePath](function.md#ithunderenginesetlogfilepath) | Set a directory for SDK to write the log files |
+| [setLogLevel](function.md#ithunderenginesetloglevel) | Set the log levels |
 
 ## Other methods
 
 | Method | Function |
 | :---| :--- |
-| [enableWebSdkCompatibility](function.md#IThunderEngine::enableWebSdkCompatibility) | Enable/Disable WebSDK compatibility |
+| [enableWebSdkCompatibility](function.md#ithunderengineenablewebsdkcompatibility) | Enable/Disable WebSDK compatibility |
