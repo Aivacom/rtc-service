@@ -22,6 +22,8 @@ After the preceding prerequisites are met, SDK integration can be started.
 
 ### 2.2 Integrating SDK
 
+**The latest thunder windows SDK verison is 2.7.3**
+
 Integrate Thunder SDK to your project by referring to the following steps.
 
 **Configuring project files**
