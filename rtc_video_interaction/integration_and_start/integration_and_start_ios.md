@@ -12,7 +12,7 @@ Before you start, ensure that the following are available:
 
 - Xcode 9.0+
 - iOS 8.0+ prototype (use a prototype to run example codes. Simulators may fail to run some example codes due to incomplete functions.)
-- Valid AIVACOM account (valid APPID and APPSECRET). For details, see [APPID Application](/en/platform/other/user_auth.html#%E9%A1%B9%E7%9B%AE-%E4%B8%8E-app-id)
+- Valid AIVACOM account (valid APPID and APPSECRET). Please contact technical support for details
 
 ## 3. Preparing the Development Environment
 
@@ -33,7 +33,7 @@ After the preceding prerequisites are met, SDK development can be started.
 
 **Note**: `In versions later than v2.5.1`, SDK relies on the `AFNetworking` third-party library and the version is later than `3.2.0`
 
-- For API Development Manual, visit: [iOS API](../api/iOS/v2.7.0/0.%E6%8E%A5%E5%8F%A3%E6%A6%82%E8%A7%88.html)
+- For API Development Manual, visit: [iOS API](/rtc_video_interaction/api/iOS/v2.7.0/0.%E6%8E%A5%E5%8F%A3%E6%A6%82%E8%A7%88.html)
 - For Development Reference Demo, visit: [Demo Downloading](https://github.com/Aivacom/JLYMeet/tree/master/JLYMeet-ios)
 
 Integrate ThunderBolt SDK to your project.
@@ -57,6 +57,8 @@ pod init
 
 3. Add reference of ThunderBolt SDK.
 
+**The latest thunder ios version is 2.7.8**
+
 Open the Podfile file and change the file content to the following. Note: `YourApp` is your Target name and you need to add source and SDK version.
 
 ```ruby
@@ -71,7 +73,7 @@ target 'YourApp' do
     # use_frameworks!
 
     # Pods for YourApp
-    pod 'thunder','2.7.0' #Add item，'2.7.0' is thunderbolt sdk version number, and modified according to the version number introduced specifically
+    pod 'thunder','2.7.8' #Add item，'2.7.8' is thunderbolt sdk version number, and modified according to the version number introduced specifically
 ```
 
 4. Install ThunderBolt SDK.
@@ -90,21 +92,21 @@ pod update
 
 - Choose Privacy - Microphone Usage Description and fill in the purpose to use the microphone, for example, Video Chat.
 - Choose Privacy - Camera Usage Description and fill in the purpose to use the camera, for example, Video Chat. 
-   ![info.plist configuration](../resources/iOS3.jpg)
+   ![info.plist configuration](/rtc_video_interaction/api/resources/iOS3.jpg)
 
 2. Enable background mode as required by the project. After entering background mode, the iOS device can still run related functions.
 
-![Set background mode](../resources/iOS2.jpg)
+![Set background mode](/rtc_video_interaction/api/resources/iOS2.jpg)
 
 ## 4. Real-Time Video Interaction
 
 After SDK integration, real-time video call can be implemented by SDK. The following figure shows the time sequence of API calling during a video call:
 
-![Time sequence of real-time video call](../resources/sequence.png)
+![Time sequence of real-time video call](/rtc_video_interaction/api/resources/sequence.png)
 
 ### 4.1 Creating and Initializing the ThunderEngine Instance
 
-Before calling other SDK APIs, call [createEngine](../api/iOS/v2.7.0/category.md#createengine) to create and initialize the ThunderEngine object. 
+Before calling other SDK APIs, call [createEngine](/rtc_video_interaction/api/iOS/v2.7.0/category.md#createengine) to create and initialize the ThunderEngine object. 
 Fill in the app ID of the project in this step. Refer to the following steps to create a project and obtain [App ID] in AIVACOM Control Station.
 
 ```objc
@@ -113,7 +115,7 @@ Fill in the app ID of the project in this step. Refer to the following steps to 
                              delegate:(id<ThunderEventDelegate> _Nullable)delegate;
 ```
 
-For detailed information, see descriptions about [createEngine](../api/iOS/v2.7.0/category.md#createengine) in API Document.
+For detailed information, see descriptions about [createEngine](/rtc_video_interaction/api/iOS/v2.7.0/category.md#createengine) in API Document.
 
 ### 4.2 Setting SDK Media Mode
 
@@ -131,7 +133,7 @@ For detailed information, see descriptions about [createEngine](../api/iOS/v2.7.
 
 Join a room. This step allows a user to join a call room. Users in this room can communicate with each other or engage in group chat. Apps using different App IDs are not interoperable. If a call is ongoing, the user must call leaveRoom to exit the current call before joining another room.
 
-For detailed information, see descriptions about [joinRoom](../api/iOS/v2.7.0/category.md#joinroom) in API Document.
+For detailed information, see descriptions about [joinRoom](/rtc_video_interaction/api/iOS/v2.7.0/category.md#joinroom) in API Document.
 
 ### 4.4 Setting Video Encoding Attribute
 
@@ -144,7 +146,7 @@ SDK will acquire specific video encoding parameters for video encoding from the 
 If the video has been published, update the video encoding parameters. The updated video effect can be seen from local review and remote subscription. 
 ThunderVideoEncoderConfiguration consists of two members.
 
-For detailed information, see descriptions about [setVideoEncoderConfig](../api/iOS/v2.7.0/category.md#setvideoencoderconfig) in API Document.
+For detailed information, see descriptions about [setVideoEncoderConfig](/rtc_video_interaction/api/iOS/v2.7.0/category.md#setvideoencoderconfig) in API Document.
 
 ### 4.5 Setting Local View
 
@@ -154,7 +156,7 @@ For detailed information, see descriptions about [setVideoEncoderConfig](../api/
 
 You can preview and publish without setting this window. You can see locally captured pictures by setting this window.
 
-For detailed information, see descriptions about [setLocalVideoCanvas](../api/iOS/v2.7.0/category.md#setlocalvideocanvas) in API Document.
+For detailed information, see descriptions about [setLocalVideoCanvas](/rtc_video_interaction/api/iOS/v2.7.0/category.md#setlocalvideocanvas) in API Document.
 
 ### 4.6 Enabling Video Preview
 
@@ -164,7 +166,7 @@ For detailed information, see descriptions about [setLocalVideoCanvas](../api/iO
 
 Enabling preview will also enable the camera and data collection.
 
-For detailed information, see descriptions about [startVideoPreview](../api/iOS/v2.7.0/category.md#startvideopreview) in API Document.
+For detailed information, see descriptions about [startVideoPreview](/rtc_video_interaction/api/iOS/v2.7.0/category.md#startvideopreview) in API Document.
 
 ### 4.7 Enabling/Disabling Local Video Sending
 
@@ -174,7 +176,7 @@ For detailed information, see descriptions about [startVideoPreview](../api/iOS/
 
 Enabling local video sending means to send locally collected and encoded data to the server.
 
-For detailed information, see descriptions about [stopLocalVideoStream](../api/iOS/v2.7.0/category.md#stoplocalvideostream) in API Document.StopLocalVideoStream can only be called after receiving the callback of onJoinRoomSuccess.
+For detailed information, see descriptions about [stopLocalVideoStream](/rtc_video_interaction/api/iOS/v2.7.0/category.md#stoplocalvideostream) in API Document.StopLocalVideoStream can only be called after receiving the callback of onJoinRoomSuccess.
 
 ### 4.8 Disabling Video Preview
 
@@ -184,7 +186,7 @@ For detailed information, see descriptions about [stopLocalVideoStream](../api/i
 
 After video preview is disabled, video data collection will be stopped. Audience that subscribes to this anchor will fail to play video.
 
-For detailed information, see descriptions about [stopVideoPreview](../api/iOS/v2.7.0/category.md#stopvideopreview) in API Document.
+For detailed information, see descriptions about [stopVideoPreview](/rtc_video_interaction/api/iOS/v2.7.0/category.md#stopvideopreview) in API Document.
 
 ### 4.8 Leaving a Room
 
@@ -195,21 +197,21 @@ For detailed information, see descriptions about [stopVideoPreview](../api/iOS/v
 Leave a room. 
 Leaving room indicates hang off or exiting conversation. After joinRoom is called, the user must call leaveRoom to stop the call before starting another call. No matter whether the user is idle or in a call, leaveRoom can be called without generating adverse effects. This method can release all resources related to conversation.
 
-For detailed information, see descriptions about [leaveRoom](../api/iOS/v2.7.0/category.md#leaveroom) in API Document.
+For detailed information, see descriptions about [leaveRoom](/rtc_video_interaction/api/iOS/v2.7.0/category.md#leaveroom) in API Document.
 
 ## 5. API Reference
 
-- [createEngine](../api/iOS/v2.7.0/category.md#createengine)
-- [joinRoom](../api/iOS/v2.7.0/category.md#joinroom)
-- [setArea](../api/iOS/v2.7.0/category.md#setarea)
-- [setMediaMode](../api/iOS/v2.7.0/category.md#setmediamode)
-- [setRoomMode](../api/iOS/v2.7.0/category.md#setroommode)
-- [setLocalVideoCanvas](../api/iOS/v2.7.0/category.md#setlocalvideocanvas)
-- [setVideoEncoderConfig](../api/iOS/v2.7.0/category.md#setvideoencoderconfig)
-- [startVideoPreview](../api/iOS/v2.7.0/category.md#startvideopreview)
-- [stopVideoPreview](../api/iOS/v2.7.0/category.md#stopvideopreview)
-- [stopLocalVideoStream](../api/iOS/v2.7.0/category.md#stoplocalvideostream)
-- [setRemoteVideoCanvas](../api/iOS/v2.7.0/category.md#setremotevideocanvas)
-- [leaveRoom](../api/iOS/v2.7.0/category.md#leaveroom)
-- [destroyEngine](../api/iOS/v2.7.0/category.md#destroyengine)
+- [createEngine](/rtc_video_interaction/api/iOS/v2.7.0/category.md#createengine)
+- [joinRoom](/rtc_video_interaction/api/iOS/v2.7.0/category.md#joinroom)
+- [setArea](/rtc_video_interaction/api/iOS/v2.7.0/category.md#setarea)
+- [setMediaMode](/rtc_video_interaction/api/iOS/v2.7.0/category.md#setmediamode)
+- [setRoomMode](/rtc_video_interaction/api/iOS/v2.7.0/category.md#setroommode)
+- [setLocalVideoCanvas](/rtc_video_interaction/api/iOS/v2.7.0/category.md#setlocalvideocanvas)
+- [setVideoEncoderConfig](/rtc_video_interaction/api/iOS/v2.7.0/category.md#setvideoencoderconfig)
+- [startVideoPreview](/rtc_video_interaction/api/iOS/v2.7.0/category.md#startvideopreview)
+- [stopVideoPreview](/rtc_video_interaction/api/iOS/v2.7.0/category.md#stopvideopreview)
+- [stopLocalVideoStream](/rtc_video_interaction/api/iOS/v2.7.0/category.md#stoplocalvideostream)
+- [setRemoteVideoCanvas](/rtc_video_interaction/api/iOS/v2.7.0/category.md#setremotevideocanvas)
+- [leaveRoom](/rtc_video_interaction/api/iOS/v2.7.0/category.md#leaveroom)
+- [destroyEngine](/rtc_video_interaction/api/iOS/v2.7.0/category.md#destroyengine)
 
