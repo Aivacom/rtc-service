@@ -11,17 +11,22 @@ Developer can find different platforms' integration manual in [integration_and_s
 
 The manual indicates how to get SDK for different platforms.
 
-> [Windows SDK(C++ version）](/rtc_video_interaction/integration_and_start/integration_and_start_windows.md): download via [Zip](http://resource.sunclouds.com/AIVACOM_Thunderbolt_Windows_v2.7.3.zip) file and the integrate to your project .
-> [Android SDK](/rtc_video_interaction/integration_and_start/integration_and_start_android.md): pull from Maven Repository
-> [iOS SDK](/rtc_video_interaction/integration_and_start/integration_and_start_ios.md): Pods for your application. 
+* [Windows SDK(C++ version）](/rtc_video_interaction/integration_and_start/integration_and_start_windows.md): download via [Zip](http://resource.sunclouds.com/AIVACOM_Thunderbolt_Windows_v2.7.3.zip) file and the integrate to your project .
+
+* [Android SDK](/rtc_video_interaction/integration_and_start/integration_and_start_android.md): pull from Maven Repository
+
+* [iOS SDK](/rtc_video_interaction/integration_and_start/integration_and_start_ios.md): Pods for your application. 
 
 ## How to use SDK API?
 
 Please access [api](/rtc_video_interaction/api) directory to find different platforms' API documents.
 
->[Wndows SDK API](/rtc_video_interaction/api/Windows)
->[Android SDK API](/rtc_video_interaction/api/Android)
->[iOS SDK API](/rtc_video_interaction/api/iOS)
+* [Wndows SDK API](/rtc_video_interaction/api/Windows)
+
+* [Android SDK API](/rtc_video_interaction/api/Android)
+
+* [iOS SDK API](/rtc_video_interaction/api/iOS)
+
 
 
 
