@@ -167,29 +167,29 @@ ThunderEngine.setArea(isChina ?
                 ThunderRtcConstant.AreaType.THUNDER_AREA_FOREIGN);
 ```
 
-For detailed information, see descriptions about [createEngine](../api/Android/v2.7.0/function.html#thunderenginecreateengine), [createWithLoop](../api/Android/v2.7.0/function.md#thunderenginecreatewithloop), and [setArea](../api/Android/v2.7.0/function.md#thunderenginesetarea).
+For detailed information, see descriptions about [createEngine](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginecreateengine), [createWithLoop](/rtc_video_interaction/api/Android/v2.7.0/function.md#thunderenginecreatewithloop), and [setArea](/rtc_video_interaction/api/Android/v2.7.0/function.md#thunderenginesetarea).
 
-When creating ThunderEngine, you need to monitor SDK events and status callback through [ThunderEventHandler](../api/Android/v2.7.0/notification.md#thundereventhandler) as required by the scenario. For example:
+When creating ThunderEngine, you need to monitor SDK events and status callback through [ThunderEventHandler](/rtc_video_interaction/api/Android/v2.7.0/notification.md#thundereventhandler) as required by the scenario. For example:
 
-- Token status: [onTokenWillExpire](../api/Android/v2.7.0/notification.md#thundereventhandlerontokenwillexpire):
+- Token status: [onTokenWillExpire](/rtc_video_interaction/api/Android/v2.7.0/notification.md#thundereventhandlerontokenwillexpire):
 
 ```java
 public void onTokenWillExpire() {}
 ```
 
-- Network status: [onConnectionStatus](../api/Android/v2.7.0/notification.md#thundereventhandleronconnectionstatus):
+- Network status: [onConnectionStatus](/rtc_video_interaction/api/Android/v2.7.0/notification.md#thundereventhandleronconnectionstatus):
 
 ```java
 public void onConnectionStatus(){}
 ```
 
-- Publishing callback for remote users: [onRemoteVideoStopped](../api/Android/v2.7.0/notification.md#thundereventhandleronremotevideostopped)
+- Publishing callback for remote users: [onRemoteVideoStopped](/rtc_video_interaction/api/Android/v2.7.0/notification.md#thundereventhandleronremotevideostopped)
 
 ```java
 public void onRemoteVideoStopped(String uid, boolean stop) {}
 ```
 
-You can process callback interfaces in ThunderEventHandler based on scenario requirements. For details, see [API Document](../api/Android/v2.7.0/category.md).
+You can process callback interfaces in ThunderEventHandler based on scenario requirements. For details, see [API Document](/rtc_video_interaction/api/Android/v2.7.0/category.md).
 
 ### 4.3 Setting Room Attribute and Joining a Room
 
@@ -206,7 +206,7 @@ ThunderEngine.setAudioConfig(int profile,int commutMode,int scenarioMode);
 ThunderEngine.joinRoom(byte[] token, String roomName, String uid);
 ```
 
-For detailed information, see descriptions about [setMediaMode](../api/Android/v2.7.0/function.html#thunderenginesetmediamode), [setRoomMode](../api/Android/v2.7.0/function.html#thunderenginesetroommode), and [joinRoom](../api/Android/v2.7.0/function.html#thunderenginejoinroom) in API Document.
+For detailed information, see descriptions about [setMediaMode](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginesetmediamode), [setRoomMode](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginesetroommode), and [joinRoom](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginejoinroom) in API Document.
 
 ### 4.4 Enabling Local Preview and Publishing
 
@@ -219,7 +219,7 @@ ThunderEngine.setLocalVideoCanvas(canvas);
 ThunderEngine.startVideoPreview();
 ```
 
-For detailed information, see descriptions about [setLocalVideoCanvas](.../api/Android/v2.7.0/function.html#thunderenginesetlocalvideocanvas) and [startVideoPreview](../api/Android/v2.7.0/function.html#thunderenginestartvideopreview) in API Document.
+For detailed information, see descriptions about [setLocalVideoCanvas](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginesetlocalvideocanvas) and [startVideoPreview](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginestartvideopreview) in API Document.
 
 2. Publish local video:
 
@@ -227,7 +227,7 @@ For detailed information, see descriptions about [setLocalVideoCanvas](.../api/A
 ThunderEngine.stopLocalVideoStream(false);
 ```
 
-For detailed information, see descriptions about [stopLocalVideoStream](../api/Android/v2.7.0/function.html#thunderenginestoplocalvideostream) in API Document.StopLocalVideoStream can only be called after receiving the callback of onJoinRoomSuccess.
+For detailed information, see descriptions about [stopLocalVideoStream](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginestoplocalvideostream) in API Document.StopLocalVideoStream can only be called after receiving the callback of onJoinRoomSuccess.
 
 3. Stop publishing local video:
 
@@ -236,7 +236,7 @@ ThunderEngine.stopLocalVideoStream(true);
 ThunderEngine.stopVideoPreview();
 ```
 
-For detailed information, see descriptions about [stopLocalVideoStream](../api/Android/v2.7.0/function.html#thunderenginestoplocalvideostream) and [stopVideoPreview](../api/Android/v2.7.0/function.html#thunderenginestopvideopreview) in API Document.
+For detailed information, see descriptions about [stopLocalVideoStream](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginestoplocalvideostream) and [stopVideoPreview](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginestopvideopreview) in API Document.
 
 During local publishing, users can set publishing parameters:
 
@@ -244,11 +244,11 @@ During local publishing, users can set publishing parameters:
 ThunderEngine.setVideoEncoderConfig(ThunderVideoEncoderConfiguration yyVideoConfig);
 ```
 
-For detailed information, see descriptions about [setVideoEncoderConfig](../api/Android/v2.7.0/function.html#thunderenginesetvideoencoderconfig) in API Document.
+For detailed information, see descriptions about [setVideoEncoderConfig](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginesetvideoencoderconfig) in API Document.
 
 ### 4.5 Receiving and Displaying Remote Video
 
-If another user is publishing in the room where the local user resides, the local user will receive event callback of [onRemoteVideoStopped](../api/Android/v2.7.0/notification.html#thundereventhandleronremotevideostopped) in the callback of ThunderEventHandler:
+If another user is publishing in the room where the local user resides, the local user will receive event callback of [onRemoteVideoStopped](/rtc_video_interaction/api/Android/v2.7.0/notification.html#thundereventhandleronremotevideostopped) in the callback of ThunderEventHandler:
 
 ```java
 
@@ -262,11 +262,11 @@ ThunderVideoCanvas canvas = new ThunderVideoCanvas(ThunderPlayerView view, int r
 ThunderEngine.setRemoteVideoCanvas(canvas);
 ```
 
-For detailed information, see descriptions about [setRemoteVideoCanvas](../api/Android/v2.7.0/function.html#thunderenginesetremotevideocanvas) in API Document.
+For detailed information, see descriptions about [setRemoteVideoCanvas](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginesetremotevideocanvas) in API Document.
 
 ### 4.6 Leaving the Channel
 
-To stop a call, disable the app, or switch the app to the background, and call [leaveRoom](../api/Android/v2.7.0/function.html#thunderengineleaveroom) to leave the current call channel.
+To stop a call, disable the app, or switch the app to the background, and call [leaveRoom](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderengineleaveroom) to leave the current call channel.
 
 ```java
 int ret = mThunderEngine.leaveRoom();
@@ -275,20 +275,20 @@ For detailed description, refer to description of API Manual on [leaveRoom](/en/
 
 ## 5. API Reference
 
-- [createEngine](../api/Android/v2.7.0/function.html#thunderenginecreateengine)
-- [createWithLoop](../api/Android/v2.7.0/function.html#thunderenginecreatewithloop)
-- [joinRoom](../api/Android/v2.7.0/function.html#thunderenginejoinroom)
-- [setArea](../api/Android/v2.7.0/function.html#thunderenginesetarea)
-- [setSceneId](../api/Android/v2.7.0/function.html#thunderenginesetsceneid)
-- [setMediaMode](../api/Android/v2.7.0/function.html#thunderenginesetmediamode)
-- [setRoomMode](../api/Android/v2.7.0/function.html#thunderenginesetroommode)
-- [setLocalVideoCanvas](../api/Android/v2.7.0/function.html#thunderenginesetlocalvideocanvas)
-- [setVideoEncoderConfig](../api/Android/v2.7.0/function.html#thunderenginesetvideoencoderconfig)
-- [startVideoPreview](../api/Android/v2.7.0/function.html#thunderenginestartvideopreview)
-- [stopVideoPreview](../api/Android/v2.7.0/function.html#thunderenginestopvideopreview)
-- [setRemoteVideoCanvas](../api/Android/v2.7.0/function.html#thunderenginesetremotevideocanvas)
-- [leaveRoom](../api/Android/v2.7.0/function.html#thunderengineleaveroom)
-- [destroyEngine](../api/Android/v2.7.0/function.html#thunderenginedestroyengine)
+- [createEngine](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginecreateengine)
+- [createWithLoop](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginecreatewithloop)
+- [joinRoom](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginejoinroom)
+- [setArea](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginesetarea)
+- [setSceneId](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginesetsceneid)
+- [setMediaMode](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginesetmediamode)
+- [setRoomMode](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginesetroommode)
+- [setLocalVideoCanvas](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginesetlocalvideocanvas)
+- [setVideoEncoderConfig](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginesetvideoencoderconfig)
+- [startVideoPreview](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginestartvideopreview)
+- [stopVideoPreview](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginestopvideopreview)
+- [setRemoteVideoCanvas](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginesetremotevideocanvas)
+- [leaveRoom](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderengineleaveroom)
+- [destroyEngine](/rtc_video_interaction/api/Android/v2.7.0/function.html#thunderenginedestroyengine)
 
 ## 6. Precautions
 
