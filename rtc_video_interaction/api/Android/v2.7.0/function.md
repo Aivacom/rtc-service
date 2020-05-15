@@ -453,7 +453,7 @@ Join a room.
 
 | Name | Description |
 | :--- | :--- |
-| token | For the requirements of authentication, see [Authentication Access Manual](/rtc_video_interaction/token_generator/token_generator.md) for details |
+| token | For the requirements of authentication, see [Authentication Access Manual](/rtc_video_interaction/token_generator/) for details |
 | roomName | Room name (unique for each AppId) only supports the permutation and combination of characters such as [A,Z],[a,z],[0,9],-,_, with the length of not more than 64 bytes. |
 | uid | User ID only supports the permutation and combination of characters such as [A,Z],[a,z],[0,9],-,_, with the length of not more than 64 bytes. |
 
@@ -492,7 +492,7 @@ public int updateToken(byte[] token)
 
 Update token.
 
-Token is used for business authentication. The format is suggested as follows. See [Authentication Access Manual](/rtc_video_interaction/token_generator/token_generator.md) for detail
+Token is used for business authentication. The format is suggested as follows. See [Authentication Access Manual](/rtc_video_interaction/token_generator/) for detail
 
 | uint16 | uint32 | uint64 | uint64 | uint32 | uint16 | nBytes | 20 Bytes |
 | -------- | ------ | ------ | ------------- | ------------ | ------------- | -------------- | ---------------- |
@@ -511,7 +511,7 @@ Refer to the following descriptions:
 
 | Parameter | Description |
 | :--- | :--- |
-| token | For requirements of authentication, refer to "[User Authentication Description](/rtc_video_interaction/token_generator/token_generator.md)" for detail |
+| token | For requirements of authentication, refer to "[User Authentication Description](/rtc_video_interaction/token_generator/)" for detail |
 
 ##### Return[](#updatetoken)
 
