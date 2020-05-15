@@ -126,7 +126,7 @@
 
 ## Detailed Introduction for Interfaces
 
-> Introduction: If the return value of API is int, unless otherwise specified, 0 indicates a successful call, and less than 0 indicates a failed call. For detailed return code, see [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+> Introduction: If the return value of API is int, unless otherwise specified, 0 indicates a successful call, and less than 0 indicates a failed call. For detailed return code, see [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 ### ThunderEngine
 
