@@ -95,7 +95,7 @@
 
 | Public callback function | Function Name |
 | ---:| :--- |
-| BOOL | [onInitialize](#thundercustomvideosourceprotocoloninitialize):(nullable id<[ThunderVideoFrameConsumer](function.html#thundervideoframeconsumer)>)protocol |
+| BOOL | [onInitialize](#thundercustomvideosourceprotocoloninitialize):(nullable id<[ThunderVideoFrameConsumer](function.md#thundervideoframeconsumer)>)protocol |
 | [ThunderVideoBufferType](#thundervideobuffertype) | [bufferType](#thundercustomvideosourceprotocolbuffertype) |
 | void | [onStart](#thundercustomvideosourceprotocolonstart) |
 | void | [onStop](#thundercustomvideosourceprotocolonstop) |
@@ -150,7 +150,7 @@ Callback of Join Room
 | :--- | :--- |
 | room | Room name |
 | uid | User ID |
-| elapsed | Time (ms) consumed from callback of [joinRoom](function.html#thunderenginejoinroomroomnameuid) API to callback of the event |
+| elapsed | Time (ms) consumed from callback of [joinRoom](function.md#thunderenginejoinroomroomnameuid) API to callback of the event |
 
 --------------------------
 
@@ -332,7 +332,7 @@ Callback on displayed first remote video frame.
 | :--- | :--- |
 | uid | User id |
 | size | For video size (width and height), see [CGSize for details](#cgsize) |
-| elapsed | Time (ms) consumed from callback of [joinRoom](function.html#thunderenginejoinroomroomnameuid) API to callback of the event |
+| elapsed | Time (ms) consumed from callback of [joinRoom](function.md#thunderenginejoinroomroomnameuid) API to callback of the event |
 
 --------------------------
 
@@ -424,7 +424,7 @@ Callback on the first local audio frame sent.
 
 | Parameter | Description |
 | :--- | :--- |
-| elapsed | Time (ms) consumed from callback of [joinRoom](function.html#thunderenginejoinroomroomnameuid) API to callback of the event |
+| elapsed | Time (ms) consumed from callback of [joinRoom](function.md#thunderenginejoinroomroomnameuid) API to callback of the event |
 
 --------------------------
 
@@ -440,7 +440,7 @@ Callback on the first local video frame sent.
 
 | Parameter | Description |
 | :--- | :--- |
-| elapsed | Time (ms) consumed from callback of [joinRoom](function.html#thunderenginejoinroomroomnameuid) API to callback of the event |
+| elapsed | Time (ms) consumed from callback of [joinRoom](function.md#thunderenginejoinroomroomnameuid) API to callback of the event |
 
 --------------------------
 
@@ -854,7 +854,7 @@ Callback on capture volume
 
 > **Note:**
 >
-> - This callback is set with the [enableCaptureVolumeIndication](function.html#thunderengineenablecapturevolumeindicationmorethanthdlessthanthdsmooth) interface.
+> - This callback is set with the [enableCaptureVolumeIndication](function.md#thunderengineenablecapturevolumeindicationmorethanthdlessthanthdsmooth) interface.
 
 ##### Parameter[](#oncapturevolumeindication)
 
@@ -1193,7 +1193,7 @@ In initializing the video source, Engine will transmit a ThunderVideoFrameConsum
 
 | Parameter | Description |
 | :--- | :--- |
-| protocol | For operation object of external video frame, see [ThunderVideoFrameConsumer for details](function.html#thundervideoframeconsumer) |
+| protocol | For operation object of external video frame, see [ThunderVideoFrameConsumer for details](function.md#thundervideoframeconsumer) |
 
 ##### Return value[](#oninitialize)
 
