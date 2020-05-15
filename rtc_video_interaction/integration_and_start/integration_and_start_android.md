@@ -54,12 +54,13 @@ allprojects {
 ```
 
 2. Add dependencies to modules that will use SDK:
+**The latest thunder version is 2.7.18**
 
 ```js
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //Add ThunderBolt sdk here
-    api "com.rtc.thunder:thunderbolt:${thunder_version}"
+    api "com.rtc.thunder:thunderbolt:${thunder_version}" 
     .....
 }
 ```
@@ -112,7 +113,7 @@ If proguard has been enabled during app compilation, anti-proguard measures must
 
 After SDK integration, real-time video call can be implemented by SDK. The following figure shows the time sequence of API calling during a video call:
 
-![Time sequence of real-time video call](/rt_video_interaction/resources/sequence.png)
+![Time sequence of real-time video call](/rtc_video_interaction/resources/sequence.png)
 
 ### 4.1 Dynamic Permission Application
 
