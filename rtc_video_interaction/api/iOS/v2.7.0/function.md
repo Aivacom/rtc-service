@@ -7,136 +7,136 @@
 
 | Function | Function Name |
 | ---:| :--- |
-| instancetype _Nonnull | [createEngine:sceneId:delegate:](#ThunderEngine::createEngine:sceneId:delegate) |
-| void | [destroyEngine](#ThunderEngine::destroyEngine) |
-| NSString | [getVersion](#ThunderEngine::getVersion) |
-| void | [setSceneId:](#ThunderEngine::setSceneId) |
-| void | [setThunderEventDelegate:](#ThunderEngine::setThunderEventDelegate) |
-| int | [setArea:](#ThunderEngine::setArea) |
-| int | [joinRoom:roomName:uid:](#ThunderEngine::joinRoom:roomName:uid) |
-| int | [leaveRoom](#ThunderEngine::leaveRoom) |
-| int | [updateToken:](#ThunderEngine::updateToken) |
-| int | [setLogFilePath:](#ThunderEngine::setLogFilePath) |
-| int | [setLogCallback:](#ThunderEngine::setLogCallback) |
-| int | [setLogLevel:](#ThunderEngine::setLogLevel) |
-| int | [addPublishOriginStreamUrl](#ThunderEngine::addPublishOriginStreamUrl) |
-| int | [removePublishOriginStreamUrl:](#ThunderEngine::removePublishOriginStreamUrl) |
-| int | [setLiveTranscodingTask:transcoding:](#ThunderEngine::setLiveTranscodingTask:transcoding) |
-| int | [addPublishTranscodingStreamUrl:url:](#ThunderEngine::addPublishTranscodingStreamUrl:url) |
-| int | [removePublishTranscodingStreamUrl:url:](#ThunderEngine::removePublishTranscodingStreamUrl:url) |
-| int | [removeLiveTranscodingTask:](#ThunderEngine::removeLiveTranscodingTask) |
-| int | [addSubscribe:uid:](#ThunderEngine::addSubscribe:uid) |
-| int | [removeSubscribe:uid:](#ThunderEngine::removeSubscribe:uid) |
-| int | [setMediaMode:](#ThunderEngine::setMediaMode) |
-| int | [setRoomMode:](#ThunderEngine::setRoomMode) |
-| int | [enableWebSdkCompatibility:](#ThunderEngine::enableWebSdkCompatibility) |
-| int | [setVideoEncoderConfig:](#ThunderEngine::setVideoEncoderConfig) |
-| int | [setLocalVideoCanvas:](#ThunderEngine::setLocalVideoCanvas) |
-| int | [setRemotePlayType:](#ThunderEngine::setRemotePlayType) |
-| int | [setMultiVideoViewLayout:](#ThunderEngine::setMultiVideoViewLayout) |
-| int | [setRemoteVideoCanvas:](#ThunderEngine::setRemoteVideoCanvas) |
-| int | [setLocalCanvasScaleMode:](#ThunderEngine::setLocalCanvasScaleMode) |
-| int | [setRemoteCanvasScaleMode:mode:](#ThunderEngine::setRemoteCanvasScaleMode:mode) |
-| int | [startVideoPreview](#ThunderEngine::startVideoPreview) |
-| int | [stopVideoPreview](#ThunderEngine::stopVideoPreview) |
-| int | [enableLocalVideoCapture:](#ThunderEngine::enableLocalVideoCapture) |
-| int | [stopLocalVideoStream:](#ThunderEngine::stopLocalVideoStream) |
-| int | [stopAllRemoteVideoStreams:](#ThunderEngine::stopAllRemoteVideoStreams) |
-| int | [stopRemoteVideoStream:stopped:](#ThunderEngine::stopRemoteVideoStream:stopped) |
-| int | [setCustomVideoSource:](#ThunderEngine::setCustomVideoSource:) |
-| int | [setVideoWatermark:](#ThunderEngine::setVideoWatermark) |
-| int | [registerVideoDecodeFrameObserver:uid:](#ThunderEngine::registerVideoDecodeFrameObserver:uid) |
-| int | [registerVideoCaptureFrameObserver:](#ThunderEngine::registerVideoCaptureFrameObserver) |
-| int | [switchFrontCamera:](#ThunderEngine::switchFrontCamera) |
-| int | [setVideoCaptureOrientation:](#ThunderEngine::setVideoCaptureOrientation) |
-| int | [setLocalVideoMirrorMode:](#ThunderEngine::setLocalVideoMirrorMode) |
-| int | [enableLoudspeaker:](#ThunderEngine::enableLoudspeaker:) |
-| BOOL | [isLoudspeakerEnabled](#ThunderEngine::isLoudspeakerEnabled) |
-| int | [setAudioConfig:commutMode:scenarioMode:](#ThunderEngine::setAudioConfig:commutMode:scenarioMode) |
-| int | [setAudioVolumeIndication:moreThanThd:lessThanThd:smooth:](#ThunderEngine::setAudioVolumeIndication:moreThanThd:lessThanThd:smooth:) |
-| int | [enableCaptureVolumeIndication:moreThanThd:lessThanThd:smooth:](#ThunderEngine::enableCaptureVolumeIndication:moreThanThd:lessThanThd:smooth:) |
-| int | [stopLocalAudioStream:](#ThunderEngine::stopLocalAudioStream:) |
-| int | [stopAllRemoteAudioStreams:](#ThunderEngine::stopAllRemoteAudioStreams:) |
-| int | [stopRemoteAudioStream:stopped:](#ThunderEngine::stopRemoteAudioStream:stopped:) |
-| int | [setLoudSpeakerVolume:](#ThunderEngine::setLoudSpeakerVolume:) |
-| int | [setMicVolume:](#ThunderEngine::setMicVolume:) |
-| int | [setPlayVolume:volume:](#ThunderEngine::setPlayVolume:volume:) |
-| nullable [ThunderAudioFilePlayer](#ThunderAudioFilePlayer)* | [createAudioFilePlayer](#ThunderEngine::createAudioFilePlayer) |
-| void | [destroyAudioFilePlayer:](#ThunderEngine::destroyAudioFilePlayer:) |
-| int | [setEnableInEarMonitor:](#ThunderEngine::setEnableInEarMonitor:) |
-| int | [setEnableEqualizer:](#ThunderEngine::setEnableEqualizer:) |
-| int | [setEqGains:](#ThunderEngine::setEqGains:) |
-| int | [setEnableReverb:](#ThunderEngine::setEnableReverb:) |
-| int | [setReverbParam:](#ThunderEngine::setReverbParam:) |
-| int | [setEnableCompressor:](#ThunderEngine::setEnableCompressor:) |
-| int | [setCompressorParam:](#ThunderEngine::setCompressorParam:) |
-| int | [setEnableLimiter:](#ThunderEngine::setEnableLimiter:) |
-| int | [setLimiterParam:](#ThunderEngine::setLimiterParam:) |
-| void | [enableAudioDataIndication:](#ThunderEngine::enableAudioDataIndication:) |
-| void | [setAudioSourceType:](#ThunderEngine::setAudioSourceType:) |
-| void | [enableAudioPlaySpectrum:](#ThunderEngine::enableAudioPlaySpectrum:) |
-| void | [setAudioPlaySpectrumInfo:notifyIntervalMS:](#ThunderEngine::setAudioPlaySpectrumInfo:notifyIntervalMS:) |
-| int | [sendUserAppMsgData:](#ThunderEngine::sendUserAppMsgData:) |
-| int | [sendMediaExtraInfo:](#ThunderEngine::sendMediaExtraInfo:) |
-| int | [setMediaExtraInfoDelegate:](#ThunderEngine::setMediaExtraInfoDelegate:) |
-| int | [enableMixVideoExtraInfo:](#ThunderEngine::enableMixVideoExtraInfo:) |
-| BOOL | [startAudioSaver:saverMode:fileMode:](#ThunderEngine::startAudioSaver:saverMode:fileMode:) |
-| BOOL | [stopAudioSaver](#ThunderEngine::stopAudioSaver) |
-| void | [setSoundEffect:](#ThunderEngine::setSoundEffect:) |
-| void | [setVoiceChanger:](#ThunderEngine::setVoiceChanger:) |
-| int | [setRecordingAudioFrameParameters:channel:mode:samplesPerCall:](#ThunderEngine::setRecordingAudioFrameParameters:channel:mode:samplesPerCall:) |
-| int | [setPlaybackAudioFrameParameters:channel:mode:samplesPerCall:](#ThunderEngine::setPlaybackAudioFrameParameters:channel:mode:samplesPerCall:) |
-| void | [enableCustomAudioSource:channelsPerFrame:](#ThunderEngine::enableCustomAudioSource:channelsPerFrame:) |
-| void | [disableCustomAudioSource](#ThunderEngine::disableCustomAudioSource) |
-| BOOL | [pushCustomAudioRawData:samples:timestamp:](#ThunderEngine::pushCustomAudioRawData:samples:timestamp:) |
-| BOOL | [pushCustomAudioSampleBuffer:](#ThunderEngine::pushCustomAudioSampleBuffer:) |
-| int | [enableVoicePosition:](#ThunderEngine::enableVoicePosition:) |
-| int | [setRemoteUidVoicePosition:azimuth:gain:](#ThunderEngine::setRemoteUidVoicePosition:azimuth:gain:) |
+| instancetype _Nonnull | [createEngine:sceneId:delegate:](#thunderenginecreateenginesceneiddelegate) |
+| void | [destroyEngine](#thunderenginedestroyengine) |
+| NSString | [getVersion](#thunderenginegetversion) |
+| void | [setSceneId:](#thunderenginesetsceneid) |
+| void | [setThunderEventDelegate:](#thunderenginesetthundereventdelegate) |
+| int | [setArea:](#thunderenginesetarea) |
+| int | [joinRoom:roomName:uid:](#thunderenginejoinroomroomnameuid) |
+| int | [leaveRoom](#thunderengineleaveroom) |
+| int | [updateToken:](#thunderengineupdatetoken) |
+| int | [setLogFilePath:](#thunderenginesetlogfilepath) |
+| int | [setLogCallback:](#thunderenginesetlogcallback) |
+| int | [setLogLevel:](#thunderenginesetloglevel) |
+| int | [addPublishOriginStreamUrl](#thunderengineaddpublishoriginstreamurl) |
+| int | [removePublishOriginStreamUrl:](#thunderengineremovepublishoriginstreamurl) |
+| int | [setLiveTranscodingTask:transcoding:](#thunderenginesetlivetranscodingtasktranscoding) |
+| int | [addPublishTranscodingStreamUrl:url:](#thunderengineaddpublishtranscodingstreamurlurl) |
+| int | [removePublishTranscodingStreamUrl:url:](#thunderengineremovepublishtranscodingstreamurlurl) |
+| int | [removeLiveTranscodingTask:](#thunderengineremovelivetranscodingtask) |
+| int | [addSubscribe:uid:](#thunderengineaddsubscribeuid) |
+| int | [removeSubscribe:uid:](#thunderengineremovesubscribeuid) |
+| int | [setMediaMode:](#thunderenginesetmediamode) |
+| int | [setRoomMode:](#thunderenginesetroommode) |
+| int | [enableWebSdkCompatibility:](#thunderengineenablewebsdkcompatibility) |
+| int | [setVideoEncoderConfig:](#thunderenginesetvideoencoderconfig) |
+| int | [setLocalVideoCanvas:](#thunderenginesetlocalvideocanvas) |
+| int | [setRemotePlayType:](#thunderenginesetremoteplaytype) |
+| int | [setMultiVideoViewLayout:](#thunderenginesetmultivideoviewlayout) |
+| int | [setRemoteVideoCanvas:](#thunderenginesetremotevideocanvas) |
+| int | [setLocalCanvasScaleMode:](#thunderenginesetlocalcanvasscalemode) |
+| int | [setRemoteCanvasScaleMode:mode:](#thunderenginesetremotecanvasscalemodemode) |
+| int | [startVideoPreview](#thunderenginestartvideopreview) |
+| int | [stopVideoPreview](#thunderenginestopvideopreview) |
+| int | [enableLocalVideoCapture:](#thunderengineenablelocalvideocapture) |
+| int | [stopLocalVideoStream:](#thunderenginestoplocalvideostream) |
+| int | [stopAllRemoteVideoStreams:](#thunderenginestopallremotevideostreams) |
+| int | [stopRemoteVideoStream:stopped:](#thunderenginestopremotevideostreamstopped) |
+| int | [setCustomVideoSource:](#thunderenginesetcustomvideosource) |
+| int | [setVideoWatermark:](#thunderenginesetvideowatermark) |
+| int | [registerVideoDecodeFrameObserver:uid:](#thunderengineregistervideodecodeframeobserveruid) |
+| int | [registerVideoCaptureFrameObserver:](#thunderengineregistervideocaptureframeobserver) |
+| int | [switchFrontCamera:](#thunderengineswitchfrontcamera) |
+| int | [setVideoCaptureOrientation:](#thunderenginesetvideocaptureorientation) |
+| int | [setLocalVideoMirrorMode:](#thunderenginesetlocalvideomirrormode) |
+| int | [enableLoudspeaker:](#thunderengineenableloudspeaker) |
+| BOOL | [isLoudspeakerEnabled](#thunderengineisloudspeakerenabled) |
+| int | [setAudioConfig:commutMode:scenarioMode:](#thunderenginesetaudioconfigcommutmodescenariomode) |
+| int | [setAudioVolumeIndication:moreThanThd:lessThanThd:smooth:](#thunderenginesetaudiovolumeindicationmorethanthdlessthanthdsmooth) |
+| int | [enableCaptureVolumeIndication:moreThanThd:lessThanThd:smooth:](#thunderengineenablecapturevolumeindicationmorethanthdlessthanthdsmooth) |
+| int | [stopLocalAudioStream:](#thunderenginestoplocalaudiostream) |
+| int | [stopAllRemoteAudioStreams:](#thunderenginestopallremoteaudiostreams) |
+| int | [stopRemoteAudioStream:stopped:](#thunderenginestopremoteaudiostreamstopped) |
+| int | [setLoudSpeakerVolume:](#thunderenginesetloudspeakervolume) |
+| int | [setMicVolume:](#thunderenginesetmicvolume) |
+| int | [setPlayVolume:volume:](#thunderenginesetplayvolumevolume) |
+| nullable [ThunderAudioFilePlayer](#thunderaudiofileplayer)* | [createAudioFilePlayer](#thunderenginecreateaudiofileplayer) |
+| void | [destroyAudioFilePlayer:](#thunderenginedestroyaudiofileplayer) |
+| int | [setEnableInEarMonitor:](#thunderenginesetenableinearmonitor) |
+| int | [setEnableEqualizer:](#thunderenginesetenableequalizer) |
+| int | [setEqGains:](#thunderengineseteqgains) |
+| int | [setEnableReverb:](#thunderenginesetenablereverb) |
+| int | [setReverbParam:](#thunderenginesetreverbparam) |
+| int | [setEnableCompressor:](#thunderenginesetenablecompressor) |
+| int | [setCompressorParam:](#thunderenginesetcompressorparam) |
+| int | [setEnableLimiter:](#thunderenginesetenablelimiter) |
+| int | [setLimiterParam:](#thunderenginesetlimiterparam) |
+| void | [enableAudioDataIndication:](#thunderengineenableaudiodataindication) |
+| void | [setAudioSourceType:](#thunderenginesetaudiosourcetype) |
+| void | [enableAudioPlaySpectrum:](#thunderengineenableaudioplayspectrum) |
+| void | [setAudioPlaySpectrumInfo:notifyIntervalMS:](#thunderenginesetaudioplayspectruminfonotifyintervalms) |
+| int | [sendUserAppMsgData:](#thunderenginesenduserappmsgdata) |
+| int | [sendMediaExtraInfo:](#thunderenginesendmediaextrainfo) |
+| int | [setMediaExtraInfoDelegate:](#thunderenginesetmediaextrainfodelegate) |
+| int | [enableMixVideoExtraInfo:](#thunderengineenablemixvideoextrainfo) |
+| BOOL | [startAudioSaver:saverMode:fileMode:](#thunderenginestartaudiosaversavermodefilemode) |
+| BOOL | [stopAudioSaver](#thunderenginestopaudiosaver) |
+| void | [setSoundEffect:](#thunderenginesetsoundeffect) |
+| void | [setVoiceChanger:](#thunderenginesetvoicechanger) |
+| int | [setRecordingAudioFrameParameters:channel:mode:samplesPerCall:](#thunderenginesetrecordingaudioframeparameterschannelmodesamplespercall) |
+| int | [setPlaybackAudioFrameParameters:channel:mode:samplesPerCall:](#thunderenginesetplaybackaudioframeparameterschannelmodesamplespercall) |
+| void | [enableCustomAudioSource:channelsPerFrame:](#thunderengineenablecustomaudiosourcechannelsperframe) |
+| void | [disableCustomAudioSource](#thunderenginedisablecustomaudiosource) |
+| BOOL | [pushCustomAudioRawData:samples:timestamp:](#thunderenginepushcustomaudiorawdatasamplestimestamp) |
+| BOOL | [pushCustomAudioSampleBuffer:](#thunderenginepushcustomaudiosamplebuffer) |
+| int | [enableVoicePosition:](#thunderengineenablevoiceposition) |
+| int | [setRemoteUidVoicePosition:azimuth:gain:](#thunderenginesetremoteuidvoicepositionazimuthgain) |
 
 - ### ThunderVideoFrameConsumer
 
 | Function | Function Name |
 | ---:| :--- |
-| void | [consumePixelBuffer:withTimestamp:rotation:](#ThunderVideoFrameConsumer::consumePixelBuffer:withTimestamp:rotation) |
-| void | [consumeRawData:withTimestamp:format:size:rotation:](#ThunderVideoFrameConsumer::consumeRawData:withTimestamp:format:size:rotation) |
-| void | [consumeCMSampleBuffer:](#ThunderVideoFrameConsumer::consumeCMSampleBuffer) |
+| void | [consumePixelBuffer:withTimestamp:rotation:](#thundervideoframeconsumerconsumepixelbufferwithtimestamprotation) |
+| void | [consumeRawData:withTimestamp:format:size:rotation:](#thundervideoframeconsumerconsumerawdatawithtimestampformatsizerotation) |
+| void | [consumeCMSampleBuffer:](#thundervideoframeconsumerconsumecmsamplebuffer) |
 
 - ### ThunderAudioFilePlayer
 
 | Function | Function Name |
 | ---:| :--- |
-| void | [setPlayerDelegate:](#ThunderAudioFilePlayer::setPlayerDelegate) |
-| void | [open:](#ThunderAudioFilePlayer::open) |
-| void | [close](#ThunderAudioFilePlayer::close) |
-| void | [play](#ThunderAudioFilePlayer::play) |
-| void | [Stop](#ThunderAudioFilePlayer::stop) |
-| void | [pause](#ThunderAudioFilePlayer::pause) |
-| void | [resume](#ThunderAudioFilePlayer::resume) |
-| void | [seek:](#ThunderAudioFilePlayer::seek) |
-| uint32_t | [getTotalPlayTimeMS](#ThunderAudioFilePlayer::getTotalPlayTimeMS) |
-| uint32_t | [getCurrentPlayTimeMS](#ThunderAudioFilePlayer::getCurrentPlayTimeMS) |
-| void | [setPlayVolume:](#ThunderAudioFilePlayer::setPlayVolume) |
-| int | [setPlayerLocalVolume](#ThunderAudioFilePlayer::setPlayerLocalVolume) |
-| int | [setPlayerPublishVolume](#ThunderAudioFilePlayer::setPlayerPublishVolume) |
-| int | [getPlayerLocalVolume](#ThunderAudioFilePlayer::getPlayerLocalVolume) |
-| int | [getPlayerPublishVolume](#ThunderAudioFilePlayer::getPlayerPublishVolume) |
-| void | [setSemitone:](#ThunderAudioFilePlayer::setSemitone) |
-| int | [setLooping:](#ThunderAudioFilePlayer::setLooping) |
-| int | [selectAudioTrack:](#ThunderAudioFilePlayer::selectAudioTrack) |
-| int | [getAudioTrackCount](#ThunderAudioFilePlayer::getAudioTrackCount) |
-| void | [enablePublish:](#ThunderAudioFilePlayer::enablePublish) |
-| void | [enableSpectrum:](#ThunderAudioFilePlayer::enableSpectrum) |
-| void | [enableVolumeIndication:interval:](#ThunderAudioFilePlayer::enableVolumeIndication:interval) |
-| void | [setMixStandard:](#ThunderAudioFilePlayer::setMixStandard) |
-| BOOL | [isMixStandard](#ThunderAudioFilePlayer::isMixStandard) |
-| int | [getCurrentSpectrum:len:](#ThunderAudioFilePlayer::getCurrentSpectrum:len) |
+| void | [setPlayerDelegate:](#thunderaudiofileplayersetplayerdelegate) |
+| void | [open:](#thunderaudiofileplayeropen) |
+| void | [close](#thunderaudiofileplayerclose) |
+| void | [play](#thunderaudiofileplayerplay) |
+| void | [Stop](#thunderaudiofileplayerstop) |
+| void | [pause](#thunderaudiofileplayerpause) |
+| void | [resume](#thunderaudiofileplayerresume) |
+| void | [seek:](#thunderaudiofileplayerseek) |
+| uint32_t | [getTotalPlayTimeMS](#thunderaudiofileplayergettotalplaytimems) |
+| uint32_t | [getCurrentPlayTimeMS](#thunderaudiofileplayergetcurrentplaytimems) |
+| void | [setPlayVolume:](#thunderaudiofileplayersetplayvolume) |
+| int | [setPlayerLocalVolume](#thunderaudiofileplayersetplayerlocalvolume) |
+| int | [setPlayerPublishVolume](#thunderaudiofileplayersetplayerpublishvolume) |
+| int | [getPlayerLocalVolume](#thunderaudiofileplayergetplayerlocalvolume) |
+| int | [getPlayerPublishVolume](#thunderaudiofileplayergetplayerpublishvolume) |
+| void | [setSemitone:](#thunderaudiofileplayersetsemitone) |
+| int | [setLooping:](#thunderaudiofileplayersetlooping) |
+| int | [selectAudioTrack:](#thunderaudiofileplayerselectaudiotrack) |
+| int | [getAudioTrackCount](#thunderaudiofileplayergetaudiotrackcount) |
+| void | [enablePublish:](#thunderaudiofileplayerenablepublish) |
+| void | [enableSpectrum:](#thunderaudiofileplayerenablespectrum) |
+| void | [enableVolumeIndication:interval:](#thunderaudiofileplayerenablevolumeindicationinterval) |
+| void | [setMixStandard:](#thunderaudiofileplayersetmixstandard) |
+| BOOL | [isMixStandard](#thunderaudiofileplayerismixstandard) |
+| int | [getCurrentSpectrum:len:](#thunderaudiofileplayergetcurrentspectrumlen) |
 
 - 
    ### IMediaEngine
 
 | Function | Function Name |
 | ---:| :--- |
-| bool | [registerAudioFrameObserver](#IMediaEngine::registerAudioFrameObserver) |
+| bool | [registerAudioFrameObserver](#imediaengineregisteraudioframeobserver) |
 
 ## activity operation
 
@@ -159,15 +159,15 @@ Create ThunderEngine and initialize ThunderEngine instance.
 > - Users of the same AppId can communicate with each other.
 > - SceneId is used to differentiate scenes of the same business, contributing to analyze data based on them.
 
-##### Parameter[](#createEngine)
+##### Parameter[](#createengine)
 
 | Parameter | Description |
 | :--- | :--- |
 | appId | AppId signed for application developers |
 | sceneId | The scene Id customized by the developer can subdivide business scenes; it unnecessary, fill 0 |
-| delegate | Callback. For details, refer to [ThunderEventDelegate](notification.md#ThunderEventDelegate) |
+| delegate | Callback. For details, refer to [ThunderEventDelegate](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegate) |
 
-##### Return[](#createEngine)
+##### Return[](#createengine)
 
 - Back to ThunderEngine object
 
@@ -185,9 +185,9 @@ Destroy ThunderEngine instance object
 >
 > - This method releases all resources used by SDK.
 > - Some applications only operate voice communication required by users. Resources can be released for other operations if they are not needed. This method may be applicable for such applications.
-> - As long as [destroyEngine](#ThunderEngine::destroyEngine) is called, the user can no longer use or call back other methods in the SDK.
-> - To use the communication function again, [createEngine](#ThunderEngine::createEngine:sceneId:delegate) must be called again to create a ThunderEngine instance.
-> - The created file player object [ThunderAudioFilePlayer](#ThunderAudioFilePlayer) will also be released.
+> - As long as [destroyEngine](#thunderenginedestroyengine) is called, the user can no longer use or call back other methods in the SDK.
+> - To use the communication function again, [createEngine](#thunderenginecreateenginesceneiddelegate) must be called again to create a ThunderEngine instance.
+> - The created file player object [ThunderAudioFilePlayer](#thunderaudiofileplayer) will also be released.
 
 --------------------------
 
@@ -203,7 +203,7 @@ Acquire the SDK version No.
 >
 > - This method returns the string of SDK’s version No.
 
-##### Return[](#getVersion)
+##### Return[](#getversion)
 
 - String of SDK’s version No.
 
@@ -217,7 +217,7 @@ Acquire the SDK version No.
 
 Set scenario id.
 
-##### Parameter[](#setSceneId)
+##### Parameter[](#setsceneid)
 
 | Parameter | Description |
 | :--- |:--- |
@@ -233,11 +233,11 @@ Set scenario id.
 
 Set proxy interface.
 
-##### Parameter[](#setThunderEventDelegate)
+##### Parameter[](#setthundereventdelegate)
 
 | Parameter | Description |
 | :--- |:--- |
-| delegate | For proxy interface, refer to[ThunderEventDelegate](notification.md#ThunderEventDelegate) |
+| delegate | For proxy interface, refer to[ThunderEventDelegate](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegate) |
 
 --------------------------
 
@@ -257,18 +257,18 @@ To accommodate to different laws and regulations at home and abroad, aivacom pro
 
 > **Note:**
 >
-> - [Only call it before the joinRoom](#ThunderEngine::joinRoom:roomName:uid) can be valid. It is necessary for abroad users but not for domestic users.
-> - Only the [ThunderRtcAreaType](#ThunderRtcAreaType) options listed in the file can be the parameter options.
-> - It can only be reset when [destroyEngine](#ThunderEngine::destroyEngine) is performed.
+> - [Only call it before the joinRoom](#thunderenginejoinroomroomnameuid) can be valid. It is necessary for abroad users but not for domestic users.
+> - Only the [ThunderRtcAreaType](#thunderrtcareatype) options listed in the file can be the parameter options.
+> - It can only be reset when [destroyEngine](#thunderenginedestroyengine) is performed.
 
 | Parameter | Description |
 | --- | --- |
-| area | Region type is domestic by default. See [ThunderRtcAreaType for details](#ThunderRtcAreaType) |
+| area | Region type is domestic by default. See [ThunderRtcAreaType for details](#thunderrtcareatype) |
 
-##### Return[](#setArea)
+##### Return[](#setarea)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -283,26 +283,26 @@ To accommodate to different laws and regulations at home and abroad, aivacom pro
 Join a room.
 
 - This method lets users join the (audio/video) communication room. In the same room, users can communicate with each other, and group chat starts when multiple users join it.
-- If during the call, users have to call [leaveRoom](#ThunderEngine::leaveRoom) to leave before joining the next one.
+- If during the call, users have to call [leaveRoom](#thunderengineleaveroom) to leave before joining the next one.
 
 > **Note:**
 >
 > - Apps using different App IDs are not interoperable.
-> - Function returned successfully only means successful implementation of request. Receiving the [onJoinRoomSuccess](notification.md#ThunderEventDelegate::thunderEngine:onJoinRoomSuccess:withUid:elapsed) callback marks successful entry into the room.
+> - Function returned successfully only means successful implementation of request. Receiving the [onJoinRoomSuccess](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegatethunderengineonjoinroomsuccesswithuidelapsed) callback marks successful entry into the room.
 > - When appid mode is set for backstage, send a null token.
 
-##### Parameter[](#joinRoom)
+##### Parameter[](#joinroom)
 
 | Parameter | Description |
 | :--- | :--- |
-| token | For authentication, see [Authentication Access Manual for details](https://www.sunclouds.com/cloud/v2/developer/doc.htm?serviceId=103&typeCode=API_DOC&title=%E7%94%A8%E6%88%B7%E9%89%B4%E6%9D%83%E8%AF%B4%E6%98%8E&version=2.0) |
+| token | For authentication, see [token_generator](/rtc_video_interaction/token_generator/) |
 | roomName | Room name (unique for each AppId) only supports the permutation and combination of characters such as [A,Z],[a,z],[0,9],-,_ , with the length of not more than 64 bytes. |
 | uid | User ID only supports the permutation and combination of characters such as [A,Z],[a,z],[0,9],-,_, with the length of not more than 64 bytes. |
 
-##### Return[](#joinRoom)
+##### Return[](#joinroom)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -316,13 +316,13 @@ Leaving room indicates hang off or exiting conversation.
 
 > **Note:**
 >
-> - When [joinRoom](#ThunderEngine::joinRoom:roomName:uid) is called, you have to call [leaveRoom](#ThunderEngine::leaveRoom) to end conversation before starting the next one.
-> - No matter whether the user is idle or in a call, [leaveRoom](#ThunderEngine::leaveRoom) can be called, without adverse effects. This method can release all resources related to conversation.
+> - When [joinRoom](#thunderenginejoinroomroomnameuid) is called, you have to call [leaveRoom](#thunderengineleaveroom) to end conversation before starting the next one.
+> - No matter whether the user is idle or in a call, [leaveRoom](#thunderengineleaveroom) can be called, without adverse effects. This method can release all resources related to conversation.
 
-##### Return[](#leaveRoom)
+##### Return[](#leaveroom)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -336,7 +336,7 @@ This method is used to update Token and authenticate service.
 
 > **Note:**
 >
-> - Suggested token formats are listed below. See [Authentication Access Manual](https://www.sunclouds.com/cloud/v2/developer/doc.htm?serviceId=103&typeCode=API_DOC&title=%E7%94%A8%E6%88%B7%E9%89%B4%E6%9D%83%E8%AF%B4%E6%98%8E&version=2.0) for details.
+> - Suggested token formats are listed below. See [token_generator](/rtc_video_interaction/token_generator/) for details.
 
 | uint16 | uint32 | uint64 | uint64 | uint32 | uint16 | nBytes | 20 Bytes |
 ---|---|---|---|---|---|---|---
@@ -349,16 +349,16 @@ This method is used to update Token and authenticate service.
 5. DigitalSignature: Digital signature adopts the hmac-sha1 algorithm to calculate all data before DigitalSignature to get the [TokenLen,BizExtInfoData]. AppSecret distributed in application of appId is used as the key.
 6. Token has to be transmitted by http, so the whole Token shall be encoded by url base64. Note that the url encode is not performed for the whole base64.
 
-##### Parameter[](#updateToken)
+##### Parameter[](#updatetoken)
 
 | Parameter | Description |
 | :--- | :--- |
-| token | For authentication, see [Authentication Access Manual for details](https://www.sunclouds.com/cloud/v2/developer/doc.htm?serviceId=103&typeCode=API_DOC&title=%E7%94%A8%E6%88%B7%E9%89%B4%E6%9D%83%E8%AF%B4%E6%98%8E&version=2.0) |
+| token | For authentication, see [token_generator](/rtc_video_interaction/token_generator/) |
 
-##### Return[](#updateToken)
+##### Return[](#updatetoken)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -376,16 +376,16 @@ Set directory for SDK to output log files. A directory with write permissions mu
 > - Set log callback. When log callback is set, setLogFilePath is invalidated.
 
 
-##### Parameter[](#setLogFilePath)
+##### Parameter[](#setlogfilepath)
 
 | Parameter | Description |
 | :--- | :--- |
 | filePath | Complete list of log files |
 
-##### Return[](#setLogFilePath)
+##### Return[](#setlogfilepath)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -402,16 +402,16 @@ Set output of log callback.
 > - For one of the two methods to output SDK logs, SDK calls back log messages to the application and the application ghostwrites.
 > - After the log callback is set, the setLogFilePath will be invalid.
 
-##### Parameter[](#setLogCallback)
+##### Parameter[](#setlogcallback)
 
 | Parameter | Description |
 | :--- | :--- |
-| delegate | For log protocol, see [ThunderRtcLogDelegate for details](notification.md#ThunderRtcLogDelegate) |
+| delegate | For log protocol, see [ThunderRtcLogDelegate for details](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thunderrtclogdelegate) |
 
-##### Return[](#setLogCallback)
+##### Return[](#setlogcallback)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -427,17 +427,17 @@ Set filter level of log output.
 >
 > - Set filtering level for log output, and call it before setLogFilePath or setLogCallback Without calling this interface, use the default level: THUNDER_LOG_LEVEL_INFO.
 
-##### Parameter[](#setLogLevel)
+##### Parameter[](#setloglevel)
 
 | Parameter | Description |
 | :--- | :--- |
-| level | For log level, see [ThunderRtcLogLevel for details](#ThunderRtcLogLevel) |
+| level | For log level, see [ThunderRtcLogLevel for details](#thunderrtcloglevel) |
 
 
-##### Return[](#setLogLevel)
+##### Return[](#setloglevel)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -451,20 +451,20 @@ Add address for bypass stream publishing of source streams.
 
 > **Note:**
 >
-> - After this interface is called, the anchor's current audio/video stream will be pushed to the specified CDN address. To update url, first call the [removePublishOriginStreamUrl](#ThunderEngine::removePublishOriginStreamUrl), and add after removing the original address.
+> - After this interface is called, the anchor's current audio/video stream will be pushed to the specified CDN address. To update url, first call the [removePublishOriginStreamUrl](#thunderengineremovepublishoriginstreamurl), and add after removing the original address.
 > - Only one-channel stream publishing address can be added each time by this method. If multi-channel streams need to be pushed, this method have to be called repeatedly. A maximum of 5 addresses are supported for stream publishing.
-> - After playing, the server pushes source stream to corresponding URL. Enter the room[joinRoom](#ThunderEngine::joinRoom:roomName:uid) for callback. Leaving the room[leaveRoom](#ThunderEngine::leaveRoom) will empty the configuration.
+> - After playing, the server pushes source stream to corresponding URL. Enter the room[joinRoom](#thunderenginejoinroomroomnameuid) for callback. Leaving the room[leaveRoom](#thunderengineleaveroom) will empty the configuration.
 
-##### Parameter[](#addPublishOriginStreamUrl)
+##### Parameter[](#addpublishoriginstreamurl)
 
 | Parameter | Description |
 | :--- | :--- |
 | url | CDN stream publishing address is in format RTMP. This character features a length of 512 bytes as maximum. Note: Some CDN manufacturers may not support the 512 bytes, for instance, Aliyun supports merely 256 bytes |
 
-##### Return[](#addPublishOriginStreamUrl)
+##### Return[](#addpublishoriginstreamurl)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -480,16 +480,16 @@ Remove address for bypass stream publishing of source streams.
 >
 > - After this interface is called, the anchor's current audio/video stream will not be pushed to the specified CDN address.
 
-##### Parameter[](#removePublishOriginStreamUrl)
+##### Parameter[](#removepublishoriginstreamurl)
 
 | Parameter | Description |
 | :--- | :--- |
 | url | CDN stream publishing address is in format RTMP. This character features a length of 512 bytes as maximum. Note: Some CDN manufacturers may not support the 512 bytes, for instance, Aliyun supports merely 256 bytes |
 
-##### Return[](#removePublishOriginStreamUrl)
+##### Return[](#removepublishoriginstreamurl)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -499,26 +499,26 @@ Remove address for bypass stream publishing of source streams.
 - (int)setLiveTranscodingTask:(NSString* _Nonnull)taskId transcoding:(LiveTranscoding* _Nonnull)transcoding;
 ```
 
-Add/Update stream mixing task[LiveTranscoding](#LiveTranscoding).
+Add/Update stream mixing task[LiveTranscoding](#livetranscoding).
 
 > **Note:**
 >
 > - After callback of this interface, stream mixing and transcoding task will be started at back stage of aivacom, and all source flows set up will be subjected to the video mixing and audio mixing. The application shall specify the stream mixing ID to differentiate different stream mixing tasks.
 > - This interface can be called repeatedly to update stream mixing parameters in the mix process. Multiple stream mixing tasks can be set in the same room.
-> - Join the room[joinRoom](#ThunderEngine::joinRoom:roomName:uid) for callback. Leaving the room [leaveRoom](#ThunderEngine::leaveRoom) will empty the configuration.
-> - The stream publishing address can be added into the stream mixing and transcoding tasks by [addPublishTranscodingStreamUrl](#ThunderEngine::addPublishTranscodingStreamUrl:url:) interface. The stream mixing and transcoding will be pushed to specified address after operating the stream mixing and transcoding.
+> - Join the room[joinRoom](#thunderenginejoinroomroomnameuid) for callback. Leaving the room [leaveRoom](#thunderengineleaveroom) will empty the configuration.
+> - The stream publishing address can be added into the stream mixing and transcoding tasks by [addPublishTranscodingStreamUrl](#thunderengineaddpublishtranscodingstreamurlurl) interface. The stream mixing and transcoding will be pushed to specified address after operating the stream mixing and transcoding.
 
-##### Parameter[](#setLiveTranscodingTask)
+##### Parameter[](#setlivetranscodingtask)
 
 | Parameter | Description |
 | :--- | :--- |
 | taskId | The stream mixing task ID is generated by the application. It shall be unique in the entire domain |
-| transcoding | For information about stream mixing configuration, see [LiveTranscoding](#LiveTranscoding) |
+| transcoding | For information about stream mixing configuration, see [LiveTranscoding](#livetranscoding) |
 
-##### Return[](#setLiveTranscodingTask)
+##### Return[](#setlivetranscodingtask)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -532,22 +532,22 @@ Add address for bypass stream publishing of mixed streams.
 
 > **Note:**
 >
-> - Call this interface after adding transcoding task by calling [setLiveTranscodingTask](#ThunderEngine::setLiveTranscodingTask:transcoding) interface.
-> - After this interface is called, the specified stream mixing will be pushed to the specified CDN address. To update url, first call the [removePublishTranscodingStreamUrl](#ThunderEngine::removePublishTranscodingStreamUrl:url:) and add after removing the original address.
+> - Call this interface after adding transcoding task by calling [setLiveTranscodingTask](#thunderenginesetlivetranscodingtasktranscoding) interface.
+> - After this interface is called, the specified stream mixing will be pushed to the specified CDN address. To update url, first call the [removePublishTranscodingStreamUrl](#thunderengineremovepublishtranscodingstreamurlurl) and add after removing the original address.
 > - Add stream publishing address for specified transcoding task, and only one address can added by this method. If multiple-channel streams have to be pushed, call this method repeatedly. 5 stream publishing addresses can be supported at most in the same transcoding task.
-> - Join the room[joinRoom](#ThunderEngine::joinRoom:roomName:uid) for callback. Leaving the room [leaveRoom](#ThunderEngine::leaveRoom) will empty the configuration.
+> - Join the room[joinRoom](#thunderenginejoinroomroomnameuid) for callback. Leaving the room [leaveRoom](#thunderengineleaveroom) will empty the configuration.
 
-##### Parameter[](#addPublishTranscodingStreamUrl)
+##### Parameter[](#addpublishtranscodingstreamurl)
 
 | Parameter | Description |
 | :--- | :--- |
 | taskId | Stream mixing task ID |
 | url | CDN stream publishing address is in format RTMP. This character features a length of 512 bytes as maximum. Note: Some CDN manufacturers may not support the 512 bytes, for instance, Aliyun supports merely 256 bytes |
 
-##### Return[](#addPublishTranscodingStreamUrl)
+##### Return[](#addpublishtranscodingstreamurl)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -562,19 +562,19 @@ Remove address for bypass stream publishing of mixed streams.
 >
 > - After this interface is called, the specified mixed stream will not be pushed to the specified CDN address.
 > - Only one-channel stream publishing address can be deleted each time by this method. If multi-channel streams need to be removed, this method have to be called repeatedly.
-> - Join the room[joinRoom](#ThunderEngine::joinRoom:roomName:uid) for callback.
+> - Join the room[joinRoom](#thunderenginejoinroomroomnameuid) for callback.
 
-##### Parameter[](#removePublishTranscodingStreamUrl)
+##### Parameter[](#removepublishtranscodingstreamurl)
 
 | Parameter | Description |
 | :--- | :--- |
 | taskId | Stream mixing task ID |
 | url | CDN stream publishing address is in format RTMP. This character features a length of 512 bytes as maximum. Note: Some CDN manufacturers may not support the 512 bytes, for instance, Aliyun supports merely 256 bytes |
 
-##### Return[](#removePublishTranscodingStreamUrl)
+##### Return[](#removepublishtranscodingstreamurl)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -588,18 +588,18 @@ Remove the stream mixing task.
 
 > **Note:**
 >
-> - Upon callback of this interface, the stream mixing task will be deleted and stopped at backstage of aivacom, but url added at the [addPublishTranscodingStreamUrl](#ThunderEngine::addPublishTranscodingStreamUrl:url:) interface will not be removed.
+> - Upon callback of this interface, the stream mixing task will be deleted and stopped at backstage of aivacom, but url added at the [addPublishTranscodingStreamUrl](#thunderengineaddpublishtranscodingstreamurlurl) interface will not be removed.
 
-##### Parameter[](#removeLiveTranscodingTask)
+##### Parameter[](#removelivetranscodingtask)
 
 | Parameter | Description |
 | :--- | :--- |
 | taskId | The stream mixing task ID is generated by the application. It shall be unique in the entire domain |
 
-##### Return[](#removeLiveTranscodingTask)
+##### Return[](#removelivetranscodingtask)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -612,19 +612,19 @@ Remove the stream mixing task.
 Subscribe across the room.
 > **Note:**
 >
-> - Subscribe audio/video stream of other rooms after joining the room. Namely, this function can be called after joining the room[joinRoom](#ThunderEngine::joinRoom:roomName:uid). Leaving the room will empty the configuration.
+> - Subscribe audio/video stream of other rooms after joining the room. Namely, this function can be called after joining the room[joinRoom](#thunderenginejoinroomroomnameuid). Leaving the room will empty the configuration.
 
-##### Parameter[](#addSubscribe)
+##### Parameter[](#addsubscribe)
 
 | Parameter | Description |
 | :--- | :--- |
 | roomId | Room No. |
 | uid | User ID |
 
-##### Return[](#addSubscribe)
+##### Return[](#addsubscribe)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -637,19 +637,19 @@ Subscribe across the room.
 Cancel the trans-room subscription.
 > **Note:**
 >
-> - Call this method to cancel subscription to audio and video stream of other rooms. It functions the opposite of [addSubscribe](#ThunderEngine::addSubscribe:uid:) interface. It also shall join the room[joinRoom](#ThunderEngine::joinRoom:roomName:uid) for callback.
+> - Call this method to cancel subscription to audio and video stream of other rooms. It functions the opposite of [addSubscribe](#thunderengineaddsubscribeuid) interface. It also shall join the room[joinRoom](#thunderenginejoinroomroomnameuid) for callback.
 
-##### Parameter[](#removeSubscribe)
+##### Parameter[](#removesubscribe)
 
 | Parameter | Description |
 | :--- | :--- |
 | roomId | Room No. |
 | uid | User ID |
 
-##### Return[](#removeSubscribe)
+##### Return[](#removesubscribe)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -664,16 +664,16 @@ Set media mode of SDK.
 >
 > - Media modes for SDK set by the user include audio and audio/video ones. Callback before joining the room is required, and invalidated after joining the room. In non-callback status, the audio/video mode is by default.
 
-##### Parameter[](#setMediaMode)
+##### Parameter[](#setmediamode)
 
 | Parameter | Description |
 | :--- | :--- |
-| mode | For media mode, see [ThunderRtcConfig for details](#ThunderRtcConfig) |
+| mode | For media mode, see [ThunderRtcConfig for details](#thunderrtcconfig) |
 
-##### Return[](#setMediaMode)
+##### Return[](#setmediamode)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -690,16 +690,16 @@ Set room scenario mode.
 > - This interface is for setting the room scenario mode by user. Live streaming mode is by default upon non-callback. It can be used before and after joining the room.
 > - SDK can use different optimization methods by knowing usage scenes of applications (such as communication mode or live mode).
 
-##### Parameter[](#setRoomMode)
+##### Parameter[](#setroommode)
 
 | Parameter | Description |
 | :--- | :--- |
-| mode | For media mode, see [ThunderRtcRoomConfig for details](#ThunderRtcRoomConfig) |
+| mode | For media mode, see [ThunderRtcRoomConfig for details](#thunderrtcroomconfig) |
 
-##### Return[](#setRoomMode)
+##### Return[](#setroommode)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -717,16 +717,16 @@ Enable/Disable WebSDK compatibility.
 > - After enabling WebSDK compatibility, encoding B frame is prohibited internally. Because WebSDK cannot normally decode B frame, callback before living is required, which has nothing to do with forward/back channel.
 > - Microphone connection is compatible with Web SDK by default, without calling this method.
 
-##### Parameter[](#enableWebSdkCompatibility)
+##### Parameter[](#enablewebsdkcompatibility)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | YES: compatible <br>NO: incompatible <br>Incompatible by default |
 
-##### Return[](#enableWebSdkCompatibility)
+##### Return[](#enablewebsdkcompatibility)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -743,16 +743,16 @@ Set video encoder’s property.
 > - SDK will acquire specific video encoding parameters for video encoding from the configured server in accordance with parameter configuration. If the service entails special parameter demand for video encoding, contact Technical Support for personalized configuration.
 > - If the video has been published, update the video encoding parameters. The updated video effect can be seen from local review and remote subscription.
 
-##### Parameter[](#setVideoEncoderConfig)
+##### Parameter[](#setvideoencoderconfig)
 
 | Parameter | Description |
 | :--- | :--- |
-| config | For encoding configuration, see [ThunderVideoEncoderConfiguration for details](#ThunderVideoEncoderConfiguration) |
+| config | For encoding configuration, see [ThunderVideoEncoderConfiguration for details](#thundervideoencoderconfiguration) |
 
-##### Return[](#setVideoEncoderConfig)
+##### Return[](#setvideoencoderconfig)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -768,16 +768,16 @@ Set local view.
 >
 > - You can preview and publish without setting this window. You can see locally captured pictures by setting this window.
 
-##### Parameter[](#setLocalVideoCanvas)
+##### Parameter[](#setlocalvideocanvas)
 
 | Parameter | Description |
 | :--- | :--- |
-| local | For specific setting of rendering, see [ThunderVideoCanvas for details](#ThunderVideoCanvas) |
+| local | For specific setting of rendering, see [ThunderVideoCanvas for details](#thundervideocanvas) |
 
-##### Return[](#setLocalVideoCanvas)
+##### Return[](#setlocalvideocanvas)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -793,16 +793,16 @@ Set the remote play type.
 >
 > - Set the remote view whether multi-person microphone connecting is enabled. Call before entering the channel, after “initialization”.
 
-##### Parameter[](#setRemotePlayType)
+##### Parameter[](#setremoteplaytype)
 
 | Parameter | Description |
 | :--- | :--- |
-| remotePlayType | For view display mode, see [ThunderRtcRemotePlayType for details](#ThunderRtcRemotePlayType) |
+| remotePlayType | For view display mode, see [ThunderRtcRemotePlayType for details](#thunderrtcremoteplaytype) |
 
-##### Return[](#setRemotePlayType)
+##### Return[](#setremoteplaytype)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -818,16 +818,16 @@ Set multi-person microphone connection layout.
 >
 > - For setting the multi-person microphone connection layout, call before entering the channel, after “initialization”.
 
-##### Parameter[](#setMultiVideoViewLayout)
+##### Parameter[](#setmultivideoviewlayout)
 
 | Parameter | Description |
 | :--- | :--- |
-| params | For specific microphone connection layout, see [ThunderMultiVideoViewParam for details](#ThunderMultiVideoViewParam) |
+| params | For specific microphone connection layout, see [ThunderMultiVideoViewParam for details](#thundermultivideoviewparam) |
 
-##### Return[](#setMultiVideoViewLayout)
+##### Return[](#setmultivideoviewlayout)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -843,16 +843,16 @@ Set remote user’s view.
 >
 > - You can subscribe without setting this window. After setting of this window, you can see video view of corresponding user through remote subscription.
 
-##### Parameter[](#setRemoteVideoCanvas)
+##### Parameter[](#setremotevideocanvas)
 
 | Parameter | Description |
 | :--- | :--- |
-| remote | For specific setting of view, see [ThunderVideoCanvas for details](#ThunderVideoCanvas) |
+| remote | For specific setting of view, see [ThunderVideoCanvas for details](#thundervideocanvas) |
 
-##### Return[](#setRemoteVideoCanvas)
+##### Return[](#setremotevideocanvas)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -864,16 +864,16 @@ Set remote user’s view.
 
 Set local view display mode.
 
-##### Parameter[](#setLocalCanvasScaleMode)
+##### Parameter[](#setlocalcanvasscalemode)
 
 | Parameter | Description |
 | :--- | :--- |
-| mode | See [ThunderVideoRenderMode for details](#ThunderVideoRenderMode) |
+| mode | See [ThunderVideoRenderMode for details](#thundervideorendermode) |
 
-##### Return[](#setLocalCanvasScaleMode)
+##### Return[](#setlocalcanvasscalemode)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -885,17 +885,17 @@ Set local view display mode.
 
 Set the remote play type.
 
-##### Parameter[](#setRemoteCanvasScaleMode)
+##### Parameter[](#setremotecanvasscalemode)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | User id |
-| mode | See [ThunderVideoRenderMode for details](#ThunderVideoRenderMode) |
+| mode | See [ThunderVideoRenderMode for details](#thundervideorendermode) |
 
-##### Return[](#setRemoteCanvasScaleMode)
+##### Return[](#setremotecanvasscalemode)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -907,10 +907,10 @@ Set the remote play type.
 
 Enable video preview.
 
-##### Return[](#startVideoPreview)
+##### Return[](#startvideopreview)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -926,10 +926,10 @@ Stop video preview.
 >
 > - Closing preview will trigger stop video
 
-##### Return[](#stopVideoPreview)
+##### Return[](#stopvideopreview)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -941,16 +941,16 @@ Stop video preview.
 
 Enable/Disable local video capture.
 
-##### Parameter[](#enableLocalVideoCapture)
+##### Parameter[](#enablelocalvideocapture)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | YES: Enable local video capture <br>NO: Close local video capture |
 
-##### Return[](#enableLocalVideoCapture)
+##### Return[](#enablelocalvideocapture)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -962,16 +962,16 @@ Enable/Disable local video capture.
 
 Enable/Disable sending of local video stream.
 
-##### Parameter[](#stopLocalVideoStream)
+##### Parameter[](#stoplocalvideostream)
 
 | Parameter | Description |
 | :--- | :--- |
 | stopped | YES: Disable sending of local video <br>NO: Enable sending of local video |
 
-##### Return[](#stopLocalVideoStream)
+##### Return[](#stoplocalvideostream)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -985,20 +985,20 @@ Stop or receive all video streams.
 
 > **Note:**
 >
-> - After the setting of receiving all (stop=false), all video streams in the room will be subscribed automatically. You can specify one stream of not being subscribed by[stopRemoteVideoStream](#ThunderEngine::stopRemoteVideoStream:stopped).
-> - After the setting of receiving nothing (stop=true), all video streams in the room will not be subscribed. You can specify one stream being subscribed by [stopRemoteVideoStream](#ThunderEngine::stopRemoteVideoStream:stopped).
-> - This interface has no priority relationship with[stopRemoteVideoStream](#ThunderEngine::stopRemoteVideoStream:stopped), and the interface called later will be valid.
+> - After the setting of receiving all (stop=false), all video streams in the room will be subscribed automatically. You can specify one stream of not being subscribed by[stopRemoteVideoStream](#thunderenginestopremotevideostreamstopped).
+> - After the setting of receiving nothing (stop=true), all video streams in the room will not be subscribed. You can specify one stream being subscribed by [stopRemoteVideoStream](#thunderenginestopremotevideostreamstopped).
+> - This interface has no priority relationship with[stopRemoteVideoStream](#thunderenginestopremotevideostreamstopped), and the interface called later will be valid.
 
-##### Parameter[](#stopAllRemoteVideoStreams)
+##### Parameter[](#stopallremotevideostreams)
 
 | Parameter | Description |
 | :--- | :--- |
 | stopped | YES: Receive none <br>NO: Receive all <br>Receive all by default |
 
-##### Return[](#stopAllRemoteVideoStreams)
+##### Return[](#stopallremotevideostreams)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1012,20 +1012,20 @@ Receive/Stop receiving specified video stream.
 
 > **Note:**
 >
-> - Upon stopping receiving specified audio stream, you can receive all audio streams via [stopAllRemoteVideoStreams](#ThunderEngine::stopAllRemoteVideoStreams), vice versa. 
->    <br>This interface has no priority relationship with[stopAllRemoteVideoStreams](#ThunderEngine::stopAllRemoteVideoStreams), and the interface called later will be valid.
+> - Upon stopping receiving specified audio stream, you can receive all audio streams via [stopAllRemoteVideoStreams](#thunderenginestopallremotevideostreams), vice versa. 
+>    <br>This interface has no priority relationship with[stopAllRemoteVideoStreams](#thunderenginestopallremotevideostreams), and the interface called later will be valid.
 
-##### Parameter[](#stopRemoteVideoStream)
+##### Parameter[](#stopremotevideostream)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | User id |
 | stopped | YES: Stop receiving remote video stream of specified user <br> NO: Start receiving remote video stream of specified user |
 
-##### Return[](#stopRemoteVideoStream)
+##### Return[](#stopremotevideostream)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1039,13 +1039,13 @@ Set customized video source.
 
 > **Note:**
 >
-> - In real-time communication, aivacom’ SDK usually will enable the default video input device, i.e. the built-in camera, for video pushing. To customize video device, the App can customize an object to realize [ThunderCustomVideoSourceProtocol](notification.md#ThunderCustomVideoSourceProtocol) protocol, and then call this method to add the customized video source to the SDK.
+> - In real-time communication, aivacom’ SDK usually will enable the default video input device, i.e. the built-in camera, for video pushing. To customize video device, the App can customize an object to realize [ThunderCustomVideoSourceProtocol](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundercustomvideosourceprotocol) protocol, and then call this method to add the customized video source to the SDK.
 
-##### Parameter[](#setCustomVideoSource)
+##### Parameter[](#setcustomvideosource)
 
 | Parameter | Description |
 | :--- | :--- |
-| videoSource | See [ThunderCustomVideoSourceProtocol for details](notification.md#ThunderCustomVideoSourceProtocol) |
+| videoSource | See [ThunderCustomVideoSourceProtocol for details](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundercustomvideosourceprotocol) |
 
 --------------------------
 
@@ -1064,16 +1064,16 @@ Set watermark of local video.
 > - Only one watermark can be added into the live video, and the watermark added later will replace the last one.
 > - The watermark will rotate with the rotation of screen.
 
-##### Parameter[](#setVideoWatermark)
+##### Parameter[](#setvideowatermark)
 
 | Parameter | Description |
 | :--- | :--- |
 | watermark | Watermark name |
 
-##### Return[](#setVideoWatermark)
+##### Return[](#setvideowatermark)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1085,17 +1085,17 @@ Set watermark of local video.
 
 Customize decoding picture rendering.
 
-##### Parameter[](#registerVideoDecodeFrameObserver)
+##### Parameter[](#registervideodecodeframeobserver)
 
 | Parameter | Description |
 | :--- | :--- | :--- |
-| delegate | For capture of interface for decoding image, see [ThunderVideoDecodeFrameObserver for details](notification.md#ThunderVideoDecodeFrameObserver) |
+| delegate | For capture of interface for decoding image, see [ThunderVideoDecodeFrameObserver for details](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundervideodecodeframeobserver) |
 | uid | Used to indicate the uid’s video stream to be acquired |
 
-##### Return[](#registerVideoDecodeFrameObserver)
+##### Return[](#registervideodecodeframeobserver)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1107,16 +1107,16 @@ Customize decoding picture rendering.
 
 Customize the image pre-processing function.
 
-##### Parameter[](#registerVideoCaptureFrameObserver)
+##### Parameter[](#registervideocaptureframeobserver)
 
 | Parameter | Description |
 | :--- | :--- |
-| delegate | For processing interface for local video frame, see [ThunderVideoCaptureFrameObserver for details](notification.md#ThunderVideoCaptureFrameObserver) |
+| delegate | For processing interface for local video frame, see [ThunderVideoCaptureFrameObserver for details](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundervideocaptureframeobserver) |
 
-##### Return[](#registerVideoCaptureFrameObserver)
+##### Return[](#registervideocaptureframeobserver)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1130,18 +1130,18 @@ Switch to front/back camera.
 
 > **Note:**
 >
-> - Upon calling of this method, the user can shift front/rear camera. After [startVideoPreview](#ThunderEngine::startVideoPreview) is started, the calling takes effect. When this method is not called, the engine will start the front camera by default.
+> - Upon calling of this method, the user can shift front/rear camera. After [startVideoPreview](#thunderenginestartvideopreview) is started, the calling takes effect. When this method is not called, the engine will start the front camera by default.
 
-##### Parameter[](#switchFrontCamera)
+##### Parameter[](#switchfrontcamera)
 
 | Parameter | Description |
 | :--- |:--- |
 | bFront | YES: Enable front camera NO: Enable rear camera |
 
-##### Return[](#switchFrontCamera)
+##### Return[](#switchfrontcamera)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1155,18 +1155,18 @@ Set portrait and landscape.
 
 > **Note:**
 >
-> - The user can call this method to set portrait and landscape. It can be called either before preview[startVideoPreview](#ThunderEngine::startVideoPreview), or during the publishing. If this method is not called, the portrait orientation is applied by default.
+> - The user can call this method to set portrait and landscape. It can be called either before preview[startVideoPreview](#thunderenginestartvideopreview), or during the publishing. If this method is not called, the portrait orientation is applied by default.
 
-##### Parameter[](#setVideoCaptureOrientation)
+##### Parameter[](#setvideocaptureorientation)
 
 | Parameter | Description |
 | :--- | :--- |
-| orientation | For portrait and landscape, see [ThunderVideoCaptureOrientation for details](#ThunderVideoCaptureOrientation) |
+| orientation | For portrait and landscape, see [ThunderVideoCaptureOrientation for details](#thundervideocaptureorientation) |
 
-##### Return[](#setVideoCaptureOrientation)
+##### Return[](#setvideocaptureorientation)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1180,20 +1180,20 @@ Setting camera mirroring.
 
 > **Note:**
 >
-> - The user can call this method to set local video mirror mode. It can be called either before preview[startVideoPreview](#ThunderEngine::startVideoPreview), or during the publishing.
+> - The user can call this method to set local video mirror mode. It can be called either before preview[startVideoPreview](#thunderenginestartvideopreview), or during the publishing.
 > - It only functions for front camera, not for rear camera.
 > - Neither preview nor stream publishing of a rear camera is mirrored. For a front camera, preview is mirrored and stream publishing is not mirrored by default.
 
-##### Parameter[](#setLocalVideoMirrorMode)
+##### Parameter[](#setlocalvideomirrormode)
 
 | Parameter | Description |
 | :--- | :--- |
-| mode | For the mirror mode, see [ThunderVideoMirrorMode](#ThunderVideoMirrorMode) |
+| mode | For the mirror mode, see [ThunderVideoMirrorMode](#thundervideomirrormode) |
 
-##### Return[](#setLocalVideoMirrorMode)
+##### Return[](#setlocalvideomirrormode)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1209,16 +1209,16 @@ Enable/Disable loudspeaker.
 >
 > - This method forces the voice routing to loudspeaker.
 
-##### Parameter[](#enableLoudspeaker)
+##### Parameter[](#enableloudspeaker)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | YES: Play with loudspeaker<br> NO: Play with receiver |
 
-##### Return[](#enableLoudspeaker)
+##### Return[](#enableloudspeaker)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1230,7 +1230,7 @@ Enable/Disable loudspeaker.
 
 Query the enabled status of loudspeaker.
 
-##### Return[](#isLoudspeakerEnabled)
+##### Return[](#isloudspeakerenabled)
 
 - YES: Indicates output to loudspeaker
 - NO: Indicates output to non-loudspeaker (receiver, earphone, etc.)
@@ -1251,18 +1251,18 @@ Set audio profiles.
 >
 > - This method is used to set the audio parameters and application scenarios.
 
-##### Parameter[](#setAudioConfig)
+##### Parameter[](#setaudioconfig)
 
 | Parameter | Description |
 | :--- | :--- |
-| config | See [ThunderRtcAudioConfig for details](#ThunderRtcAudioConfig) |
-| commuMode | For setting of interaction mode, see [ThunderRtcCommutMode for details](#ThunderRtcCommutMode) |
-| scenarioMode | For setting of scenario mode, see [ThunderRtcScenarioMode for details](#ThunderRtcScenarioMode) |
+| config | See [ThunderRtcAudioConfig for details](#thunderrtcaudioconfig) |
+| commuMode | For setting of interaction mode, see [ThunderRtcCommutMode for details](#thunderrtccommutmode) |
+| scenarioMode | For setting of scenario mode, see [ThunderRtcScenarioMode for details](#thunderrtcscenariomode) |
 
-##### Return[](#setAudioConfig)
+##### Return[](#setaudioconfig)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1280,10 +1280,10 @@ Enable volume indication for speaker.
 > **Note:**
 >
 > - By using this method, SDK can feed current speaker and speaker’s volume back to an application periodically.
-> - Return via [onPlayVolumeIndication](notification.md#ThunderEventDelegate::onPlayVolumeIndication:totalVolume) callback interface.
+> - Return via [onPlayVolumeIndication](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegateonplayvolumeindicationtotalvolume) callback interface.
 > - The voice volume collected by local microphone or playing file is not included.
 
-##### Parameter[](#setAudioVolumeIndication)
+##### Parameter[](#setaudiovolumeindication)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1292,10 +1292,10 @@ Enable volume indication for speaker.
 | lessThanThd | From >= lessThanThd to < lessThanThd, immediately call back once (is not restricted by interval) <br><= 0 invalid, default =0 |
 | smooth | Invalid momentarily |
 
-##### Return[](#setAudioVolumeIndication)
+##### Return[](#setaudiovolumeindication)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1313,9 +1313,9 @@ Enable/Disable collected volume callback.
 > **Note:**
 >
 > - By using this method, SDK can feed current microphone capture volume back to an application periodically.
-> - Return from [onCaptureVolumeIndication](notification.md#ThunderEventDelegate::thunderEngine:onCaptureVolumeIndication:cpt:micVolume).
+> - Return from [onCaptureVolumeIndication](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegatethunderengineoncapturevolumeindicationcptmicvolume).
 
-##### Parameter[](#enableCaptureVolumeIndication)
+##### Parameter[](#enablecapturevolumeindication)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1324,10 +1324,10 @@ Enable/Disable collected volume callback.
 | lessThanThd | From >= lessThanThd to < lessThanThd, immediately call back once (is not restricted by interval) <br><= 0 invalid, default =0 |
 | smooth | Invalid momentarily |
 
-##### Return[](#enableCaptureVolumeIndication)
+##### Return[](#enablecapturevolumeindication)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1342,18 +1342,18 @@ Enabling/Disabling sending of local audio.
 > **Note:**
 >
 > - This method is used to enable/disable sending local audio stream to the network.
-> - Call this method after successful [joinRoom](#ThunderEngine::joinRoom:roomName:uid)
+> - Call this method after successful [joinRoom](#thunderenginejoinroomroomnameuid)
 
-##### Parameter[](#stopLocalAudioStream)
+##### Parameter[](#stoplocalaudiostream)
 
 | Parameter | Description |
 | :--- | :--- |
 | stopped | YES: Disable sending of local audio <br>NO: Enable sending of local audio |
 
-##### Return[](#stopLocalAudioStream)
+##### Return[](#stoplocalaudiostream)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1367,20 +1367,20 @@ Stop or receive all audio streams.
 
 > **Note:**
 >
-> - Upon setting of receiving all (stop=NO), all audio streams in the room will be automatically subscribed. Afterwards, you can specify a stream not to be subscribed via [stopRemoteAudioStream](#ThunderEngine::stopRemoteAudioStream:stopped:).
-> - Upon setting of receiving none (stop=YES), none audio streams in the room will be subscribed. Afterwards, you can specify a stream to be subscribed via [stopRemoteAudioStream](#ThunderEngine::stopRemoteAudioStream:stopped:).
-> - This interface has no priority relationship with [stopRemoteAudioStream](#ThunderEngine::stopRemoteAudioStream:stopped:), and the interface called later will be valid.
+> - Upon setting of receiving all (stop=NO), all audio streams in the room will be automatically subscribed. Afterwards, you can specify a stream not to be subscribed via [stopRemoteAudioStream](#thunderenginestopremoteaudiostreamstopped).
+> - Upon setting of receiving none (stop=YES), none audio streams in the room will be subscribed. Afterwards, you can specify a stream to be subscribed via [stopRemoteAudioStream](#thunderenginestopremoteaudiostreamstopped).
+> - This interface has no priority relationship with [stopRemoteAudioStream](#thunderenginestopremoteaudiostreamstopped), and the interface called later will be valid.
 
-##### Parameter[](#stopAllRemoteAudioStreams)
+##### Parameter[](#stopallremoteaudiostreams)
 
 | Parameter | Description |
 | :--- | :--- |
 | stopped | YES: Receive none <br>NO: Receive all <br>Receive all by default |
 
-##### Return[](#stopAllRemoteAudioStreams)
+##### Return[](#stopallremoteaudiostreams)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1394,20 +1394,20 @@ Receive/Stop receiving specified audio stream.
 
 > **Note:**
 >
-> - Upon stopping receiving specified audio stream, you can receive all audio streams via [stopAllRemoteAudioStreams](#ThunderEngine::stopAllRemoteAudioStreams), vice versa.
-> - This interface has no priority relationship with [stopAllRemoteAudioStreams](#ThunderEngine::stopAllRemoteAudioStreams), and the interface called later will be valid.
+> - Upon stopping receiving specified audio stream, you can receive all audio streams via [stopAllRemoteAudioStreams](#thunderenginestopallremoteaudiostreams), vice versa.
+> - This interface has no priority relationship with [stopAllRemoteAudioStreams](#thunderenginestopallremoteaudiostreams), and the interface called later will be valid.
 
-##### Parameter[](#stopRemoteAudioStream)
+##### Parameter[](#stopremoteaudiostream)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | User id |
 | stopped | YES: Stop receiving remote audio stream of specified user <br>NO: Start receiving remote audio stream of specified user |
 
-##### Return[](#stopRemoteAudioStream)
+##### Return[](#stopremoteaudiostream)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1419,16 +1419,16 @@ Receive/Stop receiving specified audio stream.
 
 Set loudspeaker volume.
 
-##### Parameter[](#setLoudSpeakerVolume)
+##### Parameter[](#setloudspeakervolume)
 
 | Parameter | Description |
 | :--- | :--- |
 | volume | Volume value [0-400] |
 
-##### Return[](#setLoudSpeakerVolume)
+##### Return[](#setloudspeakervolume)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1440,16 +1440,16 @@ Set loudspeaker volume.
 
 Set microphone volume.
 
-##### Parameter[](#setMicVolume)
+##### Parameter[](#setmicvolume)
 
 | Parameter | Description |
 | :--- | :--- |
 | volume | Volume value [0-400] |
 
-##### Return[](#setMicVolume)
+##### Return[](#setmicvolume)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1461,17 +1461,17 @@ Set microphone volume.
 
 Set play volume for a single user.
 
-##### Parameter[](#setPlayVolume:volume:)
+##### Parameter[](#setplayvolumevolume)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | Specified User ID |
 | volume | Volume value [0-400] |
 
-##### Return[](#setPlayVolume:volume:)
+##### Return[](#setplayvolumevolume)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1481,7 +1481,7 @@ Set play volume for a single user.
 - (nullable ThunderAudioFilePlayer*)createAudioFilePlayer;
 ```
 
-Create audio file player. See [ThunderAudioFilePlayer for details](#ThunderAudioFilePlayer)
+Create audio file player. See [ThunderAudioFilePlayer for details](#thunderaudiofileplayer)
 
 --------------------------
 
@@ -1493,11 +1493,11 @@ Create audio file player. See [ThunderAudioFilePlayer for details](#ThunderAudio
 
 Destroy audio file player.
 
-##### Parameter[](#destroyAudioFilePlayer)
+##### Parameter[](#destroyaudiofileplayer)
 
 | Parameter | Description |
 | :--- | :--- |
-| filePlayer | For file player, see [ThunderAudioFilePlayer for details](#ThunderAudioFilePlayer) |
+| filePlayer | For file player, see [ThunderAudioFilePlayer for details](#thunderaudiofileplayer) |
 
 --------------------------
 
@@ -1509,16 +1509,16 @@ Destroy audio file player.
 
 Enable/Disable in-ear monitor.
 
-##### Parameter[](#setEnableInEarMonitor)
+##### Parameter[](#setenableinearmonitor)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | YES: Open<br> NO: Close |
 
-##### Return[](#setEnableInEarMonitor)
+##### Return[](#setenableinearmonitor)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1530,16 +1530,16 @@ Enable/Disable in-ear monitor.
 
 Enable/Disable local voice equalizer.
 
-##### Parameter[](#setEnableEqualizer)
+##### Parameter[](#setenableequalizer)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | YES: Open <br>NO: Close |
 
-##### Return[](#setEnableEqualizer)
+##### Return[](#setenableequalizer)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1551,16 +1551,16 @@ Enable/Disable local voice equalizer.
 
 Set equalizer parameters.
 
-##### Parameter[](#setEqGains)
+##### Parameter[](#seteqgains)
 
 | Parameter | Description |
 | :--- | :--- |
-| gains | For parameters of an equalizer, see [ThunderEqGainsOc for details](#ThunderEqGainsOc) |
+| gains | For parameters of an equalizer, see [ThunderEqGainsOc for details](#thundereqgainsoc) |
 
-##### Return[](#setEqGains)
+##### Return[](#seteqgains)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1572,16 +1572,16 @@ Set equalizer parameters.
 
 Enable/Disable local sound reverberation.
 
-##### Parameter[](#setEnableReverb)
+##### Parameter[](#setenablereverb)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | YES: Open<br> NO: Close |
 
-##### Return[](#setEnableReverb)
+##### Return[](#setenablereverb)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1593,16 +1593,16 @@ Enable/Disable local sound reverberation.
 
 Set reverb parameters.
 
-##### Parameter[](#setReverbParam)
+##### Parameter[](#setreverbparam)
 
 | Parameter | Description |
 | :--- | :--- |
-| reverbParam | For reverb parameters, see [ThunderReverbExParamOc for details](#ThunderReverbExParamOc) |
+| reverbParam | For reverb parameters, see [ThunderReverbExParamOc for details](#thunderreverbexparamoc) |
 
-##### Return[](#setReverbParam)
+##### Return[](#setreverbparam)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1614,16 +1614,16 @@ Set reverb parameters.
 
 Enable/Disable sound compressor.
 
-##### Parameter[](#setEnableCompressor)
+##### Parameter[](#setenablecompressor)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | YES: Open<br> NO: Close |
 
-##### Return[](#setEnableCompressor)
+##### Return[](#setenablecompressor)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1635,16 +1635,16 @@ Enable/Disable sound compressor.
 
 Set compressor parameters.
 
-##### Parameter[](#setCompressorParam)
+##### Parameter[](#setcompressorparam)
 
 | Parameter | Description |
 | :--- | :--- |
-| parameter | For compressor parameters, see [ThunderCprParamOc for details](#ThunderCprParamOc) |
+| parameter | For compressor parameters, see [ThunderCprParamOc for details](#thundercprparamoc) |
 
-##### Return[](#setCompressorParam)
+##### Return[](#setcompressorparam)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1656,16 +1656,16 @@ Set compressor parameters.
 
 Enable/Disable pressure limiter.
 
-##### Parameter[](#setEnableLimiter)
+##### Parameter[](#setenablelimiter)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | YES: Open<br>NO: Close<br> |
 
-##### Return[](#setEnableLimiter)
+##### Return[](#setenablelimiter)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1677,16 +1677,16 @@ Enable/Disable pressure limiter.
 
 Set pressure limiter parameters.
 
-##### Parameter[](#setLimiterParam)
+##### Parameter[](#setlimiterparam)
 
 | Parameter | Description |
 | :--- | :--- |
-| parameter | For pressure limiter parameters, see [ThunderLimiterParamOc for details](#ThunderLimiterParamOc) |
+| parameter | For pressure limiter parameters, see [ThunderLimiterParamOc for details](#thunderlimiterparamoc) |
 
-##### Return[](#setLimiterParam)
+##### Return[](#setlimiterparam)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1700,9 +1700,9 @@ Enable/Disable data callback on audio playing.
 
 > **Note:**
 >
-> - When enabled, it will call back via [onAudioPlayData](notification.md#ThunderEventDelegate::thunderEngine:onAudioPlayData:duration:cpt:pts:data:) function.
+> - When enabled, it will call back via [onAudioPlayData](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegatethunderengineonaudioplaydatadurationcptptsdata) function.
 
-##### Parameter[](#enableAudioDataIndication)
+##### Parameter[](#enableaudiodataindication)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1718,11 +1718,11 @@ Enable/Disable data callback on audio playing.
 
 Set audio publishing mode.
 
-##### Parameter[](#setAudioSourceType)
+##### Parameter[](#setaudiosourcetype)
 
 | Parameter | Description |
 | :--- | :--- |
-| sourceType | For audio publishing type, see [ThunderSourceType for details](#ThunderSourceType) |
+| sourceType | For audio publishing type, see [ThunderSourceType for details](#thundersourcetype) |
 
 --------------------------
 
@@ -1734,7 +1734,7 @@ Set audio publishing mode.
 
 Enable/Disable data callback on audio play spectrum.
 
-##### Parameter[](#enableAudioPlaySpectrum)
+##### Parameter[](#enableaudioplayspectrum)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1750,7 +1750,7 @@ Enable/Disable data callback on audio play spectrum.
 
 Set audio play spectrum information.
 
-##### Parameter[](#setAudioPlaySpectrumInfo)
+##### Parameter[](#setaudioplayspectruminfo)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1775,19 +1775,19 @@ Send custom broadcast message of service.
 > - 3. Calling frequency of this interface not to exceed twice a second, size of msgData of 200Byte as maximum.
 > - 4. Failing to meet any of the said conditions, msg will be discarded.
 > - 5. Not guaranteed to send to all online users in the room, or send by order.
-> - For user app message data sent by other users, call back to the application via [onRecvUserAppMsgData](notification.md#ThunderEventDelegate::thunderEngine:onRecvUserAppMsgData:uid) callback interface.
-> - Acquire reasons of failing to send the msg via callback interface [onSendAppMsgDataFailedStatus](notification.md#ThunderEventDelegate::thunderEngine:onSendAppMsgDataFailedStatus).
+> - For user app message data sent by other users, call back to the application via [onRecvUserAppMsgData](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegatethunderengineonrecvuserappmsgdatauid) callback interface.
+> - Acquire reasons of failing to send the msg via callback interface [onSendAppMsgDataFailedStatus](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegatethunderengineonsendappmsgdatafailedstatus).
 
-##### Parameter[](#sendUserAppMsgData)
+##### Parameter[](#senduserappmsgdata)
 
 | Parameter | Description |
 | :--- | :--- |
 | msgData | Message sent |
 
-##### Return[](#sendUserAppMsgData)
+##### Return[](#senduserappmsgdata)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1806,19 +1806,19 @@ Send media extra information. Use video channel when uploading video, otherwise 
 > - The size of media extra information shall not exceed 200 bytes in audio publishing (publishing in a pure audio mode or only audio publishing in an audio/video mode). If video is also published at audio/video mode, the size of extra information shall not exceed 2048 bytes.
 > - Packet loss may occur
 
-> - Acquire reasons for failure to send media extra information via [onSendMediaExtraInfoFailedStatus](notification.md#ThunderMediaExtraInfoDelegate::onSendMediaExtraInfoFailedStatus:) under proxy of ThunderMediaExtraInfoDelegate.
-> - Media extra information sent by other users is called back to the application via [onRecvMediaExtraInfo](notification.md#ThunderMediaExtraInfoDelegate::onRecvMediaExtraInfo:ofUid) under proxy of ThunderMediaExtraInfoDelegate.
+> - Acquire reasons for failure to send media extra information via [onSendMediaExtraInfoFailedStatus](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundermediaextrainfodelegateonsendmediaextrainfofailedstatus) under proxy of ThunderMediaExtraInfoDelegate.
+> - Media extra information sent by other users is called back to the application via [onRecvMediaExtraInfo](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundermediaextrainfodelegateonrecvmediaextrainfoofuid) under proxy of ThunderMediaExtraInfoDelegate.
 
-##### Parameter[](#sendMediaExtraInfo)
+##### Parameter[](#sendmediaextrainfo)
 
 | Parameter | Description |
 | :--- | :--- |
 | Date | Media extra information data to be transmitted |
 
-##### Return[](#sendMediaExtraInfo)
+##### Return[](#sendmediaextrainfo)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1830,16 +1830,16 @@ Send media extra information. Use video channel when uploading video, otherwise 
 
 Set callback monitoring of media extra information.
 
-##### Parameter[](#setMediaExtraInfoDelegate)
+##### Parameter[](#setmediaextrainfodelegate)
 
 | Parameter | Description |
 | :--- | :--- |
-| delegate | See [ThunderMediaExtraInfoDelegate for details](notification.md#ThunderMediaExtraInfoDelegate) |
+| delegate | See [ThunderMediaExtraInfoDelegate for details](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundermediaextrainfodelegate) |
 
-##### Return[](#setMediaExtraInfoDelegate)
+##### Return[](#setmediaextrainfodelegate)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1851,18 +1851,18 @@ Set callback monitoring of media extra information.
 
 Enable/Disable mixed video with extra information. For example: Mixed video with layout information.
 
-When enabled, you can receive [onRecvMixVideoInfo](notification.md#ThunderMediaExtraInfoDelegate::onRecvMixVideoInfo:ofUid) callback during playing of mixed video stream at audience end
+When enabled, you can receive [onRecvMixVideoInfo](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundermediaextrainfodelegateonrecvmixvideoinfoofuid) callback during playing of mixed video stream at audience end
 
-##### Parameter[](#enableMixVideoExtraInfo)
+##### Parameter[](#enablemixvideoextrainfo)
 
 | Parameter | Description |
 | :--- | :--- |
 | enable | Whether to enable mixed video with media extra information. <br>YES: Enable <br>NO: Close |
 
-##### Return[](#enableMixVideoExtraInfo)
+##### Return[](#enablemixvideoextrainfo)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1874,15 +1874,15 @@ When enabled, you can receive [onRecvMixVideoInfo](notification.md#ThunderMediaE
 
 Start saving audio data in aac format.
 
-##### Parameter[](#startAudioSaver)
+##### Parameter[](#startaudiosaver)
 
 | Parameter | Description |
 | :--- | :--- |
 | fileName | Absolute path of the file, containing file name, suffixed with .aac |
-| saverMode | For save mode, see [ThunderSaverMode for details](#ThunderSaverMode) |
-| fileMode | For write data mode, see [ThunderFileMode for details](#ThunderFileMode) |
+| saverMode | For save mode, see [ThunderSaverMode for details](#thundersavermode) |
+| fileMode | For write data mode, see [ThunderFileMode for details](#thunderfilemode) |
 
-##### Return[](#startAudioSaver)
+##### Return[](#startaudiosaver)
 
 - YES: Success
 - NO: Failure
@@ -1897,7 +1897,7 @@ Start saving audio data in aac format.
 
 Stop saving audio files in acc format.
 
-##### Return[](#stopAudioSaver)
+##### Return[](#stopaudiosaver)
 
 - YES: Success
 - NO: Failure
@@ -1912,7 +1912,7 @@ Stop saving audio files in acc format.
 
 Set sound effect mode.
 
-##### Parameter[](#setSoundEffect)
+##### Parameter[](#setsoundeffect)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1928,7 +1928,7 @@ Set sound effect mode.
 
 Set voice change mode.
 
-##### Parameter[](#setVoiceChanger)
+##### Parameter[](#setvoicechanger)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1947,19 +1947,19 @@ Set voice change mode.
 
 Set format of recording audio.
 
-##### Parameter[](#setRecordingAudioFrameParameters)
+##### Parameter[](#setrecordingaudioframeparameters)
 
 | Parameter | Description |
 | :--- | :--- |
 | sampleRate | Sampling rate |
 | channel | Audio track; 1: Single track; 2: dual track |
-| mode | For use mode of onRecordAudioFrame, see [ThunderAudioRawFrameOperationMode for details](#ThunderAudioRawFrameOperationMode) |
+| mode | For use mode of onRecordAudioFrame, see [ThunderAudioRawFrameOperationMode for details](#thunderaudiorawframeoperationmode) |
 | samplesPerCall | Specify sampling point number for data return in onRecordAudioFrame, e.g. 1024 in transcoding publish stream. samplesPerCall = (int)(sampleRate × sampleInterval), in which: sampleInterval ≥ 0.01, in seconds. |
 
-##### Return[](#setRecordingAudioFrameParameters)
+##### Return[](#setrecordingaudioframeparameters)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -1974,19 +1974,19 @@ Set format of recording audio.
 
 Set format of playing audio.
 
-##### Parameter[](#setPlaybackAudioFrameParameters)
+##### Parameter[](#setplaybackaudioframeparameters)
 
 | Parameter | Description |
 | :--- | :--- |
 | sampleRate | Sampling rate |
 | channel | Audio track; 1: Single track; 2: dual track |
-| mode | For use mode of onRecordAudioFrame, see [ThunderAudioRawFrameOperationMode for details](#ThunderAudioRawFrameOperationMode) |
+| mode | For use mode of onRecordAudioFrame, see [ThunderAudioRawFrameOperationMode for details](#thunderaudiorawframeoperationmode) |
 | samplesPerCall | Specify sampling point number for data return in onRecordAudioFrame, e.g. 1024 in transcoding publish stream. samplesPerCall = (int)(sampleRate × sampleInterval), in which: sampleInterval ≥ 0.01, in seconds. |
 
-##### Return[](#setPlaybackAudioFrameParameters)
+##### Return[](#setplaybackaudioframeparameters)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -2002,7 +2002,7 @@ Set parameters for external audio capture.
 >
 > - Call this interface before playing the audio.
 
-##### Parameter[](#enableCustomAudioSource)
+##### Parameter[](#enablecustomaudiosource)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2033,7 +2033,7 @@ Disable external audio sampling parameters.
 
 Push external audio stream.
 
-##### Parameter[](#pushCustomAudioRawData)
+##### Parameter[](#pushcustomaudiorawdata)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2041,7 +2041,7 @@ Push external audio stream.
 | samples | Sample quantity of corresponding audio data |
 | timeStamp | Timestamp of external audio data is used for synchronization with external video source |
 
-##### Return[](#pushCustomAudioRawData)
+##### Return[](#pushcustomaudiorawdata)
 
 - YES Method called successfully
 - NO Method calling failed
@@ -2056,13 +2056,13 @@ Push external audio stream.
 
 Push external audio frame.
 
-##### Parameter[](#pushCustomAudioSampleBuffer)
+##### Parameter[](#pushcustomaudiosamplebuffer)
 
 | Parameter | Description |
 | :--- | :--- |
 | sampleBuffer | External audio frame |
 
-##### Return[](#pushCustomAudioSampleBuffer)
+##### Return[](#pushcustomaudiosamplebuffer)
 
 - YES Method called successfully
 - NO Method calling failed
@@ -2079,18 +2079,18 @@ Enable/Disable voice stereo of remote users.
 
 > **Note:**
 >
-> - Make sure to call this method before calling the [joinRoom](#ThunderEngine::joinRoom:roomName:uid) method.
+> - Make sure to call this method before calling the [joinRoom](#thunderenginejoinroomroomnameuid) method.
 
-##### Parameter[](#enableVoicePosition)
+##### Parameter[](#enablevoiceposition)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | YES: Open <br>NO: Close |
 
-##### Return[](#enableVoicePosition)
+##### Return[](#enablevoiceposition)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -2102,7 +2102,7 @@ Enable/Disable voice stereo of remote users.
 
 Set spatial location and volume of remote user's voice.
 
-##### Parameter[](#setRemoteUidVoicePosition)
+##### Parameter[](#setremoteuidvoiceposition)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2110,7 +2110,7 @@ Set spatial location and volume of remote user's voice.
 | azimuth | Set the position where the remote user’s voice appears, with value range of [-90,90]. 0: (by default) voice appears in the right ahead. -90: voice appears in the left side. 90: voice appears in the right side. |
 | gain | Set the voice volume of remote users, with value range of [0,100]. The default value is 100.0, indicating user’s original volume. The smaller the value, the lower the volume |
 
-##### Return[](#setRemoteUidVoicePosition)
+##### Return[](#setremoteuidvoiceposition)
 
 - 0: Return after successful calling of the method
 - < 0: Return upon failure
@@ -2129,13 +2129,13 @@ Set spatial location and volume of remote user's voice.
 
 Interface for pushing video frame.
 
-##### Parameter[](#consumePixelBuffer)
+##### Parameter[](#consumepixelbuffer)
 
 | Parameter | Description |
 | :--- | :--- |
 | pixelBuffer | Video original data (a frame) |
 | timestamp | The current frame displays the system time, in unit of ms. The developer must set a timestamp for each video frame. |
-| rotation | For clockwise rotation angle of the video, see [ThunderVideoRotation for details](#ThunderVideoRotation) |
+| rotation | For clockwise rotation angle of the video, see [ThunderVideoRotation for details](#thundervideorotation) |
 
 --------------------------
 
@@ -2151,15 +2151,15 @@ Interface for pushing video frame.
 
 Interface for pushing raw video data.
 
-##### Parameter[](#consumeRawData)
+##### Parameter[](#consumerawdata)
 
 | Parameter | Description |
 | :--- | :--- |
 | rawData | Video original data (a frame) |
 | timestamp | The current frame displays the system time, in unit of ms. The developer must set a timestamp for each video frame. |
 | format | Image format |
-| size | For video naked data, see [CGSize for details](#CGSize) |
-| rotation | For clockwise rotation angle of the video, see [ThunderVideoRotation for details](#ThunderVideoRotation) |
+| size | For video naked data, see [CGSize for details](#cgsize) |
+| rotation | For clockwise rotation angle of the video, see [ThunderVideoRotation for details](#thundervideorotation) |
 
 --------------------------
 
@@ -2171,7 +2171,7 @@ Interface for pushing raw video data.
 
 Interface for pushing raw video data.
 
-##### Parameter[](#consumeCMSampleBuffer)
+##### Parameter[](#consumecmsamplebuffer)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2189,11 +2189,11 @@ Interface for pushing raw video data.
 
 Callback on setting audio playback event.
 
-##### Parameter[](#setPlayerDelegate)
+##### Parameter[](#setplayerdelegate)
 
 | Parameter | Description |
 | :--- | :--- |
-| delegate | For event callback, see [ThunderAudioFilePlayerDelegate for details](notification.md#ThunderAudioFilePlayerDelegate) |
+| delegate | For event callback, see [ThunderAudioFilePlayerDelegate for details](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thunderaudiofileplayerdelegate) |
 
 --------------------------
 
@@ -2310,7 +2310,7 @@ Get the time which has been played. Return the played time (unit: millisecond)
 
 Set the playing volume of current file.
 
-##### Parameter[](#setPlayVolume)
+##### Parameter[](#setplayvolume)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2329,16 +2329,16 @@ Adjust volume of music file in mixed video being played locally.
 >
 > - Please call this method in channels.
 
-##### Parameter[](#setPlayerLocalVolume)
+##### Parameter[](#setplayerlocalvolume)
 
 | Parameter | Description |
 | :--- | :--- |
 | volume | Play volume [0-100] |
 
-##### Return[](#setPlayerLocalVolume)
+##### Return[](#setplayerlocalvolume)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -2353,16 +2353,16 @@ Adjust volume of music file in mixed video being played remotely.
 >
 > - Please call this method in channels.
 
-##### Parameter[](#setPlayerPublishVolume)
+##### Parameter[](#setplayerpublishvolume)
 
 | Parameter | Description |
 | :--- | :--- |
 | volume | Play volume [0-100] |
 
-##### Return[](#setPlayerPublishVolume)
+##### Return[](#setplayerpublishvolume)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -2374,7 +2374,7 @@ Adjust volume of music file in mixed video being played remotely.
 
 Get the local volume of music files.
 
-##### Return[](#getPlayerLocalVolume)
+##### Return[](#getplayerlocalvolume)
 
 - [0-100]: Upon successful calling of the method, return the volume, range as [0-100]
 - < 0: Method calling failed
@@ -2389,7 +2389,7 @@ Get the local volume of music files.
 
 Get the remote volume of music files.
 
-##### Return[](#getPlayerPublishVolume)
+##### Return[](#getplayerpublishvolume)
 
 - [0-100]: Upon successful calling of the method, return the volume, range as [0-100]
 - < 0: Method calling failed
@@ -2404,7 +2404,7 @@ Get the remote volume of music files.
 
 Set a tone for audio playing.
 
-##### Parameter[](#setSemitone)
+##### Parameter[](#setsemitone)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2420,16 +2420,16 @@ Set a tone for audio playing.
 
 Sets times of loop playbacks.
 
-##### Parameter[](#setLooping)
+##### Parameter[](#setlooping)
 
 | Parameter | Description |
 | :--- | :--- |
 | cycle | Positive integer: Circulation times<br> 0: Cancel circulation -1: Infinite circulation<br> |
 
-##### Return[](#setLooping)
+##### Return[](#setlooping)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -2441,16 +2441,16 @@ Sets times of loop playbacks.
 
 Select an audio track.
 
-##### Parameter[](#selectAudioTrack)
+##### Parameter[](#selectaudiotrack)
 
 | Parameter | Description |
 | :--- | :--- |
 | trackIndex | Audio track index |
 
-##### Return[](#selectAudioTrack)
+##### Return[](#selectaudiotrack)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](code.md#ThunderRet)
+- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
 
 --------------------------
 
@@ -2472,7 +2472,7 @@ Acquire quantity of audio tracks. Return the quantity of file audio track.
 
 Whether to use a currently played file as a live accompaniment.
 
-##### Parameter[](#enablePublish)
+##### Parameter[](#enablepublish)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2488,7 +2488,7 @@ Whether to use a currently played file as a live accompaniment.
 
 Enable the spectrum or not.
 
-##### Parameter[](#enableSpectrum)
+##### Parameter[](#enablespectrum)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2504,7 +2504,7 @@ Enable the spectrum or not.
 
 Enable the volume callback or not.
 
-##### Parameter[](#enableVolumeIndication)
+##### Parameter[](#enablevolumeindication)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2521,7 +2521,7 @@ Enable the volume callback or not.
 
 Set whether the accompaniment is a standard stream for video mixing.
 
-##### Parameter[](#setMixStandard)
+##### Parameter[](#setmixstandard)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2537,7 +2537,7 @@ Set whether the accompaniment is a standard stream for video mixing.
 
 Query whether the accompaniment is a standard stream for video mixing.
 
-##### Return[](#isMixStandard)
+##### Return[](#ismixstandard)
 
 - YES: Standard stream
 - NO: Non-standard stream
@@ -2555,7 +2555,7 @@ Acquire spectrum information;
 >
 > - Return the effective data length, ranging from[0 to 1].
 
-##### Parameter[](#getCurrentSpectrum)
+##### Parameter[](#getcurrentspectrum)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2574,7 +2574,7 @@ Acquire spectrum information;
 
 Register an audio frame observer.
 
-##### Parameter[](#registerAudioFrameObserver)
+##### Parameter[](#registeraudioframeobserver)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -2775,8 +2775,8 @@ __attribute__((visibility("default"))) @interface ThunderMultiVideoViewParam: NS
 
 | Parameter | Meaning |
 | :--- | :--- |
-| videoPositions | For video/view layout parameters, see [ThunderMultiVideoViewCoordinate for details](#ThunderMultiVideoViewCoordinate) |
-| bgCoordinate | For video/view background layout parameters, see [ThunderMultiVideoViewCoordinate for details](#ThunderMultiVideoViewCoordinate) |
+| videoPositions | For video/view layout parameters, see [ThunderMultiVideoViewCoordinate for details](#thundermultivideoviewcoordinate) |
+| bgCoordinate | For video/view background layout parameters, see [ThunderMultiVideoViewCoordinate for details](#thundermultivideoviewcoordinate) |
 | bgImageName | Video/view background picture |
 
 --------------------------
@@ -2819,7 +2819,7 @@ __attribute__((visibility("default"))) @interface ThunderVideoCanvas : NSObject
 | Parameter | Meaning |
 | :--- | :--- |
 | view | UIView |
-| renderMode | See [ThunderVideoRenderMode for details](#ThunderVideoRenderMode) |
+| renderMode | See [ThunderVideoRenderMode for details](#thundervideorendermode) |
 | uid | User ID |
 | seatIndex | Set user’s display position during multi-person microphone connection |
 
@@ -3071,7 +3071,7 @@ Detailed information of audio data
 
 | Parameter | Meaning |
 | :--- | :--- |
-| type | For audio frame type, see [AUDIO_FRAME_TYPE for details](#AUDIO_FRAME_TYPE) |
+| type | For audio frame type, see [AUDIO_FRAME_TYPE for details](#audio-frame-type) |
 | samples | Sample quantity of the frame |
 | bytesPerSample | Bytes per sample: PCM (16 digits) contains two types |
 | channels | Number of channels (crossed data for stereo); 1: single track, 2: dual track |
@@ -3177,8 +3177,8 @@ Publishing profile of video
 
 | Parameter | Meaning |
 | :--- | :--- |
-| playType | For publishing methods, see [ThunderPublishPlayType for details](#ThunderPublishPlayType) |
-| publishMode | For video encoding type, see [ThunderPublishVideoMode for details](#ThunderPublishVideoMode) |
+| playType | For publishing methods, see [ThunderPublishPlayType for details](#thunderpublishplaytype) |
+| publishMode | For video encoding type, see [ThunderPublishVideoMode for details](#thunderpublishvideomode) |
 
 --------------------------
 
