@@ -1,3 +1,4 @@
+
 # Functional Interface
 
 ## Interface List
@@ -6,126 +7,126 @@
 
 | Static Public member function | Function Name |
 | ---:| :--- |
-| static synchronized ThunderEngine | [createEngine](#ThunderEngine.createEngine)(Context context, String appId, long sceneId, ThunderEventHandler handler) |
-| static synchronized ThunderEngine | [createWithLoop](#ThunderEngine.createWithLoop)(Context context, String appId, long sceneId, ThunderEventHandler handler, Looper loop) |
-| static synchronized void | [destroyEngine](#ThunderEngine.destroyEngine)() |
-| static String | [getVersion](#ThunderEngine.getVersion)() |
-| static int | [setLogLevel](#ThunderEngine.setLogLevel)(int filter) |
-| static int | [setLogFilePath](#ThunderEngine.setLogFilePath)(String filePath) |
-| static int | [setLogCallback](#ThunderEngine.setLogCallback)([IThunderLogCallback](.mdnotification.md#IThunderLogCallback) callback) |
+| static synchronized ThunderEngine | [createEngine](#thunderenginecreateengine)(Context context, String appId, long sceneId, ThunderEventHandler handler) |
+| static synchronized ThunderEngine | [createWithLoop](#thunderenginecreatewithloop)(Context context, String appId, long sceneId, ThunderEventHandler handler, Looper loop) |
+| static synchronized void | [destroyEngine](#thunderenginedestroyengine)() |
+| static String | [getVersion](#thunderenginegetversion)() |
+| static int | [setLogLevel](#thunderenginesetloglevel)(int filter) |
+| static int | [setLogFilePath](#thunderenginesetlogfilepath)(String filePath) |
+| static int | [setLogCallback](#thunderenginesetlogcallback)([IThunderLogCallback](.mdnotification.html#ithunderlogcallback) callback) |
 
 | Public member functions | Function Name |
 | ---:| :--- |
-| void | [setSceneId](#ThunderEngine.setSceneId)(long sceneId) |
-| int | [setMediaMode](#ThunderEngine.setMediaMode)(int mode) |
-| int | [setRoomMode](#ThunderEngine.setRoomMode)(int mode) |
-| int | [setArea](#ThunderEngine.setArea)(int area) |
-| int | [joinRoom](#ThunderEngine.joinRoom)(byte[] token, String roomName, String uid) |
-| int | [leaveRoom](#ThunderEngine.leaveRoom)() |
-| int | [updateToken](#ThunderEngine.updateToken)(byte[] token) |
-| int | [setAudioConfig](#ThunderEngine.setAudioConfig)(int profile, int commutMode, int scenarioMode) |
-| int | [enableVoicePosition](#ThunderEngine.enableVoicePosition)(boolean enable) |
-| int | [setRemoteUidVoicePosition](#ThunderEngine.setRemoteUidVoicePosition)(String uid, int azimuth, int gain) |
-| int | [enableLoudspeaker](#ThunderEngine.enableLoudspeaker)(boolean enable) |
-| int | [isLoudspeakerEnabled](#ThunderEngine.isLoudspeakerEnabled)() |
-| int | [setLoudSpeakerVolume](#ThunderEngine.setLoudSpeakerVolume)(int volume) |
-| int | [setAudioVolumeIndication](#ThunderEngine.setAudioVolumeIndication)(int interval, int moreThanThd, int lessThanThd, int smooth) |
-| int | [enableCaptureVolumeIndication](#ThunderEngine.enableCaptureVolumeIndication)(int interval, int moreThanThd, int lessThanThd, int smooth) |
-| boolean | [startAudioSaver](#ThunderEngine.startAudioSaver)(String fileName, int saverMode, int fileMode) |
-| boolean | [stopAudioSaver](#ThunderEngine.stopAudioSaver)() |
-| void | [setSoundEffect](#ThunderEngine.setSoundEffect)(int mode) |
-| void | [setVoiceChanger](#ThunderEngine.setVoiceChanger)(int mode) |
-| int | [stopLocalAudioStream](#ThunderEngine.stopLocalAudioStream)(boolean stop) |
-| int | [stopRemoteAudioStream](#ThunderEngine.stopRemoteAudioStream)(String uid, boolean stop) |
-| int | [stopAllRemoteAudioStreams](#ThunderEngine.stopAllRemoteAudioStreams)(boolean stop) |
-| int | [setMicVolume](#ThunderEngine.setMicVolume)(int volume) |
-| int | [setRemoteAudioStreamsVolume](#ThunderEngine.setRemoteAudioStreamsVolume)(String uid, int volume) |
-| [ThunderAudioFilePlayer](#ThunderAudioFilePlayer) | [createAudioFilePlayer](#ThunderEngine.createAudioFilePlayer)() |
-| void | [destroyAudioFilePlayer](#ThunderEngine.destroyAudioFilePlayer)([ThunderAudioFilePlayer](#ThunderAudioFilePlayer) audioFilePlayer) |
-| int | [setEnableEqualizer](#ThunderEngine.setEnableEqualizer)(boolean enabled) |
-| int | [setEqGains](#ThunderEngine.setEqGains)(final int[] gains) |
-| int | [setEnableReverb](#ThunderEngine.setEnableReverb)(boolean enabled) |
-| int | [setReverbExParameter](#ThunderEngine.setReverbExParameter)([ReverbExParameter](#ThunderRtcConstant.ReverbExParameter) param) |
-| int | [setEnableCompressor](#ThunderEngine.setEnableCompressor)(boolean enabled) |
-| int | [setCompressorParam](#ThunderEngine.setCompressorParam)([CompressorParam](#ThunderRtcConstant.CompressorParam) param) |
-| int | [setEnableLimiter](#ThunderEngine.setEnableLimiter)(boolean enabled) |
-| int | [setLimiterParam](#ThunderEngine.setLimiterParam)([LimterParam](#ThunderRtcConstant.LimterParam) param) |
-| void | [enableAudioPlaySpectrum](#ThunderEngine.enableAudioPlaySpectrum)(boolean enable) |
-| void | [setAudioPlaySpectrumInfo](#ThunderEngine.setAudioPlaySpectrumInfo)(int spectrumLen, int notifyIntervalMS) |
-| int | [sendUserAppMsgData](#ThunderEngine.sendUserAppMsgData)(byte[] msgData) |
-| int | [sendMediaExtraInfo](#ThunderEngine.sendMediaExtraInfo)(ByteBuffer data, int dataLen) |
-| int | [setMediaExtraInfoCallback](#ThunderEngine.setMediaExtraInfoCallback)([IThunderMediaExtraInfoCallback](.mdnotification.md#IThunderMediaExtraInfoCallback) callback) |
-| int | [enableMixVideoExtraInfo](#ThunderEngine.enableMixVideoExtraInfo)(boolean enable) |
-| void | [enableAudioDataIndication](#ThunderEngine.enableAudioDataIndication)(boolean enablePlay) |
-| void | [setAudioSourceType](#ThunderEngine.setAudioSourceType)(int sourceType) |
-| int | [setEnableInEarMonitor](#ThunderEngine.setEnableInEarMonitor)(boolean enable) |
-| int | [setVideoEncoderConfig](#ThunderEngine.setVideoEncoderConfig)([ThunderVideoEncoderConfiguration](#ThunderVideoEncoderConfiguration) yyVideoConfig) |
-| int | [setLocalVideoCanvas](#ThunderEngine.setLocalVideoCanvas)([ThunderVideoCanvas](#ThunderVideoCanvas) local) |
-| int | [setRemotePlayType](#ThunderEngine.setRemotePlayType)(int remotePlayType) |
-| int | [setMultiVideoViewLayout](#ThunderEngine.setMultiVideoViewLayout)([ThunderMultiVideoViewParam](#ThunderMultiVideoViewParam) params) |
-| int | [setRemoteVideoCanvas](#ThunderEngine.setRemoteVideoCanvas)([ThunderVideoCanvas](#ThunderVideoCanvas) remote) |
-| int | [setLocalCanvasScaleMode](#ThunderEngine.setLocalCanvasScaleMode)(int mode) |
-| int | [setRemoteCanvasScaleMode](#ThunderEngine.setRemoteCanvasScaleMode)(String uid, int mode) |
-| int | [startVideoPreview](#ThunderEngine.startVideoPreview)() |
-| int | [stopVideoPreview](#ThunderEngine.stopVideoPreview)() |
-| int | [enableLocalVideoCapture](#ThunderEngine.enableLocalVideoCapture)((boolean enable) |
-| int | [stopLocalVideoStream](#ThunderEngine.stopLocalVideoStream)(boolean stop) |
-| int | [stopRemoteVideoStream](#ThunderEngine.stopRemoteVideoStream)(String uid, boolean stop) |
-| int | [stopAllRemoteVideoStreams](#ThunderEngine.stopAllRemoteVideoStreams)(boolean stop) |
-| int | [registerVideoCaptureTextureObserver](#ThunderEngine.registerVideoCaptureTextureObserver)([IGPUProcess](.mdnotification.md#IGPUProcess) observer) |
-| int | [registerVideoCaptureFrameObserver](#ThunderEngine.registerVideoCaptureFrameObserver)([IVideoCaptureObserver](.mdnotification.md#IVideoCaptureObserver) observer) |
-| int | [registerVideoDecodeFrameObserver](#ThunderEngine.registerVideoDecodeFrameObserver)(String uid, [IVideoDecodeObserver](.mdnotification.md#IVideoDecodeObserver) observer) |
-| int | [registerAudioFrameObserver](#ThunderEngine.registerAudioFrameObserver)([IAudioFrameObserver](.mdnotification.md#IAudioFrameObserver) observer) |
-| int | [setRecordingAudioFrameParameters](#ThunderEngine.setRecordingAudioFrameParameters)(int sampleRate, int room, int mode, int samplesPerCall) |
-| int | [setPlaybackAudioFrameParameters](#ThunderEngine.setPlaybackAudioFrameParameters)(int sampleRate, int room, int mode, int samplesPerCall) |
-| int | [setVideoWatermark](#ThunderEngine.setVideoWatermark)([ThunderBoltImage](#ThunderBoltImage) watermark) |
-| int | [setCustomAudioSource](#ThunderEngine.setCustomAudioSource)(boolean enabled, int sampleRate, int channel) |
-| int | [pushCustomAudioFrame](#ThunderEngine.pushCustomAudioFrame)(byte[] data, long timeStamp) |
-| int | [setCustomVideoSource](#ThunderEngine.setCustomVideoSource)([ThunderCustomVideoSource](.mdnotification.md#ThunderCustomVideoSource) videoSource) |
-| int | [addPublishOriginStreamUrl](#ThunderEngine.addPublishOriginStreamUrl)(String url) |
-| int | [removePublishOriginStreamUrl](#ThunderEngine.removePublishOriginStreamUrl)(String url) |
-| int | [setLiveTranscodingTask](#ThunderEngine.setLiveTranscodingTask)(String taskId, [LiveTranscoding](#LiveTranscoding) transcoding) |
-| int | [removeLiveTranscodingTask](#ThunderEngine.removeLiveTranscodingTask)(String taskId) |
-| int | [addPublishTranscodingStreamUrl](#ThunderEngine.addPublishTranscodingStreamUrl)(String taskId, String url) |
-| int | [removePublishTranscodingStreamUrl](#ThunderEngine.removePublishTranscodingStreamUrl)(String taskId, String url) |
-| int | [addSubscribe](#ThunderEngine.addSubscribe)(String roomId, String uid) |
-| int | [removeSubscribe](#ThunderEngine.removeSubscribe)(String roomId, String uid) |
-| int | [switchFrontCamera](#ThunderEngine.switchFrontCamera)(boolean bFront) |
-| int | [setVideoCaptureOrientation](#ThunderEngine.setVideoCaptureOrientation)(int orientation) |
-| int | [setLocalVideoMirrorMode](#ThunderEngine.setLocalVideoMirrorMode)(int mode) |
-| int | [enableWebSdkCompatibility](#ThunderEngine.enableWebSdkCompatibility)(boolean enabled) |
+| void | [setSceneId](#thunderenginesetsceneid)(long sceneId) |
+| int | [setMediaMode](#thunderenginesetmediamode)(int mode) |
+| int | [setRoomMode](#thunderenginesetroommode)(int mode) |
+| int | [setArea](#thunderenginesetarea)(int area) |
+| int | [joinRoom](#thunderenginejoinroom)(byte[] token, String roomName, String uid) |
+| int | [leaveRoom](#thunderengineleaveroom)() |
+| int | [updateToken](#thunderengineupdatetoken)(byte[] token) |
+| int | [setAudioConfig](#thunderenginesetaudioconfig)(int profile, int commutMode, int scenarioMode) |
+| int | [enableVoicePosition](#thunderengineenablevoiceposition)(boolean enable) |
+| int | [setRemoteUidVoicePosition](#thunderenginesetremoteuidvoiceposition)(String uid, int azimuth, int gain) |
+| int | [enableLoudspeaker](#thunderengineenableloudspeaker)(boolean enable) |
+| int | [isLoudspeakerEnabled](#thunderengineisloudspeakerenabled)() |
+| int | [setLoudSpeakerVolume](#thunderenginesetloudspeakervolume)(int volume) |
+| int | [setAudioVolumeIndication](#thunderenginesetaudiovolumeindication)(int interval, int moreThanThd, int lessThanThd, int smooth) |
+| int | [enableCaptureVolumeIndication](#thunderengineenablecapturevolumeindication)(int interval, int moreThanThd, int lessThanThd, int smooth) |
+| boolean | [startAudioSaver](#thunderenginestartaudiosaver)(String fileName, int saverMode, int fileMode) |
+| boolean | [stopAudioSaver](#thunderenginestopaudiosaver)() |
+| void | [setSoundEffect](#thunderenginesetsoundeffect)(int mode) |
+| void | [setVoiceChanger](#thunderenginesetvoicechanger)(int mode) |
+| int | [stopLocalAudioStream](#thunderenginestoplocalaudiostream)(boolean stop) |
+| int | [stopRemoteAudioStream](#thunderenginestopremoteaudiostream)(String uid, boolean stop) |
+| int | [stopAllRemoteAudioStreams](#thunderenginestopallremoteaudiostreams)(boolean stop) |
+| int | [setMicVolume](#thunderenginesetmicvolume)(int volume) |
+| int | [setRemoteAudioStreamsVolume](#thunderenginesetremoteaudiostreamsvolume)(String uid, int volume) |
+| [ThunderAudioFilePlayer](#thunderaudiofileplayer) | [createAudioFilePlayer](#thunderenginecreateaudiofileplayer)() |
+| void | [destroyAudioFilePlayer](#thunderenginedestroyaudiofileplayer)([ThunderAudioFilePlayer](#thunderaudiofileplayer) audioFilePlayer) |
+| int | [setEnableEqualizer](#thunderenginesetenableequalizer)(boolean enabled) |
+| int | [setEqGains](#thunderengineseteqgains)(final int[] gains) |
+| int | [setEnableReverb](#thunderenginesetenablereverb)(boolean enabled) |
+| int | [setReverbExParameter](#thunderenginesetreverbexparameter)([ReverbExParameter](#thunderrtcconstantreverbexparameter) param) |
+| int | [setEnableCompressor](#thunderenginesetenablecompressor)(boolean enabled) |
+| int | [setCompressorParam](#thunderenginesetcompressorparam)([CompressorParam](#thunderrtcconstantcompressorparam) param) |
+| int | [setEnableLimiter](#thunderenginesetenablelimiter)(boolean enabled) |
+| int | [setLimiterParam](#thunderenginesetlimiterparam)([LimterParam](#thunderrtcconstantlimterparam) param) |
+| void | [enableAudioPlaySpectrum](#thunderengineenableaudioplayspectrum)(boolean enable) |
+| void | [setAudioPlaySpectrumInfo](#thunderenginesetaudioplayspectruminfo)(int spectrumLen, int notifyIntervalMS) |
+| int | [sendUserAppMsgData](#thunderenginesenduserappmsgdata)(byte[] msgData) |
+| int | [sendMediaExtraInfo](#thunderenginesendmediaextrainfo)(ByteBuffer data, int dataLen) |
+| int | [setMediaExtraInfoCallback](#thunderenginesetmediaextrainfocallback)([IThunderMediaExtraInfoCallback](.mdnotification.html#ithundermediaextrainfocallback) callback) |
+| int | [enableMixVideoExtraInfo](#thunderengineenablemixvideoextrainfo)(boolean enable) |
+| void | [enableAudioDataIndication](#thunderengineenableaudiodataindication)(boolean enablePlay) |
+| void | [setAudioSourceType](#thunderenginesetaudiosourcetype)(int sourceType) |
+| int | [setEnableInEarMonitor](#thunderenginesetenableinearmonitor)(boolean enable) |
+| int | [setVideoEncoderConfig](#thunderenginesetvideoencoderconfig)([ThunderVideoEncoderConfiguration](#thundervideoencoderconfiguration) yyVideoConfig) |
+| int | [setLocalVideoCanvas](#thunderenginesetlocalvideocanvas)([ThunderVideoCanvas](#thundervideocanvas) local) |
+| int | [setRemotePlayType](#thunderenginesetremoteplaytype)(int remotePlayType) |
+| int | [setMultiVideoViewLayout](#thunderenginesetmultivideoviewlayout)([ThunderMultiVideoViewParam](#thundermultivideoviewparam) params) |
+| int | [setRemoteVideoCanvas](#thunderenginesetremotevideocanvas)([ThunderVideoCanvas](#thundervideocanvas) remote) |
+| int | [setLocalCanvasScaleMode](#thunderenginesetlocalcanvasscalemode)(int mode) |
+| int | [setRemoteCanvasScaleMode](#thunderenginesetremotecanvasscalemode)(String uid, int mode) |
+| int | [startVideoPreview](#thunderenginestartvideopreview)() |
+| int | [stopVideoPreview](#thunderenginestopvideopreview)() |
+| int | [enableLocalVideoCapture](#thunderengineenablelocalvideocapture)((boolean enable) |
+| int | [stopLocalVideoStream](#thunderenginestoplocalvideostream)(boolean stop) |
+| int | [stopRemoteVideoStream](#thunderenginestopremotevideostream)(String uid, boolean stop) |
+| int | [stopAllRemoteVideoStreams](#thunderenginestopallremotevideostreams)(boolean stop) |
+| int | [registerVideoCaptureTextureObserver](#thunderengineregistervideocapturetextureobserver)([IGPUProcess](.mdnotification.html#igpuprocess) observer) |
+| int | [registerVideoCaptureFrameObserver](#thunderengineregistervideocaptureframeobserver)([IVideoCaptureObserver](.mdnotification.html#ivideocaptureobserver) observer) |
+| int | [registerVideoDecodeFrameObserver](#thunderengineregistervideodecodeframeobserver)(String uid, [IVideoDecodeObserver](.mdnotification.html#ivideodecodeobserver) observer) |
+| int | [registerAudioFrameObserver](#thunderengineregisteraudioframeobserver)([IAudioFrameObserver](.mdnotification.html#iaudioframeobserver) observer) |
+| int | [setRecordingAudioFrameParameters](#thunderenginesetrecordingaudioframeparameters)(int sampleRate, int room, int mode, int samplesPerCall) |
+| int | [setPlaybackAudioFrameParameters](#thunderenginesetplaybackaudioframeparameters)(int sampleRate, int room, int mode, int samplesPerCall) |
+| int | [setVideoWatermark](#thunderenginesetvideowatermark)([ThunderBoltImage](#thunderboltimage) watermark) |
+| int | [setCustomAudioSource](#thunderenginesetcustomaudiosource)(boolean enabled, int sampleRate, int channel) |
+| int | [pushCustomAudioFrame](#thunderenginepushcustomaudioframe)(byte[] data, long timeStamp) |
+| int | [setCustomVideoSource](#thunderenginesetcustomvideosource)([ThunderCustomVideoSource](.mdnotification.html#thundercustomvideosource) videoSource) |
+| int | [addPublishOriginStreamUrl](#thunderengineaddpublishoriginstreamurl)(String url) |
+| int | [removePublishOriginStreamUrl](#thunderengineremovepublishoriginstreamurl)(String url) |
+| int | [setLiveTranscodingTask](#thunderenginesetlivetranscodingtask)(String taskId, [LiveTranscoding](#livetranscoding) transcoding) |
+| int | [removeLiveTranscodingTask](#thunderengineremovelivetranscodingtask)(String taskId) |
+| int | [addPublishTranscodingStreamUrl](#thunderengineaddpublishtranscodingstreamurl)(String taskId, String url) |
+| int | [removePublishTranscodingStreamUrl](#thunderengineremovepublishtranscodingstreamurl)(String taskId, String url) |
+| int | [addSubscribe](#thunderengineaddsubscribe)(String roomId, String uid) |
+| int | [removeSubscribe](#thunderengineremovesubscribe)(String roomId, String uid) |
+| int | [switchFrontCamera](#thunderengineswitchfrontcamera)(boolean bFront) |
+| int | [setVideoCaptureOrientation](#thunderenginesetvideocaptureorientation)(int orientation) |
+| int | [setLocalVideoMirrorMode](#thunderenginesetlocalvideomirrormode)(int mode) |
+| int | [enableWebSdkCompatibility](#thunderengineenablewebsdkcompatibility)(boolean enabled) |
 
 - ### ThunderAudioFilePlayer
 
 | public member functions | Function Name |
 | ---:| :--- |
-| void | [open](#ThunderAudioFilePlayer.open)(String path) |
-| void | [close](#ThunderAudioFilePlayer.close)() |
-| void | [play](#ThunderAudioFilePlayer.play)() |
-| void | [stop](#ThunderAudioFilePlayer.stop)() |
-| void | [pause](#ThunderAudioFilePlayer.pause)() |
-| void | [resume](#ThunderAudioFilePlayer.resume)() |
-| void | [seek](#ThunderAudioFilePlayer.seek)(long timeMS) |
-| long | [getTotalPlayTimeMS](#ThunderAudioFilePlayer.getTotalPlayTimeMS)() |
-| long | [getCurrentPlayTimeMS](#ThunderAudioFilePlayer.getCurrentPlayTimeMS)() |
-| void | [setPlayVolume](#ThunderAudioFilePlayer.setPlayVolume)(int volume) |
-| int | [setPlayerLocalVolume](#ThunderAudioFilePlayer.setPlayerLocalVolume)(int volume) |
-| int | [setPlayerPublishVolume](#ThunderAudioFilePlayer.setPlayerPublishVolume)(int volume) |
-| int | [getPlayerLocalVolume](#ThunderAudioFilePlayer.getPlayerLocalVolume)() |
-| int | [getPlayerPublishVolume](#ThunderAudioFilePlayer.getPlayerPublishVolume)() |
-| int | [getAudioTrackCount](#ThunderAudioFilePlayer.getAudioTrackCount)() |
-| int | [selectAudioTrack](#ThunderAudioFilePlayer.selectAudioTrack)(int audioTrack) |
-| void | [setSemitone](#ThunderAudioFilePlayer.setSemitone)(int val) |
-| int | [setLooping](#ThunderAudioFilePlayer.setLooping)(int cycle) |
-| void | [enablePublish](#ThunderAudioFilePlayer.enablePublish)(boolean enable) |
-| synchronized void | [setPlayerNotify](#ThunderAudioFilePlayer.setPlayerNotify)([IThunderAudioFilePlayerCallback](.mdnotification.md#ThunderAudioFilePlayer.IThunderAudioFilePlayerCallback) callback) |
-| synchronized void | [enableVolumeIndication](#ThunderAudioFilePlayer.enableVolumeIndication)(boolean enable, int interval) |
-| synchronized void | [setMixStandard](#ThunderAudioFilePlayer.setMixStandard)(boolean standard) |
-| synchronized boolean | [isMixStandard](#ThunderAudioFilePlayer.isMixStandard)() |
+| void | [open](#thunderaudiofileplayeropen)(String path) |
+| void | [close](#thunderaudiofileplayerclose)() |
+| void | [play](#thunderaudiofileplayerplay)() |
+| void | [stop](#thunderaudiofileplayerstop)() |
+| void | [pause](#thunderaudiofileplayerpause)() |
+| void | [resume](#thunderaudiofileplayerresume)() |
+| void | [seek](#thunderaudiofileplayerseek)(long timeMS) |
+| long | [getTotalPlayTimeMS](#thunderaudiofileplayergettotalplaytimems)() |
+| long | [getCurrentPlayTimeMS](#thunderaudiofileplayergetcurrentplaytimems)() |
+| void | [setPlayVolume](#thunderaudiofileplayersetplayvolume)(int volume) |
+| int | [setPlayerLocalVolume](#thunderaudiofileplayersetplayerlocalvolume)(int volume) |
+| int | [setPlayerPublishVolume](#thunderaudiofileplayersetplayerpublishvolume)(int volume) |
+| int | [getPlayerLocalVolume](#thunderaudiofileplayergetplayerlocalvolume)() |
+| int | [getPlayerPublishVolume](#thunderaudiofileplayergetplayerpublishvolume)() |
+| int | [getAudioTrackCount](#thunderaudiofileplayergetaudiotrackcount)() |
+| int | [selectAudioTrack](#thunderaudiofileplayerselectaudiotrack)(int audioTrack) |
+| void | [setSemitone](#thunderaudiofileplayersetsemitone)(int val) |
+| int | [setLooping](#thunderaudiofileplayersetlooping)(int cycle) |
+| void | [enablePublish](#thunderaudiofileplayerenablepublish)(boolean enable) |
+| synchronized void | [setPlayerNotify](#thunderaudiofileplayersetplayernotify)([IThunderAudioFilePlayerCallback](.mdnotification.html#thunderaudiofileplayerithunderaudiofileplayercallback) callback) |
+| synchronized void | [enableVolumeIndication](#thunderaudiofileplayerenablevolumeindication)(boolean enable, int interval) |
+| synchronized void | [setMixStandard](#thunderaudiofileplayersetmixstandard)(boolean standard) |
+| synchronized boolean | [isMixStandard](#thunderaudiofileplayerismixstandard)() |
 
 ## Detailed Introduction for Interfaces
 
-> Introduction: If the return value of API is int, unless otherwise specified, 0 indicates a successful call, and less than 0 indicates a failed call. For detailed return code, see [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+> Introduction: If the return value of API is int, unless otherwise specified, 0 indicates a successful call, and less than 0 indicates a failed call. For detailed return code, see [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 ### ThunderEngine
 
@@ -140,7 +141,7 @@ public static synchronized ThunderEngine createEngine(Context context,
 
 Create ThunderEngine and initialize ThunderEngine instance.
 
-##### Description[](#createEngine)
+##### Description[](#createengine)
 
 - Now, the SDK only supports one ThunderEngine instance, indicating that it can be only created one by application.
 - Unless otherwise specified, all interface functions of ThunderEngine are asynchronously called, and the interface is called in the same thread.
@@ -151,7 +152,7 @@ Create ThunderEngine and initialize ThunderEngine instance.
 >
 > - Users of the same AppId can communicate with each other.
 
-##### Parameter[](#createEngine)
+##### Parameter[](#createengine)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -160,7 +161,7 @@ Create ThunderEngine and initialize ThunderEngine instance.
 | sceneId | The scene Id customized by the developer can subdivide business scenes; if unnecessary, fill 0 |
 | handler | ThunderEventHandler is a abstract object providing default implementation, by which SDK can report events to applications when SDK is running. |
 
-##### Return[](#createEngine)
+##### Return[](#createengine)
 
 - ThunderEngine instance object
 
@@ -178,7 +179,7 @@ public static synchronized ThunderEngine createWithLoop(Context context,
 
 Create ThunderEngine and initialize ThunderEngine instance.
 
-##### Description[](#createWithLoop)
+##### Description[](#createwithloop)
 
 - Now, the SDK only supports one ThunderEngine instance, indicating that it can be only created by one application.
 - Unless otherwise specified, all interface functions of ThunderEngine are asynchronously called, and the interface is called in the same thread.
@@ -188,7 +189,7 @@ Create ThunderEngine and initialize ThunderEngine instance.
 >
 > - Users of the same AppId can communicate with each other.
 
-##### Parameter[](#createWithLoop)
+##### Parameter[](#createwithloop)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -198,7 +199,7 @@ Create ThunderEngine and initialize ThunderEngine instance.
 | handler | ThunderEventHandler is an abstract object providing default implementation, by which SDK can call back events from applications when SDK is running. |
 | loop | Looper objects correlated with thread can assign handler callback function to be performed in Associated thread. |
 
-##### Return[](#createWithLoop)
+##### Return[](#createwithloop)
 
 - ThunderEngine instance object
 
@@ -212,16 +213,16 @@ public static synchronized void destroyEngine()
 
 Destroy ThunderEngine instance object
 
-##### Description[](#destroyEngine)
+##### Description[](#destroyengine)
 
 - This method releases all resources used by SDK.
 - Some applications only operate voice communication required by users. Resources can be released for other operations if they are not needed. This method may be applicable for such applications.
-- If [destroyEngine](#ThunderEngine.destroyEngine) is called, the user cannot use its method and event notices will not be triggered.
-- To use the communication function again, [createEngine](#ThunderEngine.createEngine) must be called again to create a ThunderEngine instance.
+- If [destroyEngine](#thunderenginedestroyengine) is called, the user cannot use its method and event notices will not be triggered.
+- To use the communication function again, [createEngine](#thunderenginecreateengine) must be called again to create a ThunderEngine instance.
 
 > **Note:**
 >
-> - The created file player object [ThunderAudioFilePlayer](#ThunderAudioFilePlayer) will also be released.
+> - The created file player object [ThunderAudioFilePlayer](#thunderaudiofileplayer) will also be released.
 
 --------------------------
 
@@ -233,7 +234,7 @@ public static String getVersion()
 
 Get SDK version information.
 
-##### Return[](#getVersion)
+##### Return[](#getversion)
 
 - SDK version information
 
@@ -247,7 +248,7 @@ public static int setLogFilePath(String filePath)
 
 Set path of log files (open log and save its information).
 
-##### Description[](#setLogFilePath)
+##### Description[](#setlogfilepath)
 
 - One of the methods for outputting SDK logs. Specify the output directory and ensure its writability, and SDK outputs logs to this directory in logcat under debug.
 
@@ -255,16 +256,16 @@ Set path of log files (open log and save its information).
 >
 > - Ensure that the specified directory has write permission.
 
-##### Parameter[](#setLogFilePath)
+##### Parameter[](#setlogfilepath)
 
 | Parameter | Description |
 | :--- | :--- |
 | filePath | Path for saving logs |
 
-##### Return[](#setLogFilePath)
+##### Return[](#setlogfilepath)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -276,21 +277,21 @@ public static int setLogCallback(IThunderLogCallback callback)
 
 Set log callback.
 
-##### Description[](#setLogCallback)
+##### Description[](#setlogcallback)
 
 - One of methods for outputting SDK logs. The SDK calls back log messages to application for writing.
 - After the log callback is set, the setLogFilePath will be invalid.
 
-##### Parameter[](#setLogCallback)
+##### Parameter[](#setlogcallback)
 
 | Parameter | Description |
 | :--- | :--- |
-| callback | For the callback interface instances, refer to [IThunderLogCallback](.mdnotification.md#IThunderLogCallback) interface for detail |
+| callback | For the callback interface instances, refer to [IThunderLogCallback](.mdnotification.html#ithunderlogcallback) interface for detail |
 
-##### Return[](#setLogCallback)
+##### Return[](#setlogcallback)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -302,20 +303,20 @@ public static int setLogLevel(int filter)
 
 Set log level.
 
-##### Description[](#setLogLevel)
+##### Description[](#setloglevel)
 
 - Set filtering level for log output, and call it before setLogFilePath or setLogCallback. If this interface is not called, the default log level THUNDER_LOG_LEVEL_INFO will be used.
 
-##### Parameter[](#setLogLevel)
+##### Parameter[](#setloglevel)
 
 | Parameter | Description |
 | :--- | :--- |
-| filter | Use the attributes of constants [ThunderRtcConstant.ThunderLogLevel](#ThunderRtcConstant.ThunderLogLevel) to set log level |
+| filter | Use the attributes of constants [ThunderRtcConstant.ThunderLogLevel](#thunderrtcconstantthunderloglevel) to set log level |
 
-##### Return[](#setLogLevel)
+##### Return[](#setloglevel)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -327,7 +328,7 @@ public void setSceneId(long sceneId)
 
 Set scenario Id.
 
-##### Parameter[](#setSceneId)
+##### Parameter[](#setsceneid)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -343,27 +344,27 @@ public int setMediaMode(int mode)
 
 Set media mode.
 
-##### Description[](#setMediaMode)
+##### Description[](#setmediamode)
 
 - Media mode includes pure audio and audio/video.
-- By default, SDK uses audio/video mode [ThunderRtcConstant.ThunderRtcProfile.THUNDER_PROFILE_DEFAULT](#ThunderRtcConstant.ThunderRtcProfile).
-- [ThunderRtcConstant.ThunderRtcProfile.THUNDER_PROFILE_DEFAULT](#ThunderRtcConstant.ThunderRtcProfile) is equal to [ThunderRtcConstant.ThunderRtcProfile.THUNDER_PROFILE_NORMAL](#ThunderRtcConstant.ThunderRtcProfile) .
+- By default, SDK uses audio/video mode [ThunderRtcConstant.ThunderRtcProfile.THUNDER_PROFILE_DEFAULT](#thunderrtcconstantthunderrtcprofile).
+- [ThunderRtcConstant.ThunderRtcProfile.THUNDER_PROFILE_DEFAULT](#thunderrtcconstantthunderrtcprofile) is equal to [ThunderRtcConstant.ThunderRtcProfile.THUNDER_PROFILE_NORMAL](#thunderrtcconstantthunderrtcprofile) .
 
 > **Note:**
 >
-> - Call it before joining room ([joinRoom](#ThunderEngine.joinRoom)).
-> - It can only be reset when [destroyEngine](#ThunderEngine.destroyEngine) is performed.
+> - Call it before joining room ([joinRoom](#thunderenginejoinroom)).
+> - It can only be reset when [destroyEngine](#thunderenginedestroyengine) is performed.
 
-##### Parameter[](#setMediaMode)
+##### Parameter[](#setmediamode)
 
 | Parameter | Description |
 | :--- | :--- |
-| mode | Media mode. For the optional value, refer to class attributes of [ThunderRtcConstant.ThunderRtcProfile](#ThunderRtcConstant.ThunderRtcProfile) for details |
+| mode | Media mode. For the optional value, refer to class attributes of [ThunderRtcConstant.ThunderRtcProfile](#thunderrtcconstantthunderrtcprofile) for details |
 
-##### Return[](#setMediaMode)
+##### Return[](#setmediamode)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -375,27 +376,27 @@ public int setRoomMode(int mode)
 
 Set room mode.
 
-##### Description[](#setRoomMode)
+##### Description[](#setroommode)
 
-- By default, SDK uses live mode [ThunderRtcConstant.RoomConfig.THUNDER_ROOMCONFIG_LIVE](#ThunderRtcConstant.RoomConfig)。
+- By default, SDK uses live mode [ThunderRtcConstant.RoomConfig.THUNDER_ROOMCONFIG_LIVE](#thunderrtcconstantroomconfig)。
 - It can be used before and after joining room.
 - SDK can use different optimization methods by knowing usage scenes of applications (such as communication mode or live mode).
 
 > **Note:**
 >
-> - It can only be reset when [destroyEngine](#ThunderEngine.destroyEngine) is performed.
-> - The optional value of parameters can only be [ThunderRtcConstant.RoomConfig](#ThunderRtcConstant.RoomConfig) options listed in the document.
+> - It can only be reset when [destroyEngine](#thunderenginedestroyengine) is performed.
+> - The optional value of parameters can only be [ThunderRtcConstant.RoomConfig](#thunderrtcconstantroomconfig) options listed in the document.
 
-##### Parameter[](#setRoomMode)
+##### Parameter[](#setroommode)
 
 | Parameter | Description |
 | :--- | :--- |
-| mode | Room mode. For the optional value, refer to class attributes of [ThunderRtcConstant.RoomConfig](#ThunderRtcConstant.RoomConfig) for details |
+| mode | Room mode. For the optional value, refer to class attributes of [ThunderRtcConstant.RoomConfig](#thunderrtcconstantroomconfig) for details |
 
-##### Return[](#setRoomMode)
+##### Return[](#setroommode)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -415,20 +416,20 @@ To accommodate to different laws and regulations at home and abroad, AIVACOM NET
 
 > **Note:**
 >
-> - Only call it before the [joinRoom](#ThunderEngine.joinRoom) can be valid. It is necessary for abroad users but not for domestic users.
-> - The optional value of parameters can only be [ThunderRtcConstant.RoomConfig](#ThunderRtcConstant.RoomConfig) options listed in the document.
-> - It can only be reset when [destroyEngine](#ThunderEngine.destroyEngine) is performed.
+> - Only call it before the [joinRoom](#thunderenginejoinroom) can be valid. It is necessary for abroad users but not for domestic users.
+> - The optional value of parameters can only be [ThunderRtcConstant.RoomConfig](#thunderrtcconstantroomconfig) options listed in the document.
+> - It can only be reset when [destroyEngine](#thunderenginedestroyengine) is performed.
 
-##### Parameter[](#setArea)
+##### Parameter[](#setarea)
 
 | Parameter | Description |
 | :--- | :--- |
-| area | User’s area. For the optional value, refer to class attributes of [ThunderRtcConstant.AreaType](#ThunderRtcConstant.AreaType) for details |
+| area | User’s area. For the optional value, refer to class attributes of [ThunderRtcConstant.AreaType](#thunderrtcconstantareatype) for details |
 
-##### Return[](#setArea)
+##### Return[](#setarea)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -441,25 +442,25 @@ public int joinRoom(byte[] token, String roomName, String uid)
 Join a room.
 
 - This method lets users join the (audio/video) communication room. In the same room, users can communicate with each other, and group chat starts when multiple users join it.
-- If during the call, users have to call [leaveRoom](#ThunderEngine.leaveRoom) to leave before joining the next one.
+- If during the call, users have to call [leaveRoom](#thunderengineleaveroom) to leave before joining the next one.
 
 > **Note:**
 >
 > - The applications cannot communicate with each other when using different appId.
-> - Successful function return only indicates that the request is executed successfully. After receiving the callback on [ThunderEventHandler.onJoinRoomSuccess](.mdnotification.md#ThunderEventHandler.onJoinRoomSuccess) , it can indicate the success of joining room.
+> - Successful function return only indicates that the request is executed successfully. After receiving the callback on [ThunderEventHandler.onJoinRoomSuccess](.mdnotification.html#thundereventhandleronjoinroomsuccess) , it can indicate the success of joining room.
 
-##### Parameter[](#joinRoom)
+##### Parameter[](#joinroom)
 
 | Name | Description |
 | :--- | :--- |
-| token | For the requirements of authentication, see [Authentication Access Manual](#TODO:) for details |
+| token | For the requirements of authentication, see [Authentication Access Manual](#todo) for details |
 | roomName | Room name (unique for each AppId) only supports the permutation and combination of characters such as [A,Z],[a,z],[0,9],-,_, with the length of not more than 64 bytes. |
 | uid | User ID only supports the permutation and combination of characters such as [A,Z],[a,z],[0,9],-,_, with the length of not more than 64 bytes. |
 
-##### Return[](#joinRoom)
+##### Return[](#joinroom)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -473,13 +474,13 @@ Leaving room indicates hang off or exiting conversation.
 
 > **Note:**
 >
-> - When [joinRoom](#ThunderEngine.joinRoom) is called, you have to call [leaveRoom](#ThunderEngine.leaveRoom) to end conversation before starting the next one.
-> - No matter whether the user is idle or in a call, [leaveRoom](#ThunderEngine.leaveRoom) can be called, without adverse effects. This method can release all resources related to conversation.
+> - When [joinRoom](#thunderenginejoinroom) is called, you have to call [leaveRoom](#thunderengineleaveroom) to end conversation before starting the next one.
+> - No matter whether the user is idle or in a call, [leaveRoom](#thunderengineleaveroom) can be called, without adverse effects. This method can release all resources related to conversation.
 
-##### Return[](#leaveRoom)
+##### Return[](#leaveroom)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -491,7 +492,7 @@ public int updateToken(byte[] token)
 
 Update token.
 
-Token is used for business authentication. The format is suggested as follows. See [Authentication Access Manual](#TODO:) for detail
+Token is used for business authentication. The format is suggested as follows. See [Authentication Access Manual](#todo) for detail
 
 | uint16 | uint32 | uint64 | uint64 | uint32 | uint16 | nBytes | 20 Bytes |
 | -------- | ------ | ------ | ------------- | ------------ | ------------- | -------------- | ---------------- |
@@ -506,16 +507,16 @@ Refer to the following descriptions:
 - DigitalSignature: The digital signature adopts hmac-sha1 algorithm to obtain [TokenLen,BizExtInfoData] by calculating all data before DigitalSignature. The private key uses assigned appSecret when applying for appId.
 - Token has to be transmitted by http, so the whole Token shall be encoded by url base64. Note that the url encode is not performed for the whole base64.
 
-##### Parameter[](#updateToken)
+##### Parameter[](#updatetoken)
 
 | Parameter | Description |
 | :--- | :--- |
-| token | For requirements of authentication, refer to "[User Authentication Description](#TODO:)" for detail |
+| token | For requirements of authentication, refer to "[User Authentication Description](#todo)" for detail |
 
-##### Return[](#updateToken)
+##### Return[](#updatetoken)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -529,20 +530,20 @@ It is used to set audio parameter and application scene.
 
 > **Note:**
 >
-> - Call it before playing audio [stopLocalAudioStream](#ThunderEngine.stopLocalAudioStream) .
+> - Call it before playing audio [stopLocalAudioStream](#thunderenginestoplocalaudiostream) .
 
-##### Parameter[](#setAudioConfig)
+##### Parameter[](#setaudioconfig)
 
 | Parameter | Description |
 | :--- | :--- |
-| profile | Audio type. For the optional value, refer to class attributes of [ThunderRtcConstant.AudioConfig](#ThunderRtcConstant.AudioConfig) for details |
-| commuMode | Interactive mode. For the optional value, refer to class attributes of [ThunderRtcConstant.CommutMode](#ThunderRtcConstant.CommutMode) for details |
-| scenarioMode | Scenario mode. For the optional value, refer to class attributes of [ThunderRtcConstant.ScenarioMode](#ThunderRtcConstant.ScenarioMode) for details |
+| profile | Audio type. For the optional value, refer to class attributes of [ThunderRtcConstant.AudioConfig](#thunderrtcconstantaudioconfig) for details |
+| commuMode | Interactive mode. For the optional value, refer to class attributes of [ThunderRtcConstant.CommutMode](#thunderrtcconstantcommutmode) for details |
+| scenarioMode | Scenario mode. For the optional value, refer to class attributes of [ThunderRtcConstant.ScenarioMode](#thunderrtcconstantscenariomode) for details |
 
-##### Return[](#setAudioConfig)
+##### Return[](#setaudioconfig)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -556,18 +557,18 @@ Enable/Disable voice stereo of remote users.
 
 > **Note:**
 >
-> - Call this method before [joinRoom](#ThunderEngine.joinRoom)
+> - Call this method before [joinRoom](#thunderenginejoinroom)
 
-##### Parameter[](#enableVoicePosition)
+##### Parameter[](#enablevoiceposition)
 
 | Parameter | Description |
 | :--- | :--- |
 | enable | true: enable voice stereo of remote users <br>false: disable voice stereo of remote users |
 
-##### Return[](#enableVoicePosition)
+##### Return[](#enablevoiceposition)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -579,7 +580,7 @@ public int setRemoteUidVoicePosition(String uid, int azimuth, int gain)
 
 Set spatial location and volume of remote user's voice.
 
-##### Parameter[](#setRemoteUidVoicePosition)
+##### Parameter[](#setremoteuidvoiceposition)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -587,10 +588,10 @@ Set spatial location and volume of remote user's voice.
 | azimuth | Set the position where the remote user’s voice appears, with value range of [-90,90].<br> 0: voice appears in the right ahead. (default)<br> -90: voice appears in the left side.<br> 90: voice appears in the right side. |
 | gain | Set the voice volume of remote user, with value range of [0,100]. The default value is 100.0, indicating user’s original volume. The smaller the value, the lower the volume |
 
-##### Return[](#setRemoteUidVoicePosition)
+##### Return[](#setremoteuidvoiceposition)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -604,16 +605,16 @@ Enable/Disable loudspeaker.
 
 - This method forces the voice routing to loudspeaker.
 
-##### Parameter[](#enableLoudspeaker)
+##### Parameter[](#enableloudspeaker)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | true: play by loudspeaker<br>false: play by receiver |
 
-##### Return[](#enableLoudspeaker)
+##### Return[](#enableloudspeaker)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -625,7 +626,7 @@ public boolean isLoudspeakerEnabled()
 
 Query the enabled status of loudspeaker.
 
-##### Return[](#isLoudspeakerEnabled)
+##### Return[](#isloudspeakerenabled)
 
 - true: play by loudspeaker
 - false: play not by loudspeaker
@@ -640,16 +641,16 @@ public int setLoudSpeakerVolume(int volume)
 
 Set loudspeaker volume.
 
-##### Parameter[](#setLoudSpeakerVolume)
+##### Parameter[](#setloudspeakervolume)
 
 | Parameter | Description |
 | :--- | :--- |
 | volume | Volume value [0-400] |
 
-##### Return[](#setLoudSpeakerVolume)
+##### Return[](#setloudspeakervolume)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -664,14 +665,14 @@ public int setAudioVolumeIndication(int interval,
 
 Enable volume indication for speaker.
 
-- By using this method, SDK can feed current speaker and speaker’s volume back to an application periodically. Report by callback interface [ThunderEventHandler.onPlayVolumeIndication](.mdnotification.md#ThunderEventHandler.onPlayVolumeIndication) .
+- By using this method, SDK can feed current speaker and speaker’s volume back to an application periodically. Report by callback interface [ThunderEventHandler.onPlayVolumeIndication](.mdnotification.html#thundereventhandleronplayvolumeindication) .
 
 > **Note:**
 >
 > - It can only be reset when destroyEngine is performed.
 > - The voice volume collected by local microphone or playing file is not included.
 
-##### Parameter[](#setAudioVolumeIndication)
+##### Parameter[](#setaudiovolumeindication)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -680,10 +681,10 @@ Enable volume indication for speaker.
 | lessThanThd | From >= lessThanThd to < lessThanThd, immediately call back once (is not restricted by interval) <br><= 0 invalid, default =0 |
 | smooth | Invalid momentarily. Fill 0 |
 
-##### Return[](#setAudioVolumeIndication)
+##### Return[](#setaudiovolumeindication)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -698,9 +699,9 @@ public int enableCaptureVolumeIndication(int interval,
 
 Enable/Disable collected volume callback.
 
-- By using this method, SDK can feed current microphone capture volume back to an application periodically. Report it by [ThunderEventHandler.onCaptureVolumeIndication](.mdnotification.md#ThunderEventHandler.onCaptureVolumeIndication).
+- By using this method, SDK can feed current microphone capture volume back to an application periodically. Report it by [ThunderEventHandler.onCaptureVolumeIndication](.mdnotification.html#thundereventhandleroncapturevolumeindication).
 
-##### Parameter[](#enableCaptureVolumeIndication)
+##### Parameter[](#enablecapturevolumeindication)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -709,10 +710,10 @@ Enable/Disable collected volume callback.
 | lessThanThd | From >= lessThanThd to < lessThanThd, immediately call back once (is not restricted by interval) <br><= 0 invalid, default =0 |
 | smooth | Invalid momentarily. Fill 0 |
 
-##### Return[](#enableCaptureVolumeIndication)
+##### Return[](#enablecapturevolumeindication)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -724,15 +725,15 @@ public boolean startAudioSaver(String fileName, int saverMode, int fileMode)
 
 Start saving audio data as aac format file.
 
-##### Parameter[](#startAudioSaver)
+##### Parameter[](#startaudiosaver)
 
 | Parameter | Description |
 | :--- | :--- |
 | fileName | The save path of file must be full path including file name with postfix of .aac. The directory for saving file must be created in advance, and the folder cannot be created by this interface. For example: /sdcard/helloworld.aac |
-| saverMode | Audio saving mode. For the optional value, refer to class attributes of [ThunderRtcConstant.ScenarioMode](#ThunderRtcConstant.AudioSaverMode) for details |
-| fileMode | Audio writing mode. For the optional value, refer to class attributes of [ThunderRtcConstant.AudioSaverWfMode](#ThunderRtcConstant.AudioSaverWfMode) for details |
+| saverMode | Audio saving mode. For the optional value, refer to class attributes of [ThunderRtcConstant.ScenarioMode](#thunderrtcconstantaudiosavermode) for details |
+| fileMode | Audio writing mode. For the optional value, refer to class attributes of [ThunderRtcConstant.AudioSaverWfMode](#thunderrtcconstantaudiosaverwfmode) for details |
 
-##### Return[](#startAudioSaver)
+##### Return[](#startaudiosaver)
 
 - true: Success.
 - false: Method call failed
@@ -747,7 +748,7 @@ public boolean stopAudioSaver()
 
 Stop saving audio data as aac format file.
 
-##### Return[](#stopAudioSaver)
+##### Return[](#stopaudiosaver)
 
 - true: Success.
 - false: Method call failed
@@ -762,11 +763,11 @@ public void setSoundEffect(int mode)
 
 Set sound effect mode.
 
-##### Parameter[](#setSoundEffect)
+##### Parameter[](#setsoundeffect)
 
 | Parameter | Description |
 | :--- | :--- |
-| mode | sound effect mode. For the optional value, refer to class attributes of [ThunderRtcConstant.SoundEffectMode](#ThunderRtcConstant.SoundEffectMode) for details |
+| mode | sound effect mode. For the optional value, refer to class attributes of [ThunderRtcConstant.SoundEffectMode](#thunderrtcconstantsoundeffectmode) for details |
 
 --------------------------
 
@@ -778,11 +779,11 @@ public void setVoiceChanger(int mode)
 
 Set voice change mode.
 
-##### Parameter[](#setVoiceChanger)
+##### Parameter[](#setvoicechanger)
 
 | Parameter | Description |
 | :--- | :--- |
-| mode | Voice change mode. For the optional value, refer to class attributes of [ThunderRtcConstant.VoiceChangerMode](#ThunderRtcConstant.VoiceChangerMode) for details |
+| mode | Voice change mode. For the optional value, refer to class attributes of [ThunderRtcConstant.VoiceChangerMode](#thunderrtcconstantvoicechangermode) for details |
 
 --------------------------
 
@@ -796,18 +797,18 @@ Enable/Disable the capture, encode and upstream of local audio.
 
 > **Note:**
 >
-> - Call this method after calling [joinRoom](#ThunderEngine.joinRoom) successfully.
+> - Call this method after calling [joinRoom](#thunderenginejoinroom) successfully.
 
-##### Parameter[](#stopLocalAudioStream)
+##### Parameter[](#stoplocalaudiostream)
 
 | Parameter | Description |
 | :--- | :--- |
 | stop | true: disable the capture, encode and upstream of local audio<br>false: enable the capture, encode and upstream of local audio |
 
-##### Return[](#stopLocalAudioStream)
+##### Return[](#stoplocalaudiostream)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -821,21 +822,21 @@ Stop/Resume receiving audio stream of a specified user.
 
 > **Note:**
 >
-> - Subscription configuration is only reset when [destroyEngine](#ThunderEngine.destroyEngine) is performed
-> - After stopping receiving the specified audio stream, you can receive all audio streams through [stopAllRemoteAudioStreams](#ThunderEngine.stopAllRemoteAudioStreams) and vice versa.
-> - This interface has no priority relationship with [stopAllRemoteAudioStreams](#ThunderEngine.stopAllRemoteAudioStreams), and the interface called later will be valid.
+> - Subscription configuration is only reset when [destroyEngine](#thunderenginedestroyengine) is performed
+> - After stopping receiving the specified audio stream, you can receive all audio streams through [stopAllRemoteAudioStreams](#thunderenginestopallremoteaudiostreams) and vice versa.
+> - This interface has no priority relationship with [stopAllRemoteAudioStreams](#thunderenginestopallremoteaudiostreams), and the interface called later will be valid.
 
-##### Parameter[](#stopRemoteAudioStream)
+##### Parameter[](#stopremoteaudiostream)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | uid of remote users |
 | Stop | True: stop receiving audio stream of specified remote user<br>false: start receiving audio stream of specified remote user |
 
-##### Return[](#stopRemoteAudioStream)
+##### Return[](#stopremoteaudiostream)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -848,24 +849,24 @@ public int stopAllRemoteAudioStreams(boolean stop)
 Stop/Resume receiving all remote audio streams. Process this interface based on the following rules:
 
 - By default, SDK receives all audio stream data.
-- After the setting of receiving all (stop=false), all audio streams in the room will be subscribed automatically. You can specify one stream of not being subscribed by [stopRemoteAudioStream](#ThunderEngine.stopRemoteAudioStream).
-- After the setting of receiving nothing (stop=true), all audio stream in the room will not be subscribed. You can specify one stream being subscribed by [stopRemoteAudioStream](#ThunderEngine.stopRemoteAudioStream).
+- After the setting of receiving all (stop=false), all audio streams in the room will be subscribed automatically. You can specify one stream of not being subscribed by [stopRemoteAudioStream](#thunderenginestopremoteaudiostream).
+- After the setting of receiving nothing (stop=true), all audio stream in the room will not be subscribed. You can specify one stream being subscribed by [stopRemoteAudioStream](#thunderenginestopremoteaudiostream).
 
 > **Note:**
 >
-> - Subscription configuration is only reset when [destroyEngine](#ThunderEngine.destroyEngine) is performed.
-> - This interface has no priority relationship with [stopRemoteAudioStream](#ThunderEngine.stopRemoteAudioStream) , and which interface called later will be valid.
+> - Subscription configuration is only reset when [destroyEngine](#thunderenginedestroyengine) is performed.
+> - This interface has no priority relationship with [stopRemoteAudioStream](#thunderenginestopremoteaudiostream) , and which interface called later will be valid.
 
-##### Parameter[](#stopAllRemoteAudioStreams)
+##### Parameter[](#stopallremoteaudiostreams)
 
 | Parameter | Description |
 | :--- | :--- |
 | stop | true: stop receiving all remote audios<br>false: resume receiving all remote audios |
 
-##### Return[](#stopAllRemoteAudioStreams)
+##### Return[](#stopallremoteaudiostreams)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -877,16 +878,16 @@ public int setMicVolume(int volume)
 
 Set microphone volume.
 
-##### Parameter[](#setMicVolume)
+##### Parameter[](#setmicvolume)
 
 | Parameter | Description |
 | :--- | :--- |
 | volume | Volume value [0-400] |
 
-##### Return[](#setMicVolume)
+##### Return[](#setmicvolume)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -898,17 +899,17 @@ public int setRemoteAudioStreamsVolume(String uid, int volume)
 
 Set the volume of the remote audio stream.
 
-##### Parameter[](#setRemoteAudioStreamsVolume)
+##### Parameter[](#setremoteaudiostreamsvolume)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | uid of remote user |
 | volume | Volume value [0-400] |
 
-##### Return[](#setRemoteAudioStreamsVolume)
+##### Return[](#setremoteaudiostreamsvolume)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -920,9 +921,9 @@ public ThunderAudioFilePlayer createAudioFilePlayer()
 
 Create instance object of audio file player.
 
-##### Return[](#createAudioFilePlayer)
+##### Return[](#createaudiofileplayer)
 
-- [ThunderAudioFilePlayer](#ThunderAudioFilePlayer) : instance object of audio file player
+- [ThunderAudioFilePlayer](#thunderaudiofileplayer) : instance object of audio file player
 
 --------------------------
 
@@ -934,11 +935,11 @@ public void destroyAudioFilePlayer(ThunderAudioFilePlayer audioFilePlayer)
 
 Destroy instance object of audio file player.
 
-##### Parameter[](#destroyAudioFilePlayer)
+##### Parameter[](#destroyaudiofileplayer)
 
 | Parameter | Description |
 | :--- | :--- |
-| audioFilePlayer | Instance object of audio file player [ThunderAudioFilePlayer](#ThunderAudioFilePlayer) ) |
+| audioFilePlayer | Instance object of audio file player [ThunderAudioFilePlayer](#thunderaudiofileplayer) ) |
 
 --------------------------
 
@@ -950,16 +951,16 @@ public int setEnableEqualizer(boolean enabled)
 
 Enable/Disable local voice equalizer.
 
-##### Parameter[](#setEnableEqualizer)
+##### Parameter[](#setenableequalizer)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | true: Enable<br>false: Disable |
 
-##### Return[](#setEnableEqualizer)
+##### Return[](#setenableequalizer)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -971,16 +972,16 @@ public int setEqGains(final int[] gains)
 
 Set voice equalizer parameters.
 
-##### Parameter[](#setEqGains)
+##### Parameter[](#seteqgains)
 
 | Parameter | Description |
 | :--- | :--- |
 | gains | The value range of each element: -12 <= gains[i] <= 12, in which the value range of i: -12 <= gains[i] <= 12 |
 
-##### Return[](#setEqGains)
+##### Return[](#seteqgains)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -992,16 +993,16 @@ public int setEnableReverb(boolean enabled)
 
 Enable/Disable local voice reverberation.
 
-##### Parameter[](#setEnableReverb)
+##### Parameter[](#setenablereverb)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | true: Enable<br>false: Disable |
 
-##### Return[](#setEnableReverb)
+##### Return[](#setenablereverb)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1013,16 +1014,16 @@ public int setReverbExParameter(ThunderRtcConstant.ReverbExParameter param)
 
 Set local voice reverberation parameters
 
-##### Parameter[](#setReverbExParameter)
+##### Parameter[](#setreverbexparameter)
 
 | Parameter | Description |
 | :--- | :--- |
-| param | The parameters of voice reverberation, refer to [ThunderRtcConstant.ReverbExParameter](#ThunderRtcConstant.ReverbExParameter) for details |
+| param | The parameters of voice reverberation, refer to [ThunderRtcConstant.ReverbExParameter](#thunderrtcconstantreverbexparameter) for details |
 
-##### Return[](#setReverbExParameter)
+##### Return[](#setreverbexparameter)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1034,16 +1035,16 @@ public int setEnableCompressor(boolean enabled)
 
 Enable/Disable audio compressor.
 
-##### Parameter[](#setEnableCompressor)
+##### Parameter[](#setenablecompressor)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | true: Enable<br>false: disable |
 
-##### Return[](#setEnableCompressor)
+##### Return[](#setenablecompressor)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1055,16 +1056,16 @@ public int setCompressorParam(ThunderRtcConstant.CompressorParam param)
 
 Set audio compressor parameters.
 
-##### Parameter[](#setCompressorParam)
+##### Parameter[](#setcompressorparam)
 
 | Parameter | Description |
 | :--- | :--- |
-| param | The parameters of audio compressor, refer to [ThunderRtcConstant.CompressorParam](#ThunderRtcConstant.CompressorParam) for details |
+| param | The parameters of audio compressor, refer to [ThunderRtcConstant.CompressorParam](#thunderrtcconstantcompressorparam) for details |
 
-##### Return[](#setCompressorParam)
+##### Return[](#setcompressorparam)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1076,16 +1077,16 @@ public int setEnableLimiter(boolean enabled)
 
 Enable/Disable limiter.
 
-##### Parameter[](#setEnableLimiter)
+##### Parameter[](#setenablelimiter)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | true: Enable<br>false: Disable |
 
-##### Return[](#setEnableLimiter)
+##### Return[](#setenablelimiter)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1097,16 +1098,16 @@ public int setLimiterParam(ThunderRtcConstant.LimterParam param)
 
 Set limiter parameters.
 
-##### Parameter[](#setLimiterParam)
+##### Parameter[](#setlimiterparam)
 
 | Parameter | Description |
 | :--- | :--- |
-| param | The parameters of limiter, refer to [ThunderRtcConstant.LimterParam](#ThunderRtcConstant.LimterParam) for details |
+| param | The parameters of limiter, refer to [ThunderRtcConstant.LimterParam](#thunderrtcconstantlimterparam) for details |
 
-##### Return[](#setLimiterParam)
+##### Return[](#setlimiterparam)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1118,9 +1119,9 @@ public void enableAudioPlaySpectrum(boolean enable)
 
 Enable/Disable data callback on audio play spectrum.
 
-The [ThunderEventHandler.onAudioPlaySpectrumData](.mdnotification.md#ThunderEventHandler.onAudioPlaySpectrumData) function will be called back after it is enabled.
+The [ThunderEventHandler.onAudioPlaySpectrumData](.mdnotification.html#thundereventhandleronaudioplayspectrumdata) function will be called back after it is enabled.
 
-##### Parameter[](#enableAudioPlaySpectrum)
+##### Parameter[](#enableaudioplayspectrum)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1136,7 +1137,7 @@ public void setAudioPlaySpectrumInfo(int spectrumLen, int notifyIntervalMS)
 
 Set callback information of audio play spectrum data.
 
-##### Parameter[](#setAudioPlaySpectrumInfo)
+##### Parameter[](#setaudioplayspectruminfo)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1161,19 +1162,19 @@ This interface sends messages through media UDP channel with features of low-lan
 - msg will be dropped if any of the conditions above is not met.
 - The messages cannot be guaranteed to be delivered to all online users in room, and cannot be guaranteed be delivered in order.
 
-Get the reason for failed sending of msg through [ThunderEventHandler.onSendAppMsgDataFailedStatus](.mdnotification.md#ThunderEventHandler.onSendAppMsgDataFailedStatus) interface function.
-Get the custom broadcast messages from other users through [ThunderEventHandler.onRecvUserAppMsgData](.mdnotification.md#ThunderEventHandler.onRecvUserAppMsgData) interface function.
+Get the reason for failed sending of msg through [ThunderEventHandler.onSendAppMsgDataFailedStatus](.mdnotification.html#thundereventhandleronsendappmsgdatafailedstatus) interface function.
+Get the custom broadcast messages from other users through [ThunderEventHandler.onRecvUserAppMsgData](.mdnotification.html#thundereventhandleronrecvuserappmsgdata) interface function.
 
-##### Parameter[](#sendUserAppMsgData)
+##### Parameter[](#senduserappmsgdata)
 
 | Parameter | Description |
 | :--- | :--- |
 | msgData | Message sent |
 
-##### Return[](#sendUserAppMsgData)
+##### Return[](#senduserappmsgdata)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1193,20 +1194,20 @@ Specified constraints are as follows:
 - In audio/video mode, the call frequency of video publishing cannot exceed the frame rate, and the extra information shall be no more than 2048 bytes. For example, the default frame rate of 15fps is adopted for stream publishing, indicating that the call frequency cannot exceed 1000/15=66.7 ms each time
 - Packet loss may occur
 
-Get the reason for failed sending of media extra information through [IThunderMediaExtraInfoCallback.onSendMediaExtraInfoFailedStatus](.mdnotification.md#IThunderMediaExtraInfoCallback.onSendMediaExtraInfoFailedStatus).
-Receive the media extra information from other users through [IThunderMediaExtraInfoCallback.onRecvMediaExtraInfo](.mdnotification.md#IThunderMediaExtraInfoCallback.onRecvMediaExtraInfo) interface function.
+Get the reason for failed sending of media extra information through [IThunderMediaExtraInfoCallback.onSendMediaExtraInfoFailedStatus](.mdnotification.html#ithundermediaextrainfocallbackonsendmediaextrainfofailedstatus).
+Receive the media extra information from other users through [IThunderMediaExtraInfoCallback.onRecvMediaExtraInfo](.mdnotification.html#ithundermediaextrainfocallbackonrecvmediaextrainfo) interface function.
 
-##### Parameter[](#sendMediaExtraInfo)
+##### Parameter[](#sendmediaextrainfo)
 
 | Parameter | Description |
 | :--- | :--- |
 | Date | The media extra information data to be transmitted which must be created using ByteBuffer.allocateDirect(int) |
 | dataLen | The length of media extra information data.<br>If there is only audio publishing (publishing in a pure audio mode or only audio publishing in an audio/video mode), the size of extra information shall be no more than 200 bytes.<br>If there is video publishing in audio/video mode, the extra information shall be no more than 2048 bytes |
 
-##### Return[](#sendMediaExtraInfo)
+##### Return[](#sendmediaextrainfo)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1218,16 +1219,16 @@ public int setMediaExtraInfoCallback(IThunderMediaExtraInfoCallback callback)
 
 Set callback monitoring of media extra information.
 
-##### Parameter[](#setMediaExtraInfoCallback)
+##### Parameter[](#setmediaextrainfocallback)
 
 | Parameter | Description |
 | :--- | :--- |
-| callback | The callback instance object of media extra information, refer to [IThunderMediaExtraInfoCallback](.mdnotification.md#IThunderMediaExtraInfoCallback) for details |
+| callback | The callback instance object of media extra information, refer to [IThunderMediaExtraInfoCallback](.mdnotification.html#ithundermediaextrainfocallback) for details |
 
-##### Return[](#setMediaExtraInfoCallback)
+##### Return[](#setmediaextrainfocallback)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1238,18 +1239,18 @@ public int enableMixVideoExtraInfo(boolean enable)
 ```
 
 Enable mixed video carry media extra information, for example, mixed video carry layout information.
-After it is enabled, the callback on [IThunderMediaExtraInfoCallback.onRecvMixVideoInfo](.mdnotification.md#IThunderMediaExtraInfoCallback.onRecvMixVideoInfo) can be received when this mixed video stream is played in audience terminal.
+After it is enabled, the callback on [IThunderMediaExtraInfoCallback.onRecvMixVideoInfo](.mdnotification.html#ithundermediaextrainfocallbackonrecvmixvideoinfo) can be received when this mixed video stream is played in audience terminal.
 
-##### Parameter[](#enableMixVideoExtraInfo)
+##### Parameter[](#enablemixvideoextrainfo)
 
 | Parameter | Description |
 | :--- | :--- |
 | enable | true: Enable<br>false: Disable (default) |
 
-##### Return[](#enableMixVideoExtraInfo)
+##### Return[](#enablemixvideoextrainfo)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1260,9 +1261,9 @@ public void enableAudioDataIndication(boolean enablePlay)
 ```
 
 Enable/Disable reporting Audio playback Data.
-Get audio playback data through the [ThunderEventHandler.onAudioPlayData](.mdnotification.md#ThunderEventHandler.onAudioPlayData) interface function
+Get audio playback data through the [ThunderEventHandler.onAudioPlayData](.mdnotification.html#thundereventhandleronaudioplaydata) interface function
 
-##### 参数[](#enableAudioDataIndication)
+##### 参数[](#enableaudiodataindication)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1278,11 +1279,11 @@ public void setAudioSourceType(int sourceType)
 
 Set the audio source type.
 
-##### Parameter[](#setAudioSourceType)
+##### Parameter[](#setaudiosourcetype)
 
 | Parameter | Description |
 | :--- | :--- |
-| sourceType | Audio source type. For the optional value, refer to class attributes of [ThunderRtcConstant.SourceType](#ThunderRtcConstant.SourceType) for details |
+| sourceType | Audio source type. For the optional value, refer to class attributes of [ThunderRtcConstant.SourceType](#thunderrtcconstantsourcetype) for details |
 
 --------------------------
 
@@ -1294,16 +1295,16 @@ public int setEnableInEarMonitor(boolean enable)
 
 Enable/Disable in-ear monitor.
 
-##### Parameter[](#setEnableInEarMonitor)
+##### Parameter[](#setenableinearmonitor)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | true: enable <br>false: disable (default) |
 
-##### Return[](#setEnableInEarMonitor)
+##### Return[](#setenableinearmonitor)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1318,16 +1319,16 @@ Set video encoding configuration.
 - SDK will get specified parameters for encoding video from configuration server based on config. If the developer has special parameter requirements for encoding video, contact technical support for personalized configuration.
 - If the video has been published, update the video encoding parameters. The updated video effect can be seen from local review and remote subscription.
 
-##### Parameter[](#setVideoEncoderConfig)
+##### Parameter[](#setvideoencoderconfig)
 
 | Parameter | Description |
 | :--- | :--- |
-| yyVideoConfig | For the video encoding configuration, refer to  [ThunderVideoEncoderConfiguration](#ThunderVideoEncoderConfiguration) for details |
+| yyVideoConfig | For the video encoding configuration, refer to  [ThunderVideoEncoderConfiguration](#thundervideoencoderconfiguration) for details |
 
-##### Return[](#setVideoEncoderConfig)
+##### Return[](#setvideoencoderconfig)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1340,16 +1341,16 @@ public int setLocalVideoCanvas(ThunderVideoCanvas local)
 Set local view.
 If this view is not set, the preview and publishing can also be enabled. The local collected picture can seen after setting this view.
 
-##### Parameter[](#setLocalVideoCanvas)
+##### Parameter[](#setlocalvideocanvas)
 
 | Parameter | Description |
 | :--- | :--- |
-| local | The video rendering canvas instance, refer to [ThunderVideoCanvas](#ThunderVideoCanvas) for details |
+| local | The video rendering canvas instance, refer to [ThunderVideoCanvas](#thundervideocanvas) for details |
 
-##### Return[](#setLocalVideoCanvas)
+##### Return[](#setlocalvideocanvas)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1365,16 +1366,16 @@ Set the playing type of remote video. The default is the common audience view.
 >
 > - Call it before joining room.
 
-##### Parameter[](#setRemotePlayType)
+##### Parameter[](#setremoteplaytype)
 
 | Parameter | Description |
 | :--- | :--- |
-| remotePlayType | Playing type of remote video. For the optional value, refer to [ThunderRtcConstant.ThunderRtcRemotePlayType](#ThunderRtcConstant.ThunderRtcRemotePlayType) |
+| remotePlayType | Playing type of remote video. For the optional value, refer to [ThunderRtcConstant.ThunderRtcRemotePlayType](#thunderrtcconstantthunderrtcremoteplaytype) |
 
-##### Return[](#setRemotePlayType)
+##### Return[](#setremoteplaytype)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1392,16 +1393,16 @@ This function is called to set the locations where the multi-channel video strea
 
 Support setting background image and its display location.
 
-##### Parameter[](#setMultiVideoViewLayout)
+##### Parameter[](#setmultivideoviewlayout)
 
 | Parameter | Description |
 | :--- | :--- |
-| params | The layout parameters of multiplayer interaction video in rendering view, refer to [ThunderMultiVideoViewParam](#ThunderMultiVideoViewParam) for details |
+| params | The layout parameters of multiplayer interaction video in rendering view, refer to [ThunderMultiVideoViewParam](#thundermultivideoviewparam) for details |
 
-##### Return[](#setMultiVideoViewLayout)
+##### Return[](#setmultivideoviewlayout)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1413,16 +1414,16 @@ public int setRemoteVideoCanvas(ThunderVideoCanvas remote)
 
 Set the rendering canvas of remote video.
 
-##### Parameter[](#setRemoteVideoCanvas)
+##### Parameter[](#setremotevideocanvas)
 
 | Parameter | Description |
 | :--- | :--- |
-| remote | The display view instance, refer to [ThunderVideoCanvas](#ThunderVideoCanvas) for details |
+| remote | The display view instance, refer to [ThunderVideoCanvas](#thundervideocanvas) for details |
 
-##### Return[](#setRemoteVideoCanvas)
+##### Return[](#setremotevideocanvas)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1434,16 +1435,16 @@ public int setLocalCanvasScaleMode(int mode)
 
 Set the scale mode of the local video stream on the canvas.
 
-##### Parameter[](#setLocalCanvasScaleMode)
+##### Parameter[](#setlocalcanvasscalemode)
 
 | Parameter | Description |
 | :--- | :--- |
-| mode | Local view scale mode. For the optional value, refer to [ThunderRtcConstant.ThunderVideoRenderMode](#ThunderRtcConstant.ThunderVideoRenderMode) |
+| mode | Local view scale mode. For the optional value, refer to [ThunderRtcConstant.ThunderVideoRenderMode](#thunderrtcconstantthundervideorendermode) |
 
-##### Return[](#setLocalCanvasScaleMode)
+##### Return[](#setlocalcanvasscalemode)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1455,17 +1456,17 @@ public int setRemoteCanvasScaleMode(String uid, int mode)
 
 Set the scale mode of the remote video stream on the canvas.
 
-##### Parameter[](#setRemoteCanvasScaleMode)
+##### Parameter[](#setremotecanvasscalemode)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | uid of remote user |
-| mode | Remote specified view scale mode. For the optional value, refer to [ThunderRtcConstant.ThunderVideoRenderMode](#ThunderRtcConstant.ThunderVideoRenderMode) |
+| mode | Remote specified view scale mode. For the optional value, refer to [ThunderRtcConstant.ThunderVideoRenderMode](#thunderrtcconstantthundervideorendermode) |
 
-##### Return[](#setRemoteCanvasScaleMode)
+##### Return[](#setremotecanvasscalemode)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1477,10 +1478,10 @@ public int startVideoPreview()
 
 Start video preview of local camera.
 
-##### Return[](#startVideoPreview)
+##### Return[](#startvideopreview)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1492,10 +1493,10 @@ public int stopVideoPreview()
 
 Stop video preview of local camera.
 
-##### Return[](#stopVideoPreview)
+##### Return[](#stopvideopreview)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1507,16 +1508,16 @@ public int enableLocalVideoCapture(boolean enable)
 
 Enable/Disable local video capture.
 
-##### Parameter[](#enableLocalVideoCapture)
+##### Parameter[](#enablelocalvideocapture)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | true: enable local video capture<br>false: disable local video capture (default) |
 
-##### Return[](#enableLocalVideoCapture)
+##### Return[](#enablelocalvideocapture)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1528,16 +1529,16 @@ public int stopLocalVideoStream(boolean stop)
 
 Disable/Enable local video sending.
 
-##### Parameter[](#stopLocalVideoStream)
+##### Parameter[](#stoplocalvideostream)
 
 | Parameter | Description |
 | :--- | :--- |
 | Stop | true: stop sending local video (default)<br>false: start sending local video |
 
-##### Return[](#stopLocalVideoStream)
+##### Return[](#stoplocalvideostream)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1549,20 +1550,20 @@ public int stopRemoteVideoStream(String uid, boolean stop)
 
  Stop/Resume receiving video stream of a specified user.
 
-- After stopping receiving specified video stream, you can receive all video streams through [stopAllRemoteVideoStreams](#ThunderEngine.stopAllRemoteVideoStreams), vice versa.
-- This interface has no priority relationship with [stopAllRemoteVideoStreams](#ThunderEngine.stopAllRemoteVideoStreams), and the interface called later will be valid.
+- After stopping receiving specified video stream, you can receive all video streams through [stopAllRemoteVideoStreams](#thunderenginestopallremotevideostreams), vice versa.
+- This interface has no priority relationship with [stopAllRemoteVideoStreams](#thunderenginestopallremotevideostreams), and the interface called later will be valid.
 
-##### Parameter[](#stopRemoteVideoStream)
+##### Parameter[](#stopremotevideostream)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | uid of remote user |
 | Stop | true: stop receiving specified video stream<br>false: receive specified video stream |
 
-##### Return[](#stopRemoteVideoStream)
+##### Return[](#stopremotevideostream)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1574,20 +1575,20 @@ public int stopAllRemoteVideoStreams(boolean stop)
 
 Stop/Receive all remote videos
 
-- After the setting of receiving all (stop=false), all video streams in the room will be subscribed automatically. You can specify one stream of not being subscribed by[stopRemoteVideoStream](#ThunderEngine.stopRemoteVideoStream).
-- After the setting of receiving nothing (stop=true), all video streams in the room will not be subscribed. You can specify one stream being subscribed by [stopRemoteVideoStream](#ThunderEngine.stopRemoteVideoStream).
-- This interface has no priority relationship with [stopRemoteVideoStream](#ThunderEngine.stopRemoteVideoStream), and the interface called later will be valid.
+- After the setting of receiving all (stop=false), all video streams in the room will be subscribed automatically. You can specify one stream of not being subscribed by[stopRemoteVideoStream](#thunderenginestopremotevideostream).
+- After the setting of receiving nothing (stop=true), all video streams in the room will not be subscribed. You can specify one stream being subscribed by [stopRemoteVideoStream](#thunderenginestopremotevideostream).
+- This interface has no priority relationship with [stopRemoteVideoStream](#thunderenginestopremotevideostream), and the interface called later will be valid.
 
-##### Parameter[](#stopAllRemoteVideoStreams)
+##### Parameter[](#stopallremotevideostreams)
 
 | Parameter | Description |
 | :--- | :--- |
-| Stop | true: stop receiving all video streams <br>false: resume receiving all video streams (clear all configuration records of [stopRemoteVideoStream](#ThunderEngine.stopRemoteVideoStream) at the same time) |
+| Stop | true: stop receiving all video streams <br>false: resume receiving all video streams (clear all configuration records of [stopRemoteVideoStream](#thunderenginestopremotevideostream) at the same time) |
 
-##### Return[](#stopAllRemoteVideoStreams)
+##### Return[](#stopallremotevideostreams)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1599,16 +1600,16 @@ public int registerVideoCaptureTextureObserver(IGPUProcess observer)
 
 Register observer object for capturing video texture data, which is used for beautification etc.
 
-##### Parameter[](#registerVideoCaptureTextureObserver)
+##### Parameter[](#registervideocapturetextureobserver)
 
 | Parameter | Description |
 | :--- | :--- |
-| observer | The observer object instance for collecting video texture data can obtain and process rendering texture data of video’s each frame. See [IGPUProcess](.mdnotification.md#IGPUProcess) for details.<br>If the null is transmitted, cancel registration. |
+| observer | The observer object instance for collecting video texture data can obtain and process rendering texture data of video’s each frame. See [IGPUProcess](.mdnotification.html#igpuprocess) for details.<br>If the null is transmitted, cancel registration. |
 
-##### Return[](#registerVideoCaptureTextureObserver)
+##### Return[](#registervideocapturetextureobserver)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1620,16 +1621,16 @@ public int registerVideoCaptureFrameObserver(IVideoCaptureObserver observer)
 
 Register observer object for collecting data of camera.
 
-##### Parameter[](#registerVideoCaptureFrameObserver)
+##### Parameter[](#registervideocaptureframeobserver)
 
 | Parameter | Description |
 | :--- | :--- |
-| observer | The observer object instance for collecting data of camera can obtain and render collected data of video camera yuv. See [IVideoCaptureObserver](.mdnotification.md#IVideoCaptureObserver) for details.<br>If the null is transmitted, cancel registration. |
+| observer | The observer object instance for collecting data of camera can obtain and render collected data of video camera yuv. See [IVideoCaptureObserver](.mdnotification.html#ivideocaptureobserver) for details.<br>If the null is transmitted, cancel registration. |
 
-##### Return[](#registerVideoCaptureFrameObserver)
+##### Return[](#registervideocaptureframeobserver)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1641,17 +1642,17 @@ public int registerVideoDecodeFrameObserver(String uid, IVideoDecodeObserver obs
 
 Register the decoded YUV (I420) video data observer object for the specified user.
 
-##### Parameter[](#registerVideoDecodeFrameObserver)
+##### Parameter[](#registervideodecodeframeobserver)
 
 | Parameter | Description |
 | :--- | :--- |
 | uid | uid needing to be monitored. |
-| observer | The decoded observer object for video data can obtain and process decoded video data. See [IVideoDecodeObserver](.mdnotification.md#IVideoDecodeObserver) for details.<br>If the null is transmitted, cancel registration. |
+| observer | The decoded observer object for video data can obtain and process decoded video data. See [IVideoDecodeObserver](.mdnotification.html#ivideodecodeobserver) for details.<br>If the null is transmitted, cancel registration. |
 
-##### Return[](#registerVideoDecodeFrameObserver)
+##### Return[](#registervideodecodeframeobserver)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1663,16 +1664,16 @@ public int registerAudioFrameObserver(IAudioFrameObserver observer)
 
 Register audio observer object.
 
-##### Parameter[](#registerAudioFrameObserver)
+##### Parameter[](#registeraudioframeobserver)
 
 | Parameter | Description |
 | :--- | :--- |
-| observer | The observer object for audio frame data can obtain and process audio frame data. See [IAudioFrameObserver](.mdnotification.md#IAudioFrameObserver) for details.<br>If the null is transmitted, cancel registration. |
+| observer | The observer object for audio frame data can obtain and process audio frame data. See [IAudioFrameObserver](.mdnotification.html#iaudioframeobserver) for details.<br>If the null is transmitted, cancel registration. |
 
-##### Return[](#registerAudioFrameObserver)
+##### Return[](#registeraudioframeobserver)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1684,19 +1685,19 @@ public int setRecordingAudioFrameParameters(int sampleRate, int room, int mode, 
 
 Set the format of captured audio data which will report.
 
-##### Parameter[](#setRecordingAudioFrameParameters)
+##### Parameter[](#setrecordingaudioframeparameters)
 
 | Parameter | Description |
 | :--- | :--- |
 | sampleRate | Specify sampling rate of audio callback data, and it can be set as 8000, 16000, 32000, 44100 or 48000 |
 | room | Set number of channels for audio callback data; 1: single track 2: dual track |
-| mode | Specify operation mode of audio callback data. See [ThunderRtcConstant.ThunderAudioRawFrameOperationMode](#ThunderRtcConstant.ThunderAudioRawFrameOperationMode) for details |
+| mode | Specify operation mode of audio callback data. See [ThunderRtcConstant.ThunderAudioRawFrameOperationMode](#thunderrtcconstantthunderaudiorawframeoperationmode) for details |
 | samplesPerCall | Specify number of samples for audio callback data. For example, the RTMP in push flow is always 1024. samplesPerCall = (int)(sampleRate × sampleInterval), in which: sampleInterval ≥ 0.01, in seconds. |
 
-##### Return[](#setRecordingAudioFrameParameters)
+##### Return[](#setrecordingaudioframeparameters)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1708,19 +1709,19 @@ public int setPlaybackAudioFrameParameters(int sampleRate, int room, int mode, i
 
 Set the format of playing audio data which will report.
 
-##### Parameter[](#setPlaybackAudioFrameParameters)
+##### Parameter[](#setplaybackaudioframeparameters)
 
 | Parameter | Description |
 | :--- | :--- |
 | sampleRate | Specify sampling rate of audio callback data, and it can be set as 8000, 16000, 32000, 44100 or 48000 |
 | room | Set number of channels for audio callback data; 1: single track 2: dual track |
-| mode | Specify operation mode of audio callback data. See [ThunderRtcConstant.ThunderAudioRawFrameOperationMode](#ThunderRtcConstant.ThunderAudioRawFrameOperationMode) for details |
+| mode | Specify operation mode of audio callback data. See [ThunderRtcConstant.ThunderAudioRawFrameOperationMode](#thunderrtcconstantthunderaudiorawframeoperationmode) for details |
 | samplesPerCall | Specify number of samples for audio callback data. For example, the RTMP in push flow is always 1024. samplesPerCall = (int)(sampleRate × sampleInterval), in which: sampleInterval ≥ 0.01, in seconds. |
 
-##### Return[](#setPlaybackAudioFrameParameters)
+##### Return[](#setplaybackaudioframeparameters)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1737,16 +1738,16 @@ Set watermark of local video.
 - Only one watermark can be added into the live video, and the watermark added later will replace the last one.
 - The watermark will rotate with the rotation of screen.
 
-##### Parameter[](#setVideoWatermark)
+##### Parameter[](#setvideowatermark)
 
 | Parameter | Description |
 | :--- | :--- |
-| watermark | The watermark pictures to be added into local live video, refer to [ThunderBoltImage](#ThunderBoltImage) for details. The settings of null indicates canceling watermark |
+| watermark | The watermark pictures to be added into local live video, refer to [ThunderBoltImage](#thunderboltimage) for details. The settings of null indicates canceling watermark |
 
-##### Return[](#setVideoWatermark)
+##### Return[](#setvideowatermark)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1758,9 +1759,9 @@ public int setCustomAudioSource(boolean enabled, int sampleRate, int channel)
 
 Set parameters of external audio source.
 
-- This interface shall be called before [pushCustomAudioFrame](#ThunderEngine.pushCustomAudioFrame).
+- This interface shall be called before [pushCustomAudioFrame](#thunderenginepushcustomaudioframe).
 
-##### Parameter[](#setCustomAudioSource)
+##### Parameter[](#setcustomaudiosource)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -1768,10 +1769,10 @@ Set parameters of external audio source.
 | sampleRate | The sampling rate of external audio source can be 8000, 16000, 32000, 44100 or 48000 |
 | channel | Number of channels for external audio source (support two at most) |
 
-##### Return[](#setCustomAudioSource)
+##### Return[](#setcustomaudiosource)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1783,19 +1784,19 @@ public int pushCustomAudioFrame(byte[] data, long timeStamp)
 
 Push external audio frame.
 
-- Call this interface after [setCustomAudioSource](#ThunderEngine.setCustomAudioSource), and then, upload the external audio data
+- Call this interface after [setCustomAudioSource](#thunderenginesetcustomaudiosource), and then, upload the external audio data
 
-##### Parameter[](#pushCustomAudioFrame)
+##### Parameter[](#pushcustomaudioframe)
 
 | Parameter | Description |
 | :--- | :--- |
 | Date | External PCM audio frame data |
 | timeStamp | Timestamp of external audio frame is used to synchronize external video source |
 
-##### Return[](#pushCustomAudioFrame)
+##### Return[](#pushcustomaudioframe)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1807,18 +1808,18 @@ public int setCustomVideoSource(ThunderCustomVideoSource videoSource)
 
 Set customized video source.
 
-- The user needs to implement [ThunderCustomVideoSource](.mdnotification.md#ThunderCustomVideoSource) interface, monitor corresponding methods, and upload external video stream by using [ThunderVideoFrameConsumer.consumeByteArrayFrame](.mdnotification.md#ThunderVideoFrameConsumer.consumeByteArrayFrame) in onInitialize function.
+- The user needs to implement [ThunderCustomVideoSource](.mdnotification.html#thundercustomvideosource) interface, monitor corresponding methods, and upload external video stream by using [ThunderVideoFrameConsumer.consumeByteArrayFrame](.mdnotification.html#thundervideoframeconsumerconsumebytearrayframe) in onInitialize function.
 
-##### Parameter[](#setCustomVideoSource)
+##### Parameter[](#setcustomvideosource)
 
 | Parameter | Description |
 | :--- | :--- |
 | videoSource | Operation interface for external video source |
 
-##### Return[](#setCustomVideoSource)
+##### Return[](#setcustomvideosource)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1830,20 +1831,20 @@ public int addPublishOriginStreamUrl(String url)
 
 Add a publishing address of source stream.
 
-- After this interface is called, the anchor's current audio/video stream will be pushed to the specified CDN address. To update url, first call the [removePublishOriginStreamUrl](#ThunderEngine.removePublishOriginStreamUrl), and add after removing the original address.
+- After this interface is called, the anchor's current audio/video stream will be pushed to the specified CDN address. To update url, first call the [removePublishOriginStreamUrl](#thunderengineremovepublishoriginstreamurl), and add after removing the original address.
 - Only one-channel stream publishing address can be added each time by this method. If multi-channel streams need to be pushed, this method have to be called repeatedly. A maximum of 5 addresses are supported for stream publishing.
 - The server will push the source stream to corresponding URL after publishing. It can be called after joining the room (joinroom), and the configuration will be cleared after leaving the room.
 
-##### Parameter[](#addPublishOriginStreamUrl)
+##### Parameter[](#addpublishoriginstreamurl)
 
 | Parameter | Description |
 | :--- | :--- |
 | url | Stream publishing address, with the format of RTMP.<br>The special characters such as Chinese cannot be supported, and the address length cannot be more than 512 bytes.<br>Note: some CDN manufacturers may not support 512 bytes, for example, the Aliyun only supports 256 bytes. |
 
-##### Return[](#addPublishOriginStreamUrl)
+##### Return[](#addpublishoriginstreamurl)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1857,16 +1858,16 @@ Remove the publishing address of source stream.
 
 - After this interface is called, the anchor's current audio/video stream will not be pushed to the specified CDN address.
 
-##### Parameter[](#removePublishOriginStreamUrl)
+##### Parameter[](#removepublishoriginstreamurl)
 
 | Parameter | Description |
 | :--- | :--- |
 | url | The address to stop pushing stream, the format is RTMP.<br>The special characters such as Chinese cannot be supported, and the address length cannot be more than 512 bytes.<br>Note: some CDN manufacturers may not support 512 bytes, for example, the Aliyun only supports 256 bytes. |
 
-##### Return[](#removePublishOriginStreamUrl)
+##### Return[](#removepublishoriginstreamurl)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1881,19 +1882,19 @@ Add or update transcoding task.
 - After this interface is called, the server of AIVACOM will start stream mixing and transcoding tasks, and pull various set source streams to mix videos and audios. The application needs to specify task ID to differentiate different stream mixing and transcoding tasks.
 - This interface can be called repeatedly to update stream mixing parameters in the mix process. Multiple stream mixing tasks can be set in the same room.
 - This interface is called only after you join a room (joinRoom). The configuration will be cleaned after you leave the room.
-- The stream publishing address can be added into the stream mixing and transcoding tasks by [addPublishTranscodingStreamUrl](#ThunderEngine.addPublishTranscodingStreamUrl) interface. The mixing and transcoding stream will be pushed to specified address after operating the stream mixing and transcoding.
+- The stream publishing address can be added into the stream mixing and transcoding tasks by [addPublishTranscodingStreamUrl](#thunderengineaddpublishtranscodingstreamurl) interface. The mixing and transcoding stream will be pushed to specified address after operating the stream mixing and transcoding.
 
-##### Parameter[](#setLiveTranscodingTask)
+##### Parameter[](#setlivetranscodingtask)
 
 | Parameter | Description |
 | :--- | :--- |
 | taskId | Task ID for stream mixing and transcoding tasks is generated and managed by the developer. It shall be unique in a room and supports the permutation and combination of characters such as [A,Z],[a,z],[0,9],-,_, with the length of not more than 64 bytes. |
-| transcoding | The configuration information of stream mixing and transcoding, refer to [LiveTranscoding](#LiveTranscoding) for details |
+| transcoding | The configuration information of stream mixing and transcoding, refer to [LiveTranscoding](#livetranscoding) for details |
 
-##### Return[](#setLiveTranscodingTask)
+##### Return[](#setlivetranscodingtask)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1907,16 +1908,16 @@ Remove a transcoding task.
 
 - After this interface is called, the server of AIVACOM will delete and stop the stream mixing task, but the url added by the addPublishTranscodingStreamUrl will not be remove.
 
-##### Parameter[](#removeLiveTranscodingTask)
+##### Parameter[](#removelivetranscodingtask)
 
 | Parameter | Description |
 | :--- | :--- |
 | taskId | Task ID for stream mixing and transcoding tasks is generated and managed by the developer. It shall be unique in a room and supports the permutation and combination of characters such as [A,Z],[a,z],[0,9],-,_, with the length of not more than 64 bytes. |
 
-##### Return[](#removeLiveTranscodingTask)
+##### Return[](#removelivetranscodingtask)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1928,22 +1929,22 @@ public int addPublishTranscodingStreamUrl(String taskId, String url)
 
 Add a publishing address of transcoding stream.
 
-- Call this interface after adding transcoding task by calling [setLiveTranscodingTask](#ThunderEngine.setLiveTranscodingTask) interface.
-- After this interface is called, the specified mixing stream will be pushed to the specified CDN address. To update url, first call the [removePublishTranscodingStreamUrl](#ThunderEngine.removePublishTranscodingStreamUrl) and add after removing the original address.
+- Call this interface after adding transcoding task by calling [setLiveTranscodingTask](#thunderenginesetlivetranscodingtask) interface.
+- After this interface is called, the specified mixing stream will be pushed to the specified CDN address. To update url, first call the [removePublishTranscodingStreamUrl](#thunderengineremovepublishtranscodingstreamurl) and add after removing the original address.
 - Add stream publishing address for specified transcoding task, and only one address can added by this method. If multiple-channel streams have to be pushed, call this method repeatedly. 5 stream publishing addresses can be supported at most in the same transcoding task.
 - This interface is called only after you join a room (joinRoom). The configuration will be cleaned after you leave the room.
 
-##### Parameter[](#addPublishTranscodingStreamUrl)
+##### Parameter[](#addpublishtranscodingstreamurl)
 
 | Parameter | Description |
 | :--- | :--- |
 | taskId | The transcoding task ID is generated and managed by users. It shall be unique globally, and only supports character set composed of a-zA-Z0-9 with length of no more than 20 characters. |
 | url | Stream publishing address, with the format of RTMP.<br>The special characters such as Chinese cannot be supported, and the address length cannot be more than 512 bytes.<br>Note: some CDN manufacturers may not support 512 bytes, for example, the Aliyun only supports 256 bytes |
 
-##### Return[](#addPublishTranscodingStreamUrl)
+##### Return[](#addpublishtranscodingstreamurl)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1959,17 +1960,17 @@ Remove the publishing address of the transcoding stream.
 - Only one-channel stream publishing address can be deleted each time by this method. If multi-channel streams need to be removed, this method have to be called repeatedly.
 - Call it after joining room (joinRoom).
 
-##### Parameter[](#removePublishTranscodingStreamUrl)
+##### Parameter[](#removepublishtranscodingstreamurl)
 
 | Parameter | Description |
 | :--- | :--- |
 | taskId | The transcoding task ID is generated by application. It shall be unique globally, and only supports character set composed of a-zA-Z0-9 with length of no more than 20 characters. |
 | url | The publishing stream address to be deleted, the format is RTMP.<br>The special characters such as Chinese cannot be supported, and the address length cannot be more than 512 bytes.<br>Note: some CDN manufacturers may not support 512 bytes, for example, the Aliyun only supports 256 bytes. |
 
-##### Return[](#removePublishTranscodingStreamUrl)
+##### Return[](#removepublishtranscodingstreamurl)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1983,17 +1984,17 @@ Subscribe stream of specified user across the room.
 
 - Subscribe audio/video stream of other rooms after joining the room. Namely, this function can be called after joining the room (joinRoom). Leaving the room will empty the configuration.
 
-##### Parameter[](#addSubscribe)
+##### Parameter[](#addsubscribe)
 
 | Parameter | Description |
 | :--- | :--- |
 | roomId | Room ID only supports the permutation and combination of characters such as [A,Z],[a,z],[0,9],-,_, with the length of not more than 64 bytes. |
 | uid | User ID, the corresponding anchor uid of audio/video to be subscribed |
 
-##### Return[](#addSubscribe)
+##### Return[](#addsubscribe)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2005,19 +2006,19 @@ public int removeSubscribe(String roomId, String uid)
 
 Remove the subscription of stream of specified user across the room.
 
-- Remove the subscription of audio/video stream of other rooms. It plays a opposite role with the [addSubscribe](#ThunderEngine.addSubscribe) interface. It also shall be called after joining the room (joinRoom).
+- Remove the subscription of audio/video stream of other rooms. It plays a opposite role with the [addSubscribe](#thunderengineaddsubscribe) interface. It also shall be called after joining the room (joinRoom).
 
-##### Parameter[](#removeSubscribe)
+##### Parameter[](#removesubscribe)
 
 | Parameter | Description |
 | :--- | :--- |
 | roomId | Room ID only supports the permutation and combination of characters such as [A,Z],[a,z],[0,9],-,_, with the length of not more than 64 bytes. |
 | uid | User ID, the corresponding anchor uid of audio/video to be unsubscribed |
 
-##### Return[](#removeSubscribe)
+##### Return[](#removesubscribe)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2029,19 +2030,19 @@ public int switchFrontCamera(boolean bFront)
 
 Switch to front/rear camera.
 
-- It needs to be called after starting the preview [startVideoPreview](#ThunderEngine.startVideoPreview).
+- It needs to be called after starting the preview [startVideoPreview](#thunderenginestartvideopreview).
 - The front camera is by default enabled when this method is not called.
 
-##### Parameter[](#switchFrontCamera)
+##### Parameter[](#switchfrontcamera)
 
 | Parameter | Description |
 | :--- | :--- |
 | bFront | true: enable front camera (default)<br>false: switch to rear camera |
 
-##### Return[](#switchFrontCamera)
+##### Return[](#switchfrontcamera)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2053,19 +2054,19 @@ public int setVideoCaptureOrientation(int orientation)
 
 Set the capture angle of camera (landscape/portrait).
 
-- It can be valid before or after calling [startVideoPreview](#ThunderEngine.startVideoPreview) .
+- It can be valid before or after calling [startVideoPreview](#thunderenginestartvideopreview) .
 - The capture orientation is vertical by default when this method is not called.
 
-##### Parameter[](#setVideoCaptureOrientation)
+##### Parameter[](#setvideocaptureorientation)
 
 | Parameter | Description |
 | :--- | :--- |
-| orientation | The capture orientation of camera. For the optional value, refer to [ThunderRtcConstant.ThunderVideoCaptureOrientation](#ThunderRtcConstant.ThunderVideoCaptureOrientation) for details |
+| orientation | The capture orientation of camera. For the optional value, refer to [ThunderRtcConstant.ThunderVideoCaptureOrientation](#thunderrtcconstantthundervideocaptureorientation) for details |
 
-##### Return[](#setVideoCaptureOrientation)
+##### Return[](#setvideocaptureorientation)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2077,20 +2078,20 @@ public int setLocalVideoMirrorMode(int mode)
 
 Set local video mirror mode.
 
-- It can be valid before or after calling [startVideoPreview](#ThunderEngine.startVideoPreview) .
+- It can be valid before or after calling [startVideoPreview](#thunderenginestartvideopreview) .
 - This method is only applicable for front camera other than rear camera. The preview and stream publishing of rear camera will not be mirrored.
 - By default, the front camera mirrors preview other than stream publishing.
 
-##### Parameter[](#setLocalVideoMirrorMode)
+##### Parameter[](#setlocalvideomirrormode)
 
 | Parameter | Description |
 | :--- | :--- |
-| mode | Mirror mode. For the optional value, see[ThunderRtcConstant.ThunderVideoMirrorMode](#ThunderRtcConstant.ThunderVideoMirrorMode) for details |
+| mode | Mirror mode. For the optional value, see[ThunderRtcConstant.ThunderVideoMirrorMode](#thunderrtcconstantthundervideomirrormode) for details |
 
-##### Return[](#setLocalVideoMirrorMode)
+##### Return[](#setlocalvideomirrormode)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2106,16 +2107,16 @@ Enable/Disable WebSDK compatibility.
 - This is applicable for live scenes and shall be called before publishing. It has nothing to join/exit channel, and only be reset when destroyEngine is performed
 - Audio/Video connection is compatible with Web SDK by default, and there is no need to calling this method.
 
-##### Parameter[](#enableWebSdkCompatibility)
+##### Parameter[](#enablewebsdkcompatibility)
 
 | Parameter | Description |
 | :--- | :--- |
 | enabled | true: Compatible<br>false: Incompatible (default) |
 
-##### Return[](#enableWebSdkCompatibility)
+##### Return[](#enablewebsdkcompatibility)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2143,7 +2144,7 @@ Open the file to be played, and the following formats are supported: mp3, aac, w
 public void close()
 ```
 
-Close play file, and [ThunderAudioFilePlayer.open](#ThunderAudioFilePlayer.open) can be called again.
+Close play file, and [ThunderAudioFilePlayer.open](#thunderaudiofileplayeropen) can be called again.
 
 --------------------------
 
@@ -2163,7 +2164,7 @@ Start playing.
 public void stop()
 ```
 
-Stop playing, and call [ThunderAudioFilePlayer.play](#ThunderAudioFilePlayer.play) to play again.
+Stop playing, and call [ThunderAudioFilePlayer.play](#thunderaudiofileplayerplay) to play again.
 
 --------------------------
 
@@ -2173,7 +2174,7 @@ Stop playing, and call [ThunderAudioFilePlayer.play](#ThunderAudioFilePlayer.pla
 public void pause()
 ```
 
-Suspend playing, and call [ThunderAudioFilePlayer.resume](#ThunderAudioFilePlayer.resume) to continue.
+Suspend playing, and call [ThunderAudioFilePlayer.resume](#thunderaudiofileplayerresume) to continue.
 
 --------------------------
 
@@ -2199,7 +2200,7 @@ Skip to specified play time.(Only support local audio files)
 
 | Parameter | Description |
 | :--- | :--- |
-| timeMS | The time (in seconds), shall be no more than the value obtained by [ThunderAudioFilePlayer.getTotalPlayTimeMS](#ThunderAudioFilePlayer.getTotalPlayTimeMS) |
+| timeMS | The time (in seconds), shall be no more than the value obtained by [ThunderAudioFilePlayer.getTotalPlayTimeMS](#thunderaudiofileplayergettotalplaytimems) |
 
 --------------------------
 
@@ -2211,7 +2212,7 @@ public long getTotalPlayTimeMS()
 
 Get the total play time of files.
 
-##### Return[](#getTotalPlayTimeMS)
+##### Return[](#gettotalplaytimems)
 
 - Total play time in seconds
 
@@ -2225,9 +2226,9 @@ public long getCurrentPlayTimeMS()
 
 Get the time which has been played.
 
-##### Return[](#getCurrentPlayTimeMS)
+##### Return[](#getcurrentplaytimems)
 
-- The time (in seconds) which has been played, shall be no more than the value obtained by [ThunderAudioFilePlayer.getTotalPlayTimeMS](#ThunderAudioFilePlayer.getTotalPlayTimeMS)
+- The time (in seconds) which has been played, shall be no more than the value obtained by [ThunderAudioFilePlayer.getTotalPlayTimeMS](#thunderaudiofileplayergettotalplaytimems)
 
 --------------------------
 
@@ -2239,7 +2240,7 @@ public void setPlayVolume(int volume)
 
 Set play volume of current music files locally (anchor) and remotely (audience).
 
-##### Parameter[](#setPlayVolume)
+##### Parameter[](#setplayvolume)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2255,16 +2256,16 @@ public int setPlayerLocalVolume(int volume)
 
 Adjust the local volume of music files. Call this method in the room.
 
-##### Parameter[](#setPlayerLocalVolume)
+##### Parameter[](#setplayerlocalvolume)
 
 | Parameter | Description |
 | :--- | :--- |
 | volume | Play volume [0-100] |
 
-##### Return[](#setPlayerLocalVolume)
+##### Return[](#setplayerlocalvolume)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2276,16 +2277,16 @@ public int setPlayerPublishVolume(int volume)
 
 Adjust remote volume of music files. Call this method in the room.
 
-##### Parameter[](#setPlayerPublishVolume)
+##### Parameter[](#setplayerpublishvolume)
 
 | Parameter | Description |
 | :--- | :--- |
 | volume | Play volume [0-100] |
 
-##### Return[](#setPlayerPublishVolume)
+##### Return[](#setplayerpublishvolume)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2297,10 +2298,10 @@ public int getPlayerLocalVolume()
 
 Get the local volume of music files.
 
-##### Return[](#getPlayerLocalVolume)
+##### Return[](#getplayerlocalvolume)
 
 - [0-100]: Volume value, ranging from [0 to 100]
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2312,10 +2313,10 @@ public int getPlayerPublishVolume()
 
 Get the remote volume of music files.
 
-##### Return[](#getPlayerPublishVolume)
+##### Return[](#getplayerpublishvolume)
 
 - [0-100]: Volume value, ranging from [0 to 100]
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2327,10 +2328,10 @@ public int getAudioTrackCount()
 
 Get audio track count of audio files.
 
-##### Return[](#getAudioTrackCount)
+##### Return[](#getaudiotrackcount)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2342,16 +2343,16 @@ public int selectAudioTrack(int audioTrack)
 
 Switch to specified audio track.
 
-##### Parameter[](#selectAudioTrack)
+##### Parameter[](#selectaudiotrack)
 
 | Parameter | Description |
 | :--- | :--- |
 | audiotrack | Specified audio track to be switch to. 0 indicates the first audio track |
 
-##### Return[](#selectAudioTrack)
+##### Return[](#selectaudiotrack)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2363,7 +2364,7 @@ public void setSemitone(int val)
 
 Set a tone for audio playing.
 
-##### Parameter[](#setSemitone)
+##### Parameter[](#setsemitone)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2379,16 +2380,16 @@ public int setLooping(int cycle)
 
 Sets times of loop playbacks.
 
-##### Parameter[](#setLooping)
+##### Parameter[](#setlooping)
 
 | Parameter | Description |
 | :--- | :--- |
 | cycle | -1: indicates infinite loop <br>0: No loop (default value); Positive integer: Loop times<br> |
 
-##### Return[](#setLooping)
+##### Return[](#setlooping)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.md#ThunderRtcConstant.ThunderRet)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](.mdcode.html#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2400,7 +2401,7 @@ public void enablePublish(boolean enable)
 
 Whether to use this currently played audio file as the live accompaniment.
 
-##### Parameter[](#enablePublish)
+##### Parameter[](#enablepublish)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2416,11 +2417,11 @@ public synchronized void setPlayerNotify(IThunderAudioFilePlayerCallback callbac
 
 Set callback interface of audio file player.
 
-##### Parameter[](#setPlayerNotify)
+##### Parameter[](#setplayernotify)
 
 | Parameter | Description |
 | :--- | :--- |
-| callback | The callback interface of audio file player, refer to [ThunderAudioFilePlayer.IThunderAudioFilePlayerCallback](.mdnotification.md#ThunderAudioFilePlayer.IThunderAudioFilePlayerCallback) for details |
+| callback | The callback interface of audio file player, refer to [ThunderAudioFilePlayer.IThunderAudioFilePlayerCallback](.mdnotification.html#thunderaudiofileplayerithunderaudiofileplayercallback) for details |
 
 --------------------------
 
@@ -2432,7 +2433,7 @@ public synchronized void enableVolumeIndication(boolean enable, int interval)
 
 Enable the volume callback on audio file playing.
 
-##### Parameter[](#enableVolumeIndication)
+##### Parameter[](#enablevolumeindication)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2449,7 +2450,7 @@ public synchronized void setMixStandard(boolean standard)
 
 Set whether audio file is a mixed video standard stream.
 
-##### Parameter[](#setMixStandard)
+##### Parameter[](#setmixstandard)
 
 | Parameter | Description |
 | :--- | :--- |
@@ -2465,7 +2466,7 @@ public synchronized boolean isMixStandard()
 
 Query whether audio file is a mixed video standard stream.
 
-##### Return[](#isMixStandard)
+##### Return[](#ismixstandard)
 
 - true: Mixed video standard stream
 - false: Not mixed video standard stream
@@ -2569,7 +2570,7 @@ Authentication results
 | :--- | :--- |
 | THUNDER_AUTHRES_SUCCUSS(0) | Authentication succeeded |
 | THUNDER_AUTHRES_ERR_SERVER_INTERNAL(10000) | Server internal error, try again |
-| THUNDER_AUTHRES_ERR_NO_TOKEN(10001) | If there is no token, call [ThunderEngine.updateToken](#ThunderEngine.updateToken) |
+| THUNDER_AUTHRES_ERR_NO_TOKEN(10001) | If there is no token, call [ThunderEngine.updateToken](#thunderengineupdatetoken) |
 | THUNDER_AUTHRES_ERR_TOKEN_ERR(10002) | Token authentication failed (incorrect digital signature), which may be caused by incorrect appSecret |
 | THUNDER_AUTHRES_ERR_APPID(10003) | appid in token is inconsistent with appid when execute authentication |
 | THUNDER_AUTHRES_ERR_UID(10004) | uid in token is inconsistent with uid when execute authentication |
@@ -3307,8 +3308,8 @@ public class ThunderVideoEncoderConfiguration {
 
 | Profile (value) | Meaning |
 | :--- | :--- |
-| playType | Play type. For the optional value, refer to [ThunderRtcConstant.ThunderVideoCaptureOrientation](#ThunderRtcConstant.ThunderPublishPlayType) for details |
-| publishMode | Publish bracket. For the optional value, refer to [ThunderRtcConstant.ThunderVideoCaptureOrientation](#ThunderRtcConstant.ThunderPublishVideoMode) for details |
+| playType | Play type. For the optional value, refer to [ThunderRtcConstant.ThunderVideoCaptureOrientation](#thunderrtcconstantthunderpublishplaytype) for details |
+| publishMode | Publish bracket. For the optional value, refer to [ThunderRtcConstant.ThunderVideoCaptureOrientation](#thunderrtcconstantthunderpublishvideomode) for details |
 
 --------------------------
 
@@ -3496,10 +3497,10 @@ public class LiveTranscoding {
 
 Used layout information configuration types include:
 
-- [LiveTranscoding.TranscodingUser](#LiveTranscoding.TranscodingUser)
-- [LiveTranscoding.MediaStreamLayout](#LiveTranscoding.MediaStreamLayout)
+- [LiveTranscoding.TranscodingUser](#livetranscodingtranscodinguser)
+- [LiveTranscoding.MediaStreamLayout](#livetranscodingmediastreamlayout)
 
-For the default configuration of video mixing and transcoding output bracket, refer to [ThunderRtcConstant.LiveTranscodingMode](#ThunderRtcConstant.LiveTranscodingMode) for details
+For the default configuration of video mixing and transcoding output bracket, refer to [ThunderRtcConstant.LiveTranscodingMode](#thunderrtcconstantlivetranscodingmode) for details
 
 --------------------------
 
