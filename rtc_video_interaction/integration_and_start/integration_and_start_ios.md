@@ -92,17 +92,17 @@ pod update
 
 - Choose Privacy - Microphone Usage Description and fill in the purpose to use the microphone, for example, Video Chat.
 - Choose Privacy - Camera Usage Description and fill in the purpose to use the camera, for example, Video Chat. 
-   ![info.plist configuration](/rtc_video_interaction/api/resources/iOS3.jpg)
+   ![info.plist configuration](/rtc_video_interaction/resources/IOS3.png)
 
 2. Enable background mode as required by the project. After entering background mode, the iOS device can still run related functions.
 
-![Set background mode](/rtc_video_interaction/api/resources/iOS2.jpg)
+![Set background mode](/rtc_video_interaction/resources/iOS2.jpg)
 
 ## 4. Real-Time Video Interaction
 
 After SDK integration, real-time video call can be implemented by SDK. The following figure shows the time sequence of API calling during a video call:
 
-![Time sequence of real-time video call](/rtc_video_interaction/api/resources/sequence.png)
+![Time sequence of real-time video call](/rtc_video_interaction/resources/sequence.png)
 
 ### 4.1 Creating and Initializing the ThunderEngine Instance
 
