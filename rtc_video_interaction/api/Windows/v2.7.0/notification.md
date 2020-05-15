@@ -7,80 +7,80 @@
 
 | public member functions | Function Name |
 | ---:| :--- |
-| virtual void | [onJoinRoomSuccess](#IThunderEventHandler::onJoinRoomSuccess)(const char* roomId, const char* uid, int elapsed) = 0 |
-| virtual void | [onLeaveRoom](#IThunderEventHandler::onLeaveRoom)() = 0 |
-| virtual void | [onPlayVolumeIndication](#IThunderEventHandler::onPlayVolumeIndication)(const [AudioVolumeInfo](#AudioVolumeInfo)* speakers, int speakerCount, int totalVolume) = 0 |
-| virtual void | [onInputVolume](#IThunderEventHandler::onInputVolume)(unsigned volume) = 0 |
-| virtual void | [onOutputVolume](#IThunderEventHandler::onOutputVolume)(unsigned volume) = 0 |
-| virtual void | [onBizAuthResult](#IThunderEventHandler::onBizAuthResult)(bool bPublish, [AUTH_RESULT](#AUTH_RESULT) result) = 0 |
-| virtual void | [onSdkAuthResult](#IThunderEventHandler::onSdkAuthResult)([AUTH_RESULT](#AUTH_RESULT) result) = 0 |
-| virtual void | [onTokenWillExpire](#IThunderEventHandler::onTokenWillExpire)(const char* token) = 0 |
-| virtual void | [onTokenRequest](#IThunderEventHandler::onTokenRequest)() = 0 |
-| virtual void | [onUserBanned](#IThunderEventHandler::onUserBanned)(bool status) = 0 |
-| virtual void | [onUserJoined](#IThunderEventHandler::onUserJoined)(const char* uid, int elapsed) = 0 |
-| virtual void | [onUserOffline](#IThunderEventHandler::onUserOffline)(const char* uid, [USER_OFFLINE_REASON_TYPE](#USER_OFFLINE_REASON_TYPE) reason) = 0 |
-| virtual void | [onNetworkQuality](#IThunderEventHandler::onNetworkQuality)(const char* uid, [NetworkQuality](#NetworkQuality) txQuality, [NetworkQuality](#NetworkQuality) rxQuality) = 0 |
-| virtual void | [onFirstLocalVideoFrameSent](#IThunderEventHandler::onFirstLocalVideoFrameSent)(int elapsed) = 0 |
-| virtual void | [onFirstLocalAudioFrameSent](#IThunderEventHandler::onFirstLocalAudioFrameSent)(int elapsed) = 0 |
-| virtual void | [onRemoteAudioStopped](#IThunderEventHandler::onRemoteAudioStopped)(const char* uid, bool stop) = 0 |
-| virtual void | [onConnectionStatus](#IThunderEventHandler::onConnectionStatus)([ThunderConnectionStatus](#ThunderConnectionStatus) status) = 0 |
-| virtual void | [onConnectionLost](#IThunderEventHandler::onConnectionLost)() = 0 |
-| virtual void | [onRemoteVideoStopped](#IThunderEventHandler::onRemoteVideoStopped)(const char* uid, bool stop) = 0 |
-| virtual void | [onVideoSizeChanged](#IThunderEventHandler::onVideoSizeChanged)(const char* uid, int width, int height, int rotation) = 0 |
-| virtual void | [onRemoteVideoPlay](#IThunderEventHandler::onRemoteVideoPlay)(const char* uid, int width, int height, int elapsed) = 0 |
-| virtual void | [onNetworkTypeChanged](#IThunderEventHandler::onNetworkTypeChanged)([ThunderNetworkType](#ThunderNetworkType) type) = 0 |
-| virtual void | [onAudioCaptureStatus](#IThunderEventHandler::onAudioCaptureStatus)([ThunderAudioDeviceStatus](#ThunderAudioDeviceStatus) type) = 0 |
-| virtual void | [onPublishStreamToCDNStatus](#IThunderEventHandler::onPublishStreamToCDNStatus)(const char* url, [ThunderPublishCDNErrorCode](#ThunderPublishCDNErrorCode) errorCode) = 0 |
-| virtual void | [onRoomStats](#IThunderEventHandler::onRoomStats)([RoomStats](#RoomStats) stats) = 0 |
-| virtual void | [onRecvUserAppMsgData](#IThunderEventHandler::onRecvUserAppMsgData)(const char* uid, const char* msgData) = 0 |
-| virtual void | [onSendAppMsgDataFailedStatus](#IThunderEventHandler::onSendAppMsgDataFailedStatus)(int status) = 0 |
-| virtual void | [onVideoCaptureStatus](#IThunderEventHandler::onVideoCaptureStatus)(int status) = 0 |
-| virtual void | [onLocalVideoStats](#IThunderEventHandler::onLocalVideoStats)(const [LocalVideoStats](#LocalVideoStats) stats) = 0 |
-| virtual void | [onLocalAudioStats](#IThunderEventHandler::onLocalAudioStats)(const [LocalAudioStats](#LocalAudioStats) stats) = 0 |
-| virtual void | [onRemoteVideoStatsOfUid](#IThunderEventHandler::onRemoteVideoStatsOfUid)(const char* uid, const [RemoteVideoStats](#RemoteVideoStats) stats) = 0 |
-| virtual void | [onRemoteAudioStatsOfUid](#IThunderEventHandler::onRemoteAudioStatsOfUid)(const char* uid, const [RemoteAudioStats](#RemoteAudioStats) stats) = 0 |
+| virtual void | [onJoinRoomSuccess](#ithundereventhandleronjoinroomsuccess)(const char* roomId, const char* uid, int elapsed) = 0 |
+| virtual void | [onLeaveRoom](#ithundereventhandleronleaveroom)() = 0 |
+| virtual void | [onPlayVolumeIndication](#ithundereventhandleronplayvolumeindication)(const [AudioVolumeInfo](#audiovolumeinfo)* speakers, int speakerCount, int totalVolume) = 0 |
+| virtual void | [onInputVolume](#ithundereventhandleroninputvolume)(unsigned volume) = 0 |
+| virtual void | [onOutputVolume](#ithundereventhandleronoutputvolume)(unsigned volume) = 0 |
+| virtual void | [onBizAuthResult](#ithundereventhandleronbizauthresult)(bool bPublish, [AUTH_RESULT](#auth-result) result) = 0 |
+| virtual void | [onSdkAuthResult](#ithundereventhandleronsdkauthresult)([AUTH_RESULT](#auth-result) result) = 0 |
+| virtual void | [onTokenWillExpire](#ithundereventhandlerontokenwillexpire)(const char* token) = 0 |
+| virtual void | [onTokenRequest](#ithundereventhandlerontokenrequest)() = 0 |
+| virtual void | [onUserBanned](#ithundereventhandleronuserbanned)(bool status) = 0 |
+| virtual void | [onUserJoined](#ithundereventhandleronuserjoined)(const char* uid, int elapsed) = 0 |
+| virtual void | [onUserOffline](#ithundereventhandleronuseroffline)(const char* uid, [USER_OFFLINE_REASON_TYPE](#user-offline-reason-type) reason) = 0 |
+| virtual void | [onNetworkQuality](#ithundereventhandleronnetworkquality)(const char* uid, [NetworkQuality](#networkquality) txQuality, [NetworkQuality](#networkquality) rxQuality) = 0 |
+| virtual void | [onFirstLocalVideoFrameSent](#ithundereventhandleronfirstlocalvideoframesent)(int elapsed) = 0 |
+| virtual void | [onFirstLocalAudioFrameSent](#ithundereventhandleronfirstlocalaudioframesent)(int elapsed) = 0 |
+| virtual void | [onRemoteAudioStopped](#ithundereventhandleronremoteaudiostopped)(const char* uid, bool stop) = 0 |
+| virtual void | [onConnectionStatus](#ithundereventhandleronconnectionstatus)([ThunderConnectionStatus](#thunderconnectionstatus) status) = 0 |
+| virtual void | [onConnectionLost](#ithundereventhandleronconnectionlost)() = 0 |
+| virtual void | [onRemoteVideoStopped](#ithundereventhandleronremotevideostopped)(const char* uid, bool stop) = 0 |
+| virtual void | [onVideoSizeChanged](#ithundereventhandleronvideosizechanged)(const char* uid, int width, int height, int rotation) = 0 |
+| virtual void | [onRemoteVideoPlay](#ithundereventhandleronremotevideoplay)(const char* uid, int width, int height, int elapsed) = 0 |
+| virtual void | [onNetworkTypeChanged](#ithundereventhandleronnetworktypechanged)([ThunderNetworkType](#thundernetworktype) type) = 0 |
+| virtual void | [onAudioCaptureStatus](#ithundereventhandleronaudiocapturestatus)([ThunderAudioDeviceStatus](#thunderaudiodevicestatus) type) = 0 |
+| virtual void | [onPublishStreamToCDNStatus](#ithundereventhandleronpublishstreamtocdnstatus)(const char* url, [ThunderPublishCDNErrorCode](#thunderpublishcdnerrorcode) errorCode) = 0 |
+| virtual void | [onRoomStats](#ithundereventhandleronroomstats)([RoomStats](#roomstats) stats) = 0 |
+| virtual void | [onRecvUserAppMsgData](#ithundereventhandleronrecvuserappmsgdata)(const char* uid, const char* msgData) = 0 |
+| virtual void | [onSendAppMsgDataFailedStatus](#ithundereventhandleronsendappmsgdatafailedstatus)(int status) = 0 |
+| virtual void | [onVideoCaptureStatus](#ithundereventhandleronvideocapturestatus)(int status) = 0 |
+| virtual void | [onLocalVideoStats](#ithundereventhandleronlocalvideostats)(const [LocalVideoStats](#localvideostats) stats) = 0 |
+| virtual void | [onLocalAudioStats](#ithundereventhandleronlocalaudiostats)(const [LocalAudioStats](#localaudiostats) stats) = 0 |
+| virtual void | [onRemoteVideoStatsOfUid](#ithundereventhandleronremotevideostatsofuid)(const char* uid, const [RemoteVideoStats](#remotevideostats) stats) = 0 |
+| virtual void | [onRemoteAudioStatsOfUid](#ithundereventhandleronremoteaudiostatsofuid)(const char* uid, const [RemoteAudioStats](#remoteaudiostats) stats) = 0 |
 
 - 
    ### IAudioFrameObserver
 
 | public member functions | Function Name |
 | ---:| :--- |
-| virtual bool | [onRecordAudioFrame](#IAudioFrameObserver::onRecordAudioFrame)([AudioFrame](#AudioFrame)& audioFrame) = 0 |
-| virtual bool | [onPlaybackAudioFrame](#IAudioFrameObserver::onPlaybackAudioFrame)([AudioFrame](#AudioFrame)& audioFrame) = 0 |
-| virtual bool | [onPlaybackAudioFrameBeforeMixing](#IAudioFrameObserver::onPlaybackAudioFrameBeforeMixing)(char* uid, [AudioFrame](#AudioFrame)& audioFrame) = 0 |
+| virtual bool | [onRecordAudioFrame](#iaudioframeobserveronrecordaudioframe)([AudioFrame](#audioframe)& audioFrame) = 0 |
+| virtual bool | [onPlaybackAudioFrame](#iaudioframeobserveronplaybackaudioframe)([AudioFrame](#audioframe)& audioFrame) = 0 |
+| virtual bool | [onPlaybackAudioFrameBeforeMixing](#iaudioframeobserveronplaybackaudioframebeforemixing)(char* uid, [AudioFrame](#audioframe)& audioFrame) = 0 |
 
 - 
    ### IThunderAudioPlayerNotify
 
 | public member functions | Function Name |
 | ---:| :--- |
-| virtual void | [onAudioFileVolume](#IThunderAudioPlayerNotify::onAudioFileVolume)(unsigned int volume, unsigned int currentMs, unsigned int totalMs) = 0 |
-| virtual void | [onAudioFilePlayEnd](#IThunderAudioPlayerNotify::onAudioFilePlayEnd)() = 0 |
+| virtual void | [onAudioFileVolume](#ithunderaudioplayernotifyonaudiofilevolume)(unsigned int volume, unsigned int currentMs, unsigned int totalMs) = 0 |
+| virtual void | [onAudioFilePlayEnd](#ithunderaudioplayernotifyonaudiofileplayend)() = 0 |
 
 - 
    ### IVideoFrameObserver
 
 | public member functions | Function Name |
 | ---:| :--- |
-| virtual bool | [onPreviewVideoFrame](#IVideoFrameObserver::onPreviewVideoFrame)([VideoFrame](#VideoFrame)& videoFrame) = 0 |
-| virtual bool | [onRenderVideoFrame](#IVideoFrameObserver::onRenderVideoFrame)(const char* uid, [VideoFrame](#VideoFrame)& videoFrame) = 0 |
+| virtual bool | [onPreviewVideoFrame](#ivideoframeobserveronpreviewvideoframe)([VideoFrame](#videoframe)& videoFrame) = 0 |
+| virtual bool | [onRenderVideoFrame](#ivideoframeobserveronrendervideoframe)(const char* uid, [VideoFrame](#videoframe)& videoFrame) = 0 |
 
 - 
    ### IVideoCaptureObserver
 
 | public member functions | Function Name |
 | ---:| :--- |
-| virtual bool | [onCaptureVideoFrame](#IVideoCaptureObserver::onCaptureVideoFrame)([VideoFrame](#VideoFrame)& videoFrame) = 0 |
+| virtual bool | [onCaptureVideoFrame](#ivideocaptureobserveroncapturevideoframe)([VideoFrame](#videoframe)& videoFrame) = 0 |
 
 - 
    ### IThunderMediaExtraInfoObserver
 
 | public member functions | Function Name |
 | ---:| :--- |
-| virtual void | [onSendMediaExtraInfoFailedStatus](#IThunderMediaExtraInfoObserver::onSendMediaExtraInfoFailedStatus)(int status) = 0 |
-| virtual void | [onRecvMediaExtraInfo](#IThunderMediaExtraInfoObserver::onRecvMediaExtraInfo)(const char* uid, const char* pData, int dataLen) = 0 |
-| virtual bool | [onRecvMixAudioInfo](#IThunderMediaExtraInfoObserver::onRecvMixAudioInfo)(const char* uid, [MixAudioInfoList](#MixAudioInfoList)& infos) = 0 |
-| virtual bool | [onRecvMixVideoInfo](#IThunderMediaExtraInfoObserver::onRecvMixVideoInfo)(const char* uid, [MixVideoInfoList](#MixVideoInfoList)& infos) = 0 |
+| virtual void | [onSendMediaExtraInfoFailedStatus](#ithundermediaextrainfoobserveronsendmediaextrainfofailedstatus)(int status) = 0 |
+| virtual void | [onRecvMediaExtraInfo](#ithundermediaextrainfoobserveronrecvmediaextrainfo)(const char* uid, const char* pData, int dataLen) = 0 |
+| virtual bool | [onRecvMixAudioInfo](#ithundermediaextrainfoobserveronrecvmixaudioinfo)(const char* uid, [MixAudioInfoList](#mixaudioinfolist)& infos) = 0 |
+| virtual bool | [onRecvMixVideoInfo](#ithundermediaextrainfoobserveronrecvmixvideoinfo)(const char* uid, [MixVideoInfoList](#mixvideoinfolist)& infos) = 0 |
 
 ## Detailed callback description
 
@@ -96,15 +96,15 @@ Occurs when the local user enters a room successfully.
 
 > **Note:**
 >
-> If you receive this callback after calling IThunderEngine::[joinRoom](function.md#IThunderEngine::joinRoom) means, connection to the server succeeds. In this case, you can call interfaces that are allowed only after entering room successfully.
+> If you receive this callback after calling IThunderEngine::[joinRoom](function.md#ithunderenginejoinroom) means, connection to the server succeeds. In this case, you can call interfaces that are allowed only after entering room successfully.
 
-##### Parameter[](#onJoinRoomSuccess)
+##### Parameter[](#onjoinroomsuccess)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | roomName | OUT | Room name |
 | uid | OUT | User ID |
-| elapsed | OUT | Time (ms) consumed from calling IThunderEngine::[joinRoom](function.md#IThunderEngine::joinRoom) to API event callback |
+| elapsed | OUT | Time (ms) consumed from calling IThunderEngine::[joinRoom](function.md#ithunderenginejoinroom) to API event callback |
 
 --------------------------
 
@@ -118,7 +118,7 @@ Callback on leaving room.
 
 > **Note:**
 >
-> This callback is received if you leave the room by calling [leaveRoom](function.md#IThunderEngine::leaveRoom).
+> This callback is received if you leave the room by calling [leaveRoom](function.md#ithunderengineleaveroom).
 
 --------------------------
 
@@ -132,13 +132,13 @@ Reporting who is speaking and the speakers' volume.
 
 > **Note:**
 >
-> After this method is called, an [onPlayVolumeIndication](function.md#IThunderEngine::setAudioVolumeIndication) notification will be received once anyone speaks in the room.
+> After this method is called, an [onPlayVolumeIndication](function.md#ithunderenginesetaudiovolumeindication) notification will be received once anyone speaks in the room.
 
-##### Parameter[](#onPlayVolumeIndication)
+##### Parameter[](#onplayvolumeindication)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| speakers | OUT | Speaker (array). For details, see [AudioVolumeInfo.](#AudioVolumeInfo) |
+| speakers | OUT | Speaker (array). For details, see [AudioVolumeInfo.](#audiovolumeinfo) |
 | speakerCount | OUT | Number of speakers |
 | totalVolume | OUT | Total volume (after audio mixing) [0-100] |
 
@@ -154,9 +154,9 @@ Reports the input volume for audition.
 
 > **Note:**
 >
-> This callback is received if [startInputDeviceTest](function.md#IAudioDeviceManager::startInputDeviceTest) is called. The call frequency is 120 ms.
+> This callback is received if [startInputDeviceTest](function.md#iaudiodevicemanagerstartinputdevicetest) is called. The call frequency is 120 ms.
 
-##### Parameter[](#onInputVolume)
+##### Parameter[](#oninputvolume)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -174,9 +174,9 @@ Reports the input volume for audition.
 
 > **Note:**
 >
-> This callback is received if [startOutputDeviceTest](function.md#IAudioDeviceManager::startOutputDeviceTest)is called. The call frequency is 150 ms.
+> This callback is received if [startOutputDeviceTest](function.md#iaudiodevicemanagerstartoutputdevicetest)is called. The call frequency is 150 ms.
 
-##### Parameter[](#onOutputVolume)
+##### Parameter[](#onoutputvolume)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -197,7 +197,7 @@ Callback on service authentication results.
 > - For returned results to be authenticated by the service, Aivacom will transfer the authentication request to the service authentication server and pass through and return authentication results.
 > - This callback is received if service authentication is mandatory for services and there is media stream in the uplink.
 
-##### Parameter[](#onBizAuthResult)
+##### Parameter[](#onbizauthresult)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -216,13 +216,13 @@ Callback of SDK authentication result.
 
 > **Note:**
 >
-> - Reports authentication result if IThunderEngine::[joinRoom](function.md#IThunderEngine::joinRoom) is called and there is uplink and downlink media data.
+> - Reports authentication result if IThunderEngine::[joinRoom](function.md#ithunderenginejoinroom) is called and there is uplink and downlink media data.
 
-##### Parameter[](#onSdkAuthResult)
+##### Parameter[](#onsdkauthresult)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| result | OUT | For details about the authentication result, see [AUTH_RESULT.](#AUTH_RESULT) |
+| result | OUT | For details about the authentication result, see [AUTH_RESULT.](#auth-result) |
 
 --------------------------
 
@@ -234,7 +234,7 @@ virtual void Thunder::IThunderEventHandler::onTokenWillExpire(const char* token)
 
 This callback is received if the user’s token is to expire.
 
-##### Parameter[](#onTokenWillExpire)
+##### Parameter[](#ontokenwillexpire)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -260,7 +260,7 @@ virtual void Thunder::IThunderEventHandler::onUserBanned(bool status);
 
 This callback is received if the user’s banning status has changed.
 
-##### Parameter[](#onUserBanned)
+##### Parameter[](#onuserbanned)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -280,12 +280,12 @@ This callback is received if a user joins the current room.
 
 > - This callback is valid only in audio-only mode and will be received when other users enter the room where the local user has entered.
 
-##### Parameter[](#onUserJoined)
+##### Parameter[](#onuserjoined)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | uid | OUT | User ID |
-| elapsed | OUT | Delay from calling [joinRoom](function.md#IThunderEngine::joinRoom) to receiving the callback (ms) |
+| elapsed | OUT | Delay from calling [joinRoom](function.md#ithunderenginejoinroom) to receiving the callback (ms) |
 
 --------------------------
 
@@ -301,12 +301,12 @@ Callback when the user leaves the current room.
 
 > - This callback is valid only in audio-only mode and is returned when other users leave the room where the local user has entered.
 
-##### Parameter[](#onUserOffline)
+##### Parameter[](#onuseroffline)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | uid | OUT | User ID |
-| reason | OUT | Causes for going offline. For details, see [USER_OFFLINE_REASON_TYPE.](#USER_OFFLINE_REASON_TYPE) |
+| reason | OUT | Causes for going offline. For details, see [USER_OFFLINE_REASON_TYPE.](#user-offline-reason-type) |
 
 --------------------------
 
@@ -318,13 +318,13 @@ virtual void Thunder::IThunderEventHandler::onNetworkQuality(const char* uid, Ne
 
 Reporting user network uplink/downlink quality.
 
-##### Parameter[](#onNetworkQuality)
+##### Parameter[](#onnetworkquality)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | uid | OUT | User ID |
-| txQuality | OUT | Uplink network quality of this user. For details, see [NetworkQuality.](#NetworkQuality) |
-| rxQuality | OUT | Downlink network quality of this user. For details, see [NetworkQuality.](#NetworkQuality) |
+| txQuality | OUT | Uplink network quality of this user. For details, see [NetworkQuality.](#networkquality) |
+| rxQuality | OUT | Downlink network quality of this user. For details, see [NetworkQuality.](#networkquality) |
 
 --------------------------
 
@@ -336,11 +336,11 @@ virtual void Thunder::IThunderEventHandler::onFirstLocalVideoFrameSent(int elaps
 
 Callback on first local video frame sent successfully. This callback is received if the user succeeds in publishing video streams.
 
-##### Parameter[](#onFirstLocalVideoFrameSent)
+##### Parameter[](#onfirstlocalvideoframesent)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| elapsed | OUT | Time (ms) consumed from calling IThunderEngine::[joinRoom](function.md#IThunderEngine::joinRoom) to event occurrence |
+| elapsed | OUT | Time (ms) consumed from calling IThunderEngine::[joinRoom](function.md#ithunderenginejoinroom) to event occurrence |
 
 --------------------------
 
@@ -352,11 +352,11 @@ virtual void Thunder::IThunderEventHandler::onFirstLocalAudioFrameSent(int elaps
 
 Callback on first local audio frame sent successfully. This callback is received if the user succeeds in publishing audio streams.
 
-##### Parameter[](#onFirstLocalAudioFrameSent)
+##### Parameter[](#onfirstlocalaudioframesent)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| elapsed | OUT | Time (ms) consumed from calling IThunderEngine::[joinRoom](function.md#IThunderEngine::joinRoom) to event occurrence |
+| elapsed | OUT | Time (ms) consumed from calling IThunderEngine::[joinRoom](function.md#ithunderenginejoinroom) to event occurrence |
 
 --------------------------
 
@@ -366,9 +366,9 @@ Callback on first local audio frame sent successfully. This callback is received
 virtual void Thunder::IThunderEventHandler::onRemoteAudioStopped(const char* uid, bool stopped);
 ```
 
-Callback on enabling/disabling remote user’s audio stream. This callback is received if IThunderEngine::[joinRoom](function.md#IThunderEngine::joinRoom) is called and status of existing and subsequent audio streams in the room changes.
+Callback on enabling/disabling remote user’s audio stream. This callback is received if IThunderEngine::[joinRoom](function.md#ithunderenginejoinroom) is called and status of existing and subsequent audio streams in the room changes.
 
-##### Parameter[](#onRemoteAudioStopped)
+##### Parameter[](#onremoteaudiostopped)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -383,13 +383,13 @@ Callback on enabling/disabling remote user’s audio stream. This callback is re
 virtual void Thunder::IThunderEventHandler::onConnectionStatus(ThunderConnectionStatus status);
 ```
 
-Reporting status of connection with server network. This callback is received if IThunderEngine::[joinRoom](function.md#IThunderEngine::joinRoom) is called and SDK connection with server network changes.
+Reporting status of connection with server network. This callback is received if IThunderEngine::[joinRoom](function.md#ithunderenginejoinroom) is called and SDK connection with server network changes.
 
-##### Parameter[](#onConnectionStatus)
+##### Parameter[](#onconnectionstatus)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| status | OUT | Network connection status. For details, see [ThunderConnectionStatus.](#ThunderConnectionStatus) |
+| status | OUT | Network connection status. For details, see [ThunderConnectionStatus.](#thunderconnectionstatus) |
 
 --------------------------
 
@@ -399,7 +399,7 @@ Reporting status of connection with server network. This callback is received if
 virtual void Thunder::IThunderEventHandler::onConnectionLost();
 ```
 
-Callback on disconnection with server network. This callback is received if IThunderEngine::[joinRoom](function.md#IThunderEngine::joinRoom) is called and SDK connection with server network is interrupted.
+Callback on disconnection with server network. This callback is received if IThunderEngine::[joinRoom](function.md#ithunderenginejoinroom) is called and SDK connection with server network is interrupted.
 
 --------------------------
 
@@ -409,9 +409,9 @@ Callback on disconnection with server network. This callback is received if IThu
 virtual void Thunder::IThunderEventHandler::onRemoteVideoStopped(const char* uid, bool stopped);
 ```
 
-Callback on stopping/starting remote user video streaming. This callback is received if IThunderEngine::[joinRoom](function.md#IThunderEngine::joinRoom) is called and status of existing and subsequent video streams in the room change.
+Callback on stopping/starting remote user video streaming. This callback is received if IThunderEngine::[joinRoom](function.md#ithunderenginejoinroom) is called and status of existing and subsequent video streams in the room change.
 
-##### Parameter[](#onRemoteVideoStopped)
+##### Parameter[](#onremotevideostopped)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -426,9 +426,9 @@ Callback on stopping/starting remote user video streaming. This callback is rece
 virtual void Thunder::IThunderEventHandler::onVideoSizeChanged(const char* uid, int width, int height, int rotation);
 ```
 
-Callback on change in local or remote video resolution. This callback is received if IThunderEngine::[joinRoom](function.md#IThunderEngine::joinRoom) is called and video resolution changes.
+Callback on change in local or remote video resolution. This callback is received if IThunderEngine::[joinRoom](function.md#ithunderenginejoinroom) is called and video resolution changes.
 
-##### Parameter[](#onVideoSizeChanged)
+##### Parameter[](#onvideosizechanged)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -445,16 +445,16 @@ Callback on change in local or remote video resolution. This callback is receive
 virtual void Thunder::IThunderEventHandler::onRemoteVideoPlay(const char* uid, int width, int height, int elapsed);
 ```
 
-Callback on displayed first remote video frame. Used to calculate the video speed. This callback is received after [setRemoteVideoCanvas](function.md#IThunderEngine::setRemoteVideoCanvas) is called and video streams are received and displayed in the window.
+Callback on displayed first remote video frame. Used to calculate the video speed. This callback is received after [setRemoteVideoCanvas](function.md#ithunderenginesetremotevideocanvas) is called and video streams are received and displayed in the window.
 
-##### Parameter[](#onRemoteVideoPlay)
+##### Parameter[](#onremotevideoplay)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | uid | OUT | User id |
 | width | OUT | Width |
 | height | OUT | High |
-| elapsed | OUT | Time (ms) consumed from calling IThunderEngine::[joinRoom](function.md#IThunderEngine::joinRoom) to event callback |
+| elapsed | OUT | Time (ms) consumed from calling IThunderEngine::[joinRoom](function.md#ithunderenginejoinroom) to event callback |
 
 --------------------------
 
@@ -464,13 +464,13 @@ Callback on displayed first remote video frame. Used to calculate the video spee
 virtual void Thunder::IThunderEventHandler::onNetworkTypeChanged(ThunderNetworkType type);
 ```
 
-Callback on network status change. This callback is received if initialization ([initialize](function.md#IThunderEngine::initialize)) is complete and network type changes.
+Callback on network status change. This callback is received if initialization ([initialize](function.md#ithunderengineinitialize)) is complete and network type changes.
 
-##### Parameter[](#onNetworkTypeChanged)
+##### Parameter[](#onnetworktypechanged)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| type | OUT | Network connection type. For details, see [ThunderNetworkType.](#ThunderNetworkType) |
+| type | OUT | Network connection type. For details, see [ThunderNetworkType.](#thundernetworktype) |
 
 --------------------------
 
@@ -482,11 +482,11 @@ virtual void Thunder::IThunderEventHandler::onAudioCaptureStatus(ThunderAudioDev
 
 Callback on changes in audio device capture status. Enable audio capture. When device for audio capture changes in status, this notification will be received.
 
-##### Parameter[](#onAudioCaptureStatus)
+##### Parameter[](#onaudiocapturestatus)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| type | OUT | Collection status of the audio device. For details, see [ThunderAudioDeviceStatus.](#ThunderAudioDeviceStatus) |
+| type | OUT | Collection status of the audio device. For details, see [ThunderAudioDeviceStatus.](#thunderaudiodevicestatus) |
 
 --------------------------
 
@@ -496,14 +496,14 @@ Callback on changes in audio device capture status. Enable audio capture. When d
 virtual void Thunder::IThunderEventHandler::onPublishStreamToCDNStatus(const char* url, ThunderPublishCDNErrorCode errorCode);
 ```
 
-Callback on CDN stream publishing result. This callback is received if the user has called [addPublishOriginStreamUrl](function.md#IThunderEngine::addPublishOriginStreamUrl) or [addPublishTranscodingStreamUrl](function.md#IThunderEngine::addPublishTranscodingStreamUrl) for stream publishing and the stream publishing status changes.
+Callback on CDN stream publishing result. This callback is received if the user has called [addPublishOriginStreamUrl](function.md#ithunderengineaddpublishoriginstreamurl) or [addPublishTranscodingStreamUrl](function.md#ithunderengineaddpublishtranscodingstreamurl) for stream publishing and the stream publishing status changes.
 
-##### Parameter[](#onPublishStreamToCDNStatus)
+##### Parameter[](#onpublishstreamtocdnstatus)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | url | OUT | URL for stream publishing |
-| errorCode | OUT | Error code for stream publishing. For details, see [ThunderPublishCDNErrorCode.](#ThunderPublishCDNErrorCode) |
+| errorCode | OUT | Error code for stream publishing. For details, see [ThunderPublishCDNErrorCode.](#thunderpublishcdnerrorcode) |
 
 --------------------------
 
@@ -515,11 +515,11 @@ virtual void Thunder::IThunderEventHandler::onRoomStats(RoomStats stats);
 
 Callback on uplink/downlink traffic (periodic callback at an interval of 2 seconds). This callback is received when the user enters a channel.
 
-##### Parameter[](#onRoomStats)
+##### Parameter[](#onroomstats)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| stats | OUT | Specific status. For details, see [RoomStats.](#RoomStats) |
+| stats | OUT | Specific status. For details, see [RoomStats.](#roomstats) |
 
 --------------------------
 
@@ -529,9 +529,9 @@ Callback on uplink/downlink traffic (periodic callback at an interval of 2 secon
 virtual void Thunder::IThunderEventHandler::onRecvUserAppMsgData(const char* uid, const char* msgData);
 ```
 
-Callback custom broadcast message of service This callback is received by users entering the channel if the anchor sends data through [sendUserAppMsgData](function.md#IThunderEngine::sendUserAppMsgData).
+Callback custom broadcast message of service This callback is received by users entering the channel if the anchor sends data through [sendUserAppMsgData](function.md#ithunderenginesenduserappmsgdata).
 
-##### Parameter[](#onRecvUserAppMsgData)
+##### Parameter[](#onrecvuserappmsgdata)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -546,13 +546,13 @@ Callback custom broadcast message of service This callback is received by users 
 virtual void Thunder::IThunderEventHandler::onSendAppMsgDataFailedStatus(ThunderSendAppMsgDataFailedStatus status);
 ```
 
-This callback is received if the anchor fails to send data by calling [sendUserAppMsgData](function.md#IThunderEngine::sendUserAppMsgData).
+This callback is received if the anchor fails to send data by calling [sendUserAppMsgData](function.md#ithunderenginesenduserappmsgdata).
 
-##### Parameter[](#onSendAppMsgDataFailedStatus)
+##### Parameter[](#onsendappmsgdatafailedstatus)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| status | OUT | Causes for failure in sending customized broadcast messages. For details, see [ThunderSendAppMsgDataFailedStatus.](#ThunderSendAppMsgDataFailedStatus) |
+| status | OUT | Causes for failure in sending customized broadcast messages. For details, see [ThunderSendAppMsgDataFailedStatus.](#thundersendappmsgdatafailedstatus) |
 
 --------------------------
 
@@ -564,11 +564,11 @@ virtual void Thunder::IThunderEventHandler::onVideoCaptureStatus(ThunderCaptureS
 
 Callback on changes in camera capture status. This callback is received when camera collection starts and the collection status of the camera changes.
 
-##### Parameter[](#onVideoCaptureStatus)
+##### Parameter[](#onvideocapturestatus)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| status | OUT | Camera collection status. For details, see [ThunderCaptureStatus.](#ThunderCaptureStatus) |
+| status | OUT | Camera collection status. For details, see [ThunderCaptureStatus.](#thundercapturestatus) |
 
 --------------------------
 
@@ -580,11 +580,11 @@ virtual void Thunder::IThunderEventHandler::onLocalVideoStats(const LocalVideoSt
 
 The statistics of sending of video stream by local device is described during this callback. Callback time: 1. immediate callback when the publishing interface is called; 2. immediate callback on bracket change during the publishing; and 3. periodical callback at an interval of 2s.
 
-##### Parameter[](#onLocalVideoStats)
+##### Parameter[](#onlocalvideostats)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| stats | OUT | Statistical data on local video. For details, see [LocalVideoStats.](#LocalVideoStats) |
+| stats | OUT | Statistical data on local video. For details, see [LocalVideoStats.](#localvideostats) |
 
 --------------------------
 
@@ -596,11 +596,11 @@ virtual void Thunder::IThunderEventHandler::onLocalAudioStats(const LocalAudioSt
 
 The statistics of sending of video stream by local device is described during this callback. Callback time: periodical callback at an interval of 2s.
 
-##### Parameter[](#onLocalAudioStats)
+##### Parameter[](#onlocalaudiostats)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| stats | OUT | Statistical data on local audio. For details, see [LocalAudioStats.](#LocalAudioStats) |
+| stats | OUT | Statistical data on local audio. For details, see [LocalAudioStats.](#localaudiostats) |
 
 --------------------------
 
@@ -612,12 +612,12 @@ virtual void Thunder::IThunderEventHandler::onRemoteVideoStatsOfUid(const char* 
 
 The end-to-end video stream status in calling of remote users is described during this callback, which is triggered once 2s for each remote user/anchor. In case multiple users/anchors exist remotely at the same time, this callback will be triggered multiple times every 2 seconds.
 
-##### Parameter[](#onRemoteVideoStatsOfUid)
+##### Parameter[](#onremotevideostatsofuid)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | uid | OUT | Id of remote user/anchor |
-| stats | OUT | Statistical data on remote video. For details, see [RemoteVideoStats.](#RemoteVideoStats) |
+| stats | OUT | Statistical data on remote video. For details, see [RemoteVideoStats.](#remotevideostats) |
 
 --------------------------
 
@@ -629,12 +629,12 @@ virtual void Thunder::IThunderEventHandler::onRemoteAudioStatsOfUid(const char* 
 
 This callback describes end-to-end video streaming status of remote user during the call. It is triggered every 2s for each remote user/anchor. In case multiple users/anchors exist remotely at the same time, this callback will be triggered multiple times every 2 seconds.
 
-##### Parameter[](#onRemoteAudioStatsOfUid)
+##### Parameter[](#onremoteaudiostatsofuid)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | uid | OUT | Id of remote user/anchor |
-| stats | OUT | Statistical data on remote audio. For details, see [RemoteAudioStats.](#RemoteAudioStats) |
+| stats | OUT | Statistical data on remote audio. For details, see [RemoteAudioStats.](#remoteaudiostats) |
 
 --------------------------
 
@@ -648,14 +648,14 @@ virtual void Thunder::IAudioFrameObserver::onRecordAudioFrame(AudioFrame& audioF
 
 Callback on raw audio capture data.
 
-- The user has called the [registerAudioFrameObserver](function.md#IThunderEngine::registerAudioFrameObserver) interface and has registered IAudioFrameObserver.
+- The user has called the [registerAudioFrameObserver](function.md#ithunderengineregisteraudioframeobserver) interface and has registered IAudioFrameObserver.
 - Meanwhile, when the user starts capture, this callback will be received.
 
-##### Parameter[](#onRecordAudioFrame)
+##### Parameter[](#onrecordaudioframe)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| audioFrame | OUT | For original audio data, see [AudioFrame for details](#AudioFrame) |
+| audioFrame | OUT | For original audio data, see [AudioFrame for details](#audioframe) |
 
 --------------------------
 
@@ -667,14 +667,14 @@ virtual void Thunder::IAudioFrameObserver::onPlaybackAudioFrame(AudioFrame& audi
 
 Callback on raw audio play data.
 
-- The user has called the [registerAudioFrameObserver](function.md#IThunderEngine::registerAudioFrameObserver) interface and has registered IAudioFrameObserver.
+- The user has called the [registerAudioFrameObserver](function.md#ithunderengineregisteraudioframeobserver) interface and has registered IAudioFrameObserver.
 - Meanwhile, when there’s audio data being played, this callback will be received.
 
-##### Parameter[](#onPlaybackAudioFrame)
+##### Parameter[](#onplaybackaudioframe)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| audioFrame | OUT | For original audio data, see [AudioFrame for details](#AudioFrame) |
+| audioFrame | OUT | For original audio data, see [AudioFrame for details](#audioframe) |
 
 --------------------------
 
@@ -686,15 +686,15 @@ virtual void Thunder::IAudioFrameObserver::onPlaybackAudioFrameBeforeMixing(char
 
 Callback of original data decoded by remote user can differentiate users through different uids.
 
-- The user has called the [registerAudioFrameObserver](function.md#IThunderEngine::registerAudioFrameObserver) interface and has registered IAudioFrameObserver.
+- The user has called the [registerAudioFrameObserver](function.md#ithunderengineregisteraudioframeobserver) interface and has registered IAudioFrameObserver.
 - Meanwhile, when there’s remote audio data being played, this callback will be received.
 
-##### Parameter[](#onPlaybackAudioFrameBeforeMixing)
+##### Parameter[](#onplaybackaudioframebeforemixing)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | uid | OUT | Remote user uid |
-| audioFrame | OUT | For original audio data, see [AudioFrame for details](#AudioFrame) |
+| audioFrame | OUT | For original audio data, see [AudioFrame for details](#audioframe) |
 
 --------------------------
 
@@ -708,9 +708,9 @@ virtual void Thunder::IThunderAudioPlayerNotify::onAudioFileVolume(unsigned int 
 
 Callback on progress information of audio player.
 
-- Call the IThunderAudioPlayer::[SetFilePlayerNotify](function.md#IThunderAudioPlayer::SetFilePlayerNotify) interface with IThunderAudioPlayerNotify set as the monitoring object.
+- Call the IThunderAudioPlayer::[SetFilePlayerNotify](function.md#ithunderaudioplayersetfileplayernotify) interface with IThunderAudioPlayerNotify set as the monitoring object.
 
-##### Parameter[](#onAudioFileVolume)
+##### Parameter[](#onaudiofilevolume)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -728,7 +728,7 @@ virtual void Thunder::IThunderAudioPlayerNotify::onAudioFilePlayEnd();
 
 The audio player plays and then calls back.
 
-- Call the IThunderAudioPlayer::[SetFilePlayerNotify](function.md#IThunderAudioPlayer::SetFilePlayerNotify) interface with IThunderAudioPlayerNotify set as the monitoring object.
+- Call the IThunderAudioPlayer::[SetFilePlayerNotify](function.md#ithunderaudioplayersetfileplayernotify) interface with IThunderAudioPlayerNotify set as the monitoring object.
 
 --------------------------
 
@@ -742,13 +742,13 @@ virtual bool Thunder::IVideoFrameObserver::onPreviewVideoFrame(VideoFrame& video
 
 The local video preview data is called back. The current data format is YUV420.
 
-- Call IThunderEngine::[registerVideoFrameObserver](function.md#IThunderEngine::registerVideoFrameObserver) to proceed with registration.
+- Call IThunderEngine::[registerVideoFrameObserver](function.md#ithunderengineregistervideoframeobserver) to proceed with registration.
 
-##### Parameter[](#onPreviewVideoFrame)
+##### Parameter[](#onpreviewvideoframe)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| videoFrame | OUT | Local preview video data. For details, see [VideoFrame.](#VideoFrame) |
+| videoFrame | OUT | Local preview video data. For details, see [VideoFrame.](#videoframe) |
 
 --------------------------
 
@@ -760,14 +760,14 @@ virtual bool Thunder::IVideoFrameObserver::onRenderVideoFrame(const char* uid, V
 
 The rendering video data of other users is called back. The data format is YUV420.
 
-- Call IThunderEngine::[registerVideoFrameObserver](function.md#IThunderEngine::registerVideoFrameObserver) to proceed with registration.
+- Call IThunderEngine::[registerVideoFrameObserver](function.md#ithunderengineregistervideoframeobserver) to proceed with registration.
 
-##### Parameter[](#onRenderVideoFrame)
+##### Parameter[](#onrendervideoframe)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | uid | OUT | User id |
-| videoFrame | OUT | User rending video data. For details, see [VideoFrame.](#VideoFrame) |
+| videoFrame | OUT | User rending video data. For details, see [VideoFrame.](#videoframe) |
 
 --------------------------
 
@@ -781,13 +781,13 @@ virtual bool Thunder::IVideoCaptureObserver::onCaptureVideoFrame(VideoFrame& vid
 
 The local video capture data is called back. The current data format is BGRA.
 
-- Call IThunderEngine::[registerVideoCaptureObserver](function.md#IThunderEngine::registerVideoCaptureObserver) to proceed with registration.
+- Call IThunderEngine::[registerVideoCaptureObserver](function.md#ithunderengineregistervideocaptureobserver) to proceed with registration.
 
-##### Parameter[](#onCaptureVideoFrame)
+##### Parameter[](#oncapturevideoframe)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| videoFrame | OUT | Local collection video data. For details, see [VideoFrame.](#VideoFrame) |
+| videoFrame | OUT | Local collection video data. For details, see [VideoFrame.](#videoframe) |
 
 --------------------------
 
@@ -801,9 +801,9 @@ virtual void Thunder::IThunderMediaExtraInfoObserver::onSendMediaExtraInfoFailed
 
 Callback on failure in sending media extra information.
 
-- Call IThunderEngine::[registerMediaExtraInfoObserver](function.md#IThunderEngine::registerMediaExtraInfoObserver) to proceed with registration.
+- Call IThunderEngine::[registerMediaExtraInfoObserver](function.md#ithunderengineregistermediaextrainfoobserver) to proceed with registration.
 
-##### Parameter[](#onSendMediaExtraInfoFailedStatus)
+##### Parameter[](#onsendmediaextrainfofailedstatus)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -819,9 +819,9 @@ virtual void Thunder::IThunderMediaExtraInfoObserver::onRecvMediaExtraInfo(const
 
 Callback on media extra information received.
 
-- Call IThunderEngine::[registerMediaExtraInfoObserver](function.md#IThunderEngine::registerMediaExtraInfoObserver) to proceed with registration.
+- Call IThunderEngine::[registerMediaExtraInfoObserver](function.md#ithunderengineregistermediaextrainfoobserver) to proceed with registration.
 
-##### Parameter[](#onRecvMediaExtraInfo)
+##### Parameter[](#onrecvmediaextrainfo)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -839,9 +839,9 @@ virtual bool Thunder::IThunderMediaExtraInfoObserver::onRecvMixAudioInfo(const c
 
 Callback on extra information of mixed audio streams received.
 
-- Call IThunderEngine::[registerMediaExtraInfoObserver](function.md#IThunderEngine::registerMediaExtraInfoObserver) to proceed with registration.
+- Call IThunderEngine::[registerMediaExtraInfoObserver](function.md#ithunderengineregistermediaextrainfoobserver) to proceed with registration.
 
-##### Parameter[](#onRecvMixAudioInfo)
+##### Parameter[](#onrecvmixaudioinfo)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -858,9 +858,9 @@ virtual bool Thunder::IThunderMediaExtraInfoObserver::onRecvMixVideoInfo(const c
 
 Callback on extra information of mixed video streams received.
 
-- Call IThunderEngine::[registerMediaExtraInfoObserver](function.md#IThunderEngine::registerMediaExtraInfoObserver) to proceed with registration.
+- Call IThunderEngine::[registerMediaExtraInfoObserver](function.md#ithunderengineregistermediaextrainfoobserver) to proceed with registration.
 
-##### Parameter[](#onRecvMixVideoInfo)
+##### Parameter[](#onrecvmixvideoinfo)
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
@@ -899,7 +899,7 @@ Authentication result
 | :--- | :--- |
 | AUTHRES_SUCCUSS(0) | Authentication succeeded |
 | AUTHRES_ERR_SERVER_INTERNAL(10000) | Server internal error, try again |
-| AUTHRES_ERR_NO_TOKEN(10001) | token not carried. [updateToken needs to be called.](#updateToken) |
+| AUTHRES_ERR_NO_TOKEN(10001) | token not carried. [updateToken needs to be called.](#updatetoken) |
 | AUTHRES_ERR_TOKEN_ERR(10002) | Token authentication failed (incorrect digital signature), which may be caused by incorrect appSecret |
 | AUTHRES_ERR_APPID(10003) | appid in token is inconsistent with appid when execute authentication |
 | AUTHRES_ERR_UID(10004) | uid in token is inconsistent with uid when execute authentication |
@@ -1132,8 +1132,8 @@ struct Thunder::LocalVideoStats
 
 Statistics on video streams sent from the local device, among which:
 
-- Video quality adaption: See [QUALITY_ADAPT_INDICATION.](#QUALITY_ADAPT_INDICATION)
-- Video encoding type: See [VIDEO_CODEC_TYPE.](#VIDEO_CODEC_TYPE)
+- Video quality adaption: See [QUALITY_ADAPT_INDICATION.](#quality-adapt-indication)
+- Video encoding type: See [VIDEO_CODEC_TYPE.](#video-codec-type)
 
 --------------------------
 
@@ -1187,7 +1187,7 @@ struct RemoteVideoStats
 
 Status of end-to-end video streams of remote users in a call. Among which:
 
-- Video stream type: See [REMOTE_VIDEO_STREAM_TYPE.](#REMOTE_VIDEO_STREAM_TYPE)
+- Video stream type: See [REMOTE_VIDEO_STREAM_TYPE.](#remote-video-stream-type)
 
 --------------------------
 
@@ -1242,7 +1242,7 @@ struct IAudioFrameObserver::AudioFrame
 };
 ```
 
-Detailed information about audio data. For details about audio frame type, see [AUDIO_FRAME_TYPE.](#AUDIO_FRAME_TYPE)
+Detailed information about audio data. For details about audio frame type, see [AUDIO_FRAME_TYPE.](#audio-frame-type)
 
 --------------------------
 
@@ -1279,7 +1279,7 @@ struct VideoFrame
 };
 ```
 
-Detailed information about video data. For details about video frame type, see [VIDEO_FRAME_TYPE.](#VIDEO_FRAME_TYPE)
+Detailed information about video data. For details about video frame type, see [VIDEO_FRAME_TYPE.](#video-frame-type)
 
 --------------------------
 
