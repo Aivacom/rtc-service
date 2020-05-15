@@ -13,7 +13,7 @@
 | static String | [getVersion](#thunderenginegetversion)() |
 | static int | [setLogLevel](#thunderenginesetloglevel)(int filter) |
 | static int | [setLogFilePath](#thunderenginesetlogfilepath)(String filePath) |
-| static int | [setLogCallback](#thunderenginesetlogcallback)([IThunderLogCallback](/notification.md#ithunderlogcallback) callback) |
+| static int | [setLogCallback](#thunderenginesetlogcallback)([IThunderLogCallback](notification.md#ithunderlogcallback) callback) |
 
 | Public member functions | Function Name |
 | ---:| :--- |
@@ -55,7 +55,7 @@
 | void | [setAudioPlaySpectrumInfo](#thunderenginesetaudioplayspectruminfo)(int spectrumLen, int notifyIntervalMS) |
 | int | [sendUserAppMsgData](#thunderenginesenduserappmsgdata)(byte[] msgData) |
 | int | [sendMediaExtraInfo](#thunderenginesendmediaextrainfo)(ByteBuffer data, int dataLen) |
-| int | [setMediaExtraInfoCallback](#thunderenginesetmediaextrainfocallback)([IThunderMediaExtraInfoCallback](/notification.md#ithundermediaextrainfocallback) callback) |
+| int | [setMediaExtraInfoCallback](#thunderenginesetmediaextrainfocallback)([IThunderMediaExtraInfoCallback](notification.md#ithundermediaextrainfocallback) callback) |
 | int | [enableMixVideoExtraInfo](#thunderengineenablemixvideoextrainfo)(boolean enable) |
 | void | [enableAudioDataIndication](#thunderengineenableaudiodataindication)(boolean enablePlay) |
 | void | [setAudioSourceType](#thunderenginesetaudiosourcetype)(int sourceType) |
@@ -73,16 +73,16 @@
 | int | [stopLocalVideoStream](#thunderenginestoplocalvideostream)(boolean stop) |
 | int | [stopRemoteVideoStream](#thunderenginestopremotevideostream)(String uid, boolean stop) |
 | int | [stopAllRemoteVideoStreams](#thunderenginestopallremotevideostreams)(boolean stop) |
-| int | [registerVideoCaptureTextureObserver](#thunderengineregistervideocapturetextureobserver)([IGPUProcess](/notification.md#igpuprocess) observer) |
-| int | [registerVideoCaptureFrameObserver](#thunderengineregistervideocaptureframeobserver)([IVideoCaptureObserver](/notification.md#ivideocaptureobserver) observer) |
-| int | [registerVideoDecodeFrameObserver](#thunderengineregistervideodecodeframeobserver)(String uid, [IVideoDecodeObserver](/notification.md#ivideodecodeobserver) observer) |
-| int | [registerAudioFrameObserver](#thunderengineregisteraudioframeobserver)([IAudioFrameObserver](/notification.md#iaudioframeobserver) observer) |
+| int | [registerVideoCaptureTextureObserver](#thunderengineregistervideocapturetextureobserver)([IGPUProcess](notification.md#igpuprocess) observer) |
+| int | [registerVideoCaptureFrameObserver](#thunderengineregistervideocaptureframeobserver)([IVideoCaptureObserver](notification.md#ivideocaptureobserver) observer) |
+| int | [registerVideoDecodeFrameObserver](#thunderengineregistervideodecodeframeobserver)(String uid, [IVideoDecodeObserver](notification.md#ivideodecodeobserver) observer) |
+| int | [registerAudioFrameObserver](#thunderengineregisteraudioframeobserver)([IAudioFrameObserver](notification.md#iaudioframeobserver) observer) |
 | int | [setRecordingAudioFrameParameters](#thunderenginesetrecordingaudioframeparameters)(int sampleRate, int room, int mode, int samplesPerCall) |
 | int | [setPlaybackAudioFrameParameters](#thunderenginesetplaybackaudioframeparameters)(int sampleRate, int room, int mode, int samplesPerCall) |
 | int | [setVideoWatermark](#thunderenginesetvideowatermark)([ThunderBoltImage](#thunderboltimage) watermark) |
 | int | [setCustomAudioSource](#thunderenginesetcustomaudiosource)(boolean enabled, int sampleRate, int channel) |
 | int | [pushCustomAudioFrame](#thunderenginepushcustomaudioframe)(byte[] data, long timeStamp) |
-| int | [setCustomVideoSource](#thunderenginesetcustomvideosource)([ThunderCustomVideoSource](/notification.md#thundercustomvideosource) videoSource) |
+| int | [setCustomVideoSource](#thunderenginesetcustomvideosource)([ThunderCustomVideoSource](notification.md#thundercustomvideosource) videoSource) |
 | int | [addPublishOriginStreamUrl](#thunderengineaddpublishoriginstreamurl)(String url) |
 | int | [removePublishOriginStreamUrl](#thunderengineremovepublishoriginstreamurl)(String url) |
 | int | [setLiveTranscodingTask](#thunderenginesetlivetranscodingtask)(String taskId, [LiveTranscoding](#livetranscoding) transcoding) |
@@ -119,7 +119,7 @@
 | void | [setSemitone](#thunderaudiofileplayersetsemitone)(int val) |
 | int | [setLooping](#thunderaudiofileplayersetlooping)(int cycle) |
 | void | [enablePublish](#thunderaudiofileplayerenablepublish)(boolean enable) |
-| synchronized void | [setPlayerNotify](#thunderaudiofileplayersetplayernotify)([IThunderAudioFilePlayerCallback](/notification.md#thunderaudiofileplayerithunderaudiofileplayercallback) callback) |
+| synchronized void | [setPlayerNotify](#thunderaudiofileplayersetplayernotify)([IThunderAudioFilePlayerCallback](notification.md#thunderaudiofileplayerithunderaudiofileplayercallback) callback) |
 | synchronized void | [enableVolumeIndication](#thunderaudiofileplayerenablevolumeindication)(boolean enable, int interval) |
 | synchronized void | [setMixStandard](#thunderaudiofileplayersetmixstandard)(boolean standard) |
 | synchronized boolean | [isMixStandard](#thunderaudiofileplayerismixstandard)() |
@@ -265,7 +265,7 @@ Set path of log files (open log and save its information).
 ##### Return[](#setlogfilepath)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -286,12 +286,12 @@ Set log callback.
 
 | Parameter | Description |
 | :--- | :--- |
-| callback | For the callback interface instances, refer to [IThunderLogCallback](/notification.md#ithunderlogcallback) interface for detail |
+| callback | For the callback interface instances, refer to [IThunderLogCallback](notification.md#ithunderlogcallback) interface for detail |
 
 ##### Return[](#setlogcallback)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -316,7 +316,7 @@ Set log level.
 ##### Return[](#setloglevel)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -364,7 +364,7 @@ Set media mode.
 ##### Return[](#setmediamode)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -396,7 +396,7 @@ Set room mode.
 ##### Return[](#setroommode)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -429,7 +429,7 @@ To accommodate to different laws and regulations at home and abroad, AIVACOM NET
 ##### Return[](#setarea)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -447,7 +447,7 @@ Join a room.
 > **Note:**
 >
 > - The applications cannot communicate with each other when using different appId.
-> - Successful function return only indicates that the request is executed successfully. After receiving the callback on [ThunderEventHandler.onJoinRoomSuccess](/notification.md#thundereventhandleronjoinroomsuccess) , it can indicate the success of joining room.
+> - Successful function return only indicates that the request is executed successfully. After receiving the callback on [ThunderEventHandler.onJoinRoomSuccess](notification.md#thundereventhandleronjoinroomsuccess) , it can indicate the success of joining room.
 
 ##### Parameter[](#joinroom)
 
@@ -460,7 +460,7 @@ Join a room.
 ##### Return[](#joinroom)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -480,7 +480,7 @@ Leaving room indicates hang off or exiting conversation.
 ##### Return[](#leaveroom)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -516,7 +516,7 @@ Refer to the following descriptions:
 ##### Return[](#updatetoken)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -543,7 +543,7 @@ It is used to set audio parameter and application scene.
 ##### Return[](#setaudioconfig)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -568,7 +568,7 @@ Enable/Disable voice stereo of remote users.
 ##### Return[](#enablevoiceposition)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -591,7 +591,7 @@ Set spatial location and volume of remote user's voice.
 ##### Return[](#setremoteuidvoiceposition)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -614,7 +614,7 @@ Enable/Disable loudspeaker.
 ##### Return[](#enableloudspeaker)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -650,7 +650,7 @@ Set loudspeaker volume.
 ##### Return[](#setloudspeakervolume)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -665,7 +665,7 @@ public int setAudioVolumeIndication(int interval,
 
 Enable volume indication for speaker.
 
-- By using this method, SDK can feed current speaker and speaker’s volume back to an application periodically. Report by callback interface [ThunderEventHandler.onPlayVolumeIndication](/notification.md#thundereventhandleronplayvolumeindication) .
+- By using this method, SDK can feed current speaker and speaker’s volume back to an application periodically. Report by callback interface [ThunderEventHandler.onPlayVolumeIndication](notification.md#thundereventhandleronplayvolumeindication) .
 
 > **Note:**
 >
@@ -684,7 +684,7 @@ Enable volume indication for speaker.
 ##### Return[](#setaudiovolumeindication)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -699,7 +699,7 @@ public int enableCaptureVolumeIndication(int interval,
 
 Enable/Disable collected volume callback.
 
-- By using this method, SDK can feed current microphone capture volume back to an application periodically. Report it by [ThunderEventHandler.onCaptureVolumeIndication](/notification.md#thundereventhandleroncapturevolumeindication).
+- By using this method, SDK can feed current microphone capture volume back to an application periodically. Report it by [ThunderEventHandler.onCaptureVolumeIndication](notification.md#thundereventhandleroncapturevolumeindication).
 
 ##### Parameter[](#enablecapturevolumeindication)
 
@@ -713,7 +713,7 @@ Enable/Disable collected volume callback.
 ##### Return[](#enablecapturevolumeindication)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -808,7 +808,7 @@ Enable/Disable the capture, encode and upstream of local audio.
 ##### Return[](#stoplocalaudiostream)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -836,7 +836,7 @@ Stop/Resume receiving audio stream of a specified user.
 ##### Return[](#stopremoteaudiostream)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -866,7 +866,7 @@ Stop/Resume receiving all remote audio streams. Process this interface based on 
 ##### Return[](#stopallremoteaudiostreams)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -887,7 +887,7 @@ Set microphone volume.
 ##### Return[](#setmicvolume)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -909,7 +909,7 @@ Set the volume of the remote audio stream.
 ##### Return[](#setremoteaudiostreamsvolume)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -960,7 +960,7 @@ Enable/Disable local voice equalizer.
 ##### Return[](#setenableequalizer)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -981,7 +981,7 @@ Set voice equalizer parameters.
 ##### Return[](#seteqgains)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1002,7 +1002,7 @@ Enable/Disable local voice reverberation.
 ##### Return[](#setenablereverb)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1023,7 +1023,7 @@ Set local voice reverberation parameters
 ##### Return[](#setreverbexparameter)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1044,7 +1044,7 @@ Enable/Disable audio compressor.
 ##### Return[](#setenablecompressor)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1065,7 +1065,7 @@ Set audio compressor parameters.
 ##### Return[](#setcompressorparam)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1086,7 +1086,7 @@ Enable/Disable limiter.
 ##### Return[](#setenablelimiter)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1107,7 +1107,7 @@ Set limiter parameters.
 ##### Return[](#setlimiterparam)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1119,7 +1119,7 @@ public void enableAudioPlaySpectrum(boolean enable)
 
 Enable/Disable data callback on audio play spectrum.
 
-The [ThunderEventHandler.onAudioPlaySpectrumData](/notification.md#thundereventhandleronaudioplayspectrumdata) function will be called back after it is enabled.
+The [ThunderEventHandler.onAudioPlaySpectrumData](notification.md#thundereventhandleronaudioplayspectrumdata) function will be called back after it is enabled.
 
 ##### Parameter[](#enableaudioplayspectrum)
 
@@ -1162,8 +1162,8 @@ This interface sends messages through media UDP channel with features of low-lan
 - msg will be dropped if any of the conditions above is not met.
 - The messages cannot be guaranteed to be delivered to all online users in room, and cannot be guaranteed be delivered in order.
 
-Get the reason for failed sending of msg through [ThunderEventHandler.onSendAppMsgDataFailedStatus](/notification.md#thundereventhandleronsendappmsgdatafailedstatus) interface function.
-Get the custom broadcast messages from other users through [ThunderEventHandler.onRecvUserAppMsgData](/notification.md#thundereventhandleronrecvuserappmsgdata) interface function.
+Get the reason for failed sending of msg through [ThunderEventHandler.onSendAppMsgDataFailedStatus](notification.md#thundereventhandleronsendappmsgdatafailedstatus) interface function.
+Get the custom broadcast messages from other users through [ThunderEventHandler.onRecvUserAppMsgData](notification.md#thundereventhandleronrecvuserappmsgdata) interface function.
 
 ##### Parameter[](#senduserappmsgdata)
 
@@ -1174,7 +1174,7 @@ Get the custom broadcast messages from other users through [ThunderEventHandler.
 ##### Return[](#senduserappmsgdata)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1194,8 +1194,8 @@ Specified constraints are as follows:
 - In audio/video mode, the call frequency of video publishing cannot exceed the frame rate, and the extra information shall be no more than 2048 bytes. For example, the default frame rate of 15fps is adopted for stream publishing, indicating that the call frequency cannot exceed 1000/15=66.7 ms each time
 - Packet loss may occur
 
-Get the reason for failed sending of media extra information through [IThunderMediaExtraInfoCallback.onSendMediaExtraInfoFailedStatus](/notification.md#ithundermediaextrainfocallbackonsendmediaextrainfofailedstatus).
-Receive the media extra information from other users through [IThunderMediaExtraInfoCallback.onRecvMediaExtraInfo](/notification.md#ithundermediaextrainfocallbackonrecvmediaextrainfo) interface function.
+Get the reason for failed sending of media extra information through [IThunderMediaExtraInfoCallback.onSendMediaExtraInfoFailedStatus](notification.md#ithundermediaextrainfocallbackonsendmediaextrainfofailedstatus).
+Receive the media extra information from other users through [IThunderMediaExtraInfoCallback.onRecvMediaExtraInfo](notification.md#ithundermediaextrainfocallbackonrecvmediaextrainfo) interface function.
 
 ##### Parameter[](#sendmediaextrainfo)
 
@@ -1207,7 +1207,7 @@ Receive the media extra information from other users through [IThunderMediaExtra
 ##### Return[](#sendmediaextrainfo)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1223,12 +1223,12 @@ Set callback monitoring of media extra information.
 
 | Parameter | Description |
 | :--- | :--- |
-| callback | The callback instance object of media extra information, refer to [IThunderMediaExtraInfoCallback](/notification.md#ithundermediaextrainfocallback) for details |
+| callback | The callback instance object of media extra information, refer to [IThunderMediaExtraInfoCallback](notification.md#ithundermediaextrainfocallback) for details |
 
 ##### Return[](#setmediaextrainfocallback)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1239,7 +1239,7 @@ public int enableMixVideoExtraInfo(boolean enable)
 ```
 
 Enable mixed video carry media extra information, for example, mixed video carry layout information.
-After it is enabled, the callback on [IThunderMediaExtraInfoCallback.onRecvMixVideoInfo](/notification.md#ithundermediaextrainfocallbackonrecvmixvideoinfo) can be received when this mixed video stream is played in audience terminal.
+After it is enabled, the callback on [IThunderMediaExtraInfoCallback.onRecvMixVideoInfo](notification.md#ithundermediaextrainfocallbackonrecvmixvideoinfo) can be received when this mixed video stream is played in audience terminal.
 
 ##### Parameter[](#enablemixvideoextrainfo)
 
@@ -1250,7 +1250,7 @@ After it is enabled, the callback on [IThunderMediaExtraInfoCallback.onRecvMixVi
 ##### Return[](#enablemixvideoextrainfo)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1261,7 +1261,7 @@ public void enableAudioDataIndication(boolean enablePlay)
 ```
 
 Enable/Disable reporting Audio playback Data.
-Get audio playback data through the [ThunderEventHandler.onAudioPlayData](/notification.md#thundereventhandleronaudioplaydata) interface function
+Get audio playback data through the [ThunderEventHandler.onAudioPlayData](notification.md#thundereventhandleronaudioplaydata) interface function
 
 ##### 参数[](#enableaudiodataindication)
 
@@ -1304,7 +1304,7 @@ Enable/Disable in-ear monitor.
 ##### Return[](#setenableinearmonitor)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1328,7 +1328,7 @@ Set video encoding configuration.
 ##### Return[](#setvideoencoderconfig)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1350,7 +1350,7 @@ If this view is not set, the preview and publishing can also be enabled. The loc
 ##### Return[](#setlocalvideocanvas)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1375,7 +1375,7 @@ Set the playing type of remote video. The default is the common audience view.
 ##### Return[](#setremoteplaytype)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1402,7 +1402,7 @@ Support setting background image and its display location.
 ##### Return[](#setmultivideoviewlayout)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1423,7 +1423,7 @@ Set the rendering canvas of remote video.
 ##### Return[](#setremotevideocanvas)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1444,7 +1444,7 @@ Set the scale mode of the local video stream on the canvas.
 ##### Return[](#setlocalcanvasscalemode)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1466,7 +1466,7 @@ Set the scale mode of the remote video stream on the canvas.
 ##### Return[](#setremotecanvasscalemode)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1481,7 +1481,7 @@ Start video preview of local camera.
 ##### Return[](#startvideopreview)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1496,7 +1496,7 @@ Stop video preview of local camera.
 ##### Return[](#stopvideopreview)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1517,7 +1517,7 @@ Enable/Disable local video capture.
 ##### Return[](#enablelocalvideocapture)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1538,7 +1538,7 @@ Disable/Enable local video sending.
 ##### Return[](#stoplocalvideostream)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1563,7 +1563,7 @@ public int stopRemoteVideoStream(String uid, boolean stop)
 ##### Return[](#stopremotevideostream)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1588,7 +1588,7 @@ Stop/Receive all remote videos
 ##### Return[](#stopallremotevideostreams)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1604,12 +1604,12 @@ Register observer object for capturing video texture data, which is used for bea
 
 | Parameter | Description |
 | :--- | :--- |
-| observer | The observer object instance for collecting video texture data can obtain and process rendering texture data of video’s each frame. See [IGPUProcess](/notification.md#igpuprocess) for details.<br>If the null is transmitted, cancel registration. |
+| observer | The observer object instance for collecting video texture data can obtain and process rendering texture data of video’s each frame. See [IGPUProcess](notification.md#igpuprocess) for details.<br>If the null is transmitted, cancel registration. |
 
 ##### Return[](#registervideocapturetextureobserver)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1625,12 +1625,12 @@ Register observer object for collecting data of camera.
 
 | Parameter | Description |
 | :--- | :--- |
-| observer | The observer object instance for collecting data of camera can obtain and render collected data of video camera yuv. See [IVideoCaptureObserver](/notification.md#ivideocaptureobserver) for details.<br>If the null is transmitted, cancel registration. |
+| observer | The observer object instance for collecting data of camera can obtain and render collected data of video camera yuv. See [IVideoCaptureObserver](notification.md#ivideocaptureobserver) for details.<br>If the null is transmitted, cancel registration. |
 
 ##### Return[](#registervideocaptureframeobserver)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1647,12 +1647,12 @@ Register the decoded YUV (I420) video data observer object for the specified use
 | Parameter | Description |
 | :--- | :--- |
 | uid | uid needing to be monitored. |
-| observer | The decoded observer object for video data can obtain and process decoded video data. See [IVideoDecodeObserver](/notification.md#ivideodecodeobserver) for details.<br>If the null is transmitted, cancel registration. |
+| observer | The decoded observer object for video data can obtain and process decoded video data. See [IVideoDecodeObserver](notification.md#ivideodecodeobserver) for details.<br>If the null is transmitted, cancel registration. |
 
 ##### Return[](#registervideodecodeframeobserver)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1668,12 +1668,12 @@ Register audio observer object.
 
 | Parameter | Description |
 | :--- | :--- |
-| observer | The observer object for audio frame data can obtain and process audio frame data. See [IAudioFrameObserver](/notification.md#iaudioframeobserver) for details.<br>If the null is transmitted, cancel registration. |
+| observer | The observer object for audio frame data can obtain and process audio frame data. See [IAudioFrameObserver](notification.md#iaudioframeobserver) for details.<br>If the null is transmitted, cancel registration. |
 
 ##### Return[](#registeraudioframeobserver)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1697,7 +1697,7 @@ Set the format of captured audio data which will report.
 ##### Return[](#setrecordingaudioframeparameters)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1721,7 +1721,7 @@ Set the format of playing audio data which will report.
 ##### Return[](#setplaybackaudioframeparameters)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1747,7 +1747,7 @@ Set watermark of local video.
 ##### Return[](#setvideowatermark)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1772,7 +1772,7 @@ Set parameters of external audio source.
 ##### Return[](#setcustomaudiosource)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1796,7 +1796,7 @@ Push external audio frame.
 ##### Return[](#pushcustomaudioframe)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1808,7 +1808,7 @@ public int setCustomVideoSource(ThunderCustomVideoSource videoSource)
 
 Set customized video source.
 
-- The user needs to implement [ThunderCustomVideoSource](/notification.md#thundercustomvideosource) interface, monitor corresponding methods, and upload external video stream by using [ThunderVideoFrameConsumer.consumeByteArrayFrame](/notification.md#thundervideoframeconsumerconsumebytearrayframe) in onInitialize function.
+- The user needs to implement [ThunderCustomVideoSource](notification.md#thundercustomvideosource) interface, monitor corresponding methods, and upload external video stream by using [ThunderVideoFrameConsumer.consumeByteArrayFrame](notification.md#thundervideoframeconsumerconsumebytearrayframe) in onInitialize function.
 
 ##### Parameter[](#setcustomvideosource)
 
@@ -1819,7 +1819,7 @@ Set customized video source.
 ##### Return[](#setcustomvideosource)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1844,7 +1844,7 @@ Add a publishing address of source stream.
 ##### Return[](#addpublishoriginstreamurl)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1867,7 +1867,7 @@ Remove the publishing address of source stream.
 ##### Return[](#removepublishoriginstreamurl)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1894,7 +1894,7 @@ Add or update transcoding task.
 ##### Return[](#setlivetranscodingtask)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1917,7 +1917,7 @@ Remove a transcoding task.
 ##### Return[](#removelivetranscodingtask)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1944,7 +1944,7 @@ Add a publishing address of transcoding stream.
 ##### Return[](#addpublishtranscodingstreamurl)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1970,7 +1970,7 @@ Remove the publishing address of the transcoding stream.
 ##### Return[](#removepublishtranscodingstreamurl)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -1994,7 +1994,7 @@ Subscribe stream of specified user across the room.
 ##### Return[](#addsubscribe)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2018,7 +2018,7 @@ Remove the subscription of stream of specified user across the room.
 ##### Return[](#removesubscribe)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2042,7 +2042,7 @@ Switch to front/rear camera.
 ##### Return[](#switchfrontcamera)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2066,7 +2066,7 @@ Set the capture angle of camera (landscape/portrait).
 ##### Return[](#setvideocaptureorientation)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2091,7 +2091,7 @@ Set local video mirror mode.
 ##### Return[](#setlocalvideomirrormode)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2116,7 +2116,7 @@ Enable/Disable WebSDK compatibility.
 ##### Return[](#enablewebsdkcompatibility)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2265,7 +2265,7 @@ Adjust the local volume of music files. Call this method in the room.
 ##### Return[](#setplayerlocalvolume)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2286,7 +2286,7 @@ Adjust remote volume of music files. Call this method in the room.
 ##### Return[](#setplayerpublishvolume)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2301,7 +2301,7 @@ Get the local volume of music files.
 ##### Return[](#getplayerlocalvolume)
 
 - [0-100]: Volume value, ranging from [0 to 100]
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2316,7 +2316,7 @@ Get the remote volume of music files.
 ##### Return[](#getplayerpublishvolume)
 
 - [0-100]: Volume value, ranging from [0 to 100]
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2331,7 +2331,7 @@ Get audio track count of audio files.
 ##### Return[](#getaudiotrackcount)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2352,7 +2352,7 @@ Switch to specified audio track.
 ##### Return[](#selectaudiotrack)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2389,7 +2389,7 @@ Sets times of loop playbacks.
 ##### Return[](#setlooping)
 
 - 0: Success.
-- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](/code.md#thunderrtcconstantthunderret)
+- <0: Failure. For detailed return code, refer to [ThunderRtcConstant.ThunderRet](code.md#thunderrtcconstantthunderret)
 
 --------------------------
 
@@ -2421,7 +2421,7 @@ Set callback interface of audio file player.
 
 | Parameter | Description |
 | :--- | :--- |
-| callback | The callback interface of audio file player, refer to [ThunderAudioFilePlayer.IThunderAudioFilePlayerCallback](/notification.md#thunderaudiofileplayerithunderaudiofileplayercallback) for details |
+| callback | The callback interface of audio file player, refer to [ThunderAudioFilePlayer.IThunderAudioFilePlayerCallback](notification.md#thunderaudiofileplayerithunderaudiofileplayercallback) for details |
 
 --------------------------
 
