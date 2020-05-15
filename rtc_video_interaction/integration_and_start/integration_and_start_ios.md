@@ -27,7 +27,7 @@ After the preceding prerequisites are met, SDK development can be started.
 4. Select the project storage path and click **Create**.
 5. Connect your iOS device to the computer.
 6. Choose TARGETS > Project Name > General > Signing. Select Automatically manage signing. Click Enable Automatic in the displayed menu. 
-   ![Configuration diagram](/resources/en/rtc_service/rt_video_interaction/iOS1.png)
+   ![Configuration diagram](/rt_video_interaction/resources/iOS1.png)
 
 ### 3.2 Integrating SDK
 
