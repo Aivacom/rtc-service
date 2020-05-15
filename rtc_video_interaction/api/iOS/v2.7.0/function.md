@@ -165,7 +165,7 @@ Create ThunderEngine and initialize ThunderEngine instance.
 | :--- | :--- |
 | appId | AppId signed for application developers |
 | sceneId | The scene Id customized by the developer can subdivide business scenes; it unnecessary, fill 0 |
-| delegate | Callback. For details, refer to [ThunderEventDelegate](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegate) |
+| delegate | Callback. For details, refer to [ThunderEventDelegate](notification.md#thundereventdelegate) |
 
 ##### Return[](#createengine)
 
@@ -237,7 +237,7 @@ Set proxy interface.
 
 | Parameter | Description |
 | :--- |:--- |
-| delegate | For proxy interface, refer to[ThunderEventDelegate](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegate) |
+| delegate | For proxy interface, refer to[ThunderEventDelegate](notification.md#thundereventdelegate) |
 
 --------------------------
 
@@ -268,7 +268,7 @@ To accommodate to different laws and regulations at home and abroad, aivacom pro
 ##### Return[](#setarea)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -288,7 +288,7 @@ Join a room.
 > **Note:**
 >
 > - Apps using different App IDs are not interoperable.
-> - Function returned successfully only means successful implementation of request. Receiving the [onJoinRoomSuccess](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegatethunderengineonjoinroomsuccesswithuidelapsed) callback marks successful entry into the room.
+> - Function returned successfully only means successful implementation of request. Receiving the [onJoinRoomSuccess](notification.md#thundereventdelegatethunderengineonjoinroomsuccesswithuidelapsed) callback marks successful entry into the room.
 > - When appid mode is set for backstage, send a null token.
 
 ##### Parameter[](#joinroom)
@@ -302,7 +302,7 @@ Join a room.
 ##### Return[](#joinroom)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -322,7 +322,7 @@ Leaving room indicates hang off or exiting conversation.
 ##### Return[](#leaveroom)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -358,7 +358,7 @@ This method is used to update Token and authenticate service.
 ##### Return[](#updatetoken)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -385,7 +385,7 @@ Set directory for SDK to output log files. A directory with write permissions mu
 ##### Return[](#setlogfilepath)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -406,12 +406,12 @@ Set output of log callback.
 
 | Parameter | Description |
 | :--- | :--- |
-| delegate | For log protocol, see [ThunderRtcLogDelegate for details](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thunderrtclogdelegate) |
+| delegate | For log protocol, see [ThunderRtcLogDelegate for details](notification.md#thunderrtclogdelegate) |
 
 ##### Return[](#setlogcallback)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -437,7 +437,7 @@ Set filter level of log output.
 ##### Return[](#setloglevel)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -464,7 +464,7 @@ Add address for bypass stream publishing of source streams.
 ##### Return[](#addpublishoriginstreamurl)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -489,7 +489,7 @@ Remove address for bypass stream publishing of source streams.
 ##### Return[](#removepublishoriginstreamurl)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -518,7 +518,7 @@ Add/Update stream mixing task[LiveTranscoding](#livetranscoding).
 ##### Return[](#setlivetranscodingtask)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -547,7 +547,7 @@ Add address for bypass stream publishing of mixed streams.
 ##### Return[](#addpublishtranscodingstreamurl)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -574,7 +574,7 @@ Remove address for bypass stream publishing of mixed streams.
 ##### Return[](#removepublishtranscodingstreamurl)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -599,7 +599,7 @@ Remove the stream mixing task.
 ##### Return[](#removelivetranscodingtask)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -624,7 +624,7 @@ Subscribe across the room.
 ##### Return[](#addsubscribe)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -649,7 +649,7 @@ Cancel the trans-room subscription.
 ##### Return[](#removesubscribe)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -673,7 +673,7 @@ Set media mode of SDK.
 ##### Return[](#setmediamode)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -699,7 +699,7 @@ Set room scenario mode.
 ##### Return[](#setroommode)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -726,7 +726,7 @@ Enable/Disable WebSDK compatibility.
 ##### Return[](#enablewebsdkcompatibility)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -752,7 +752,7 @@ Set video encoder’s property.
 ##### Return[](#setvideoencoderconfig)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -777,7 +777,7 @@ Set local view.
 ##### Return[](#setlocalvideocanvas)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -802,7 +802,7 @@ Set the remote play type.
 ##### Return[](#setremoteplaytype)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -827,7 +827,7 @@ Set multi-person microphone connection layout.
 ##### Return[](#setmultivideoviewlayout)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -852,7 +852,7 @@ Set remote user’s view.
 ##### Return[](#setremotevideocanvas)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -873,7 +873,7 @@ Set local view display mode.
 ##### Return[](#setlocalcanvasscalemode)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -895,7 +895,7 @@ Set the remote play type.
 ##### Return[](#setremotecanvasscalemode)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -910,7 +910,7 @@ Enable video preview.
 ##### Return[](#startvideopreview)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -929,7 +929,7 @@ Stop video preview.
 ##### Return[](#stopvideopreview)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -950,7 +950,7 @@ Enable/Disable local video capture.
 ##### Return[](#enablelocalvideocapture)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -971,7 +971,7 @@ Enable/Disable sending of local video stream.
 ##### Return[](#stoplocalvideostream)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -998,7 +998,7 @@ Stop or receive all video streams.
 ##### Return[](#stopallremotevideostreams)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1025,7 +1025,7 @@ Receive/Stop receiving specified video stream.
 ##### Return[](#stopremotevideostream)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1039,13 +1039,13 @@ Set customized video source.
 
 > **Note:**
 >
-> - In real-time communication, aivacom’ SDK usually will enable the default video input device, i.e. the built-in camera, for video pushing. To customize video device, the App can customize an object to realize [ThunderCustomVideoSourceProtocol](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundercustomvideosourceprotocol) protocol, and then call this method to add the customized video source to the SDK.
+> - In real-time communication, aivacom’ SDK usually will enable the default video input device, i.e. the built-in camera, for video pushing. To customize video device, the App can customize an object to realize [ThunderCustomVideoSourceProtocol](notification.md#thundercustomvideosourceprotocol) protocol, and then call this method to add the customized video source to the SDK.
 
 ##### Parameter[](#setcustomvideosource)
 
 | Parameter | Description |
 | :--- | :--- |
-| videoSource | See [ThunderCustomVideoSourceProtocol for details](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundercustomvideosourceprotocol) |
+| videoSource | See [ThunderCustomVideoSourceProtocol for details](notification.md#thundercustomvideosourceprotocol) |
 
 --------------------------
 
@@ -1073,7 +1073,7 @@ Set watermark of local video.
 ##### Return[](#setvideowatermark)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1089,13 +1089,13 @@ Customize decoding picture rendering.
 
 | Parameter | Description |
 | :--- | :--- | :--- |
-| delegate | For capture of interface for decoding image, see [ThunderVideoDecodeFrameObserver for details](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundervideodecodeframeobserver) |
+| delegate | For capture of interface for decoding image, see [ThunderVideoDecodeFrameObserver for details](notification.md#thundervideodecodeframeobserver) |
 | uid | Used to indicate the uid’s video stream to be acquired |
 
 ##### Return[](#registervideodecodeframeobserver)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1111,12 +1111,12 @@ Customize the image pre-processing function.
 
 | Parameter | Description |
 | :--- | :--- |
-| delegate | For processing interface for local video frame, see [ThunderVideoCaptureFrameObserver for details](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundervideocaptureframeobserver) |
+| delegate | For processing interface for local video frame, see [ThunderVideoCaptureFrameObserver for details](notification.md#thundervideocaptureframeobserver) |
 
 ##### Return[](#registervideocaptureframeobserver)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1141,7 +1141,7 @@ Switch to front/back camera.
 ##### Return[](#switchfrontcamera)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1166,7 +1166,7 @@ Set portrait and landscape.
 ##### Return[](#setvideocaptureorientation)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1193,7 +1193,7 @@ Setting camera mirroring.
 ##### Return[](#setlocalvideomirrormode)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1218,7 +1218,7 @@ Enable/Disable loudspeaker.
 ##### Return[](#enableloudspeaker)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1262,7 +1262,7 @@ Set audio profiles.
 ##### Return[](#setaudioconfig)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1280,7 +1280,7 @@ Enable volume indication for speaker.
 > **Note:**
 >
 > - By using this method, SDK can feed current speaker and speaker’s volume back to an application periodically.
-> - Return via [onPlayVolumeIndication](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegateonplayvolumeindicationtotalvolume) callback interface.
+> - Return via [onPlayVolumeIndication](notification.md#thundereventdelegateonplayvolumeindicationtotalvolume) callback interface.
 > - The voice volume collected by local microphone or playing file is not included.
 
 ##### Parameter[](#setaudiovolumeindication)
@@ -1295,7 +1295,7 @@ Enable volume indication for speaker.
 ##### Return[](#setaudiovolumeindication)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1313,7 +1313,7 @@ Enable/Disable collected volume callback.
 > **Note:**
 >
 > - By using this method, SDK can feed current microphone capture volume back to an application periodically.
-> - Return from [onCaptureVolumeIndication](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegatethunderengineoncapturevolumeindicationcptmicvolume).
+> - Return from [onCaptureVolumeIndication](notification.md#thundereventdelegatethunderengineoncapturevolumeindicationcptmicvolume).
 
 ##### Parameter[](#enablecapturevolumeindication)
 
@@ -1327,7 +1327,7 @@ Enable/Disable collected volume callback.
 ##### Return[](#enablecapturevolumeindication)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1353,7 +1353,7 @@ Enabling/Disabling sending of local audio.
 ##### Return[](#stoplocalaudiostream)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1380,7 +1380,7 @@ Stop or receive all audio streams.
 ##### Return[](#stopallremoteaudiostreams)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1407,7 +1407,7 @@ Receive/Stop receiving specified audio stream.
 ##### Return[](#stopremoteaudiostream)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1428,7 +1428,7 @@ Set loudspeaker volume.
 ##### Return[](#setloudspeakervolume)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1449,7 +1449,7 @@ Set microphone volume.
 ##### Return[](#setmicvolume)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1471,7 +1471,7 @@ Set play volume for a single user.
 ##### Return[](#setplayvolumevolume)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1518,7 +1518,7 @@ Enable/Disable in-ear monitor.
 ##### Return[](#setenableinearmonitor)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1539,7 +1539,7 @@ Enable/Disable local voice equalizer.
 ##### Return[](#setenableequalizer)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1560,7 +1560,7 @@ Set equalizer parameters.
 ##### Return[](#seteqgains)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1581,7 +1581,7 @@ Enable/Disable local sound reverberation.
 ##### Return[](#setenablereverb)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1602,7 +1602,7 @@ Set reverb parameters.
 ##### Return[](#setreverbparam)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1623,7 +1623,7 @@ Enable/Disable sound compressor.
 ##### Return[](#setenablecompressor)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1644,7 +1644,7 @@ Set compressor parameters.
 ##### Return[](#setcompressorparam)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1665,7 +1665,7 @@ Enable/Disable pressure limiter.
 ##### Return[](#setenablelimiter)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1686,7 +1686,7 @@ Set pressure limiter parameters.
 ##### Return[](#setlimiterparam)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1700,7 +1700,7 @@ Enable/Disable data callback on audio playing.
 
 > **Note:**
 >
-> - When enabled, it will call back via [onAudioPlayData](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegatethunderengineonaudioplaydatadurationcptptsdata) function.
+> - When enabled, it will call back via [onAudioPlayData](notification.md#thundereventdelegatethunderengineonaudioplaydatadurationcptptsdata) function.
 
 ##### Parameter[](#enableaudiodataindication)
 
@@ -1775,8 +1775,8 @@ Send custom broadcast message of service.
 > - 3. Calling frequency of this interface not to exceed twice a second, size of msgData of 200Byte as maximum.
 > - 4. Failing to meet any of the said conditions, msg will be discarded.
 > - 5. Not guaranteed to send to all online users in the room, or send by order.
-> - For user app message data sent by other users, call back to the application via [onRecvUserAppMsgData](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegatethunderengineonrecvuserappmsgdatauid) callback interface.
-> - Acquire reasons of failing to send the msg via callback interface [onSendAppMsgDataFailedStatus](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundereventdelegatethunderengineonsendappmsgdatafailedstatus).
+> - For user app message data sent by other users, call back to the application via [onRecvUserAppMsgData](notification.md#thundereventdelegatethunderengineonrecvuserappmsgdatauid) callback interface.
+> - Acquire reasons of failing to send the msg via callback interface [onSendAppMsgDataFailedStatus](notification.md#thundereventdelegatethunderengineonsendappmsgdatafailedstatus).
 
 ##### Parameter[](#senduserappmsgdata)
 
@@ -1787,7 +1787,7 @@ Send custom broadcast message of service.
 ##### Return[](#senduserappmsgdata)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1806,8 +1806,8 @@ Send media extra information. Use video channel when uploading video, otherwise 
 > - The size of media extra information shall not exceed 200 bytes in audio publishing (publishing in a pure audio mode or only audio publishing in an audio/video mode). If video is also published at audio/video mode, the size of extra information shall not exceed 2048 bytes.
 > - Packet loss may occur
 
-> - Acquire reasons for failure to send media extra information via [onSendMediaExtraInfoFailedStatus](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundermediaextrainfodelegateonsendmediaextrainfofailedstatus) under proxy of ThunderMediaExtraInfoDelegate.
-> - Media extra information sent by other users is called back to the application via [onRecvMediaExtraInfo](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundermediaextrainfodelegateonrecvmediaextrainfoofuid) under proxy of ThunderMediaExtraInfoDelegate.
+> - Acquire reasons for failure to send media extra information via [onSendMediaExtraInfoFailedStatus](notification.md#thundermediaextrainfodelegateonsendmediaextrainfofailedstatus) under proxy of ThunderMediaExtraInfoDelegate.
+> - Media extra information sent by other users is called back to the application via [onRecvMediaExtraInfo](notification.md#thundermediaextrainfodelegateonrecvmediaextrainfoofuid) under proxy of ThunderMediaExtraInfoDelegate.
 
 ##### Parameter[](#sendmediaextrainfo)
 
@@ -1818,7 +1818,7 @@ Send media extra information. Use video channel when uploading video, otherwise 
 ##### Return[](#sendmediaextrainfo)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1834,12 +1834,12 @@ Set callback monitoring of media extra information.
 
 | Parameter | Description |
 | :--- | :--- |
-| delegate | See [ThunderMediaExtraInfoDelegate for details](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundermediaextrainfodelegate) |
+| delegate | See [ThunderMediaExtraInfoDelegate for details](notification.md#thundermediaextrainfodelegate) |
 
 ##### Return[](#setmediaextrainfodelegate)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1851,7 +1851,7 @@ Set callback monitoring of media extra information.
 
 Enable/Disable mixed video with extra information. For example: Mixed video with layout information.
 
-When enabled, you can receive [onRecvMixVideoInfo](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thundermediaextrainfodelegateonrecvmixvideoinfoofuid) callback during playing of mixed video stream at audience end
+When enabled, you can receive [onRecvMixVideoInfo](notification.md#thundermediaextrainfodelegateonrecvmixvideoinfoofuid) callback during playing of mixed video stream at audience end
 
 ##### Parameter[](#enablemixvideoextrainfo)
 
@@ -1862,7 +1862,7 @@ When enabled, you can receive [onRecvMixVideoInfo](/en/product_category/rtc_serv
 ##### Return[](#enablemixvideoextrainfo)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1959,7 +1959,7 @@ Set format of recording audio.
 ##### Return[](#setrecordingaudioframeparameters)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -1986,7 +1986,7 @@ Set format of playing audio.
 ##### Return[](#setplaybackaudioframeparameters)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -2090,7 +2090,7 @@ Enable/Disable voice stereo of remote users.
 ##### Return[](#enablevoiceposition)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -2193,7 +2193,7 @@ Callback on setting audio playback event.
 
 | Parameter | Description |
 | :--- | :--- |
-| delegate | For event callback, see [ThunderAudioFilePlayerDelegate for details](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/notification.html#thunderaudiofileplayerdelegate) |
+| delegate | For event callback, see [ThunderAudioFilePlayerDelegate for details](notification.md#thunderaudiofileplayerdelegate) |
 
 --------------------------
 
@@ -2338,7 +2338,7 @@ Adjust volume of music file in mixed video being played locally.
 ##### Return[](#setplayerlocalvolume)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -2362,7 +2362,7 @@ Adjust volume of music file in mixed video being played remotely.
 ##### Return[](#setplayerpublishvolume)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -2429,7 +2429,7 @@ Sets times of loop playbacks.
 ##### Return[](#setlooping)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
@@ -2450,7 +2450,7 @@ Select an audio track.
 ##### Return[](#selectaudiotrack)
 
 - 0: Success.
-- For other errors, refer to [ThunderRet](/en/product_category/rtc_service/rt_video_interaction/api/iOS/v2.7.0/code.html#thunderret)
+- For other errors, refer to [ThunderRet](code.md#thunderret)
 
 --------------------------
 
