@@ -1,4 +1,0 @@
-integration_and_start_android:Android
-integration_and_start_ios:iOS
-integration_and_start_windows:Windows
-integration_and_start_web:Web
